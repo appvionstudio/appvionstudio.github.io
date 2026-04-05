@@ -128,7 +128,7 @@ a.button {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    clip-path: inset(22% 14% 8% 14%);
+  clip-path: inset(24% 14% 7% 14%);
     transform: scale(1.18);
 }
 
