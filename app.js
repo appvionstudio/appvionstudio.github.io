@@ -35,7 +35,7 @@ if (menuToggle && nav) {
 }
 
 if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
 
         const formData = new FormData(contactForm);
@@ -58,10 +58,46 @@ if (contactForm) {
             message
         ].join("\n"));
 
-        window.location.href = `mailto:appvionstudio@gmail.com?subject=${subject}&body=${body}`;
+        const submitButton = contactForm.querySelector("button[type='submit']");
 
         if (formStatus) {
-            formStatus.textContent = "Opening your email app with the project brief ready to send.";
+            formStatus.textContent = "Sending your project brief...";
+        }
+
+        if (submitButton) {
+            submitButton.disabled = true;
+        }
+
+        formData.set("_subject", `Project brief from ${name || "AppVion website"}`);
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/appvionstudio@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json"
+                },
+                body: formData
+            });
+
+            if (!response.ok) {
+                throw new Error("Form submit failed");
+            }
+
+            contactForm.reset();
+
+            if (formStatus) {
+                formStatus.textContent = "Thanks. Your project brief has been sent to AppVion Studio.";
+            }
+        } catch (error) {
+            window.location.href = `mailto:appvionstudio@gmail.com?subject=${subject}&body=${body}`;
+
+            if (formStatus) {
+                formStatus.textContent = "We could not send directly, so your email app is opening with the brief ready.";
+            }
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+            }
         }
     });
 }

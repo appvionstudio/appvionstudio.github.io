@@ -37,7 +37,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="appvion-logo-icon.png">
     <link rel="apple-touch-icon" href="appvion-logo-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20260518-local-enhancements">
+    <link rel="stylesheet" href="styles.css?v=20260518-form-submit">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -761,7 +761,10 @@
                             <a href="https://www.linkedin.com/company/112235810/" target="_blank" rel="noreferrer">LinkedIn company page</a>
                         </div>
                     </div>
-                    <form class="contact-form" data-contact-form>
+                    <form class="contact-form" action="https://formsubmit.co/appvionstudio@gmail.com" method="POST" data-contact-form>
+                        <input type="hidden" name="_subject" value="New AppVion Studio project brief">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
                         <div class="field-row">
                             <label>
                                 <span>Name</span>
@@ -800,7 +803,7 @@
                             <textarea name="message" rows="5" placeholder="Tell us the product idea, target users, must-have features, and current stage." required></textarea>
                         </label>
                         <button class="button primary" type="submit">Send Project Brief</button>
-                        <p class="form-status" data-form-status aria-live="polite">Submits through your email app with a pre-filled message.</p>
+                        <p class="form-status" data-form-status aria-live="polite">Sends directly to AppVion Studio.</p>
                     </form>
                 </div>
             </section>
@@ -851,6 +854,6 @@
         window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
     </script>
     <script src="site-render.js?v=20260518-firebase"></script>
-    <script src="app.js?v=20260518-admin"></script>
+    <script src="app.js?v=20260518-form-submit"></script>
 </body>
 </html>
