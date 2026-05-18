@@ -85,17 +85,4 @@ if (!prefersReducedMotion) {
         });
     });
 
-    document.querySelectorAll(".case-card, .service-card, .choice-card, .team-card, .insight-card").forEach((card) => {
-        card.addEventListener("pointermove", (event) => {
-            if (window.innerWidth < 900) return;
-            const rect = card.getBoundingClientRect();
-            const x = (event.clientX - rect.left) / rect.width - 0.5;
-            const y = (event.clientY - rect.top) / rect.height - 0.5;
-            card.style.transform = `perspective(900px) rotateX(${(-y * 4).toFixed(2)}deg) rotateY(${(x * 4).toFixed(2)}deg) translateY(-3px)`;
-        });
-
-        card.addEventListener("pointerleave", () => {
-            card.style.transform = "";
-        });
-    });
 }
