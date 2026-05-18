@@ -40,24 +40,6 @@ if (contactForm) {
 
         const formData = new FormData(contactForm);
         const name = String(formData.get("name") || "").trim();
-        const email = String(formData.get("email") || "").trim();
-        const type = String(formData.get("type") || "").trim();
-        const timeline = String(formData.get("timeline") || "").trim();
-        const message = String(formData.get("message") || "").trim();
-
-        const subject = encodeURIComponent(`Project brief from ${name || "AppVion website"}`);
-        const body = encodeURIComponent([
-            "New AppVion Studio project brief",
-            "",
-            `Name: ${name}`,
-            `Email: ${email}`,
-            `Project type: ${type}`,
-            `Timeline: ${timeline}`,
-            "",
-            "Project brief:",
-            message
-        ].join("\n"));
-
         const submitButton = contactForm.querySelector("button[type='submit']");
 
         if (formStatus) {
@@ -89,11 +71,11 @@ if (contactForm) {
                 formStatus.textContent = "Thanks. Your project brief has been sent to AppVion Studio.";
             }
         } catch (error) {
-            window.location.href = `mailto:appvionstudio@gmail.com?subject=${subject}&body=${body}`;
-
             if (formStatus) {
-                formStatus.textContent = "We could not send directly, so your email app is opening with the brief ready.";
+                formStatus.textContent = "Opening the secure form submit page to finish sending...";
             }
+
+            contactForm.submit();
         } finally {
             if (submitButton) {
                 submitButton.disabled = false;
