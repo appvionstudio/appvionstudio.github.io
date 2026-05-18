@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>AppVion Control</title>
+    <link rel="icon" href="appvion-logo-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css?v=20260518-password">
+</head>
+<body>
+    <section class="lock-screen" data-lock-screen>
+        <form class="lock-card" data-lock-form>
+            <img src="appvion-logo-icon.png" alt="AppVion Studio">
+            <p class="eyebrow">Private control</p>
+            <h1>Owner sign in</h1>
+            <p class="muted" data-lock-help>Enter the owner Gmail and password to unlock the AppVion control panel through Firebase.</p>
+            <label data-email-field>
+                <span>Owner Gmail</span>
+                <input name="email" type="email" autocomplete="email" placeholder="your@email.com" required>
+            </label>
+            <label data-password-field>
+                <span>Password</span>
+                <input name="password" type="password" autocomplete="current-password" placeholder="Enter password" required>
+            </label>
+            <button class="button primary" type="submit" data-lock-button>Unlock Admin</button>
+            <button class="button ghost local-unlock" type="button" data-action="local-unlock">Local Preview Unlock</button>
+        </form>
+    </section>
+
+    <div class="admin-shell">
+        <aside class="admin-sidebar">
+            <a class="admin-brand" href="appvion-control.html" aria-label="AppVion Studio Control">
+                <img src="appvion-logo-icon.png" alt="AppVion Studio">
+                <span>
+                    <strong>AppVion Studio</strong>
+                    <small>Content command center</small>
+                </span>
+            </a>
+
+            <nav class="admin-nav" aria-label="Admin sections">
+                <button class="nav-item active" type="button" data-view="overview">Overview</button>
+                <button class="nav-item" type="button" data-view="projects">Projects</button>
+                <button class="nav-item" type="button" data-view="services">Services</button>
+                <button class="nav-item" type="button" data-view="processSteps">Process</button>
+                <button class="nav-item" type="button" data-view="metrics">Metrics</button>
+                <button class="nav-item" type="button" data-view="choiceReasons">Why Choose</button>
+                <button class="nav-item" type="button" data-view="engagements">Engagements</button>
+                <button class="nav-item" type="button" data-view="team">Team</button>
+                <button class="nav-item" type="button" data-view="stack">Tech Stack</button>
+                <button class="nav-item" type="button" data-view="insights">Blogs</button>
+                <button class="nav-item" type="button" data-view="faqs">FAQ</button>
+                <button class="nav-item" type="button" data-view="settings">Settings</button>
+                <button class="nav-item" type="button" data-view="publish">Publish</button>
+                <button class="nav-item" type="button" data-action="logout">Lock Admin</button>
+            </nav>
+
+            <div class="admin-sidebar-card">
+                <span>Local CMS mode</span>
+                <p>Changes save locally first, then Publish Live sends them to Firebase.</p>
+            </div>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-topbar">
+                <div>
+                    <p class="eyebrow">Admin panel</p>
+                    <h1 data-page-title>Overview</h1>
+                </div>
+                <div class="topbar-actions">
+                    <a class="button ghost" href="index.html" target="_blank" rel="noreferrer">Open Site</a>
+                    <button class="button primary" type="button" data-action="export">Export Content</button>
+                </div>
+            </header>
+
+            <section class="admin-view active" data-panel="overview">
+                <div class="overview-grid" data-overview></div>
+                <div class="admin-card roadmap-card">
+                    <div>
+                        <p class="eyebrow">Publishing path</p>
+                        <h2>From local edits to Firebase live content</h2>
+                        <p>This dashboard is structured so content can be edited safely, previewed locally, and then published to Firestore for the live website.</p>
+                    </div>
+                    <div class="roadmap-steps">
+                        <span>Local edit</span>
+                        <span>Preview website</span>
+                        <span>Backup JSON</span>
+                        <span>Publish Firebase</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="projects">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">Portfolio</p>
+                                <h2>Projects</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="projects">Add Project</button>
+                        </div>
+                        <div class="collection-list" data-list="projects"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="projects"></form>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="services">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">Offerings</p>
+                                <h2>Services</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="services">Add Service</button>
+                        </div>
+                        <div class="collection-list" data-list="services"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="services"></form>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="processSteps">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">Build system</p>
+                                <h2>Process Steps</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="processSteps">Add Step</button>
+                        </div>
+                        <div class="collection-list" data-list="processSteps"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="processSteps"></form>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="metrics">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">Trust proof</p>
+                                <h2>Metrics</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="metrics">Add Metric</button>
+                        </div>
+                        <div class="collection-list" data-list="metrics"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="metrics"></form>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="choiceReasons">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">Positioning</p>
+                                <h2>Why Choose Reasons</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="choiceReasons">Add Reason</button>
+                        </div>
+                        <div class="collection-list" data-list="choiceReasons"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="choiceReasons"></form>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="engagements">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">Sales paths</p>
+                                <h2>Engagements</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="engagements">Add Engagement</button>
+                        </div>
+                        <div class="collection-list" data-list="engagements"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="engagements"></form>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="team">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">People</p>
+                                <h2>Team</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="team">Add Member</button>
+                        </div>
+                        <div class="collection-list" data-list="team"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="team"></form>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="stack">
+                <form class="admin-card settings-form" data-stack-form></form>
+            </section>
+
+            <section class="admin-view" data-panel="insights">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">Content marketing</p>
+                                <h2>Blogs & Insights</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="insights">Add Blog</button>
+                        </div>
+                        <div class="collection-list" data-list="insights"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="insights"></form>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="faqs">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">Buyer clarity</p>
+                                <h2>FAQ</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="faqs">Add FAQ</button>
+                        </div>
+                        <div class="collection-list" data-list="faqs"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="faqs"></form>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="settings">
+                <form class="admin-card settings-form" data-settings-form></form>
+            </section>
+
+            <section class="admin-view" data-panel="publish">
+                <div class="publish-grid">
+                    <div class="admin-card">
+                        <p class="eyebrow">Export</p>
+                        <h2>Content JSON</h2>
+                        <p class="muted">Export creates a backup `appvion-content.json` file. Firebase publishing is the main live method.</p>
+                        <textarea data-json-output readonly></textarea>
+                        <div class="button-row">
+                            <button class="button primary" type="button" data-action="export">Download JSON</button>
+                            <button class="button ghost" type="button" data-action="copy">Copy JSON</button>
+                        </div>
+                    </div>
+                    <div class="admin-card">
+                        <p class="eyebrow">Import</p>
+                        <h2>Restore or migrate</h2>
+                        <p class="muted">Paste a saved content JSON file here to restore dashboard content.</p>
+                        <textarea data-json-import placeholder="{ ... }"></textarea>
+                        <div class="button-row">
+                            <button class="button primary" type="button" data-action="import">Import JSON</button>
+                            <button class="button danger" type="button" data-action="reset">Reset Local Changes</button>
+                        </div>
+                    </div>
+                    <div class="admin-card backend-card">
+                        <p class="eyebrow">Live publishing</p>
+                        <h2>Publish through Firebase</h2>
+                        <p class="muted">This saves the current dashboard content to Firestore. The public website reads the published Firebase content when configured.</p>
+                        <div class="button-row">
+                            <button class="button primary" type="button" data-action="publish-live">Publish Live</button>
+                            <span class="publish-status" data-publish-status>Firebase configuration required for live publishing.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="toast" data-toast role="status" aria-live="polite"></div>
+        </main>
+    </div>
+    <script>
+        window.APPVION_FIREBASE_CONFIG = {
+            apiKey: "AIzaSyC44enadsgl9w1a0mRE51zaLY-1uc5AWwI",
+            authDomain: "appvion-studio.firebaseapp.com",
+            projectId: "appvion-studio",
+            storageBucket: "appvion-studio.firebasestorage.app",
+            messagingSenderId: "4195907711",
+            appId: "1:4195907711:web:3cdf11646b9b7bc876e74a",
+            measurementId: "G-DEV3NRR902"
+        };
+        window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
+    </script>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+{
+  "settings": {
+    "studioName": "AppVion Studio",
+    "heroEyebrow": "Premium mobile app agency",
+    "heroTitle": "World-class mobile apps for ambitious teams.",
+    "heroLead": "AppVion Studio designs and engineers polished Android Native, Kotlin Multiplatform, and AI-ready products that look expensive, feel effortless, and hold up under real business pressure.",
+    "metaTitle": "AppVion Studio | Android, Kotlin Multiplatform & AI-Ready App Agency",
+    "metaDescription": "AppVion Studio designs and builds premium Android Native, Kotlin Multiplatform, operational, and AI-ready mobile products for ambitious teams.",
+    "proofText": "Product experience across field operations, university systems, attendance workflows, events, secure web layers, and finance concepts.",
+    "ctaEyebrow": "Start the conversation",
+    "ctaTitle": "Bring a serious mobile product idea. Leave with a sharper path.",
+    "ctaBody": "Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade. AppVion will help turn it into a focused product direction.",
+    "footerTagline": "Elite mobile products, operational systems, and future-ready app experiences.",
+    "email": "appvionstudio@gmail.com",
+    "whatsapp": "+92 346 7277143",
+    "whatsappUrl": "https://wa.me/923467277143",
+    "linkedinUrl": "https://www.linkedin.com/company/112235810/",
+    "instagramUrl": "https://www.instagram.com/appvion?igsh=MTVyYTV5azl4ODF1bQ==",
+    "sections": {
+      "work": true,
+      "services": true,
+      "process": true,
+      "proof": true,
+      "choice": true,
+      "confidence": true,
+      "engagements": true,
+      "stack": true,
+      "team": true,
+      "insights": true,
+      "faq": true,
+      "contact": true
+    }
+  },
+  "proofLogos": ["ProFix", "WUM Connect", "Attendance Suite", "Pay Portal"],
+  "projects": [
+    {
+      "id": "wum-connect",
+      "title": "WUM Connect",
+      "kicker": "University product",
+      "description": "Role-based communication with real-time announcements, Firebase architecture, and offline-friendly usage.",
+      "status": "Live",
+      "metric": "Sync",
+      "theme": "campus",
+      "linkLabel": "Watch demo",
+      "linkUrl": "https://youtu.be/9I1OX1Z4w-Q"
+    },
+    {
+      "id": "attendance-management",
+      "title": "Attendance Management",
+      "kicker": "Data-heavy utility",
+      "description": "Large-list browsing, record clarity, and Paging 3 implementation for smoother institutional workflows.",
+      "status": "98%",
+      "metric": "Records",
+      "theme": "data",
+      "linkLabel": "Watch demo",
+      "linkUrl": "https://youtu.be/NnlCmr_C4Cw"
+    },
+    {
+      "id": "sports-society-events",
+      "title": "Sports Society Events",
+      "kicker": "Events platform",
+      "description": "Mobile event coordination with filtering, structured updates, and participant-facing activity flows.",
+      "status": "Open",
+      "metric": "Events",
+      "theme": "event",
+      "linkLabel": "Watch demo",
+      "linkUrl": "https://youtube.com/shorts/1dSV-00hZr4"
+    }
+  ],
+  "services": [
+    {
+      "id": "mobile-product-strategy",
+      "number": "01",
+      "title": "Mobile Product Strategy",
+      "description": "Define the product thesis, core workflow, feature priority, monetization shape, and launch path before code gets expensive."
+    },
+    {
+      "id": "premium-android-apps",
+      "number": "02",
+      "title": "Premium Android Apps",
+      "description": "Native Android products with Compose-driven interfaces, refined interactions, scalable structure, and crisp mobile ergonomics."
+    },
+    {
+      "id": "kotlin-multiplatform-systems",
+      "number": "03",
+      "title": "Kotlin Multiplatform Systems",
+      "description": "Shared business logic and durable architecture for teams that want cleaner delivery across platforms without duplicated complexity."
+    },
+    {
+      "id": "ai-ready-interfaces",
+      "number": "04",
+      "title": "AI-Ready Interfaces",
+      "description": "Intelligent workflows, command surfaces, automation-ready UX, and data-aware interaction patterns built with restraint."
+    },
+    {
+      "id": "product-redesigns",
+      "number": "05",
+      "title": "Product Redesigns",
+      "description": "Transform dated apps into premium experiences with sharper hierarchy, smoother flows, better trust signals, and cleaner UI systems."
+    },
+    {
+      "id": "operational-tools",
+      "number": "06",
+      "title": "Operational Tools",
+      "description": "Dispatch, approvals, tracking, secure content, attendance, communication, and internal systems built for repeat daily use."
+    }
+  ],
+  "processSteps": [
+    {
+      "id": "signal-audit",
+      "number": "01",
+      "title": "Signal Audit",
+      "description": "We map the business model, user roles, core workflows, risk areas, and the few screens that must feel exceptional."
+    },
+    {
+      "id": "product-blueprint",
+      "number": "02",
+      "title": "Product Blueprint",
+      "description": "Information architecture, feature sequencing, data model direction, and interface system are aligned before build sprints."
+    },
+    {
+      "id": "design-engineering",
+      "number": "03",
+      "title": "Design Engineering",
+      "description": "UI, motion, backend integration, state handling, and product logic come together in focused releases."
+    },
+    {
+      "id": "launch-refinement",
+      "number": "04",
+      "title": "Launch Refinement",
+      "description": "Polish, QA, deployment support, analytics readiness, and post-launch improvement loops keep the product moving."
+    }
+  ],
+  "metrics": [
+    {
+      "id": "portfolio-products",
+      "value": "06",
+      "description": "Portfolio products and concepts presented with demos or clear product scope."
+    },
+    {
+      "id": "core-domains",
+      "value": "04",
+      "description": "Core domains covered: operations, education, events, and finance-oriented systems."
+    },
+    {
+      "id": "founder-led",
+      "value": "01",
+      "description": "Founder-led accountability path from strategy to implementation review."
+    },
+    {
+      "id": "first-response",
+      "value": "24h",
+      "description": "Fast first response target for qualified strategy conversations."
+    }
+  ],
+  "choiceReasons": [
+    {
+      "id": "founder-level-thinking",
+      "title": "Founder-level thinking",
+      "description": "Strategy stays close to execution, so decisions move fast and the product does not drift into agency theater."
+    },
+    {
+      "id": "mobile-first-obsession",
+      "title": "Mobile-first obsession",
+      "description": "The interface is planned for thumbs, glances, permissions, loading states, empty states, and daily operational use."
+    },
+    {
+      "id": "premium-perception-design",
+      "title": "Premium perception design",
+      "description": "Visual hierarchy, motion, contrast, and spacing are used to create confidence before a user reads every word."
+    },
+    {
+      "id": "modern-architecture",
+      "title": "Modern architecture",
+      "description": "Compose, Kotlin Multiplatform, Supabase, Firebase, Ktor, and SQLDelight patterns for products that can evolve."
+    }
+  ],
+  "engagements": [
+    {
+      "id": "product-clarity-sprint",
+      "number": "01",
+      "title": "Product Clarity Sprint",
+      "description": "Best for founders or teams who need scope, user flows, feature priority, and a realistic launch roadmap before hiring build work.",
+      "items": "Workflow map\nFeature priority\nTech direction",
+      "featured": false
+    },
+    {
+      "id": "premium-app-build",
+      "number": "02",
+      "title": "Premium App Build",
+      "description": "Best for serious mobile products that need strategy, UI, Android/KMP engineering, backend integration, and launch refinement.",
+      "items": "Compose UI system\nAPI/backend integration\nRelease support",
+      "featured": true
+    },
+    {
+      "id": "redesign-scale",
+      "number": "03",
+      "title": "Redesign & Scale",
+      "description": "Best for existing apps that feel dated, confusing, slow, or hard to trust and need a premium product experience upgrade.",
+      "items": "UX audit\nInterface redesign\nArchitecture review",
+      "featured": false
+    }
+  ],
+  "team": [
+    {
+      "id": "ayyaz-sajjad",
+      "role": "Founder | Android App Developer",
+      "name": "Ayyaz Sajjad",
+      "description": "Leads AppVion Studio across product strategy, Android engineering, Kotlin Multiplatform systems, and premium mobile execution.",
+      "profileUrl": "ayyaz-sajjad.html",
+      "featured": true
+    },
+    {
+      "id": "tayyab-sajjad",
+      "role": "Developer",
+      "name": "Tayyab Sajjad",
+      "description": "Supports product delivery, UI implementation, and growing development execution within the studio workflow.",
+      "profileUrl": "tayyab-sajjad.html",
+      "featured": false
+    },
+    {
+      "id": "momna-shah",
+      "role": "Studio Associate",
+      "name": "Momna Shah",
+      "description": "Strengthens the team-facing studio presence with space for future coordination, support, and client-facing contributions.",
+      "profileUrl": "momna-shah.html",
+      "featured": false
+    }
+  ],
+  "stack": ["Android Native", "Kotlin", "Jetpack Compose", "Kotlin Multiplatform", "Ktor", "Supabase", "Firebase", "SQLDelight", "Paging 3", "Realtime Systems", "Secure WebView", "AI-ready UX"],
+  "insights": [
+    {
+      "id": "premium-app-calm",
+      "category": "UX strategy",
+      "title": "Why premium apps feel calmer before they feel beautiful.",
+      "excerpt": "Trust comes from rhythm, spacing, hierarchy, and fast recognition of what matters next."
+    },
+    {
+      "id": "kmp-speed",
+      "category": "Engineering",
+      "title": "How KMP helps teams move faster without making the product brittle.",
+      "excerpt": "Shared logic can reduce duplication while keeping the native interface precise and responsive."
+    },
+    {
+      "id": "enterprise-ready-screens",
+      "category": "Conversion",
+      "title": "The mobile screens that decide whether a product feels enterprise-ready.",
+      "excerpt": "Onboarding, status, empty states, permissions, and review flows carry more trust than decoration."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "project-types",
+      "question": "What type of projects is AppVion Studio best for?",
+      "answer": "Mobile apps, operational systems, founder-led MVPs, internal business tools, Android Native products, Kotlin Multiplatform builds, and premium redesigns."
+    },
+    {
+      "id": "design-development",
+      "question": "Can you build both design and development?",
+      "answer": "Yes. The studio can shape product strategy, interface direction, Android/KMP engineering, backend integration, and launch refinement in one focused workflow."
+    },
+    {
+      "id": "international-clients",
+      "question": "Do you work with international clients?",
+      "answer": "Yes. The site is set up for remote-first conversations through email, WhatsApp, LinkedIn, and structured project briefs."
+    },
+    {
+      "id": "how-to-start",
+      "question": "How should a client start?",
+      "answer": "The best start is a short brief with the product idea, target users, required platforms, current stage, budget range, and preferred launch timeline."
+    }
+  ]
+}

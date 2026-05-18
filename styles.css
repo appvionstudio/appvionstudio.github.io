@@ -385,8 +385,11 @@ h3 {
 .choice-card p,
 .confidence-copy p,
 .confidence-note p,
+.engagement-card p,
+.faq-item p,
 .team-card p,
 .insight-card p,
+.contact-form,
 .cta-layout p,
 .profile-copy p,
 .profile-panel p,
@@ -1049,6 +1052,7 @@ h3 {
 .case-grid,
 .service-grid,
 .choice-grid,
+.engagement-grid,
 .insights-grid,
 .projects-grid {
     display: grid;
@@ -1061,8 +1065,11 @@ h3 {
 .service-card,
 .choice-card,
 .confidence-note,
+.engagement-card,
+.faq-item,
 .team-card,
 .insight-card,
+.contact-form,
 .profile-detail,
 .project-card,
 .profile-panel,
@@ -1416,6 +1423,67 @@ h3 {
     font-size: 18px;
 }
 
+.engagement-section {
+    padding-top: 92px;
+}
+
+.engagement-grid {
+    align-items: stretch;
+}
+
+.engagement-card {
+    min-height: 360px;
+    display: grid;
+    align-content: start;
+    gap: 18px;
+    padding: 24px;
+}
+
+.engagement-card.featured {
+    border-color: rgba(34, 211, 238, 0.32);
+    background:
+        linear-gradient(135deg, rgba(34, 211, 238, 0.13), transparent 34%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.035));
+    box-shadow: 0 18px 54px rgba(34, 211, 238, 0.08);
+}
+
+.engagement-card > span,
+.service-card > span,
+.process-step > span {
+    width: fit-content;
+    color: var(--cyan);
+    font-family: var(--heading-font);
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.engagement-card ul {
+    display: grid;
+    gap: 10px;
+    margin: 6px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.engagement-card li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted-strong);
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.engagement-card li::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 14px rgba(52, 211, 153, 0.34);
+}
+
 .stack-cloud {
     display: flex;
     flex-wrap: wrap;
@@ -1456,15 +1524,75 @@ h3 {
     justify-content: space-between;
 }
 
+.faq-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.74fr) minmax(460px, 1.26fr);
+    gap: 50px;
+    align-items: start;
+}
+
+.faq-list {
+    display: grid;
+    gap: 12px;
+}
+
+.faq-item {
+    padding: 0;
+    overflow: hidden;
+}
+
+.faq-item summary {
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 20px 22px;
+    color: var(--text);
+    cursor: pointer;
+    font-family: var(--heading-font);
+    font-size: 17px;
+    font-weight: 800;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--cyan);
+    font-family: var(--body-font);
+    font-size: 18px;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after {
+    content: "-";
+}
+
+.faq-item p {
+    border-top: 1px solid var(--line);
+    padding: 0 22px 22px;
+}
+
 .cta-section {
     padding-bottom: 90px;
 }
 
 .cta-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1fr);
     gap: 40px;
-    align-items: center;
+    align-items: start;
     border: 1px solid rgba(203, 213, 225, 0.18);
     border-radius: var(--card-radius);
     padding: 40px;
@@ -1483,8 +1611,101 @@ h3 {
     margin-top: 18px;
 }
 
-.cta-actions {
-    justify-content: flex-end;
+.cta-copy {
+    display: grid;
+    align-content: start;
+    gap: 0;
+}
+
+.contact-routes {
+    display: grid;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.contact-routes a {
+    width: fit-content;
+    color: var(--muted-strong);
+    font-size: 14px;
+    font-weight: 800;
+    transition: color 180ms ease;
+}
+
+.contact-routes a:hover,
+.contact-routes a:focus-visible {
+    color: var(--cyan);
+}
+
+.contact-form {
+    display: grid;
+    gap: 16px;
+    padding: 22px;
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.07), transparent 46%),
+        rgba(7, 9, 15, 0.32);
+}
+
+.field-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.contact-form label {
+    display: grid;
+    gap: 8px;
+}
+
+.contact-form label span {
+    color: var(--muted-strong);
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    min-height: 48px;
+    border: 1px solid rgba(203, 213, 225, 0.16);
+    border-radius: var(--card-radius);
+    padding: 12px 14px;
+    color: var(--text);
+    background: rgba(5, 6, 8, 0.72);
+    font: inherit;
+    outline: none;
+    transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.contact-form textarea {
+    min-height: 132px;
+    resize: vertical;
+}
+
+.contact-form select {
+    color-scheme: dark;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: rgba(34, 211, 238, 0.48);
+    background: rgba(5, 6, 8, 0.9);
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.11);
+}
+
+.contact-form .button {
+    width: fit-content;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-status {
+    margin-top: 0 !important;
+    color: var(--muted);
+    font-size: 13px !important;
+    line-height: 1.5 !important;
 }
 
 .footer {
@@ -1761,6 +1982,7 @@ h3 {
     .team-grid,
     .case-grid,
     .service-grid,
+    .engagement-grid,
     .insights-grid,
     .profile-grid,
     .projects-grid {
@@ -1815,6 +2037,7 @@ h3 {
 
     .proof-strip-grid,
     .split-heading,
+    .faq-layout,
     .footer-grid,
     .cta-layout,
     .signature-card {
@@ -1974,6 +2197,7 @@ h3 {
     .case-grid,
     .service-grid,
     .choice-grid,
+    .engagement-grid,
     .process-grid,
     .team-grid,
     .insights-grid,
@@ -1983,9 +2207,24 @@ h3 {
         grid-template-columns: 1fr;
     }
 
+    .field-row {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-item summary {
+        min-height: 62px;
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .faq-item p {
+        padding: 0 18px 18px;
+    }
+
     .case-card,
     .service-card,
     .choice-card,
+    .engagement-card,
     .team-card,
     .insight-card {
         min-height: auto;

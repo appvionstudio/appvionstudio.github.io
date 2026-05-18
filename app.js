@@ -3,6 +3,8 @@ const nav = document.querySelector(".nav-links");
 const header = document.querySelector("[data-header]");
 const progress = document.querySelector(".scroll-progress");
 const year = document.getElementById("year");
+const contactForm = document.querySelector("[data-contact-form]");
+const formStatus = document.querySelector("[data-form-status]");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (year) {
@@ -29,6 +31,38 @@ if (menuToggle && nav) {
 
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") closeMenu();
+    });
+}
+
+if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const name = String(formData.get("name") || "").trim();
+        const email = String(formData.get("email") || "").trim();
+        const type = String(formData.get("type") || "").trim();
+        const timeline = String(formData.get("timeline") || "").trim();
+        const message = String(formData.get("message") || "").trim();
+
+        const subject = encodeURIComponent(`Project brief from ${name || "AppVion website"}`);
+        const body = encodeURIComponent([
+            "New AppVion Studio project brief",
+            "",
+            `Name: ${name}`,
+            `Email: ${email}`,
+            `Project type: ${type}`,
+            `Timeline: ${timeline}`,
+            "",
+            "Project brief:",
+            message
+        ].join("\n"));
+
+        window.location.href = `mailto:appvionstudio@gmail.com?subject=${subject}&body=${body}`;
+
+        if (formStatus) {
+            formStatus.textContent = "Opening your email app with the project brief ready to send.";
+        }
     });
 }
 
