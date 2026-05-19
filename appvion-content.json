@@ -41,7 +41,7 @@
       "status": "Live",
       "metric": "Sync",
       "theme": "campus",
-      "linkLabel": "Watch demo",
+      "linkLabel": "View Live Demo",
       "linkUrl": "https://youtu.be/9I1OX1Z4w-Q"
     },
     {
@@ -52,7 +52,7 @@
       "status": "98%",
       "metric": "Records",
       "theme": "data",
-      "linkLabel": "Watch demo",
+      "linkLabel": "View Live Demo",
       "linkUrl": "https://youtu.be/NnlCmr_C4Cw"
     },
     {
@@ -63,7 +63,7 @@
       "status": "Open",
       "metric": "Events",
       "theme": "event",
-      "linkLabel": "Watch demo",
+      "linkLabel": "View Live Demo",
       "linkUrl": "https://youtube.com/shorts/1dSV-00hZr4"
     }
   ],

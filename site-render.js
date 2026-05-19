@@ -113,7 +113,7 @@
                     <h3>${escapeHtml(project.title)}</h3>
                     <p>${escapeHtml(project.description)}</p>
                 </div>
-                <a href="${escapeHtml(project.linkUrl || "#")}" target="_blank" rel="noreferrer">${escapeHtml(project.linkLabel || "View project")}</a>
+                <a href="${escapeHtml(project.linkUrl || "#")}" target="_blank" rel="noreferrer">${escapeHtml(project.linkLabel || "View Live Demo")}</a>
             </article>
         `).join("");
     }

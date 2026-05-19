@@ -292,6 +292,7 @@ h3 {
 }
 
 .button {
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -303,12 +304,13 @@ h3 {
     font-weight: 800;
     line-height: 1;
     white-space: nowrap;
+    overflow: hidden;
     transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease, box-shadow 180ms ease;
 }
 
 .button:hover,
 .button:focus-visible {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 .button.primary {
@@ -1078,6 +1080,7 @@ h3 {
     border-radius: var(--card-radius);
     background: rgba(255, 255, 255, 0.04);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset;
+    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
 .case-card {
@@ -1086,11 +1089,28 @@ h3 {
     grid-template-rows: 200px 1fr auto;
     gap: 18px;
     padding: 14px;
-    transition: border-color 180ms ease;
 }
 
+.case-card:hover,
 .case-card:focus-within {
-    border-color: rgba(34, 211, 238, 0.25);
+    border-color: rgba(34, 211, 238, 0.32);
+    background: rgba(255, 255, 255, 0.058);
+    box-shadow: 0 20px 54px rgba(0, 0, 0, 0.22);
+    transform: translateY(-4px);
+}
+
+@media (hover: hover) {
+    .service-card:hover,
+    .choice-card:hover,
+    .engagement-card:hover,
+    .team-card:hover,
+    .insight-card:hover,
+    .project-card:hover {
+        border-color: rgba(203, 213, 225, 0.26);
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 18px 46px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+    }
 }
 
 .case-card > div:not(.case-card-visual) {
@@ -1114,12 +1134,20 @@ h3 {
 
 .case-card > a {
     width: fit-content;
-    border-bottom: 1px solid rgba(34, 211, 238, 0.48);
-    padding-bottom: 4px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(34, 211, 238, 0.28);
+    border-radius: var(--button-radius);
+    padding: 10px 14px;
+    background: rgba(34, 211, 238, 0.08);
+    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
 }
 
 .case-card > a::after {
     content: " ->";
+    margin-left: 6px;
     color: var(--cyan);
 }
 
@@ -1636,6 +1664,13 @@ h3 {
     color: var(--cyan);
 }
 
+.case-card > a:hover,
+.case-card > a:focus-visible {
+    border-color: rgba(34, 211, 238, 0.48);
+    background: rgba(34, 211, 238, 0.13);
+    transform: translateY(-2px);
+}
+
 .contact-form {
     display: grid;
     gap: 16px;
@@ -1712,6 +1747,10 @@ h3 {
     line-height: 1.5 !important;
 }
 
+.sticky-mobile-cta {
+    display: none;
+}
+
 .footer {
     padding: 34px 0 42px;
     border-top: 1px solid var(--line);
@@ -1761,6 +1800,26 @@ h3 {
 .reveal.in-view {
     opacity: 1;
     transform: translateY(0);
+}
+
+.reveal.in-view.case-card,
+.reveal.in-view.service-card,
+.reveal.in-view.choice-card,
+.reveal.in-view.engagement-card,
+.reveal.in-view.team-card,
+.reveal.in-view.insight-card,
+.reveal.in-view.project-card {
+    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.reveal.in-view.case-card:hover,
+.reveal.in-view.service-card:hover,
+.reveal.in-view.choice-card:hover,
+.reveal.in-view.engagement-card:hover,
+.reveal.in-view.team-card:hover,
+.reveal.in-view.insight-card:hover,
+.reveal.in-view.project-card:hover {
+    transform: translateY(-4px);
 }
 
 .profile-page .section {
@@ -2071,6 +2130,10 @@ h3 {
         --container: min(100% - 24px, 1180px);
     }
 
+    body {
+        padding-bottom: 84px;
+    }
+
     .section {
         padding: 78px 0;
     }
@@ -2241,6 +2304,36 @@ h3 {
 
     .proof-logos {
         grid-template-columns: 1fr;
+    }
+
+    .sticky-mobile-cta {
+        position: fixed;
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        z-index: 80;
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid rgba(52, 211, 153, 0.38);
+        border-radius: var(--button-radius);
+        padding: 12px 18px;
+        color: #ffffff;
+        background: linear-gradient(135deg, #16a34a, #22c55e 48%, #14b8a6);
+        box-shadow: 0 18px 48px rgba(22, 163, 74, 0.36);
+        font-weight: 900;
+    }
+
+    .sticky-mobile-cta span {
+        font-size: 12px;
+        text-transform: uppercase;
+        opacity: 0.84;
+    }
+
+    .sticky-mobile-cta strong {
+        font-family: var(--heading-font);
+        font-size: 16px;
     }
 }
 
