@@ -374,6 +374,14 @@ h2 {
     font-size: 14px;
 }
 
+.brief-item {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.brief-item a {
+    color: var(--cyan);
+}
+
 .item-meta {
     display: inline-flex;
     width: fit-content;

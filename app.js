@@ -6,6 +6,9 @@ const year = document.getElementById("year");
 const contactForm = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const firebaseConfig = window.APPVION_FIREBASE_CONFIG || {};
+const isFirebaseConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId && !String(firebaseConfig.apiKey).includes("YOUR_"));
+let firebaseBriefsReady = null;
 
 if (year) {
     year.textContent = new Date().getFullYear().toString();
@@ -34,12 +37,69 @@ if (menuToggle && nav) {
     });
 }
 
+function buildBriefPayload(formData) {
+    return {
+        name: String(formData.get("name") || "").trim(),
+        email: String(formData.get("email") || "").trim(),
+        type: String(formData.get("type") || "").trim(),
+        timeline: String(formData.get("timeline") || "").trim(),
+        message: String(formData.get("message") || "").trim(),
+        source: "website-contact-form",
+        userAgent: navigator.userAgent
+    };
+}
+
+function buildWhatsAppFallback(payload) {
+    const text = [
+        "New AppVion Studio project brief",
+        "",
+        `Name: ${payload.name}`,
+        `Email: ${payload.email}`,
+        `Project type: ${payload.type}`,
+        `Timeline: ${payload.timeline}`,
+        "",
+        "Project brief:",
+        payload.message
+    ].join("\n");
+
+    return `https://wa.me/923467277143?text=${encodeURIComponent(text)}`;
+}
+
+async function getBriefsFirestore() {
+    if (!isFirebaseConfigured) throw new Error("Firebase is not configured.");
+    if (!firebaseBriefsReady) {
+        firebaseBriefsReady = Promise.all([
+            import("https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"),
+            import("https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js")
+        ]).then(([appModule, firestoreModule]) => {
+            const app = appModule.getApps().length
+                ? appModule.getApps()[0]
+                : appModule.initializeApp(firebaseConfig);
+            const db = firestoreModule.getFirestore(app);
+            return { db, firestoreModule };
+        });
+    }
+
+    return firebaseBriefsReady;
+}
+
+async function saveBriefToFirebase(payload) {
+    const { db, firestoreModule } = await getBriefsFirestore();
+    await firestoreModule.addDoc(firestoreModule.collection(db, "projectBriefs"), {
+        ...payload,
+        status: "new",
+        createdAt: firestoreModule.serverTimestamp()
+    });
+}
+
 if (contactForm) {
     contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
 
         const formData = new FormData(contactForm);
-        const name = String(formData.get("name") || "").trim();
+        if (String(formData.get("_honey") || "").trim()) return;
+
+        const payload = buildBriefPayload(formData);
         const submitButton = contactForm.querySelector("button[type='submit']");
 
         if (formStatus) {
@@ -50,21 +110,8 @@ if (contactForm) {
             submitButton.disabled = true;
         }
 
-        formData.set("_subject", `Project brief from ${name || "AppVion website"}`);
-
         try {
-            const response = await fetch("https://formsubmit.co/ajax/appvionstudio@gmail.com", {
-                method: "POST",
-                headers: {
-                    "Accept": "application/json"
-                },
-                body: formData
-            });
-
-            if (!response.ok) {
-                throw new Error("Form submit failed");
-            }
-
+            await saveBriefToFirebase(payload);
             contactForm.reset();
 
             if (formStatus) {
@@ -72,10 +119,10 @@ if (contactForm) {
             }
         } catch (error) {
             if (formStatus) {
-                formStatus.textContent = "Opening the secure form submit page to finish sending...";
+                formStatus.textContent = "Direct send is unavailable, so WhatsApp is opening with your brief ready.";
             }
 
-            contactForm.submit();
+            window.location.href = buildWhatsAppFallback(payload);
         } finally {
             if (submitButton) {
                 submitButton.disabled = false;

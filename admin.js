@@ -86,6 +86,7 @@ const sectionLabels = {
 let content = null;
 let activeView = "overview";
 let selected = Object.fromEntries(collectionTypes.map((type) => [type, null]));
+let projectBriefs = [];
 
 const pageTitle = document.querySelector("[data-page-title]");
 const toast = document.querySelector("[data-toast]");
@@ -221,7 +222,12 @@ async function getFirebase() {
             doc: firestoreModule.doc,
             getDoc: firestoreModule.getDoc,
             setDoc: firestoreModule.setDoc,
-            serverTimestamp: firestoreModule.serverTimestamp
+            serverTimestamp: firestoreModule.serverTimestamp,
+            collection: firestoreModule.collection,
+            query: firestoreModule.query,
+            orderBy: firestoreModule.orderBy,
+            limit: firestoreModule.limit,
+            getDocs: firestoreModule.getDocs
         };
         return firebaseState;
     });
@@ -244,6 +250,7 @@ async function initializeFirebaseSession() {
             unlockAdmin();
             updatePublishStatus("Firebase login active. Ready to publish.");
             await loadFirebaseContentIntoEditor();
+            await loadProjectBriefs();
         });
     } catch (error) {
         showToast(error.message || "Firebase could not initialize.");
@@ -278,6 +285,77 @@ function showToast(message) {
     toast.classList.add("show");
     window.clearTimeout(showToast.timer);
     showToast.timer = window.setTimeout(() => toast.classList.remove("show"), 2600);
+}
+
+function formatBriefDate(value) {
+    if (!value) return "New";
+    const date = typeof value.toDate === "function" ? value.toDate() : new Date(value);
+    if (Number.isNaN(date.getTime())) return "New";
+    return date.toLocaleString([], {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+    });
+}
+
+function renderBriefs() {
+    const target = document.querySelector("[data-briefs-list]");
+    if (!target) return;
+
+    if (!isFirebaseConfigured) {
+        target.innerHTML = `<p class="editor-empty">Firebase config is required to read project briefs.</p>`;
+        return;
+    }
+
+    if (!projectBriefs.length) {
+        target.innerHTML = `<p class="editor-empty">No project briefs yet. New website submissions will appear here.</p>`;
+        return;
+    }
+
+    target.innerHTML = projectBriefs.map((brief) => `
+        <article class="item-card brief-item">
+            <div>
+                <span class="item-meta">${escapeHtml(formatBriefDate(brief.createdAt))}</span>
+                <h3>${escapeHtml(brief.name || "Unnamed lead")}</h3>
+                <p><strong>Email:</strong> <a href="mailto:${escapeHtml(brief.email || "")}">${escapeHtml(brief.email || "No email")}</a></p>
+                <p><strong>Project:</strong> ${escapeHtml(brief.type || "Not selected")}</p>
+                <p><strong>Timeline:</strong> ${escapeHtml(brief.timeline || "Not selected")}</p>
+                <p>${escapeHtml(brief.message || "No brief text")}</p>
+            </div>
+        </article>
+    `).join("");
+}
+
+async function loadProjectBriefs() {
+    const target = document.querySelector("[data-briefs-list]");
+    if (target) target.innerHTML = `<p class="editor-empty">Loading project briefs...</p>`;
+
+    if (!isFirebaseConfigured) {
+        renderBriefs();
+        return;
+    }
+
+    try {
+        const { auth, db, modules } = await getFirebase();
+        if (!auth.currentUser) {
+            if (target) target.innerHTML = `<p class="editor-empty">Login with Firebase to load project briefs.</p>`;
+            return;
+        }
+
+        const briefsQuery = modules.query(
+            modules.collection(db, "projectBriefs"),
+            modules.orderBy("createdAt", "desc"),
+            modules.limit(50)
+        );
+        const snapshot = await modules.getDocs(briefsQuery);
+        projectBriefs = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+        renderBriefs();
+    } catch (error) {
+        if (target) target.innerHTML = `<p class="editor-empty">Could not load briefs. Check Firebase rules.</p>`;
+        showToast(error.message || "Could not load project briefs.");
+    }
 }
 
 function normalizeContent(data) {
@@ -329,6 +407,7 @@ function activateView(view) {
         stack: "Tech Stack",
         insights: "Blogs",
         faqs: "FAQ",
+        briefs: "Briefs",
         settings: "Settings",
         publish: "Publish"
     }[view] || "Admin";
@@ -558,6 +637,7 @@ function renderAll() {
     renderSettings();
     renderStack();
     renderPublish();
+    renderBriefs();
 }
 
 function addItem(type) {
@@ -703,6 +783,7 @@ document.addEventListener("click", (event) => {
     if (target.dataset.action === "export") exportContent();
     if (target.dataset.action === "copy") copyContent();
     if (target.dataset.action === "publish-live") publishLive();
+    if (target.dataset.action === "refresh-briefs") loadProjectBriefs();
     if (target.dataset.action === "import") importContent();
     if (target.dataset.action === "reset") resetLocalContent();
     if (target.dataset.action === "logout") lockAdmin();

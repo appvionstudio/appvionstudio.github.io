@@ -7,5 +7,40 @@ service cloud.firestore {
       allow write: if request.auth != null
         && request.auth.token.email == "appvionstudio@gmail.com";
     }
+
+    match /projectBriefs/{briefId} {
+      allow create: if request.resource.data.keys().hasOnly([
+          "name",
+          "email",
+          "type",
+          "timeline",
+          "message",
+          "source",
+          "userAgent",
+          "status",
+          "createdAt"
+        ])
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 120
+        && request.resource.data.email is string
+        && request.resource.data.email.size() > 4
+        && request.resource.data.email.size() <= 180
+        && request.resource.data.type is string
+        && request.resource.data.type.size() > 0
+        && request.resource.data.type.size() <= 80
+        && request.resource.data.timeline is string
+        && request.resource.data.timeline.size() > 0
+        && request.resource.data.timeline.size() <= 80
+        && request.resource.data.message is string
+        && request.resource.data.message.size() > 0
+        && request.resource.data.message.size() <= 4000
+        && request.resource.data.source == "website-contact-form"
+        && request.resource.data.status == "new"
+        && request.resource.data.createdAt == request.time;
+
+      allow read, update, delete: if request.auth != null
+        && request.auth.token.email == "appvionstudio@gmail.com";
+    }
   }
 }

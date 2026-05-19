@@ -53,6 +53,7 @@
                 <button class="nav-item" type="button" data-view="stack">Tech Stack</button>
                 <button class="nav-item" type="button" data-view="insights">Blogs</button>
                 <button class="nav-item" type="button" data-view="faqs">FAQ</button>
+                <button class="nav-item" type="button" data-view="briefs">Briefs</button>
                 <button class="nav-item" type="button" data-view="settings">Settings</button>
                 <button class="nav-item" type="button" data-view="publish">Publish</button>
                 <button class="nav-item" type="button" data-action="logout">Lock Admin</button>
@@ -245,6 +246,21 @@
                 <form class="admin-card settings-form" data-settings-form></form>
             </section>
 
+            <section class="admin-view" data-panel="briefs">
+                <div class="admin-card briefs-card">
+                    <div class="collection-header">
+                        <div>
+                            <p class="eyebrow">Inbox</p>
+                            <h2>Project Briefs</h2>
+                        </div>
+                        <button class="button primary" type="button" data-action="refresh-briefs">Refresh Briefs</button>
+                    </div>
+                    <div class="collection-list briefs-list" data-briefs-list>
+                        <p class="editor-empty">Login with Firebase to load project briefs.</p>
+                    </div>
+                </div>
+            </section>
+
             <section class="admin-view" data-panel="publish">
                 <div class="publish-grid">
                     <div class="admin-card">
@@ -294,6 +310,6 @@
         };
         window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
     </script>
-    <script src="admin.js"></script>
+    <script src="admin.js?v=20260519-briefs"></script>
 </body>
 </html>

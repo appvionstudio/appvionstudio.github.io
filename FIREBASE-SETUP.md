@@ -43,3 +43,22 @@ After this:
 3. Edit content.
 4. Click **Publish Live**.
 5. The public website reads the Firestore content from `siteContent/home`.
+
+## Project Brief Form
+
+The public contact form now saves new leads to Firestore:
+
+```text
+projectBriefs/{autoId}
+```
+
+Deploy the updated `firebase-firestore.rules` before testing the live form. The rules allow public visitors to create a brief, while only `appvionstudio@gmail.com` can read, update, or delete briefs.
+
+If you use Firebase CLI:
+
+```bash
+firebase login
+firebase deploy --only firestore:rules --project appvion-studio
+```
+
+After deployment, open `appvion-control.html`, login, and use the **Briefs** tab to read submissions.
