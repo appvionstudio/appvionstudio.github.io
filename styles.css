@@ -1747,6 +1747,18 @@ h3 {
     line-height: 1.5 !important;
 }
 
+.form-status[data-state="sending"] {
+    color: var(--muted-strong);
+}
+
+.form-status[data-state="success"] {
+    color: var(--green);
+}
+
+.form-status[data-state="error"] {
+    color: var(--warning);
+}
+
 .sticky-mobile-cta {
     display: none;
 }

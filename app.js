@@ -49,22 +49,6 @@ function buildBriefPayload(formData) {
     };
 }
 
-function buildWhatsAppFallback(payload) {
-    const text = [
-        "New AppVion Studio project brief",
-        "",
-        `Name: ${payload.name}`,
-        `Email: ${payload.email}`,
-        `Project type: ${payload.type}`,
-        `Timeline: ${payload.timeline}`,
-        "",
-        "Project brief:",
-        payload.message
-    ].join("\n");
-
-    return `https://wa.me/923467277143?text=${encodeURIComponent(text)}`;
-}
-
 async function getBriefsFirestore() {
     if (!isFirebaseConfigured) throw new Error("Firebase is not configured.");
     if (!firebaseBriefsReady) {
@@ -104,6 +88,7 @@ if (contactForm) {
 
         if (formStatus) {
             formStatus.textContent = "Sending your project brief...";
+            formStatus.dataset.state = "sending";
         }
 
         if (submitButton) {
@@ -116,13 +101,13 @@ if (contactForm) {
 
             if (formStatus) {
                 formStatus.textContent = "Thanks. Your project brief has been sent to AppVion Studio.";
+                formStatus.dataset.state = "success";
             }
         } catch (error) {
             if (formStatus) {
-                formStatus.textContent = "Direct send is unavailable, so WhatsApp is opening with your brief ready.";
+                formStatus.textContent = "We could not send this brief from your browser. Your details are still here, so please try again or use the direct email link beside the form.";
+                formStatus.dataset.state = "error";
             }
-
-            window.location.href = buildWhatsAppFallback(payload);
         } finally {
             if (submitButton) {
                 submitButton.disabled = false;
