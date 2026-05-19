@@ -761,8 +761,12 @@
                             <a href="https://www.linkedin.com/company/112235810/" target="_blank" rel="noreferrer">LinkedIn company page</a>
                         </div>
                     </div>
-                    <form class="contact-form" data-contact-form>
+                    <iframe class="form-submit-frame" name="appvion-form-submit-frame" title="Project brief submission"></iframe>
+                    <form class="contact-form" data-contact-form action="https://formsubmit.co/appvionstudio@gmail.com" method="POST" target="appvion-form-submit-frame">
                         <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <input type="hidden" name="_subject" value="New AppVion Studio project brief">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
                         <div class="field-row">
                             <label>
                                 <span>Name</span>
@@ -846,6 +850,6 @@
 
     <script src="app-config.js?v=20260519-standard-form"></script>
     <script src="site-render.js?v=20260518-firebase"></script>
-    <script src="app.js?v=20260519-standard-form"></script>
+    <script src="app.js?v=20260519-iframe-submit"></script>
 </body>
 </html>

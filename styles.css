@@ -1695,6 +1695,16 @@ h3 {
     display: none;
 }
 
+.form-submit-frame {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+}
+
 .contact-form label span {
     color: var(--muted-strong);
     font-size: 12px;
