@@ -41,6 +41,12 @@
       "status": "Live",
       "metric": "Sync",
       "theme": "campus",
+      "visualLabel": "Admin broadcast",
+      "visualHeadline": "Exam schedule updated",
+      "visualDetail": "Sent to 4 active roles with offline sync.",
+      "visualItems": "Students\nFaculty\nAdmin",
+      "visualRows": "",
+      "visualBars": "",
       "linkLabel": "View Live Demo",
       "linkUrl": "https://youtu.be/9I1OX1Z4w-Q"
     },
@@ -52,6 +58,12 @@
       "status": "98%",
       "metric": "Records",
       "theme": "data",
+      "visualLabel": "Attendance table",
+      "visualHeadline": "Live attendance rows",
+      "visualDetail": "Records with status and time.",
+      "visualItems": "",
+      "visualRows": "ID-01 | Present | 08:55\nID-02 | Late | 09:08",
+      "visualBars": "54\n78\n42\n88\n66",
       "linkLabel": "View Live Demo",
       "linkUrl": "https://youtu.be/NnlCmr_C4Cw"
     },
@@ -63,6 +75,12 @@
       "status": "Open",
       "metric": "Events",
       "theme": "event",
+      "visualLabel": "Upcoming event",
+      "visualHeadline": "Cricket Trials",
+      "visualDetail": "120 signups | 3 filters active",
+      "visualItems": "Register\nFilter\nNotify",
+      "visualRows": "",
+      "visualBars": "",
       "linkLabel": "View Live Demo",
       "linkUrl": "https://youtube.com/shorts/1dSV-00hZr4"
     }

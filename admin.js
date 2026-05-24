@@ -20,6 +20,12 @@ const schema = {
         ["status", "Status", "text"],
         ["metric", "Metric", "text"],
         ["theme", "Visual Theme", "select", ["campus", "data", "event"]],
+        ["visualLabel", "Preview Label", "text"],
+        ["visualHeadline", "Preview Headline", "text"],
+        ["visualDetail", "Preview Detail", "textarea"],
+        ["visualItems", "Preview Items or Steps, One Per Line", "textarea"],
+        ["visualRows", "Data Table Rows, One Per Line: ID | Status | Time", "textarea"],
+        ["visualBars", "Chart Bar Heights, One Number Per Line", "textarea"],
         ["linkLabel", "Link Label", "text"],
         ["linkUrl", "Link URL", "url"]
     ],
@@ -487,18 +493,30 @@ function blankItem(type) {
         else if (key === "number") base[key] = String(content[type].length + 1).padStart(2, "0");
         else if (key === "linkLabel") base[key] = "View project";
         else if (key === "items") base[key] = "First point\nSecond point\nThird point";
+        else if (key === "visualLabel") base[key] = "Product update";
+        else if (key === "visualHeadline") base[key] = "New product preview";
+        else if (key === "visualDetail") base[key] = "Short visual detail shown inside the project card.";
+        else if (key === "visualItems") base[key] = "Users\nAdmin\nOps";
+        else if (key === "visualRows") base[key] = "ID-01 | Active | 09:00\nID-02 | Review | 09:15";
+        else if (key === "visualBars") base[key] = "54\n78\n42\n88\n66";
         else base[key] = "";
     });
     return base;
 }
 
+function isRequiredField(key, fieldType) {
+    const optionalProjectFields = ["visualLabel", "visualHeadline", "visualDetail", "visualItems", "visualRows", "visualBars", "linkUrl"];
+    return fieldType !== "url" && !optionalProjectFields.includes(key);
+}
+
 function renderField(item, [key, label, fieldType, options]) {
     const value = item[key] ?? "";
+    const required = isRequiredField(key, fieldType) ? "required" : "";
     if (fieldType === "textarea") {
         return `
             <label>
                 <span>${escapeHtml(label)}</span>
-                <textarea name="${escapeHtml(key)}" required>${escapeHtml(value)}</textarea>
+                <textarea name="${escapeHtml(key)}" ${required}>${escapeHtml(value)}</textarea>
             </label>
         `;
     }
@@ -523,7 +541,7 @@ function renderField(item, [key, label, fieldType, options]) {
     return `
         <label>
             <span>${escapeHtml(label)}</span>
-            <input name="${escapeHtml(key)}" type="${fieldType}" value="${escapeHtml(value)}" ${fieldType !== "url" ? "required" : ""}>
+            <input name="${escapeHtml(key)}" type="${fieldType}" value="${escapeHtml(value)}" ${required}>
         </label>
     `;
 }

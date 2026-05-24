@@ -70,6 +70,27 @@
         const status = escapeHtml(project.status || "Live");
         const metric = escapeHtml(project.metric || "Preview");
         const theme = escapeHtml(project.theme || "campus");
+        const visualLabel = escapeHtml(project.visualLabel || (theme === "event" ? "Upcoming event" : "Product update"));
+        const visualHeadline = escapeHtml(project.visualHeadline || project.title);
+        const visualDetail = escapeHtml(project.visualDetail || `${metric} with role-aware workflows.`);
+        const visualItems = String(project.visualItems || "Users\nAdmin\nOps")
+            .split("\n")
+            .map((item) => item.trim())
+            .filter(Boolean)
+            .slice(0, 3);
+        const visualRows = String(project.visualRows || "ID-01 | Active | 09:00\nID-02 | Review | 09:15")
+            .split("\n")
+            .map((row) => row.split("|").map((cell) => escapeHtml(cell.trim())))
+            .filter((row) => row.length >= 3)
+            .slice(0, 3);
+        const visualBars = String(project.visualBars || "54\n78\n42\n88\n66")
+            .split("\n")
+            .map((value) => Number.parseInt(value, 10))
+            .filter((value) => Number.isFinite(value))
+            .slice(0, 5);
+        const itemMarkup = visualItems.map((item) => `<span>${escapeHtml(item)}</span>`).join("");
+        const rowMarkup = visualRows.map(([id, rowStatus, time]) => `<strong>${id}</strong><em>${rowStatus}</em><small>${time}</small>`).join("");
+        const barMarkup = visualBars.map((value) => `<span style="height: ${Math.min(Math.max(value, 8), 100)}%"></span>`).join("");
 
         if (theme === "data") {
             return `
@@ -77,10 +98,9 @@
                     <div class="preview-top"><span>${title}</span><strong>${status}</strong></div>
                     <div class="attendance-table" aria-label="${title} preview">
                         <span>ID</span><span>Status</span><span>Time</span>
-                        <strong>CS-21</strong><em>Present</em><small>08:55</small>
-                        <strong>CS-22</strong><em>Late</em><small>09:08</small>
+                        ${rowMarkup || "<strong>ID-01</strong><em>Active</em><small>09:00</small>"}
                     </div>
-                    <div class="attendance-bars"><span style="height: 54%"></span><span style="height: 78%"></span><span style="height: 42%"></span><span style="height: 88%"></span><span style="height: 66%"></span></div>
+                    <div class="attendance-bars">${barMarkup || '<span style="height: 54%"></span><span style="height: 78%"></span><span style="height: 42%"></span><span style="height: 88%"></span><span style="height: 66%"></span>'}</div>
                 </div>`;
         }
 
@@ -88,16 +108,16 @@
             return `
                 <div class="case-card-visual event">
                     <div class="preview-top"><span>${title}</span><strong>${status}</strong></div>
-                    <div class="event-ticket"><small>Upcoming event</small><strong>${title}</strong><span>${metric} | structured updates</span></div>
-                    <div class="event-flow" aria-label="${title} flow"><span>Register</span><span>Filter</span><span>Notify</span></div>
+                    <div class="event-ticket"><small>${visualLabel}</small><strong>${visualHeadline}</strong><span>${visualDetail}</span></div>
+                    <div class="event-flow" aria-label="${title} flow">${itemMarkup || "<span>Register</span><span>Filter</span><span>Notify</span>"}</div>
                 </div>`;
         }
 
         return `
             <div class="case-card-visual campus">
                 <div class="preview-top"><span>${title}</span><strong>${status}</strong></div>
-                <div class="announcement-card"><small>Product update</small><strong>${title}</strong><span>${metric} with role-aware workflows.</span></div>
-                <div class="role-row" aria-label="${title} roles"><span>Users</span><span>Admin</span><span>Ops</span></div>
+                <div class="announcement-card"><small>${visualLabel}</small><strong>${visualHeadline}</strong><span>${visualDetail}</span></div>
+                <div class="role-row" aria-label="${title} roles">${itemMarkup || "<span>Users</span><span>Admin</span><span>Ops</span>"}</div>
             </div>`;
     }
 
