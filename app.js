@@ -19,6 +19,12 @@ function withTimeout(task, timeoutMs, message) {
     ]);
 }
 
+function updateFormStatus(message, state) {
+    if (!formStatus) return;
+    formStatus.textContent = message;
+    formStatus.dataset.state = state;
+}
+
 if (year) {
     year.textContent = new Date().getFullYear().toString();
 }
@@ -95,48 +101,43 @@ if (contactForm) {
         const payload = buildBriefPayload(formData);
         const submitButton = contactForm.querySelector("button[type='submit']");
 
-        if (formStatus) {
-            formStatus.textContent = "Sending your project brief...";
-            formStatus.dataset.state = "sending";
-        }
+        updateFormStatus("Saving your project brief...", "sending");
 
         if (submitButton) {
             submitButton.disabled = true;
         }
 
         try {
-            try {
-                await withTimeout(
-                    saveBriefToFirebase(payload),
-                    4500,
-                    "Firebase submit timed out."
-                );
+            await withTimeout(
+                saveBriefToFirebase(payload),
+                4500,
+                "Firebase submit timed out."
+            );
 
-                contactForm.reset();
+            contactForm.reset();
+            updateFormStatus(
+                "Thanks. Your project brief is saved in the AppVion dashboard. Open Admin > Briefs to read it.",
+                "success"
+            );
+        } catch (error) {
+            console.warn("AppVion Firebase brief submit failed. Falling back to form endpoint.", error);
 
-                if (formStatus) {
-                    formStatus.textContent = "Thanks. Your project brief has been sent to AppVion Studio.";
-                    formStatus.dataset.state = "success";
-                }
-            } catch (firebaseError) {
-                console.warn("AppVion Firebase brief submit failed. Falling back to form endpoint.", firebaseError);
+            if (contactForm.action) {
                 contactForm.submit();
-
                 window.setTimeout(() => {
                     contactForm.reset();
-
-                    if (formStatus) {
-                        formStatus.textContent = "Thanks. Your project brief has been sent to AppVion Studio.";
-                        formStatus.dataset.state = "success";
-                    }
+                    updateFormStatus(
+                        "Firebase did not save this brief, so it was sent through the backup email service. Check appvionstudio@gmail.com and FormSubmit.",
+                        "success"
+                    );
                 }, 900);
-            }
-        } catch (error) {
-            const errorMessage = error && error.message ? error.message : String(error);
-            console.warn("AppVion brief submit failed:", error);
-            if (formStatus) {
-                formStatus.textContent = `We could not send this brief from your browser. Please email appvionstudio@gmail.com directly. (${errorMessage})`;
-                formStatus.dataset.state = "error";
+            } else {
+                const errorMessage = error && error.message ? error.message : String(error);
+                console.warn("AppVion brief submit failed:", error);
+                updateFormStatus(
+                    `We could not save this brief from your browser. Please email appvionstudio@gmail.com directly. (${errorMessage})`,
+                    "error"
+                );
             }
         } finally {
             if (submitButton) {
