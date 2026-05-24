@@ -372,9 +372,10 @@ function normalizeContent(data) {
     return data;
 }
 
-function saveContent(message = "Saved locally. Refresh the website preview to see it.") {
+function saveContent(message = "Draft saved only on this device. Click Publish Live so everyone can see it.") {
     localStorage.setItem(storageKey, JSON.stringify(content));
     renderAll();
+    updatePublishStatus("Unpublished local changes. Click Publish Live to update the public website.");
     showToast(message);
 }
 
@@ -644,7 +645,7 @@ function addItem(type) {
     const item = blankItem(type);
     content[type].push(item);
     selected[type] = item.id;
-    saveContent("New item created. Add the details and save.");
+    saveContent("New item created as a local draft. Add details, save, then Publish Live.");
 }
 
 function deleteItem(type, id) {
@@ -654,7 +655,7 @@ function deleteItem(type, id) {
     if (!confirmed) return;
     content[type] = content[type].filter((entry) => entry.id !== id);
     if (selected[type] === id) selected[type] = null;
-    saveContent("Item deleted locally.");
+    saveContent("Item deleted only from this local draft. Publish Live to remove it from the public website.");
 }
 
 function saveEditor(type, form) {
@@ -665,7 +666,7 @@ function saveEditor(type, form) {
         item[key] = fieldType === "checkbox" ? data.has(key) : String(data.get(key) || "").trim();
     });
     item.id = item.id || slugify(itemTitle(type, item));
-    saveContent("Changes saved locally. Refresh the website tab to preview.");
+    saveContent("Changes saved as a local draft. Click Publish Live so other devices can see them.");
 }
 
 function saveSettings(form) {
@@ -680,7 +681,7 @@ function saveSettings(form) {
         .split("\n")
         .map((item) => item.trim())
         .filter(Boolean);
-    saveContent("Settings saved locally. Refresh the website tab to preview.");
+    saveContent("Settings saved as a local draft. Click Publish Live so other devices can see them.");
 }
 
 function saveStack(form) {
@@ -689,7 +690,7 @@ function saveStack(form) {
         .split("\n")
         .map((item) => item.trim())
         .filter(Boolean);
-    saveContent("Tech stack saved locally. Refresh the website tab to preview.");
+    saveContent("Tech stack saved as a local draft. Click Publish Live so other devices can see it.");
 }
 
 function exportContent() {
@@ -753,7 +754,7 @@ function importContent() {
             if (!parsed[key]) throw new Error(`Missing ${key}`);
         });
         content = normalizeContent(parsed);
-        saveContent("Imported content saved locally.");
+        saveContent("Imported content saved as a local draft. Click Publish Live so other devices can see it.");
     } catch (error) {
         showToast(`Import failed: ${error.message}`);
     }
