@@ -8,6 +8,7 @@ const formStatus = document.querySelector("[data-form-status]");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const firebaseConfig = window.APPVION_FIREBASE_CONFIG || {};
 const isFirebaseConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId && !String(firebaseConfig.apiKey).includes("YOUR_"));
+const calendlyUrl = "https://calendly.com/ayyaz-appvionstudio/30min";
 let firebaseBriefsReady = null;
 
 function withTimeout(task, timeoutMs, message) {
@@ -90,6 +91,73 @@ async function saveBriefToFirebase(payload) {
         createdAt: firestoreModule.serverTimestamp()
     });
 }
+
+async function saveContactEvent(eventData) {
+    if (!eventData || !isFirebaseConfigured) return;
+    const { db, firestoreModule } = await getBriefsFirestore();
+    await firestoreModule.addDoc(firestoreModule.collection(db, "contactEvents"), {
+        route: eventData.route || "contact",
+        label: eventData.label || "Contact action",
+        href: eventData.href || window.location.href,
+        source: "website-contact-click",
+        page: window.location.pathname || "/",
+        userAgent: navigator.userAgent,
+        status: "new",
+        createdAt: firestoreModule.serverTimestamp()
+    });
+}
+
+function contactEventFromLink(link) {
+    return {
+        route: link.dataset.contactAction || "contact",
+        label: link.dataset.contactLabel || link.innerText.trim().slice(0, 120) || "Contact action",
+        href: link.href
+    };
+}
+
+function openCalendlyPopup() {
+    if (window.Calendly && typeof window.Calendly.initPopupWidget === "function") {
+        window.Calendly.initPopupWidget({ url: calendlyUrl });
+        return true;
+    }
+
+    return false;
+}
+
+document.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-contact-action]");
+    if (!link) return;
+    const contactEvent = contactEventFromLink(link);
+
+    if (contactEvent.route === "strategy-call") {
+        event.preventDefault();
+        const opened = openCalendlyPopup();
+        saveContactEvent(contactEvent).catch((error) => {
+            console.warn("AppVion contact event tracking failed:", error);
+        });
+        if (!opened) window.open(link.href, "_blank", "noopener,noreferrer");
+        return;
+    }
+
+    saveContactEvent(contactEvent).catch((error) => {
+        console.warn("AppVion contact event tracking failed:", error);
+    });
+});
+
+window.addEventListener("message", (event) => {
+    const eventName = event.data && event.data.event;
+    if (typeof eventName !== "string" || !eventName.startsWith("calendly.")) return;
+    if (eventName !== "calendly.event_scheduled") return;
+
+    const payload = event.data.payload || {};
+    saveContactEvent({
+        route: "calendly-scheduled",
+        label: "Calendly booking completed",
+        href: payload.event && payload.event.uri ? payload.event.uri : calendlyUrl
+    }).catch((error) => {
+        console.warn("AppVion Calendly booking tracking failed:", error);
+    });
+});
 
 if (contactForm) {
     contactForm.addEventListener("submit", async (event) => {

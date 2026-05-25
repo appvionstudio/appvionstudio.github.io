@@ -98,6 +98,7 @@ let content = null;
 let activeView = "overview";
 let selected = Object.fromEntries(collectionTypes.map((type) => [type, null]));
 let projectBriefs = [];
+let contactEvents = [];
 
 const pageTitle = document.querySelector("[data-page-title]");
 const toast = document.querySelector("[data-toast]");
@@ -320,15 +321,34 @@ function renderBriefs() {
         return;
     }
 
-    if (!projectBriefs.length) {
-        target.innerHTML = `<p class="editor-empty">No project briefs yet. New website submissions will appear here.</p>`;
+    const inboxItems = [
+        ...projectBriefs.map((brief) => ({ ...brief, inboxType: "brief" })),
+        ...contactEvents.map((event) => ({ ...event, inboxType: "event" }))
+    ].sort((a, b) => {
+        const first = toDateValue(b.createdAt);
+        const second = toDateValue(a.createdAt);
+        return first - second;
+    });
+
+    if (!inboxItems.length) {
+        target.innerHTML = `<p class="editor-empty">No project briefs or contact activity yet. Form submissions and CTA clicks will appear here.</p>`;
         return;
     }
 
-    target.innerHTML = projectBriefs.map((brief) => `
+    target.innerHTML = inboxItems.map((item) => item.inboxType === "event" ? renderContactEvent(item) : renderProjectBrief(item)).join("");
+}
+
+function toDateValue(value) {
+    if (!value) return 0;
+    const date = typeof value.toDate === "function" ? value.toDate() : new Date(value);
+    return Number.isNaN(date.getTime()) ? 0 : date.getTime();
+}
+
+function renderProjectBrief(brief) {
+    return `
         <article class="item-card brief-item">
             <div>
-                <span class="item-meta">${escapeHtml(formatBriefDate(brief.createdAt))}</span>
+                <span class="item-meta">Project brief - ${escapeHtml(formatBriefDate(brief.createdAt))}</span>
                 <h3>${escapeHtml(brief.name || "Unnamed lead")}</h3>
                 <p><strong>Email:</strong> <a href="mailto:${escapeHtml(brief.email || "")}">${escapeHtml(brief.email || "No email")}</a></p>
                 <p><strong>Project:</strong> ${escapeHtml(brief.type || "Not selected")}</p>
@@ -336,7 +356,22 @@ function renderBriefs() {
                 <p>${escapeHtml(brief.message || "No brief text")}</p>
             </div>
         </article>
-    `).join("");
+    `;
+}
+
+function renderContactEvent(event) {
+    return `
+        <article class="item-card brief-item contact-event-item">
+            <div>
+                <span class="item-meta">Contact activity - ${escapeHtml(formatBriefDate(event.createdAt))}</span>
+                <h3>${escapeHtml(event.label || "Website contact action")}</h3>
+                <p><strong>Route:</strong> ${escapeHtml(event.route || "contact")}</p>
+                <p><strong>Page:</strong> ${escapeHtml(event.page || "/")}</p>
+                <p><strong>Opened:</strong> <a href="${escapeHtml(event.href || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.href || "No link")}</a></p>
+                <p class="muted">This records that a visitor clicked the CTA. Confirmed Calendly bookings still need Calendly notification or webhook integration.</p>
+            </div>
+        </article>
+    `;
 }
 
 async function loadProjectBriefs() {
@@ -360,8 +395,17 @@ async function loadProjectBriefs() {
             modules.orderBy("createdAt", "desc"),
             modules.limit(50)
         );
-        const snapshot = await modules.getDocs(briefsQuery);
-        projectBriefs = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+        const eventsQuery = modules.query(
+            modules.collection(db, "contactEvents"),
+            modules.orderBy("createdAt", "desc"),
+            modules.limit(50)
+        );
+        const [briefsSnapshot, eventsSnapshot] = await Promise.all([
+            modules.getDocs(briefsQuery),
+            modules.getDocs(eventsQuery)
+        ]);
+        projectBriefs = briefsSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+        contactEvents = eventsSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
         renderBriefs();
     } catch (error) {
         if (target) target.innerHTML = `<p class="editor-empty">Could not load briefs. Check Firebase rules.</p>`;

@@ -42,5 +42,37 @@ service cloud.firestore {
       allow read, update, delete: if request.auth != null
         && request.auth.token.email == "ayyaz@appvionstudio.com";
     }
+
+    match /contactEvents/{eventId} {
+      allow create: if request.resource.data.keys().hasOnly([
+          "route",
+          "label",
+          "href",
+          "source",
+          "page",
+          "userAgent",
+          "status",
+          "createdAt"
+        ])
+        && request.resource.data.route is string
+        && request.resource.data.route.size() > 0
+        && request.resource.data.route.size() <= 80
+        && request.resource.data.label is string
+        && request.resource.data.label.size() > 0
+        && request.resource.data.label.size() <= 140
+        && request.resource.data.href is string
+        && request.resource.data.href.size() > 0
+        && request.resource.data.href.size() <= 500
+        && request.resource.data.source == "website-contact-click"
+        && request.resource.data.page is string
+        && request.resource.data.page.size() <= 120
+        && request.resource.data.userAgent is string
+        && request.resource.data.userAgent.size() <= 600
+        && request.resource.data.status == "new"
+        && request.resource.data.createdAt == request.time;
+
+      allow read, update, delete: if request.auth != null
+        && request.auth.token.email == "ayyaz@appvionstudio.com";
+    }
   }
 }

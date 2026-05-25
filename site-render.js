@@ -286,17 +286,17 @@
 
         if (routes) {
             routes.innerHTML = `
-                <a class="contact-route featured" href="${escapeHtml(canonicalContact.calendlyUrl)}" target="_blank" rel="noopener noreferrer">
+                <a class="contact-route featured" href="${escapeHtml(canonicalContact.calendlyUrl)}" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Contact strategy session">
                     <span>Priority route</span>
                     <strong>Book a 20-min App Strategy Session</strong>
                     <small>Direct scheduling for founders and B2B teams ready to scope the build.</small>
                 </a>
-                <a class="contact-route" href="mailto:${escapeHtml(canonicalContact.email)}">
+                <a class="contact-route" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=${escapeHtml(canonicalContact.email)}" target="_blank" rel="noopener noreferrer" data-contact-action="email" data-contact-label="Contact email">
                     <span>Email</span>
                     <strong>${escapeHtml(canonicalContact.email)}</strong>
-                    <small>Best for briefs, RFP notes, and project context.</small>
+                    <small>Opens Gmail compose for briefs, RFP notes, and project context.</small>
                 </a>
-                <a class="contact-route" href="${escapeHtml(canonicalContact.whatsappUrl)}" target="_blank" rel="noreferrer">
+                <a class="contact-route" href="${escapeHtml(canonicalContact.whatsappUrl)}" target="_blank" rel="noreferrer" data-contact-action="whatsapp" data-contact-label="Contact WhatsApp">
                     <span>WhatsApp</span>
                     <strong>${escapeHtml(canonicalContact.whatsapp)}</strong>
                     <small>Fast route for availability, timeline, and quick fit checks.</small>
