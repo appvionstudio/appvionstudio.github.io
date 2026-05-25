@@ -282,6 +282,8 @@
             routes.innerHTML = `
                 <a href="mailto:${escapeHtml(settings.email)}">${escapeHtml(settings.email)}</a>
                 <a href="${escapeHtml(settings.whatsappUrl)}" target="_blank" rel="noreferrer">WhatsApp: ${escapeHtml(settings.whatsapp)}</a>
+                <span>Or book a 20-min App Strategy Session directly.</span>
+                <a href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer">Book App Strategy Session</a>
                 <a href="${escapeHtml(settings.linkedinUrl)}" target="_blank" rel="noreferrer">LinkedIn company page</a>
             `;
         }

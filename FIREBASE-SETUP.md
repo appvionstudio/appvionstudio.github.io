@@ -10,7 +10,7 @@ The code is ready for Firebase Auth + Firestore.
 4. Add this admin user:
 
 ```text
-appvionstudio@gmail.com
+ayyaz@appvionstudio.com
 ```
 
 5. Enable Firestore Database.
@@ -52,7 +52,7 @@ The public contact form now saves new leads to Firestore:
 projectBriefs/{autoId}
 ```
 
-Deploy the updated `firebase-firestore.rules` before testing the live form. The rules allow public visitors to create a brief, while only `appvionstudio@gmail.com` can read, update, or delete briefs.
+Deploy the updated `firebase-firestore.rules` before testing the live form. The rules allow public visitors to create a brief, while only `ayyaz@appvionstudio.com` can read, update, or delete briefs.
 
 If you use Firebase CLI:
 

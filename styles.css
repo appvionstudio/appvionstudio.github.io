@@ -1651,7 +1651,8 @@ h3 {
     margin-top: 26px;
 }
 
-.contact-routes a {
+.contact-routes a,
+.contact-routes span {
     width: fit-content;
     color: var(--muted-strong);
     font-size: 14px;

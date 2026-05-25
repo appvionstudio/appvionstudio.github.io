@@ -127,7 +127,7 @@ if (contactForm) {
                 window.setTimeout(() => {
                     contactForm.reset();
                     updateFormStatus(
-                        "Firebase did not save this brief, so it was sent through the backup email service. Check appvionstudio@gmail.com and FormSubmit.",
+                        "Firebase did not save this brief, so it was sent through the backup email service. Check ayyaz@appvionstudio.com and FormSubmit.",
                         "success"
                     );
                 }, 900);
@@ -135,7 +135,7 @@ if (contactForm) {
                 const errorMessage = error && error.message ? error.message : String(error);
                 console.warn("AppVion brief submit failed:", error);
                 updateFormStatus(
-                    `We could not save this brief from your browser. Please email appvionstudio@gmail.com directly. (${errorMessage})`,
+                    `We could not save this brief from your browser. Please email ayyaz@appvionstudio.com directly. (${errorMessage})`,
                     "error"
                 );
             }
