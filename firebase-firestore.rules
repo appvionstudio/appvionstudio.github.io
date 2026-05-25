@@ -2,10 +2,14 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
+    function isAppVionAdmin() {
+      return request.auth != null
+        && request.auth.token.email == "appvionstudio@gmail.com";
+    }
+
     match /siteContent/home {
       allow read: if true;
-      allow write: if request.auth != null
-        && request.auth.token.email == "ayyaz@appvionstudio.com";
+      allow write: if isAppVionAdmin();
     }
 
     match /projectBriefs/{briefId} {
@@ -39,8 +43,7 @@ service cloud.firestore {
         && request.resource.data.status == "new"
         && request.resource.data.createdAt == request.time;
 
-      allow read, update, delete: if request.auth != null
-        && request.auth.token.email == "ayyaz@appvionstudio.com";
+      allow read, update, delete: if isAppVionAdmin();
     }
 
     match /contactEvents/{eventId} {
@@ -71,8 +74,7 @@ service cloud.firestore {
         && request.resource.data.status == "new"
         && request.resource.data.createdAt == request.time;
 
-      allow read, update, delete: if request.auth != null
-        && request.auth.token.email == "ayyaz@appvionstudio.com";
+      allow read, update, delete: if isAppVionAdmin();
     }
   }
 }
