@@ -1,5 +1,10 @@
 const storageKey = "appvionStudioContent.v1";
 const unlockedKey = "appvionAdminUnlocked.v1";
+const canonicalContact = {
+    email: "ayyaz@appvionstudio.com",
+    whatsapp: "+92 346 7277143",
+    whatsappUrl: "https://wa.me/923467277143"
+};
 const firebaseConfig = window.APPVION_FIREBASE_CONFIG || {};
 const firebaseContentPath = window.APPVION_FIREBASE_CONTENT_PATH || ["siteContent", "home"];
 const isFirebaseConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId && !String(firebaseConfig.apiKey).includes("YOUR_"));
@@ -366,6 +371,9 @@ async function loadProjectBriefs() {
 
 function normalizeContent(data) {
     data.settings = data.settings || {};
+    data.settings.email = canonicalContact.email;
+    data.settings.whatsapp = canonicalContact.whatsapp;
+    data.settings.whatsappUrl = canonicalContact.whatsappUrl;
     data.settings.sections = data.settings.sections || {};
     Object.keys(sectionLabels).forEach((key) => {
         if (typeof data.settings.sections[key] !== "boolean") data.settings.sections[key] = true;
@@ -612,10 +620,10 @@ function renderSettings() {
         <label><span>CTA Body</span><textarea name="ctaBody" required>${escapeHtml(settings.ctaBody)}</textarea></label>
         <label><span>Footer Tagline</span><textarea name="footerTagline" required>${escapeHtml(settings.footerTagline)}</textarea></label>
         <div class="field-grid two">
-            <label><span>Email</span><input name="email" type="email" value="${escapeHtml(settings.email)}" required></label>
-            <label><span>WhatsApp Label</span><input name="whatsapp" value="${escapeHtml(settings.whatsapp)}" required></label>
+            <label><span>Email</span><input name="email" type="email" value="${escapeHtml(canonicalContact.email)}" readonly required></label>
+            <label><span>WhatsApp Label</span><input name="whatsapp" value="${escapeHtml(canonicalContact.whatsapp)}" readonly required></label>
         </div>
-        <label><span>WhatsApp URL</span><input name="whatsappUrl" type="url" value="${escapeHtml(settings.whatsappUrl)}" required></label>
+        <label><span>WhatsApp URL</span><input name="whatsappUrl" type="url" value="${escapeHtml(canonicalContact.whatsappUrl)}" readonly required></label>
         <label><span>LinkedIn URL</span><input name="linkedinUrl" type="url" value="${escapeHtml(settings.linkedinUrl)}" required></label>
         <label><span>Instagram URL</span><input name="instagramUrl" type="url" value="${escapeHtml(settings.instagramUrl)}" required></label>
         ${renderSectionControls()}
@@ -692,6 +700,9 @@ function saveSettings(form) {
     Object.keys(content.settings).forEach((key) => {
         if (key !== "sections" && data.has(key)) content.settings[key] = String(data.get(key) || "").trim();
     });
+    content.settings.email = canonicalContact.email;
+    content.settings.whatsapp = canonicalContact.whatsapp;
+    content.settings.whatsappUrl = canonicalContact.whatsappUrl;
     Object.keys(sectionLabels).forEach((key) => {
         content.settings.sections[key] = data.has(`section:${key}`);
     });

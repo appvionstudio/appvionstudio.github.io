@@ -1618,8 +1618,8 @@ h3 {
 
 .cta-layout {
     display: grid;
-    grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1fr);
-    gap: 40px;
+    grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1fr);
+    gap: 34px;
     align-items: start;
     border: 1px solid rgba(203, 213, 225, 0.18);
     border-radius: var(--card-radius);
@@ -1631,7 +1631,7 @@ h3 {
 }
 
 .cta-layout h2 {
-    max-width: 16ch;
+    max-width: 18ch;
 }
 
 .cta-layout p {
@@ -1647,22 +1647,82 @@ h3 {
 
 .contact-routes {
     display: grid;
-    gap: 10px;
+    gap: 12px;
     margin-top: 26px;
 }
 
-.contact-routes a,
-.contact-routes span {
-    width: fit-content;
+.contact-route {
+    display: grid;
+    gap: 5px;
+    border: 1px solid rgba(203, 213, 225, 0.13);
+    border-radius: var(--card-radius);
+    padding: 14px 16px;
     color: var(--muted-strong);
-    font-size: 14px;
-    font-weight: 800;
-    transition: color 180ms ease;
+    background: rgba(255, 255, 255, 0.035);
+    transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
 }
 
-.contact-routes a:hover,
-.contact-routes a:focus-visible {
+.contact-route.featured {
+    border-color: rgba(34, 211, 238, 0.36);
+    background:
+        linear-gradient(135deg, rgba(34, 211, 238, 0.14), transparent 58%),
+        rgba(255, 255, 255, 0.055);
+}
+
+.contact-route span,
+.form-intro span {
     color: var(--cyan);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-route strong {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.contact-route small {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.contact-route:hover,
+.contact-route:focus-visible {
+    border-color: rgba(34, 211, 238, 0.5);
+    background: rgba(34, 211, 238, 0.09);
+    transform: translateY(-2px);
+}
+
+.contact-assurance {
+    display: grid;
+    gap: 10px;
+    margin: 22px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-assurance li {
+    position: relative;
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-assurance li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: var(--cyan);
+    box-shadow: 0 0 18px rgba(34, 211, 238, 0.45);
 }
 
 .case-card > a:hover,
@@ -1679,6 +1739,27 @@ h3 {
     background:
         linear-gradient(145deg, rgba(255, 255, 255, 0.07), transparent 46%),
         rgba(7, 9, 15, 0.32);
+}
+
+.form-intro {
+    display: grid;
+    gap: 7px;
+    padding-bottom: 2px;
+}
+
+.form-intro h3 {
+    max-width: 20ch;
+    color: var(--text);
+    font-size: 24px;
+    line-height: 1.08;
+}
+
+.form-intro p {
+    max-width: 620px;
+    margin-top: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.55;
 }
 
 .field-row {
