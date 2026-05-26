@@ -72,6 +72,22 @@
     }
 
     function projectVisual(project) {
+        const screenshots = String(project.screenshotUrls || project.thumbnailUrl || "")
+            .split("\n")
+            .map((item) => item.trim())
+            .filter(Boolean)
+            .slice(0, 3);
+
+        if (screenshots.length) {
+            return `
+                <div class="case-card-visual real">
+                    <div class="preview-top"><span>${escapeHtml(project.industry || project.kicker || "Product proof")}</span><strong>${escapeHtml(project.status || "Preview")}</strong></div>
+                    <div class="case-shot-grid shots-${screenshots.length}">
+                        ${screenshots.map((src, index) => `<img src="${escapeHtml(src)}" alt="${escapeHtml(project.title)} screenshot ${index + 1}" loading="lazy">`).join("")}
+                    </div>
+                </div>`;
+        }
+
         const title = escapeHtml(project.title);
         const status = escapeHtml(project.status || "Live");
         const metric = escapeHtml(project.metric || "Preview");
@@ -131,7 +147,12 @@
         const grid = document.querySelector(".case-grid");
         if (!grid || !Array.isArray(projects)) return;
 
-        grid.innerHTML = projects.map((project) => `
+        grid.innerHTML = projects.map((project) => {
+            const caseSlug = project.caseStudySlug || project.id || "";
+            const caseHref = `case-study.html?project=${encodeURIComponent(caseSlug)}`;
+            const href = project.caseStudyEnabled ? caseHref : (project.linkUrl || "#");
+            const label = project.caseStudyEnabled ? "View Case Study" : (project.linkLabel || "View Live Demo");
+            return `
             <article class="case-card reveal in-view">
                 ${projectVisual(project)}
                 <div>
@@ -139,9 +160,9 @@
                     <h3>${escapeHtml(project.title)}</h3>
                     <p>${escapeHtml(project.description)}</p>
                 </div>
-                <a href="${escapeHtml(project.linkUrl || "#")}" target="_blank" rel="noreferrer">${escapeHtml(project.linkLabel || "View Live Demo")}</a>
+                <a href="${escapeHtml(href)}" ${project.caseStudyEnabled ? "" : 'target="_blank" rel="noreferrer"'}>${escapeHtml(label)}</a>
             </article>
-        `).join("");
+        `}).join("");
     }
 
     function renderServices(services) {
@@ -220,12 +241,44 @@
 
         grid.innerHTML = team.map((member) => `
             <article class="team-card ${member.featured ? "featured" : ""} reveal in-view">
+                ${member.photoUrl ? `<img class="team-photo" src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy">` : ""}
                 <span>${escapeHtml(member.role)}</span>
                 <h3>${escapeHtml(member.name)}</h3>
                 <p>${escapeHtml(member.description)}</p>
                 <a class="button secondary" href="${escapeHtml(member.profileUrl || "#")}">View Profile</a>
             </article>
         `).join("");
+    }
+
+    function renderDemoLibrary(demos) {
+        const grid = document.querySelector(".demo-library-grid");
+        const section = document.querySelector("#demos");
+        if (!grid || !section) return;
+
+        if (!Array.isArray(demos) || !demos.length) {
+            section.hidden = true;
+            return;
+        }
+
+        section.hidden = false;
+        grid.innerHTML = demos.map((demo) => {
+            const points = String(demo.proofPoints || "")
+                .split("\n")
+                .map((item) => item.trim())
+                .filter(Boolean)
+                .slice(0, 3);
+
+            return `
+                <article class="demo-card ${demo.featured ? "featured" : ""} reveal in-view">
+                    ${demo.thumbnailUrl ? `<img class="demo-thumb" src="${escapeHtml(demo.thumbnailUrl)}" alt="${escapeHtml(demo.title)} preview" loading="lazy">` : ""}
+                    <span>${escapeHtml(demo.category || "Demo")}</span>
+                    <h3>${escapeHtml(demo.title)}</h3>
+                    <p>${escapeHtml(demo.description)}</p>
+                    ${points.length ? `<ul>${points.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}
+                    ${demo.demoUrl ? `<a href="${escapeHtml(demo.demoUrl)}" target="_blank" rel="noreferrer">Open Demo</a>` : ""}
+                </article>
+            `;
+        }).join("");
     }
 
     function renderStack(stack) {
@@ -322,6 +375,7 @@
             confidence: ".confidence-section",
             engagements: "#engagements",
             stack: ".stack-section",
+            demos: "#demos",
             team: "#team",
             insights: ".insights-section",
             faq: "#faq",
@@ -347,6 +401,7 @@
         renderEngagements(content.engagements);
         renderTeam(content.team);
         renderStack(content.stack);
+        renderDemoLibrary(content.demoLibrary);
         renderInsights(content.insights);
         renderFaqs(content.faqs);
         applySectionVisibility(content.settings && content.settings.sections);

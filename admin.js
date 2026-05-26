@@ -31,6 +31,17 @@ const schema = {
         ["visualItems", "Preview Items or Steps, One Per Line", "textarea"],
         ["visualRows", "Data Table Rows, One Per Line: ID | Status | Time", "textarea"],
         ["visualBars", "Chart Bar Heights, One Number Per Line", "textarea"],
+        ["thumbnailUrl", "Project Thumbnail Image URL", "url"],
+        ["screenshotUrls", "Screenshot Image URLs, One Per Line", "textarea"],
+        ["demoVideoUrl", "Demo Video URL", "url"],
+        ["caseStudyEnabled", "Enable Case Study Page", "checkbox"],
+        ["caseStudySlug", "Case Study Slug", "text"],
+        ["industry", "Industry or Client Type", "text"],
+        ["problem", "Case Study Problem", "textarea"],
+        ["solution", "Case Study Solution", "textarea"],
+        ["result", "Case Study Result", "textarea"],
+        ["features", "Key Features, One Per Line", "textarea"],
+        ["techStack", "Project Tech Stack, One Per Line", "textarea"],
         ["linkLabel", "Link Label", "text"],
         ["linkUrl", "Link URL", "url"]
     ],
@@ -60,11 +71,21 @@ const schema = {
         ["featured", "Featured Card", "checkbox"]
     ],
     team: [
+        ["photoUrl", "Profile Photo URL", "url"],
         ["role", "Role", "text"],
         ["name", "Name", "text"],
         ["description", "Description", "textarea"],
         ["profileUrl", "Profile URL", "text"],
         ["featured", "Featured Member", "checkbox"]
+    ],
+    demoLibrary: [
+        ["title", "Demo Title", "text"],
+        ["category", "Category", "text"],
+        ["description", "Description", "textarea"],
+        ["thumbnailUrl", "Thumbnail Image URL", "url"],
+        ["demoUrl", "Demo URL", "url"],
+        ["proofPoints", "Proof Points, One Per Line", "textarea"],
+        ["featured", "Featured Demo", "checkbox"]
     ],
     insights: [
         ["category", "Category", "text"],
@@ -78,7 +99,7 @@ const schema = {
 };
 
 const collectionTypes = Object.keys(schema);
-const requiredContentKeys = ["settings", "projects", "services", "processSteps", "metrics", "choiceReasons", "engagements", "team", "stack", "insights", "faqs"];
+const requiredContentKeys = ["settings", "projects", "services", "processSteps", "metrics", "choiceReasons", "engagements", "team", "stack", "demoLibrary", "insights", "faqs"];
 const sectionLabels = {
     work: "Work",
     services: "Services",
@@ -88,6 +109,7 @@ const sectionLabels = {
     confidence: "Confidence",
     engagements: "Engagements",
     stack: "Technology",
+    demos: "Demos",
     team: "Team",
     insights: "Blogs",
     faq: "FAQ",
@@ -464,6 +486,7 @@ function activateView(view) {
         engagements: "Engagements",
         team: "Team",
         stack: "Tech Stack",
+        demoLibrary: "Demo Library",
         insights: "Blogs",
         faqs: "FAQ",
         briefs: "Briefs",
@@ -504,6 +527,7 @@ function itemTitle(type, item) {
 
 function itemMeta(type, item) {
     if (type === "projects") return item.kicker || item.theme;
+    if (type === "demoLibrary") return item.category || "Demo";
     if (type === "services" || type === "processSteps" || type === "engagements") return item.number || type;
     if (type === "insights") return item.category || "Blog";
     if (type === "team") return item.role || "Team";
@@ -513,6 +537,7 @@ function itemMeta(type, item) {
 function itemBody(type, item) {
     if (type === "faqs") return item.answer;
     if (type === "insights") return item.excerpt;
+    if (type === "demoLibrary") return item.description;
     return item.description;
 }
 
@@ -551,13 +576,39 @@ function blankItem(type) {
         else if (key === "visualItems") base[key] = "Users\nAdmin\nOps";
         else if (key === "visualRows") base[key] = "ID-01 | Active | 09:00\nID-02 | Review | 09:15";
         else if (key === "visualBars") base[key] = "54\n78\n42\n88\n66";
+        else if (key === "caseStudySlug") base[key] = slugify(base.title || type);
+        else if (key === "features") base[key] = "Core workflow\nAdmin visibility\nMobile-first experience";
+        else if (key === "techStack") base[key] = "Android Native\nKotlin\nFirebase";
+        else if (key === "proofPoints") base[key] = "Interactive workflow\nReal product pattern\nMobile-ready UI";
         else base[key] = "";
     });
     return base;
 }
 
 function isRequiredField(key, fieldType) {
-    const optionalProjectFields = ["visualLabel", "visualHeadline", "visualDetail", "visualItems", "visualRows", "visualBars", "linkUrl"];
+    const optionalProjectFields = [
+        "visualLabel",
+        "visualHeadline",
+        "visualDetail",
+        "visualItems",
+        "visualRows",
+        "visualBars",
+        "thumbnailUrl",
+        "screenshotUrls",
+        "demoVideoUrl",
+        "caseStudySlug",
+        "industry",
+        "problem",
+        "solution",
+        "result",
+        "features",
+        "techStack",
+        "linkUrl",
+        "photoUrl",
+        "profileUrl",
+        "demoUrl",
+        "proofPoints"
+    ];
     return fieldType !== "url" && !optionalProjectFields.includes(key);
 }
 

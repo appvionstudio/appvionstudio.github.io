@@ -246,6 +246,7 @@
     }
   ],
   "stack": ["Android Native", "Kotlin", "Jetpack Compose", "Kotlin Multiplatform", "Ktor", "Supabase", "Firebase", "SQLDelight", "Paging 3", "Realtime Systems", "Secure WebView", "AI-ready UX"],
+  "demoLibrary": [],
   "insights": [
     {
       "id": "premium-app-calm",

@@ -51,6 +51,7 @@
                 <button class="nav-item" type="button" data-view="engagements">Engagements</button>
                 <button class="nav-item" type="button" data-view="team">Team</button>
                 <button class="nav-item" type="button" data-view="stack">Tech Stack</button>
+                <button class="nav-item" type="button" data-view="demoLibrary">Demo Library</button>
                 <button class="nav-item" type="button" data-view="insights">Blogs</button>
                 <button class="nav-item" type="button" data-view="faqs">FAQ</button>
                 <button class="nav-item" type="button" data-view="briefs">Briefs</button>
@@ -210,6 +211,22 @@
                 <form class="admin-card settings-form" data-stack-form></form>
             </section>
 
+            <section class="admin-view" data-panel="demoLibrary">
+                <div class="collection-layout">
+                    <div class="admin-card">
+                        <div class="collection-header">
+                            <div>
+                                <p class="eyebrow">Real proof</p>
+                                <h2>Demo Library</h2>
+                            </div>
+                            <button class="button primary" type="button" data-add="demoLibrary">Add Demo</button>
+                        </div>
+                        <div class="collection-list" data-list="demoLibrary"></div>
+                    </div>
+                    <form class="admin-card editor-card" data-editor="demoLibrary"></form>
+                </div>
+            </section>
+
             <section class="admin-view" data-panel="insights">
                 <div class="collection-layout">
                     <div class="admin-card">
@@ -310,6 +327,6 @@
         };
         window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
     </script>
-    <script src="admin.js?v=20260526-calendly-briefs"></script>
+    <script src="admin.js?v=20260526-proof-system"></script>
 </body>
 </html>

@@ -11,6 +11,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://appvionstudio.github.io/case-study.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://appvionstudio.github.io/tayyab-sajjad.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
