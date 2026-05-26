@@ -62,3 +62,11 @@ firebase deploy --only firestore:rules --project appvion-studio
 ```
 
 After deployment, open `appvion-control.html`, login, and use the **Briefs** tab to read submissions.
+
+The website also sends a free FormSubmit email alert to:
+
+```text
+ayyazali.sajjadali@gmail.com
+```
+
+If FormSubmit sends an activation email the first time, approve it once from that Gmail inbox. After that, new project briefs and confirmed Calendly popup bookings can notify the admin even when the dashboard is closed.

@@ -9,6 +9,8 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 const firebaseConfig = window.APPVION_FIREBASE_CONFIG || {};
 const isFirebaseConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId && !String(firebaseConfig.apiKey).includes("YOUR_"));
 const calendlyUrl = "https://calendly.com/ayyaz-appvionstudio/30min";
+const adminAlertEmail = "ayyazali.sajjadali@gmail.com";
+const emailAlertEndpoint = `https://formsubmit.co/${adminAlertEmail}`;
 let firebaseBriefsReady = null;
 let calendlyReady = null;
 
@@ -108,6 +110,60 @@ async function saveContactEvent(eventData) {
     });
 }
 
+function sendAdminEmailAlert(subject, fields) {
+    if (!subject || !fields) return;
+
+    const frameName = "appvion-email-alert-frame";
+    let frame = document.querySelector(`iframe[name="${frameName}"]`);
+
+    if (!frame) {
+        frame = document.createElement("iframe");
+        frame.name = frameName;
+        frame.title = "Admin email alert submission";
+        frame.hidden = true;
+        frame.setAttribute("aria-hidden", "true");
+        document.body.appendChild(frame);
+    }
+
+    const form = document.createElement("form");
+    form.action = emailAlertEndpoint;
+    form.method = "POST";
+    form.target = frameName;
+    form.style.display = "none";
+
+    const alertFields = {
+        _subject: subject,
+        _template: "table",
+        _captcha: "false",
+        _replyto: fields.email || adminAlertEmail,
+        ...fields
+    };
+
+    Object.entries(alertFields).forEach(([name, value]) => {
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = name;
+        input.value = String(value || "");
+        form.appendChild(input);
+    });
+
+    document.body.appendChild(form);
+    form.submit();
+    window.setTimeout(() => form.remove(), 1500);
+}
+
+function sendBriefEmailAlert(payload) {
+    sendAdminEmailAlert("New AppVion Studio project brief", {
+        name: payload.name,
+        email: payload.email,
+        project_type: payload.type,
+        timeline: payload.timeline,
+        message: payload.message,
+        source: "AppVion website project brief",
+        admin_inbox: `${window.location.origin}${window.location.pathname.replace(/[^/]*$/, "")}appvion-control.html`
+    });
+}
+
 function contactEventFromLink(link) {
     return {
         route: link.dataset.contactAction || "contact",
@@ -198,12 +254,20 @@ window.addEventListener("message", (event) => {
     if (eventName !== "calendly.event_scheduled") return;
 
     const payload = event.data.payload || {};
+    const eventHref = payload.event && payload.event.uri ? payload.event.uri : calendlyUrl;
     saveContactEvent({
         route: "calendly-scheduled",
         label: "Confirmed Calendly booking",
-        href: payload.event && payload.event.uri ? payload.event.uri : calendlyUrl
+        href: eventHref
     }).catch((error) => {
         console.warn("AppVion Calendly booking tracking failed:", error);
+    });
+
+    sendAdminEmailAlert("Confirmed AppVion Calendly booking", {
+        booking_status: "Confirmed Calendly booking",
+        calendly_event: eventHref,
+        source: "AppVion website Calendly popup",
+        admin_inbox: `${window.location.origin}${window.location.pathname.replace(/[^/]*$/, "")}appvion-control.html`
     });
 });
 
@@ -230,9 +294,10 @@ if (contactForm) {
                 "Firebase submit timed out."
             );
 
+            sendBriefEmailAlert(payload);
             contactForm.reset();
             updateFormStatus(
-                "Thanks. Your project brief is saved in the AppVion dashboard. Open Admin > Briefs to read it.",
+                "Thanks. Your project brief is saved in the AppVion dashboard and an email alert has been sent to the admin.",
                 "success"
             );
         } catch (error) {
@@ -243,7 +308,7 @@ if (contactForm) {
                 window.setTimeout(() => {
                     contactForm.reset();
                     updateFormStatus(
-                        "Firebase did not save this brief, so it was sent through the backup email service. Check ayyaz@appvionstudio.com and FormSubmit.",
+                        `Firebase did not save this brief, so it was sent through the backup email service. Check ${adminAlertEmail} and FormSubmit.`,
                         "success"
                     );
                 }, 900);
