@@ -4,7 +4,10 @@ service cloud.firestore {
   match /databases/{database}/documents {
     function isAppVionAdmin() {
       return request.auth != null
-        && request.auth.token.email == "appvionstudio@gmail.com";
+        && request.auth.token.email in [
+          "appvionstudio@gmail.com",
+          "ayyazali.sajjadali@gmail.com"
+        ];
     }
 
     match /siteContent/home {
