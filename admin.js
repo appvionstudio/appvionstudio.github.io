@@ -368,7 +368,7 @@ function renderContactEvent(event) {
                 <p><strong>Route:</strong> ${escapeHtml(event.route || "contact")}</p>
                 <p><strong>Page:</strong> ${escapeHtml(event.page || "/")}</p>
                 <p><strong>Opened:</strong> <a href="${escapeHtml(event.href || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.href || "No link")}</a></p>
-                <p class="muted">This records that a visitor clicked the CTA. Confirmed Calendly bookings still need Calendly notification or webhook integration.</p>
+                <p class="muted">${event.route === "calendly-scheduled" ? "This confirms the visitor completed the Calendly booking flow in the website popup." : "This records that a visitor clicked a contact CTA. Completed Calendly bookings appear as confirmed booking events."}</p>
             </div>
         </article>
     `;

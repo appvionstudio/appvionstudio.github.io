@@ -18,7 +18,7 @@ appvionstudio@gmail.com
 
 ## Website Config
 
-Copy the Firebase Web App config into both files:
+Copy the Firebase Web App config into the inline Firebase config script in these files:
 
 - `index.html`
 - `appvion-control.html`

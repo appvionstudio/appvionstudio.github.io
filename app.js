@@ -10,6 +10,7 @@ const firebaseConfig = window.APPVION_FIREBASE_CONFIG || {};
 const isFirebaseConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId && !String(firebaseConfig.apiKey).includes("YOUR_"));
 const calendlyUrl = "https://calendly.com/ayyaz-appvionstudio/30min";
 let firebaseBriefsReady = null;
+let calendlyReady = null;
 
 function withTimeout(task, timeoutMs, message) {
     return Promise.race([
@@ -115,6 +116,47 @@ function contactEventFromLink(link) {
     };
 }
 
+function loadCalendlyWidget() {
+    if (window.Calendly && typeof window.Calendly.initPopupWidget === "function") {
+        return Promise.resolve(window.Calendly);
+    }
+
+    if (calendlyReady) return calendlyReady;
+
+    calendlyReady = new Promise((resolve, reject) => {
+        const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+        const script = existingScript || document.createElement("script");
+
+        script.addEventListener("load", () => {
+            if (window.Calendly && typeof window.Calendly.initPopupWidget === "function") {
+                resolve(window.Calendly);
+            } else {
+                reject(new Error("Calendly widget loaded without popup support."));
+            }
+        }, { once: true });
+
+        script.addEventListener("error", () => {
+            reject(new Error("Calendly widget could not load."));
+        }, { once: true });
+
+        if (!existingScript) {
+            script.src = "https://assets.calendly.com/assets/external/widget.js";
+            script.async = true;
+            document.body.appendChild(script);
+        }
+
+        window.setTimeout(() => {
+            if (window.Calendly && typeof window.Calendly.initPopupWidget === "function") {
+                resolve(window.Calendly);
+            } else {
+                reject(new Error("Calendly widget timed out."));
+            }
+        }, 3500);
+    });
+
+    return calendlyReady;
+}
+
 function openCalendlyPopup() {
     if (window.Calendly && typeof window.Calendly.initPopupWidget === "function") {
         window.Calendly.initPopupWidget({ url: calendlyUrl });
@@ -124,18 +166,24 @@ function openCalendlyPopup() {
     return false;
 }
 
-document.addEventListener("click", (event) => {
+document.addEventListener("click", async (event) => {
     const link = event.target.closest("[data-contact-action]");
     if (!link) return;
     const contactEvent = contactEventFromLink(link);
 
     if (contactEvent.route === "strategy-call") {
         event.preventDefault();
-        const opened = openCalendlyPopup();
         saveContactEvent(contactEvent).catch((error) => {
             console.warn("AppVion contact event tracking failed:", error);
         });
-        if (!opened) window.open(link.href, "_blank", "noopener,noreferrer");
+
+        try {
+            await loadCalendlyWidget();
+            if (!openCalendlyPopup()) throw new Error("Calendly popup was unavailable.");
+        } catch (error) {
+            console.warn("AppVion Calendly popup failed. Opening Calendly in a new tab.", error);
+            window.open(link.href, "_blank", "noopener,noreferrer");
+        }
         return;
     }
 
@@ -152,7 +200,7 @@ window.addEventListener("message", (event) => {
     const payload = event.data.payload || {};
     saveContactEvent({
         route: "calendly-scheduled",
-        label: "Calendly booking completed",
+        label: "Confirmed Calendly booking",
         href: payload.event && payload.event.uri ? payload.event.uri : calendlyUrl
     }).catch((error) => {
         console.warn("AppVion Calendly booking tracking failed:", error);
