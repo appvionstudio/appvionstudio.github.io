@@ -25,6 +25,7 @@
       "confidence": true,
       "engagements": true,
       "stack": true,
+      "demos": false,
       "team": true,
       "insights": true,
       "faq": true,

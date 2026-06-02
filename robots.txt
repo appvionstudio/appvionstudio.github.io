@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin.html
 Disallow: /appvion-control.html
 
-Sitemap: https://appvionstudio.github.io/sitemap.xml
+Sitemap: https://appvionstudio.com/sitemap.xml

@@ -340,6 +340,8 @@ function updateViewportState() {
         const amount = scrollHeight > 0 ? scrollY / scrollHeight : 0;
         progress.style.transform = `scaleX(${Math.min(Math.max(amount, 0), 1)})`;
     }
+
+    document.body.classList.toggle("show-sticky-cta", scrollY > 420);
 }
 
 updateViewportState();

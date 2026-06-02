@@ -250,13 +250,14 @@
         `).join("");
     }
 
-    function renderDemoLibrary(demos) {
+    function renderDemoLibrary(demos, isVisible) {
         const grid = document.querySelector(".demo-library-grid");
         const section = document.querySelector("#demos");
         if (!grid || !section) return;
 
-        if (!Array.isArray(demos) || !demos.length) {
+        if (isVisible === false || !Array.isArray(demos) || !demos.length) {
             section.hidden = true;
+            grid.innerHTML = "";
             return;
         }
 
@@ -384,6 +385,7 @@
 
         Object.entries(map).forEach(([key, selector]) => {
             document.querySelectorAll(selector).forEach((section) => {
+                if (key === "demos" && sections[key] !== false) return;
                 section.hidden = sections[key] === false;
             });
         });
@@ -401,7 +403,7 @@
         renderEngagements(content.engagements);
         renderTeam(content.team);
         renderStack(content.stack);
-        renderDemoLibrary(content.demoLibrary);
+        renderDemoLibrary(content.demoLibrary, content.settings && content.settings.sections && content.settings.sections.demos);
         renderInsights(content.insights);
         renderFaqs(content.faqs);
         applySectionVisibility(content.settings && content.settings.sections);

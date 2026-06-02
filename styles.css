@@ -2632,6 +2632,16 @@ h3 {
         background: linear-gradient(135deg, #16a34a, #22c55e 48%, #14b8a6);
         box-shadow: 0 18px 48px rgba(22, 163, 74, 0.36);
         font-weight: 900;
+        opacity: 0;
+        transform: translateY(120%);
+        pointer-events: none;
+        transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .show-sticky-cta .sticky-mobile-cta {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 
     .sticky-mobile-cta span {
