@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="admin.css?v=20260525-contact-events">
+    <link rel="stylesheet" href="admin.css?v=20260602-media-cms">
 </head>
 <body>
     <section class="lock-screen" data-lock-screen>
@@ -50,6 +50,7 @@
                 <button class="nav-item" type="button" data-view="choiceReasons">Why Choose</button>
                 <button class="nav-item" type="button" data-view="engagements">Engagements</button>
                 <button class="nav-item" type="button" data-view="team">Team</button>
+                <button class="nav-item" type="button" data-view="mediaGuide">Media Guide</button>
                 <button class="nav-item" type="button" data-view="stack">Tech Stack</button>
                 <button class="nav-item" type="button" data-view="demoLibrary">Demo Library</button>
                 <button class="nav-item" type="button" data-view="insights">Blogs</button>
@@ -211,6 +212,10 @@
                 <form class="admin-card settings-form" data-stack-form></form>
             </section>
 
+            <section class="admin-view" data-panel="mediaGuide">
+                <div data-media-guide></div>
+            </section>
+
             <section class="admin-view" data-panel="demoLibrary">
                 <div class="collection-layout">
                     <div class="admin-card">
@@ -327,6 +332,6 @@
         };
         window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
     </script>
-    <script src="admin.js?v=20260526-proof-system"></script>
+    <script src="admin.js?v=20260602-media-cms"></script>
 </body>
 </html>

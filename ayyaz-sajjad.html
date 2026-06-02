@@ -35,9 +35,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260519-sticky-cta">
+    <link rel="stylesheet" href="styles.css?v=20260602-media-ready">
 </head>
-<body class="profile-page">
+<body class="profile-page" data-profile-id="ayyaz-sajjad">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="scroll-progress" aria-hidden="true"></div>
 
@@ -88,7 +88,17 @@
                         </div>
                     </div>
 
-                    <aside class="profile-panel reveal">
+                    <aside class="profile-panel profile-media-panel reveal">
+                        <div class="profile-photo-card">
+                            <div class="profile-photo-slot" data-profile-photo>
+                                <div class="profile-photo-placeholder">AS</div>
+                            </div>
+                            <div>
+                                <span data-profile-photo-role>Founder | Android App Developer</span>
+                                <strong data-profile-photo-name>Ayyaz Sajjad</strong>
+                                <small>Photo can be updated later from Admin > Team.</small>
+                            </div>
+                        </div>
                         <h3>Product direction</h3>
                         <p>Business-first mobile systems for dispatch, approvals, communication, attendance, secure access, and real workflow execution.</p>
                         <h3>Technical base</h3>
@@ -191,6 +201,19 @@
         </footer>
     </div>
 
-    <script src="app.js?v=20260515-ux"></script>
+    <script>
+        window.APPVION_FIREBASE_CONFIG = {
+            apiKey: "AIzaSyC44enadsgl9w1a0mRE51zaLY-1uc5AWwI",
+            authDomain: "appvion-studio.firebaseapp.com",
+            projectId: "appvion-studio",
+            storageBucket: "appvion-studio.firebasestorage.app",
+            messagingSenderId: "4195907711",
+            appId: "1:4195907711:web:3cdf11646b9b7bc876e74a",
+            measurementId: "G-DEV3NRR902"
+        };
+        window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
+    </script>
+    <script src="profile-render.js?v=20260602-media-ready"></script>
+    <script src="app.js?v=20260602-media-ready"></script>
 </body>
 </html>

@@ -1579,6 +1579,23 @@ h3 {
     margin-bottom: 16px;
 }
 
+.team-photo-placeholder {
+    width: 74px;
+    height: 74px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(34, 211, 238, 0.24);
+    border-radius: 18px;
+    margin-bottom: 16px;
+    color: var(--cyan);
+    background:
+        linear-gradient(135deg, rgba(34, 211, 238, 0.12), transparent 58%),
+        rgba(255, 255, 255, 0.045);
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: 900;
+}
+
 .team-card.featured {
     background:
         linear-gradient(135deg, rgba(59, 130, 246, 0.12), transparent 38%),
@@ -2160,6 +2177,69 @@ h3 {
     padding: 24px;
 }
 
+.profile-media-panel {
+    align-content: start;
+}
+
+.profile-photo-card {
+    display: grid;
+    grid-template-columns: 118px minmax(0, 1fr);
+    gap: 18px;
+    align-items: center;
+    border: 1px solid rgba(203, 213, 225, 0.14);
+    border-radius: var(--card-radius);
+    padding: 14px;
+    background:
+        linear-gradient(135deg, rgba(34, 211, 238, 0.08), transparent 58%),
+        rgba(255, 255, 255, 0.035);
+}
+
+.profile-photo-slot,
+.profile-photo-slot img,
+.profile-photo-placeholder {
+    width: 118px;
+    height: 118px;
+    border-radius: 22px;
+}
+
+.profile-photo-slot {
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(0, 0, 0, 0.22);
+}
+
+.profile-photo-slot img {
+    object-fit: cover;
+}
+
+.profile-photo-placeholder {
+    display: grid;
+    place-items: center;
+    color: var(--cyan);
+    background:
+        linear-gradient(135deg, rgba(34, 211, 238, 0.15), transparent 60%),
+        linear-gradient(180deg, rgba(15, 23, 42, 0.94), rgba(5, 6, 8, 0.9));
+    font-family: var(--heading-font);
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.profile-photo-card span,
+.profile-photo-card small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.profile-photo-card strong {
+    display: block;
+    margin: 4px 0;
+    color: var(--text);
+    font-family: var(--heading-font);
+    font-size: 20px;
+}
+
 .profile-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2585,6 +2665,18 @@ h3 {
 
     .field-row {
         grid-template-columns: 1fr;
+    }
+
+    .profile-photo-card {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photo-slot,
+    .profile-photo-slot img,
+    .profile-photo-placeholder {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 
     .faq-item summary {

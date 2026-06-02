@@ -241,13 +241,24 @@
 
         grid.innerHTML = team.map((member) => `
             <article class="team-card ${member.featured ? "featured" : ""} reveal in-view">
-                ${member.photoUrl ? `<img class="team-photo" src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy">` : ""}
+                ${member.photoUrl
+                    ? `<img class="team-photo" src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy">`
+                    : `<div class="team-photo-placeholder" aria-hidden="true">${escapeHtml(initials(member.name))}</div>`}
                 <span>${escapeHtml(member.role)}</span>
                 <h3>${escapeHtml(member.name)}</h3>
                 <p>${escapeHtml(member.description)}</p>
                 <a class="button secondary" href="${escapeHtml(member.profileUrl || "#")}">View Profile</a>
             </article>
         `).join("");
+    }
+
+    function initials(name) {
+        return String(name || "AV")
+            .split(/\s+/)
+            .filter(Boolean)
+            .slice(0, 2)
+            .map((part) => part.charAt(0).toUpperCase())
+            .join("") || "AV";
     }
 
     function renderDemoLibrary(demos, isVisible) {

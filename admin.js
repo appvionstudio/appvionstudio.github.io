@@ -116,6 +116,20 @@ const sectionLabels = {
     contact: "Contact"
 };
 
+const fieldHelp = {
+    photoUrl: "Paste a direct portrait image URL. Best shape: square or 4:5, clear face, professional background.",
+    thumbnailUrl: "Paste one strong project image URL. This becomes the first visual proof on project cards.",
+    screenshotUrls: "Paste one screenshot URL per line. Case studies can show up to 6 screenshots.",
+    demoVideoUrl: "Paste a YouTube, Shorts, Drive, Loom, or hosted video URL for the case study demo button.",
+    linkUrl: "Paste the main project, demo, APK, GitHub, or video link visitors should open.",
+    demoUrl: "Paste the live interactive demo, video, or hosted preview URL.",
+    proofPoints: "Write one proof point per line, such as Real workflow, Admin panel, Firebase backend.",
+    caseStudyEnabled: "Turn this on when the project has enough screenshots, details, or demo proof for a case study page.",
+    caseStudySlug: "Short URL name for the case study link. Example: profix-field-service.",
+    features: "Write one feature per line. These appear on the case study page.",
+    techStack: "Write one technology per line. These appear on the case study page."
+};
+
 let content = null;
 let activeView = "overview";
 let selected = Object.fromEntries(collectionTypes.map((type) => [type, null]));
@@ -485,6 +499,7 @@ function activateView(view) {
         choiceReasons: "Why Choose",
         engagements: "Engagements",
         team: "Team",
+        mediaGuide: "Media Guide",
         stack: "Tech Stack",
         demoLibrary: "Demo Library",
         insights: "Blogs",
@@ -612,14 +627,33 @@ function isRequiredField(key, fieldType) {
     return fieldType !== "url" && !optionalProjectFields.includes(key);
 }
 
+function fieldPlaceholder(key, fieldType) {
+    const placeholders = {
+        photoUrl: "https://your-image-host.com/team/ayyaz.jpg",
+        thumbnailUrl: "https://your-image-host.com/projects/profix-cover.jpg",
+        screenshotUrls: "https://your-image-host.com/projects/profix-screen-1.jpg\nhttps://your-image-host.com/projects/profix-screen-2.jpg",
+        demoVideoUrl: "https://youtu.be/your-demo-video",
+        linkUrl: "https://github.com/appvionstudio/project-or-demo",
+        demoUrl: "https://appvionstudio.com/Demos/your-demo.html",
+        proofPoints: "Real app workflow\nAdmin dashboard\nLive data integration",
+        features: "Role-based access\nRealtime updates\nAdmin approval flow",
+        techStack: "Kotlin\nJetpack Compose\nFirebase"
+    };
+    if (placeholders[key]) return placeholders[key];
+    return fieldType === "url" ? "https://..." : "";
+}
+
 function renderField(item, [key, label, fieldType, options]) {
     const value = item[key] ?? "";
     const required = isRequiredField(key, fieldType) ? "required" : "";
+    const help = fieldHelp[key] ? `<small class="field-help">${escapeHtml(fieldHelp[key])}</small>` : "";
+    const placeholder = fieldPlaceholder(key, fieldType);
     if (fieldType === "textarea") {
         return `
             <label>
                 <span>${escapeHtml(label)}</span>
-                <textarea name="${escapeHtml(key)}" ${required}>${escapeHtml(value)}</textarea>
+                <textarea name="${escapeHtml(key)}" placeholder="${escapeHtml(placeholder)}" ${required}>${escapeHtml(value)}</textarea>
+                ${help}
             </label>
         `;
     }
@@ -638,13 +672,15 @@ function renderField(item, [key, label, fieldType, options]) {
             <label class="section-toggle">
                 <span>${escapeHtml(label)}</span>
                 <input name="${escapeHtml(key)}" type="checkbox" ${value ? "checked" : ""}>
+                ${help}
             </label>
         `;
     }
     return `
         <label>
             <span>${escapeHtml(label)}</span>
-            <input name="${escapeHtml(key)}" type="${fieldType}" value="${escapeHtml(value)}" ${required}>
+            <input name="${escapeHtml(key)}" type="${fieldType}" value="${escapeHtml(value)}" placeholder="${escapeHtml(placeholder)}" ${required}>
+            ${help}
         </label>
     `;
 }
@@ -662,6 +698,7 @@ function renderEditor(type) {
             <p class="eyebrow">Editor</p>
             <h2>${escapeHtml(itemTitle(type, item) || "New item")}</h2>
         </div>
+        ${renderMediaPreview(type, item)}
         <div class="field-grid">
             ${schema[type].map((field) => renderField(item, field)).join("")}
         </div>
@@ -747,6 +784,120 @@ function renderStack() {
     `;
 }
 
+function renderMediaGuide() {
+    const target = document.querySelector("[data-media-guide]");
+    if (!target || !content) return;
+
+    const projectMediaCount = content.projects.filter((project) => (
+        project.thumbnailUrl || project.screenshotUrls || project.demoVideoUrl || project.linkUrl
+    )).length;
+    const teamPhotoCount = content.team.filter((member) => member.photoUrl).length;
+    const demoCount = content.demoLibrary.length;
+
+    target.innerHTML = `
+        <div class="media-guide-grid">
+            <article class="admin-card media-guide-card featured">
+                <p class="eyebrow">Upload workflow</p>
+                <h2>How to add real photos, screenshots, and videos</h2>
+                <p class="muted">Upload your media to a stable place first, then paste the direct links into Projects, Team, or Demo Library. Save the draft, preview the site, then Publish Live.</p>
+                <div class="roadmap-steps">
+                    <span>Upload image or video</span>
+                    <span>Copy the share/direct URL</span>
+                    <span>Paste it into the right field</span>
+                    <span>Save, preview, Publish Live</span>
+                </div>
+            </article>
+            <article class="admin-card media-guide-card">
+                <p class="eyebrow">Current media</p>
+                <h2>Media readiness</h2>
+                <div class="media-stats">
+                    <span><strong>${escapeHtml(teamPhotoCount)}</strong> team photos added</span>
+                    <span><strong>${escapeHtml(projectMediaCount)}</strong> projects with media links</span>
+                    <span><strong>${escapeHtml(demoCount)}</strong> demo library items</span>
+                </div>
+            </article>
+            <article class="admin-card media-guide-card">
+                <p class="eyebrow">Team photos</p>
+                <h2>Where to update profile pictures</h2>
+                <p class="muted">Open Team, edit a member, then paste the portrait URL into Profile Photo URL. The homepage team cards will use it automatically.</p>
+                <ul class="media-checklist">
+                    <li>Use clear real photos.</li>
+                    <li>Best size: 800 x 800 or 1000 x 1250.</li>
+                    <li>Avoid blurry, dark, or heavily filtered photos.</li>
+                </ul>
+            </article>
+            <article class="admin-card media-guide-card">
+                <p class="eyebrow">Project proof</p>
+                <h2>Where to update screenshots and videos</h2>
+                <p class="muted">Open Projects, edit a project, then add Thumbnail Image URL, Screenshot Image URLs, Demo Video URL, and enable Case Study Page when ready.</p>
+                <ul class="media-checklist">
+                    <li>Use 2-6 screenshots per serious project.</li>
+                    <li>Put one URL per line for screenshots.</li>
+                    <li>Use real app videos for Demo Video URL.</li>
+                </ul>
+            </article>
+            <article class="admin-card media-guide-card">
+                <p class="eyebrow">Demo Library</p>
+                <h2>Where to add interactive demos</h2>
+                <p class="muted">Open Demo Library, click Add Demo, then add a title, category, thumbnail, demo URL, and proof points. Turn on the Demos section in Settings when you have at least one polished demo.</p>
+            </article>
+        </div>
+    `;
+}
+
+function mediaLines(value) {
+    return String(value || "")
+        .split("\n")
+        .map((item) => item.trim())
+        .filter(Boolean);
+}
+
+function renderMediaPreview(type, item) {
+    const images = [];
+    const links = [];
+
+    if (type === "team" && item.photoUrl) {
+        images.push({ src: item.photoUrl, label: "Profile photo" });
+    }
+
+    if (type === "projects") {
+        if (item.thumbnailUrl) images.push({ src: item.thumbnailUrl, label: "Thumbnail" });
+        mediaLines(item.screenshotUrls).slice(0, 3).forEach((src, index) => {
+            images.push({ src, label: `Screenshot ${index + 1}` });
+        });
+        if (item.demoVideoUrl) links.push({ href: item.demoVideoUrl, label: "Demo video" });
+        if (item.linkUrl) links.push({ href: item.linkUrl, label: item.linkLabel || "Project link" });
+    }
+
+    if (type === "demoLibrary") {
+        if (item.thumbnailUrl) images.push({ src: item.thumbnailUrl, label: "Demo thumbnail" });
+        if (item.demoUrl) links.push({ href: item.demoUrl, label: "Demo URL" });
+    }
+
+    if (!images.length && !links.length) {
+        return `
+            <div class="editor-media-preview empty">
+                <strong>No media added yet</strong>
+                <span>Paste photo, screenshot, thumbnail, or video URLs below. A preview will appear here after saving.</span>
+            </div>
+        `;
+    }
+
+    return `
+        <div class="editor-media-preview">
+            ${images.map((image) => `
+                <figure>
+                    <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.label)} preview" loading="lazy">
+                    <figcaption>${escapeHtml(image.label)}</figcaption>
+                </figure>
+            `).join("")}
+            ${links.map((link) => `
+                <a href="${escapeHtml(link.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)}</a>
+            `).join("")}
+        </div>
+    `;
+}
+
 function renderPublish() {
     const output = document.querySelector("[data-json-output]");
     if (output) output.value = JSON.stringify(content, null, 2);
@@ -758,6 +909,7 @@ function renderAll() {
     collectionTypes.forEach(renderCollection);
     renderSettings();
     renderStack();
+    renderMediaGuide();
     renderPublish();
     renderBriefs();
 }
