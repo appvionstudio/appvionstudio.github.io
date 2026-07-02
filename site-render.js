@@ -72,77 +72,44 @@
     }
 
     function projectVisual(project) {
-        const screenshots = String(project.screenshotUrls || project.thumbnailUrl || "")
-            .split("\n")
-            .map((item) => item.trim())
-            .filter(Boolean)
-            .slice(0, 3);
-
-        if (screenshots.length) {
-            return `
-                <div class="case-card-visual real">
-                    <div class="preview-top"><span>${escapeHtml(project.industry || project.kicker || "Product proof")}</span><strong>${escapeHtml(project.status || "Preview")}</strong></div>
-                    <div class="case-shot-grid shots-${screenshots.length}">
-                        ${screenshots.map((src, index) => `<img src="${escapeHtml(src)}" alt="${escapeHtml(project.title)} screenshot ${index + 1}" loading="lazy">`).join("")}
-                    </div>
-                </div>`;
-        }
-
-        const title = escapeHtml(project.title);
+        const title = escapeHtml(project.title || "Product");
         const status = escapeHtml(project.status || "Live");
-        const metric = escapeHtml(project.metric || "Preview");
         const theme = escapeHtml(project.theme || "campus");
-        const visualLabel = escapeHtml(project.visualLabel || (theme === "event" ? "Upcoming event" : "Product update"));
-        const visualHeadline = escapeHtml(project.visualHeadline || project.title);
-        const visualDetail = escapeHtml(project.visualDetail || `${metric} with role-aware workflows.`);
-        const visualItems = String(project.visualItems || "Users\nAdmin\nOps")
+        const visualLabel = escapeHtml(project.visualLabel || project.kicker || "Product flow");
+        const visualHeadline = escapeHtml(project.visualHeadline || project.title || "App screen");
+        const visualDetail = escapeHtml(project.visualDetail || project.description || "Operational product flow.");
+        const visualItems = String(project.visualItems || "Plan\nBuild\nLaunch")
             .split("\n")
             .map((item) => item.trim())
             .filter(Boolean)
-            .slice(0, 3);
-        const visualRows = String(project.visualRows || "ID-01 | Active | 09:00\nID-02 | Review | 09:15")
-            .split("\n")
-            .map((row) => row.split("|").map((cell) => escapeHtml(cell.trim())))
-            .filter((row) => row.length >= 3)
-            .slice(0, 3);
-        const visualBars = String(project.visualBars || "54\n78\n42\n88\n66")
-            .split("\n")
-            .map((value) => Number.parseInt(value, 10))
-            .filter((value) => Number.isFinite(value))
-            .slice(0, 5);
-        const itemMarkup = visualItems.map((item) => `<span>${escapeHtml(item)}</span>`).join("");
-        const rowMarkup = visualRows.map(([id, rowStatus, time]) => `<strong>${id}</strong><em>${rowStatus}</em><small>${time}</small>`).join("");
-        const barMarkup = visualBars.map((value) => `<span style="height: ${Math.min(Math.max(value, 8), 100)}%"></span>`).join("");
-
-        if (theme === "data") {
-            return `
-                <div class="case-card-visual data">
-                    <div class="preview-top"><span>${title}</span><strong>${status}</strong></div>
-                    <div class="attendance-table" aria-label="${title} preview">
-                        <span>ID</span><span>Status</span><span>Time</span>
-                        ${rowMarkup || "<strong>ID-01</strong><em>Active</em><small>09:00</small>"}
-                    </div>
-                    <div class="attendance-bars">${barMarkup || '<span style="height: 54%"></span><span style="height: 78%"></span><span style="height: 42%"></span><span style="height: 88%"></span><span style="height: 66%"></span>'}</div>
-                </div>`;
-        }
-
-        if (theme === "event") {
-            return `
-                <div class="case-card-visual event">
-                    <div class="preview-top"><span>${title}</span><strong>${status}</strong></div>
-                    <div class="event-ticket"><small>${visualLabel}</small><strong>${visualHeadline}</strong><span>${visualDetail}</span></div>
-                    <div class="event-flow" aria-label="${title} flow">${itemMarkup || "<span>Register</span><span>Filter</span><span>Notify</span>"}</div>
-                </div>`;
-        }
-
+            .slice(0, 4);
+        const colors = theme === "data"
+            ? ["#f59e0b", "#10b981", "#ef4444"]
+            : theme === "event"
+                ? ["#8b5cf6", "#2563eb", "#10b981"]
+                : ["#2563eb", "#10b981", "#f59e0b"];
+        const rows = visualItems.length ? visualItems : [visualHeadline, visualLabel, "Ready"];
         return `
-            <div class="case-card-visual campus">
-                <div class="preview-top"><span>${title}</span><strong>${status}</strong></div>
-                <div class="announcement-card"><small>${visualLabel}</small><strong>${visualHeadline}</strong><span>${visualDetail}</span></div>
-                <div class="role-row" aria-label="${title} roles">${itemMarkup || "<span>Users</span><span>Admin</span><span>Ops</span>"}</div>
+            <div class="case-card-visual ${theme} phone-visual">
+                <div class="portfolio-phone" aria-label="${title} mobile interface preview">
+                    <div class="portfolio-speaker"></div>
+                    <div class="portfolio-app-head">
+                        <strong>${title}</strong>
+                        <span>${status}</span>
+                    </div>
+                    <div class="portfolio-app-list">
+                        ${rows.map((item, index) => `
+                            <span>
+                                <i style="background:${colors[index % colors.length]}"></i>
+                                <b>${escapeHtml(item)}</b>
+                            </span>
+                        `).join("")}
+                    </div>
+                    <small>${visualDetail}</small>
+                    <div class="portfolio-tabs"><i></i><i></i><i></i></div>
+                </div>
             </div>`;
     }
-
     function renderProjects(projects) {
         const grid = document.querySelector(".case-grid");
         if (!grid || !Array.isArray(projects)) return;

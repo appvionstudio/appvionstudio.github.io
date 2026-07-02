@@ -3279,3 +3279,435 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
     .section-heading.centered h2,
     .stack-section .section-heading h2 { max-width: 13ch; }
 }
+
+/* User-requested polish: phone project visuals, rounded section bands, text safety */
+.topbar,
+.topbar.is-scrolled {
+    background: transparent !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+
+.nav-links {
+    gap: 8px !important;
+    padding: 8px !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    border-radius: 18px !important;
+    background: rgba(255, 255, 255, 0.90) !important;
+    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.10) !important;
+    backdrop-filter: blur(18px);
+}
+
+.nav-links a:not(.button) {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 12px !important;
+    border-radius: 12px !important;
+}
+
+.button.nav-button {
+    border-radius: 12px !important;
+}
+
+.proof-strip,
+.services-section,
+.process-section,
+.metrics-section,
+.stack-section,
+.confidence-section,
+.cta-section {
+    margin: 22px clamp(10px, 2vw, 30px);
+    border-radius: clamp(28px, 4vw, 56px);
+    overflow: clip;
+    border: 1px solid rgba(15, 23, 42, 0.045);
+}
+
+.proof-strip,
+.services-section,
+.process-section,
+.metrics-section,
+.stack-section {
+    background: #ffffff !important;
+}
+
+.confidence-section,
+.cta-section {
+    border-color: rgba(255, 255, 255, 0.09);
+    background: var(--night) !important;
+}
+
+.work-section,
+.choice-section,
+.team-section,
+.faq-section,
+.engagement-section,
+.insights-section {
+    background: transparent !important;
+}
+
+.section-heading h2,
+.case-copy h3,
+.case-card h3,
+.service-card h3,
+.process-step h3,
+.choice-card h3,
+.engagement-card h3,
+.team-card h3,
+.insight-card h3,
+.profile-copy h1,
+.study-hero h1 {
+    overflow: visible !important;
+    text-wrap: balance;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+}
+
+.case-card,
+.service-card,
+.process-step,
+.choice-card,
+.engagement-card,
+.team-card,
+.insight-card,
+.faq-item,
+.project-card,
+.study-panel,
+.contact-route,
+.contact-form {
+    overflow-wrap: break-word;
+}
+
+.case-card p,
+.service-card p,
+.process-step p,
+.choice-card p,
+.engagement-card p,
+.team-card p,
+.insight-card p,
+.faq-item p,
+.contact-route small,
+.form-status {
+    max-width: 100%;
+    overflow: visible !important;
+}
+
+.button,
+.case-card > a {
+    white-space: normal;
+    line-height: 1.2;
+}
+
+.case-hero {
+    border-radius: 18px !important;
+}
+
+.case-visual {
+    display: grid;
+    place-items: center;
+    min-height: 410px;
+    background: radial-gradient(circle at 50% 45%, rgba(37, 99, 235, 0.10), transparent 58%), #f8fafc !important;
+}
+
+.case-visual .workflow-panel {
+    position: relative;
+    width: 128px !important;
+    min-height: 258px;
+    padding: 34px 10px 16px !important;
+    border: 5px solid #111827 !important;
+    border-radius: 24px !important;
+    background: #ffffff !important;
+    box-shadow: 0 24px 52px rgba(15, 23, 42, 0.16) !important;
+    overflow: hidden;
+}
+
+.case-visual .workflow-panel::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    width: 38px;
+    height: 8px;
+    border-radius: 99px;
+    background: #111827;
+    transform: translateX(-50%);
+}
+
+.workflow-header {
+    border: 0 !important;
+    padding: 0 0 8px !important;
+}
+
+.workflow-header span {
+    display: none;
+}
+
+.workflow-header strong {
+    display: block;
+    max-width: 100%;
+    color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
+    font-family: var(--body-font) !important;
+    font-size: 9px !important;
+    line-height: 1.2 !important;
+}
+
+.workflow-row {
+    grid-template-columns: 16px 1fr !important;
+    gap: 7px !important;
+    min-height: 30px;
+    padding: 6px !important;
+    border-radius: 7px !important;
+    background: #eef2f7 !important;
+}
+
+.workflow-row > span {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 4px !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.workflow-row strong {
+    display: block;
+    width: 54px;
+    height: 4px;
+    border-radius: 99px;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    background: #cbd5e1;
+}
+
+.workflow-row small {
+    display: block;
+    width: 34px;
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 99px;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    background: #e2e8f0;
+}
+
+.phone-visual,
+.case-card-visual.phone-visual {
+    position: relative;
+    min-height: 230px !important;
+    display: grid !important;
+    place-items: start center !important;
+    padding: 12px 22px 0 !important;
+    overflow: hidden !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.case-card-visual.phone-visual.campus {
+    background: linear-gradient(180deg, #ecfdf5, #eef9f1) !important;
+}
+
+.case-card-visual.phone-visual.data {
+    background: linear-gradient(180deg, #fff7cc, #fff2b6) !important;
+}
+
+.case-card-visual.phone-visual.event {
+    background: linear-gradient(180deg, #eef2ff, #e0f2fe) !important;
+}
+
+.portfolio-phone {
+    position: relative;
+    width: 106px;
+    height: 220px;
+    border: 4px solid #111827;
+    border-radius: 18px 18px 0 0;
+    padding: 24px 8px 9px;
+    background: #ffffff;
+    box-shadow: 0 24px 48px rgba(15, 23, 42, 0.14);
+    overflow: hidden;
+}
+
+.portfolio-speaker {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 30px;
+    height: 7px;
+    border-radius: 99px;
+    background: #111827;
+    transform: translateX(-50%);
+}
+
+.portfolio-app-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.portfolio-app-head strong {
+    min-width: 0;
+    color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
+    font-family: var(--body-font) !important;
+    font-size: 7px !important;
+    font-weight: 800;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.portfolio-app-head span {
+    color: #2563eb !important;
+    -webkit-text-fill-color: #2563eb !important;
+    font-size: 6px !important;
+    font-weight: 800;
+}
+
+.portfolio-app-list {
+    display: grid;
+    gap: 6px;
+}
+
+.portfolio-app-list span {
+    display: grid;
+    grid-template-columns: 13px 1fr;
+    align-items: center;
+    gap: 6px;
+    min-height: 24px;
+    padding: 5px;
+    border-radius: 6px;
+    background: #eef2f7;
+}
+
+.portfolio-app-list i {
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+}
+
+.portfolio-app-list b {
+    width: 46px;
+    height: 4px;
+    border-radius: 99px;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    background: #cbd5e1;
+}
+
+.portfolio-phone small {
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.portfolio-tabs {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 9px;
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+
+.portfolio-tabs i {
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    background: #dbe3ee;
+}
+
+.portfolio-tabs i:first-child {
+    background: #2563eb;
+}
+
+.case-card-visual:not(.phone-visual) > .preview-top,
+.case-card-visual:not(.phone-visual) > .announcement-card,
+.case-card-visual:not(.phone-visual) > .attendance-table,
+.case-card-visual:not(.phone-visual) > .attendance-bars,
+.case-card-visual:not(.phone-visual) > .event-ticket,
+.case-card-visual:not(.phone-visual) > .event-flow,
+.case-card-visual:not(.phone-visual) > .role-row {
+    display: none !important;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        border-radius: 18px !important;
+        padding: 10px !important;
+    }
+
+    .proof-strip,
+    .services-section,
+    .process-section,
+    .metrics-section,
+    .stack-section,
+    .confidence-section,
+    .cta-section {
+        margin: 16px 10px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 720px) {
+    .phone-visual,
+    .case-card-visual.phone-visual {
+        min-height: 220px !important;
+    }
+
+    .portfolio-phone {
+        width: 104px;
+        height: 214px;
+    }
+
+    .case-visual {
+        min-height: 310px;
+    }
+}
+
+/* Project typography refinement against supplied reference */
+.work-section .section-heading h2 {
+    max-width: 22ch;
+    font-size: clamp(34px, 3.2vw, 46px);
+}
+
+.case-copy h3 {
+    max-width: 26ch !important;
+    font-size: clamp(25px, 2.4vw, 34px) !important;
+    line-height: 1.16 !important;
+}
+
+.case-copy {
+    padding: 48px 42px !important;
+}
+
+.case-copy p {
+    max-width: 58ch;
+}
+
+.case-card h3 {
+    font-family: var(--heading-font) !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 1.15 !important;
+}
+
+.case-card p {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+}
+
+@media (max-width: 720px) {
+    .work-section .section-heading h2 {
+        max-width: 14ch;
+        font-size: 36px;
+    }
+
+    .case-copy h3 {
+        font-size: 30px !important;
+    }
+}
