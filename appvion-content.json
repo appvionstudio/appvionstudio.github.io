@@ -226,6 +226,8 @@
       "role": "Founder | Android App Developer",
       "name": "Ayyaz Sajjad",
       "description": "Leads AppVion Studio across product strategy, Android engineering, Kotlin Multiplatform systems, and premium mobile execution.",
+      "photoPositionX": "50",
+      "photoPositionY": "28",
       "profileUrl": "ayyaz-sajjad.html",
       "featured": true
     },
@@ -234,6 +236,8 @@
       "role": "Developer",
       "name": "Tayyab Sajjad",
       "description": "Supports product delivery, UI implementation, and growing development execution within the studio workflow.",
+      "photoPositionX": "50",
+      "photoPositionY": "28",
       "profileUrl": "tayyab-sajjad.html",
       "featured": false
     },
@@ -242,6 +246,8 @@
       "role": "Studio Associate",
       "name": "Momna Shah",
       "description": "Strengthens the team-facing studio presence with space for future coordination, support, and client-facing contributions.",
+      "photoPositionX": "50",
+      "photoPositionY": "28",
       "profileUrl": "momna-shah.html",
       "featured": false
     }

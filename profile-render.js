@@ -14,6 +14,17 @@
             .replace(/'/g, "&#039;");
     }
 
+    function clampPercent(value, fallback) {
+        const number = Number.parseFloat(value);
+        if (!Number.isFinite(number)) return fallback;
+        return Math.min(100, Math.max(0, number));
+    }
+
+    function photoPositionStyle(member) {
+        const x = clampPercent(member && member.photoPositionX, 50);
+        const y = clampPercent(member && member.photoPositionY, 28);
+        return `--profile-photo-x:${x}%;--profile-photo-y:${y}%;`;
+    }
     function initials(name) {
         return String(name || "AV")
             .split(/\s+/)
@@ -88,7 +99,7 @@
         });
 
         photoSlot.innerHTML = member.photoUrl
-            ? `<img src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy">`
+            ? `<img src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy" style="${photoPositionStyle(member)}">`
             : `<div class="profile-photo-placeholder">${escapeHtml(initials(member.name))}</div>`;
     }
 

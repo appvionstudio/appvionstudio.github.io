@@ -72,6 +72,8 @@ const schema = {
     ],
     team: [
         ["photoUrl", "Profile Photo URL", "url"],
+        ["photoPositionX", "Photo Focus X (%)", "number"],
+        ["photoPositionY", "Photo Focus Y (%)", "number"],
         ["role", "Role", "text"],
         ["name", "Name", "text"],
         ["description", "Description", "textarea"],
@@ -118,6 +120,8 @@ const sectionLabels = {
 
 const fieldHelp = {
     photoUrl: "Paste a direct portrait image URL. Best shape: square or 4:5, clear face, professional background.",
+    photoPositionX: "Adjust only if the face sits left or right in the frame. 50 is centered.",
+    photoPositionY: "Adjust the vertical focus. Use 22-34 for most portraits so the top of the head stays visible.",
     thumbnailUrl: "Paste one strong project image URL. This becomes the first visual proof on project cards.",
     screenshotUrls: "Paste one screenshot URL per line. Case studies can show up to 6 screenshots.",
     demoVideoUrl: "Paste a YouTube, Shorts, Drive, Loom, or hosted video URL for the case study demo button.",
@@ -463,6 +467,10 @@ function normalizeContent(data) {
     collectionTypes.forEach((type) => {
         data[type] = Array.isArray(data[type]) ? data[type] : [];
     });
+    data.team.forEach((member) => {
+        member.photoPositionX = member.photoPositionX || "50";
+        member.photoPositionY = member.photoPositionY || "28";
+    });
     return data;
 }
 
@@ -591,6 +599,8 @@ function blankItem(type) {
         else if (key === "visualItems") base[key] = "Users\nAdmin\nOps";
         else if (key === "visualRows") base[key] = "ID-01 | Active | 09:00\nID-02 | Review | 09:15";
         else if (key === "visualBars") base[key] = "54\n78\n42\n88\n66";
+        else if (key === "photoPositionX") base[key] = "50";
+        else if (key === "photoPositionY") base[key] = "28";
         else if (key === "caseStudySlug") base[key] = slugify(base.title || type);
         else if (key === "features") base[key] = "Core workflow\nAdmin visibility\nMobile-first experience";
         else if (key === "techStack") base[key] = "Android Native\nKotlin\nFirebase";
@@ -620,6 +630,8 @@ function isRequiredField(key, fieldType) {
         "techStack",
         "linkUrl",
         "photoUrl",
+        "photoPositionX",
+        "photoPositionY",
         "profileUrl",
         "demoUrl",
         "proofPoints"
@@ -630,6 +642,9 @@ function isRequiredField(key, fieldType) {
 function fieldPlaceholder(key, fieldType) {
     const placeholders = {
         photoUrl: "https://your-image-host.com/team/ayyaz.jpg",
+        photoPositionX: "50",
+        photoPositionY: "28",
+
         thumbnailUrl: "https://your-image-host.com/projects/profix-cover.jpg",
         screenshotUrls: "https://your-image-host.com/projects/profix-screen-1.jpg\nhttps://your-image-host.com/projects/profix-screen-2.jpg",
         demoVideoUrl: "https://youtu.be/your-demo-video",

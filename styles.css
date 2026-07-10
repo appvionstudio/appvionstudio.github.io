@@ -3711,3 +3711,216 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
         font-size: 30px !important;
     }
 }
+
+/* Production polish: portrait-safe team media and laptop desktop rhythm */
+.team-card {
+    grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+}
+
+.team-photo,
+.team-photo-placeholder {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+    max-height: 360px;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 0 28px !important;
+}
+
+.team-photo {
+    object-fit: cover;
+    object-position: var(--team-photo-x, 50%) var(--team-photo-y, 28%);
+    background: #eef2f7 !important;
+}
+
+.team-photo-placeholder {
+    display: grid;
+    place-items: center;
+}
+
+.profile-photo-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: var(--profile-photo-x, 50%) var(--profile-photo-y, 28%);
+}
+
+.profile-photo-slot {
+    background: #eef2f7;
+}
+
+@media (min-width: 1121px) and (max-width: 1440px) {
+    :root {
+        --container: min(1200px, calc(100% - 72px));
+    }
+
+    .topbar {
+        padding-inline: 36px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero {
+        min-height: 820px;
+        padding-top: 112px;
+        padding-bottom: 72px;
+    }
+
+    .hero-grid {
+        grid-template-columns: minmax(0, 0.9fr) minmax(390px, 0.95fr);
+        gap: 62px;
+    }
+
+    .hero-copy {
+        gap: 24px;
+    }
+
+    .hero h1 {
+        font-size: 68px;
+        line-height: 1.02;
+    }
+
+    .lead {
+        max-width: 500px;
+    }
+
+    .hero-visual,
+    .product-console,
+    .device-lab {
+        min-height: 520px;
+    }
+
+    .phone-primary {
+        width: 238px;
+        right: 104px;
+        top: 12px;
+    }
+
+    .phone-secondary {
+        width: 202px;
+        right: 8px;
+        top: 68px;
+    }
+
+    .phone-screen,
+    .compact-screen {
+        min-height: 392px;
+    }
+
+    .phone-primary .phone-screen {
+        min-height: 438px;
+    }
+
+    .section {
+        padding: 104px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 46px;
+    }
+
+    .case-grid,
+    .service-grid,
+    .choice-grid,
+    .engagement-grid,
+    .insights-grid,
+    .team-grid,
+    .projects-grid,
+    .study-grid {
+        gap: 20px;
+    }
+
+    .service-card,
+    .choice-card,
+    .insight-card,
+    .profile-detail,
+    .project-card,
+    .study-panel {
+        padding: 32px 26px;
+    }
+
+    .team-photo,
+    .team-photo-placeholder {
+        max-height: 330px;
+    }
+
+    .team-card > span,
+    .team-card h3,
+    .team-card p,
+    .team-card .button {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+    .team-card .button {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .hero-grid {
+        gap: 74px;
+    }
+
+    .team-photo,
+    .team-photo-placeholder {
+        max-height: 380px;
+    }
+}
+
+@media (max-width: 720px) {
+    .team-photo,
+    .team-photo-placeholder {
+        max-height: none;
+        margin-bottom: 24px !important;
+    }
+}
+
+/* Static labels should not look like buttons */
+.proof-logos span,
+.stack-cloud span,
+.case-tags span,
+.hero-proof span,
+.stat-pills li,
+.profile-badge span {
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    transform: none !important;
+    backdrop-filter: none !important;
+    cursor: default !important;
+}
+
+.stack-cloud span:hover,
+.proof-logos span:hover,
+.case-tags span:hover,
+.hero-proof span:hover,
+.stat-pills li:hover,
+.profile-badge span:hover {
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+.proof-logos,
+.stack-cloud,
+.case-tags,
+.hero-proof,
+.stat-pills,
+.profile-badge {
+    align-items: center;
+    gap: 12px 18px !important;
+}
+
+.stack-cloud span,
+.proof-logos span,
+.case-tags span {
+    color: var(--copy) !important;
+    -webkit-text-fill-color: var(--copy) !important;
+}

@@ -20,6 +20,17 @@
             .replace(/'/g, "&#039;");
     }
 
+    function clampPercent(value, fallback) {
+        const number = Number.parseFloat(value);
+        if (!Number.isFinite(number)) return fallback;
+        return Math.min(100, Math.max(0, number));
+    }
+
+    function photoPositionStyle(member) {
+        const x = clampPercent(member && member.photoPositionX, 50);
+        const y = clampPercent(member && member.photoPositionY, 28);
+        return `--team-photo-x:${x}%;--team-photo-y:${y}%;`;
+    }
     function getStoredContent() {
         try {
             const stored = localStorage.getItem(storageKey);
@@ -209,7 +220,7 @@
         grid.innerHTML = team.map((member) => `
             <article class="team-card ${member.featured ? "featured" : ""} reveal in-view">
                 ${member.photoUrl
-                    ? `<img class="team-photo" src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy">`
+                    ? `<img class="team-photo" src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy" style="${photoPositionStyle(member)}">`
                     : `<div class="team-photo-placeholder" aria-hidden="true">${escapeHtml(initials(member.name))}</div>`}
                 <span>${escapeHtml(member.role)}</span>
                 <h3>${escapeHtml(member.name)}</h3>
