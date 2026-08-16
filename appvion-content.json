@@ -32,7 +32,7 @@
       "contact": true
     }
   },
-  "proofLogos": ["D. Delivery", "ProFix", "WUM Connect", "Attendance Suite", "Pay Portal"],
+  "proofLogos": ["D. Delivery", "SnowGrid", "GMassPulse", "ProFix", "WUM Connect", "Attendance Suite"],
   "projects": [
     {
       "id": "d-delivery",
@@ -50,6 +50,40 @@
       "visualBars": "",
       "linkLabel": "Read the Case Study",
       "linkUrl": "https://appvionstudio.com/work/d-delivery/"
+    },
+    {
+      "id": "snowgrid",
+      "title": "SnowGrid",
+      "kicker": "Fleet dispatch platform",
+      "description": "Three-role snow removal management platform with live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and Stripe escrow payments.",
+      "status": "Live",
+      "metric": "Dispatch",
+      "theme": "event",
+      "visualLabel": "Live dispatch",
+      "visualHeadline": "4 crews active",
+      "visualDetail": "Nearest available contractor auto-matched.",
+      "visualItems": "Map area\nInstant quote\nDispatch\nPhoto proof",
+      "visualRows": "",
+      "visualBars": "",
+      "linkLabel": "Read the Case Study",
+      "linkUrl": "https://appvionstudio.com/work/snowgrid/"
+    },
+    {
+      "id": "gmasspulse",
+      "title": "GMassPulse",
+      "kicker": "Email automation platform",
+      "description": "Mobile-first outreach platform with Google OAuth, Drive lead import, personalised campaign composition, automated follow-ups, and real-time open tracking.",
+      "status": "Live",
+      "metric": "Tracking",
+      "theme": "data",
+      "visualLabel": "Live campaign feed",
+      "visualHeadline": "CAMP_766964",
+      "visualDetail": "Opens and clicks streaming in real time.",
+      "visualItems": "Import\nCompose\nTrack\nFollow up",
+      "visualRows": "",
+      "visualBars": "",
+      "linkLabel": "Read the Case Study",
+      "linkUrl": "https://appvionstudio.com/work/gmasspulse/"
     },
     {
       "id": "wum-connect",

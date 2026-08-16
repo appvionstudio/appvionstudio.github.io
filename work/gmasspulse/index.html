@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w6x06tsd9x");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMassPulse Case Study | Email Automation App Development | AppVion Studio</title>
+    <meta name="description" content="How AppVion Studio built GMassPulse — a mobile email outreach platform with Google OAuth, Drive lead import, personalised campaign composition, automated follow-ups, and real-time open tracking.">
+    <meta name="keywords" content="email automation app development, outreach platform development, Google OAuth integration, Supabase app development, campaign tracking app, SaaS mobile app development, mobile app development case study">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/work/gmasspulse/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="GMassPulse — Mobile Email Outreach Platform | AppVion Studio">
+    <meta property="og:description" content="Google OAuth, Drive lead import, personalised composition, automated follow-ups, and real-time open tracking in one mobile platform.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/work/gmasspulse/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GMassPulse — Mobile Email Outreach Platform">
+    <meta name="twitter:description" content="Campaign automation and live open tracking, built mobile-first on Google OAuth and Supabase.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "GMassPulse: a mobile-first email outreach and campaign tracking platform",
+      "description": "Case study of an email campaign automation platform engineered by AppVion Studio, covering Google OAuth, Drive lead import, personalised composition, automated follow-ups, and real-time open tracking.",
+      "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://appvionstudio.com/work/gmasspulse/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "url": "https://appvionstudio.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://appvionstudio.com/appvion-logo-icon.png"
+        }
+      },
+      "about": [
+        "Email automation app development",
+        "SaaS mobile app development",
+        "Google OAuth integration",
+        "Mobile app development"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://appvionstudio.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://appvionstudio.com/#work" },
+        { "@type": "ListItem", "position": 3, "name": "GMassPulse", "item": "https://appvionstudio.com/work/gmasspulse/" }
+      ]
+    }
+    </script>
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon.png" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Case study</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Case study navigation">
+                <a href="/#work">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section study-hero-section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / <a href="/#work">Work</a> / GMassPulse
+                    </nav>
+                </div>
+                <div class="container study-hero">
+                    <div>
+                        <p class="eyebrow">SaaS &amp; automation platform</p>
+                        <h1>GMassPulse: a mobile-first email outreach and campaign tracking platform.</h1>
+                        <p class="lead">
+                            Outreach tooling has always lived on the desktop. GMassPulse puts the whole loop &mdash; import a lead
+                            list, compose a personalised campaign, schedule follow-ups, and watch opens arrive in real time &mdash;
+                            on a phone, without shrinking a dashboard down to fit.
+                        </p>
+                        <div class="case-tags">
+                            <span>Email automation</span>
+                            <span>Google OAuth</span>
+                            <span>Supabase</span>
+                            <span>Live tracking</span>
+                            <span>Mobile-first SaaS</span>
+                        </div>
+                        <div class="hero-proof">
+                            <span>10 screens</span>
+                            <span>4 core flows</span>
+                            <span>OAuth 2.0 secured</span>
+                        </div>
+                        <div class="case-actions">
+                            <a class="button primary" href="/Demos/GMassPulse_Interactive.html" target="_blank" rel="noreferrer">Explore the Interactive Demo</a>
+                            <a class="button secondary" href="/#contact">Build something like this</a>
+                        </div>
+                    </div>
+
+                    <div class="case-visual" aria-label="GMassPulse campaign workflow">
+                        <div class="workflow-panel">
+                            <div class="workflow-header">
+                                <span>Campaign flow</span>
+                                <strong>Import to insight</strong>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>01</span>
+                                <div>
+                                    <strong>Leads imported</strong>
+                                    <small>Pulled straight from Google Drive</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>02</span>
+                                <div>
+                                    <strong>Campaign sent</strong>
+                                    <small>Personalised per recipient, rate controlled</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row live">
+                                <span>03</span>
+                                <div>
+                                    <strong>Opens streaming</strong>
+                                    <small>Live activity feed across all campaigns</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row">
+                                <span>04</span>
+                                <div>
+                                    <strong>Follow-up fired</strong>
+                                    <small>Automatic sequence, with manual override</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The problem</p>
+                    <h2>Outreach tools tell you what happened yesterday.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Context</p>
+                        <p>
+                            Sales and outreach work happens between meetings, in transit, in the gaps &mdash; but the tooling
+                            assumes you are sitting at a desk with a wide screen and an hour to spare.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">What kept breaking</p>
+                        <p>
+                            Follow-ups were manual and therefore inconsistent. Reporting arrived in batches, so by the time you
+                            knew a campaign was underperforming it had already finished sending. And the moment a prospect opened
+                            an email &mdash; the one moment when a reply actually lands &mdash; nobody was watching.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">The real requirement</p>
+                        <p>
+                            Not a mobile port of a dashboard. A product where the live activity stream is the primary surface,
+                            because on a phone the thing worth showing is what is happening right now.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The approach</p>
+                    <h2>Four flows, designed around the live stream.</h2>
+                    <p>
+                        The dashboard is a scoreboard, not a spreadsheet. Everything else in the product exists to feed it or to
+                        act on what it shows.
+                    </p>
+                </div>
+                <div class="container process-grid">
+                    <article class="process-step reveal in-view">
+                        <span>01</span>
+                        <h3>Import</h3>
+                        <p>Lead lists pulled directly from Google Drive under OAuth 2.0, so no credentials are handled by the app and no CSV is emailed around.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>02</span>
+                        <h3>Compose</h3>
+                        <p>Campaign composition with spin-syntax variation, so every recipient receives a genuinely distinct message rather than an obvious template.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>03</span>
+                        <h3>Track</h3>
+                        <p>A live activity feed streaming sends, opens, and clicks across every active campaign simultaneously, with a lifetime scoreboard above it.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>04</span>
+                        <h3>Follow up</h3>
+                        <p>Automated sequences triggered by recipient behaviour, plus a manual override to fire an individual targeted message the moment it matters.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Engineering highlights</p>
+                    <h2>The parts that were harder than they look.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Real-time tracking stream</p>
+                        <p>
+                            Open and click events arrive continuously and out of order across multiple concurrent campaigns.
+                            Rendering that as a calm, readable feed on a phone screen &mdash; rather than a flickering wall of
+                            rows &mdash; was more of a state-management problem than a display one.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">OAuth without credential handling</p>
+                        <p>
+                            Google OAuth 2.0 on top of Supabase means the app is granted scoped access rather than ever holding
+                            a user's password. Drive import runs through the same grant, so lead lists never leave the user's
+                            own Google account boundary before being read.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Deliverability engine</p>
+                        <p>
+                            Sending is rate-controlled and paced rather than dumped, and message bodies vary per recipient.
+                            Both exist for the same reason: bulk-identical, burst-sent mail is what spam filtering is designed
+                            to catch, and reputation is far easier to protect than to repair.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Automation with a manual override</p>
+                        <p>
+                            Sequences run on their own, but every automated step can be interrupted by a human acting on a live
+                            signal. Full automation is efficient; the reply usually comes from the one message a person chose
+                            to send at exactly the right moment.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section metrics-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Scope at a glance</p>
+                    <h2>What the build actually covers.</h2>
+                </div>
+                <div class="container metric-grid">
+                    <article>
+                        <strong>10</strong>
+                        <span>Designed and built screens across the full campaign lifecycle.</span>
+                    </article>
+                    <article>
+                        <strong>04</strong>
+                        <span>Core flows: import, compose, track, and follow up.</span>
+                    </article>
+                    <article>
+                        <strong>2.0</strong>
+                        <span>Google OAuth grant scope &mdash; no user credentials ever handled by the app.</span>
+                    </article>
+                    <article>
+                        <strong>Live</strong>
+                        <span>Open and click events streamed to the dashboard as they happen.</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section stack-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Technology</p>
+                    <h2>The stack behind GMassPulse.</h2>
+                </div>
+                <div class="container stack-cloud">
+                    <span>Mobile App</span>
+                    <span>Google OAuth 2.0</span>
+                    <span>Google Drive API</span>
+                    <span>Supabase</span>
+                    <span>Realtime Streams</span>
+                    <span>Email Automation</span>
+                    <span>Spin-Syntax Composition</span>
+                    <span>Scheduled Follow-ups</span>
+                    <span>Open &amp; Click Tracking</span>
+                    <span>Send-Rate Control</span>
+                    <span>Campaign Analytics</span>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Have a SaaS idea that belongs on a phone?</h2>
+                    <p>
+                        Automation, live data, third-party API integration, OAuth &mdash; if the product only exists as a desktop
+                        dashboard today, there is usually a sharper mobile-first version of it.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="GMassPulse case study strategy call">Book a 20-min App Strategy Session</a>
+                        <a class="button secondary" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" data-contact-action="whatsapp" data-contact-label="GMassPulse case study WhatsApp">WhatsApp us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <a href="/#contact">Start a project</a>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
