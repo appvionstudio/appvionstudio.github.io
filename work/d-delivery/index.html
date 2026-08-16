@@ -154,41 +154,8 @@
                         </div>
                     </div>
 
-                    <div class="case-visual" aria-label="D. Delivery rider workflow">
-                        <div class="workflow-panel">
-                            <div class="workflow-header">
-                                <span>Rider job flow</span>
-                                <strong>Evidence at every step</strong>
-                            </div>
-                            <div class="workflow-row complete">
-                                <span>01</span>
-                                <div>
-                                    <strong>Job broadcast</strong>
-                                    <small>Search radius expands from 3km until a rider accepts</small>
-                                </div>
-                            </div>
-                            <div class="workflow-row complete">
-                                <span>02</span>
-                                <div>
-                                    <strong>Pickup video</strong>
-                                    <small>Device condition recorded before the parcel moves</small>
-                                </div>
-                            </div>
-                            <div class="workflow-row live">
-                                <span>03</span>
-                                <div>
-                                    <strong>Live tracking</strong>
-                                    <small>Traffic-aware ETA streamed to the customer</small>
-                                </div>
-                            </div>
-                            <div class="workflow-row">
-                                <span>04</span>
-                                <div>
-                                    <strong>Drop-off proof</strong>
-                                    <small>Second video plus recipient e-signature</small>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="case-visual">
+                        <img class="case-visual-shot" src="/assets/screens/ddelivery-video-proof.webp" alt="D. Delivery rider app recording the mandatory pickup proof video of a parcel" width="540" height="1170" fetchpriority="high" decoding="async">
                     </div>
                 </div>
             </section>
@@ -258,6 +225,50 @@
                         <h3>Shared backend</h3>
                         <p>Postgres with row-level security, realtime channels, storage for delivery evidence, edge functions for push dispatch, and scheduled jobs for the dispatch loop.</p>
                     </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Interface design</p>
+                    <h2>The product design system the apps were built against.</h2>
+                    <p>
+                        The customer booking flow, IMEI capture, live tracking, and the rider's proof-of-delivery sequence.
+                    </p>
+                </div>
+                <div class="container screens-grid">
+                    <figure>
+                        <img src="/assets/screens/ddelivery-imei-scanner.webp" alt="D. Delivery IMEI barcode scanner with a manual entry fallback" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>IMEI Capture</strong><span>Customer &middot; Scan or enter manually</span></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/assets/screens/ddelivery-order-placed.webp" alt="D. Delivery order confirmation screen preparing live tracking" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>Order Placed</strong><span>Customer &middot; Booking confirmed</span></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/assets/screens/ddelivery-live-tracking.webp" alt="D. Delivery live order tracking with rider position, ETA and pickup proof video" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>Live Tracking</strong><span>Customer &middot; ETA and pickup proof</span></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/assets/screens/ddelivery-delivery-receipt.webp" alt="D. Delivery delivery receipt showing IMEI, distance and full fare breakdown" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>Delivery Receipt</strong><span>Customer &middot; IMEI and fare breakdown</span></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/assets/screens/ddelivery-rider-job-alert.webp" alt="D. Delivery rider job broadcast alert and admin-assigned job acknowledgement" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>Job Alert</strong><span>Rider &middot; Broadcast and dispatch</span></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/assets/screens/ddelivery-video-proof.webp" alt="D. Delivery rider app recording a mandatory proof of delivery video" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>Video Proof</strong><span>Rider &middot; Pickup and drop-off</span></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/assets/screens/ddelivery-signature.webp" alt="D. Delivery recipient e-signature pad for confirming receipt" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>E-Signature</strong><span>Rider &middot; Recipient confirms receipt</span></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/assets/screens/ddelivery-rate-delivery.webp" alt="D. Delivery customer rating screen after a completed delivery" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>Rate Delivery</strong><span>Customer &middot; Post-delivery feedback</span></figcaption>
+                    </figure>
                 </div>
             </section>
 
