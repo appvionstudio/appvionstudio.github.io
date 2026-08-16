@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w6x06tsd9x");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFix Case Study | Property Maintenance &amp; Work Order App | AppVion Studio</title>
+    <meta name="description" content="How AppVion Studio built ProFix — a Kotlin Multiplatform property maintenance platform connecting property managers and contractors through work orders, proof of work, and manager approval.">
+    <meta name="keywords" content="property maintenance app development, work order management app, field service app, contractor management software, Kotlin Multiplatform case study, Supabase app development">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/work/profix/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="ProFix — Property Maintenance &amp; Work Order Platform | AppVion Studio">
+    <meta property="og:description" content="A Kotlin Multiplatform maintenance workflow: contractor assignment, proof of work, progress visibility, and manager approval in one mobile system.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/work/profix/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProFix — Property Maintenance &amp; Work Order Platform">
+    <meta name="twitter:description" content="Contractor assignment, proof of work, and manager approval in one Kotlin Multiplatform system.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "ProFix: a Kotlin Multiplatform property maintenance and work order platform",
+      "description": "Case study of a property maintenance platform engineered by AppVion Studio, covering work order dispatch, contractor onboarding, proof of work, and manager approval.",
+      "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://appvionstudio.com/work/profix/" },
+      "author": { "@type": "Organization", "name": "AppVion Studio", "url": "https://appvionstudio.com/" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "logo": { "@type": "ImageObject", "url": "https://appvionstudio.com/appvion-logo-icon.png" }
+      },
+      "about": ["Property maintenance software", "Work order management", "Kotlin Multiplatform", "Field service app development"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://appvionstudio.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://appvionstudio.com/work/" },
+        { "@type": "ListItem", "position": 3, "name": "ProFix", "item": "https://appvionstudio.com/work/profix/" }
+      ]
+    }
+    </script>
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon.png" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Case study</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Case study navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section study-hero-section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / <a href="/work/">Work</a> / ProFix
+                    </nav>
+                </div>
+                <div class="container study-hero">
+                    <div>
+                        <p class="eyebrow">Property maintenance platform</p>
+                        <h1>ProFix: a field service command layer for modern maintenance teams.</h1>
+                        <p class="lead">
+                            A Kotlin Multiplatform maintenance workflow connecting property managers and the contractors who do
+                            the work &mdash; job assignment, proof of work, progress visibility, and manager approval in one
+                            system instead of four phone calls and a paper docket.
+                        </p>
+                        <div class="case-tags">
+                            <span>Kotlin Multiplatform</span>
+                            <span>Compose Multiplatform</span>
+                            <span>Supabase</span>
+                            <span>Work orders</span>
+                            <span>Multi-role</span>
+                        </div>
+                        <div class="hero-proof">
+                            <span>3 roles</span>
+                            <span>Android &amp; iOS from one codebase</span>
+                            <span>Offline-capable</span>
+                        </div>
+                        <div class="case-actions">
+                            <a class="button primary" href="https://www.youtube.com/shorts/xUjasnRtmkQ" target="_blank" rel="noreferrer">Watch the Demo</a>
+                            <a class="button secondary" href="/#contact">Build something like this</a>
+                        </div>
+                    </div>
+
+                    <div class="case-visual">
+                        <img class="case-visual-shot" src="/assets/screens/profix-dashboard.webp" alt="ProFix dashboard showing open, active and completed work order counts with sync status" width="540" height="1170" fetchpriority="high" decoding="async">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The problem</p>
+                    <h2>Maintenance work is coordinated by whoever is willing to keep chasing it.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Context</p>
+                        <p>
+                            A property manager looking after multiple sites is the hub of every maintenance job &mdash; taking
+                            the report, finding an available contractor, confirming the work happened, and answering for it if
+                            an owner asks later.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">What kept breaking</p>
+                        <p>
+                            Jobs lived in phone calls and messages, so nothing was searchable. Nobody could say which jobs were
+                            open right now without asking around. And "it's done" was a claim, not a record &mdash; which made
+                            invoice disputes unwinnable in either direction.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">The real requirement</p>
+                        <p>
+                            A shared state that all three parties read from and write to: the manager who raises the job, the
+                            contractor who does it, and the admin who oversees the whole portfolio.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Inside the app</p>
+                    <h2>Screens from the build.</h2>
+                </div>
+                <div class="container screens-grid">
+                    <figure>
+                        <img src="/assets/screens/profix-sign-in.webp" alt="ProFix sign in screen" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>Sign In</strong><span>Role-based entry</span></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/assets/screens/profix-dashboard.webp" alt="ProFix dashboard with work order counts and sync status" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>Dashboard</strong><span>Open, active and done</span></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/assets/screens/profix-settings.webp" alt="ProFix settings screen with invite codes and account management" width="540" height="1170" loading="lazy" decoding="async">
+                        <figcaption><strong>Settings</strong><span>Invite codes and account</span></figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The approach</p>
+                    <h2>Three roles, one shared job state.</h2>
+                </div>
+                <div class="container process-grid">
+                    <article class="process-step reveal in-view">
+                        <span>01</span>
+                        <h3>Property manager</h3>
+                        <p>Raise a work order against a property, assign it to a contractor from the directory, and watch its status move without chasing anyone.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>02</span>
+                        <h3>Contractor</h3>
+                        <p>Join by invite code, see assigned jobs, work through them, and attach proof of completion from the phone already in hand.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>03</span>
+                        <h3>Admin</h3>
+                        <p>Oversee the full portfolio: every property, every contractor, every open job, plus billing and plan management.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>04</span>
+                        <h3>Shared core</h3>
+                        <p>Domain models, repositories, and business rules live in shared Kotlin so Android and iOS cannot disagree about what a job's status means.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Engineering highlights</p>
+                    <h2>The parts that were harder than they look.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Invite-code onboarding</p>
+                        <p>
+                            Contractors are not customers &mdash; they should not self-register into someone else's portfolio.
+                            Access is granted by a manager-generated invite code, so the contractor directory stays a curated
+                            list rather than an open sign-up form.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Proof of work</p>
+                        <p>
+                            Before and after records attach to the job itself, not to a chat thread. When an invoice is queried
+                            months later, the evidence is already sitting on the record rather than somewhere in a phone's
+                            camera roll.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Sync you can see</p>
+                        <p>
+                            The dashboard states its own sync status rather than silently assuming it is current. A field worker
+                            with poor signal can tell the difference between "nothing to do" and "we have not heard from the
+                            server lately" &mdash; a distinction most apps quietly collapse.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Shared logic, native shells</p>
+                        <p>
+                            Compose Multiplatform with Koin dependency injection and a local SQLDelight cache. Business rules
+                            are written once; each platform keeps its own native presentation.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section stack-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Technology</p>
+                    <h2>The stack behind ProFix.</h2>
+                </div>
+                <div class="container stack-cloud">
+                    <span>Kotlin Multiplatform</span>
+                    <span>Compose Multiplatform</span>
+                    <span>Material 3</span>
+                    <span>Coroutines &amp; Flow</span>
+                    <span>Supabase</span>
+                    <span>Supabase Auth</span>
+                    <span>SQLDelight</span>
+                    <span>Koin</span>
+                    <span>Role-Based Access</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">More case studies</p>
+                    <h2>Other operational systems we have built.</h2>
+                </div>
+                <div class="container case-grid">
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Logistics platform</span>
+                            <h3>D. Delivery</h3>
+                            <p>Three-app Kotlin Multiplatform delivery platform with dual video proof of delivery, expanding-radius dispatch, and server-enforced cash reconciliation.</p>
+                        </div>
+                        <a href="/work/d-delivery/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Fleet dispatch platform</span>
+                            <h3>SnowGrid</h3>
+                            <p>Three-role snow removal management platform with live dispatch mapping, area measurement, photo verification, and Stripe escrow.</p>
+                        </div>
+                        <a href="/work/snowgrid/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">All work</span>
+                            <h3>Full portfolio</h3>
+                            <p>Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.</p>
+                        </div>
+                        <a href="/work/">Browse all case studies</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Managing properties, crews, or contractors?</h2>
+                    <p>
+                        Job assignment, proof of work, and getting paid for it &mdash; if that runs on phone calls and a
+                        spreadsheet today, it is usually a strong candidate for the same treatment.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="ProFix case study strategy call">Book a 20-min App Strategy Session</a>
+                        <a class="button secondary" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" data-contact-action="whatsapp" data-contact-label="ProFix case study WhatsApp">WhatsApp us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <a href="/#contact">Start a project</a>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

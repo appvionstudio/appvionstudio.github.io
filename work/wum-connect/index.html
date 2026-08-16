@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w6x06tsd9x");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WUM Connect Case Study | University App Development | AppVion Studio</title>
+    <meta name="description" content="How AppVion Studio built WUM Connect — a role-based university communication app with real-time announcements, faculty and student management, results, and push notifications on Firebase.">
+    <meta name="keywords" content="university app development, campus app development, education app development, student portal app, Firebase app development, role based app, Jetpack Compose case study">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/work/wum-connect/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="WUM Connect — University Communication Platform | AppVion Studio">
+    <meta property="og:description" content="Role-based campus communication with real-time announcements, faculty and student management, and push notifications.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/work/wum-connect/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WUM Connect — University Communication Platform">
+    <meta name="twitter:description" content="Role-based campus communication built on Jetpack Compose and Firebase.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "WUM Connect: role-based university communication on Jetpack Compose and Firebase",
+      "description": "Case study of a university communication platform engineered by AppVion Studio, covering real-time announcements, role-based access, faculty and student management, and results publishing.",
+      "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://appvionstudio.com/work/wum-connect/" },
+      "author": { "@type": "Organization", "name": "AppVion Studio", "url": "https://appvionstudio.com/" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "logo": { "@type": "ImageObject", "url": "https://appvionstudio.com/appvion-logo-icon.png" }
+      },
+      "about": ["University app development", "Education technology", "Jetpack Compose", "Firebase"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://appvionstudio.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://appvionstudio.com/work/" },
+        { "@type": "ListItem", "position": 3, "name": "WUM Connect", "item": "https://appvionstudio.com/work/wum-connect/" }
+      ]
+    }
+    </script>
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon.png" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Case study</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Case study navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section study-hero-section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / <a href="/work/">Work</a> / WUM Connect
+                    </nav>
+                </div>
+                <div class="container study-hero">
+                    <div>
+                        <p class="eyebrow">University communication platform</p>
+                        <h1>WUM Connect: one campus announcement that actually reaches everyone.</h1>
+                        <p class="lead">
+                            A role-based university app where administrators, faculty, and students each see a different
+                            product built on the same data. Real-time announcements, faculty and student records, results
+                            publishing, and push notifications &mdash; replacing notice boards, WhatsApp groups, and word of mouth.
+                        </p>
+                        <div class="case-tags">
+                            <span>Jetpack Compose</span>
+                            <span>Firebase</span>
+                            <span>Hilt</span>
+                            <span>Role-based access</span>
+                            <span>Push notifications</span>
+                        </div>
+                        <div class="hero-proof">
+                            <span>3 user roles</span>
+                            <span>Real-time announcements</span>
+                            <span>Offline-friendly</span>
+                        </div>
+                        <div class="case-actions">
+                            <a class="button primary" href="https://youtu.be/9I1OX1Z4w-Q" target="_blank" rel="noreferrer">Watch the Demo</a>
+                            <a class="button secondary" href="/#contact">Build something like this</a>
+                        </div>
+                    </div>
+
+                    <div class="case-visual" aria-label="WUM Connect announcement flow">
+                        <div class="workflow-panel">
+                            <div class="workflow-header">
+                                <span>Announcement flow</span>
+                                <strong>One post, every role</strong>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>01</span>
+                                <div>
+                                    <strong>Admin publishes</strong>
+                                    <small>Targeted at the roles that need it</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row live">
+                                <span>02</span>
+                                <div>
+                                    <strong>Pushed instantly</strong>
+                                    <small>Firebase messaging to every device</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row">
+                                <span>03</span>
+                                <div>
+                                    <strong>Readable offline</strong>
+                                    <small>Cached locally once delivered</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The problem</p>
+                    <h2>A campus announcement is only as good as its worst distribution channel.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Context</p>
+                        <p>
+                            University information is time-sensitive and role-specific. An exam reschedule matters urgently to
+                            one cohort and not at all to another, and it has to arrive before the exam, not after.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">What kept breaking</p>
+                        <p>
+                            Notices lived on physical boards, in unofficial WhatsApp groups, and in forwarded screenshots.
+                            There was no way to tell who had actually been reached, and no way to stop a stale notice
+                            circulating for weeks after it was superseded.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">The real requirement</p>
+                        <p>
+                            A single authoritative source with role-aware delivery &mdash; so the university publishes once,
+                            the right people are notified, and the current version is the only one visible.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The approach</p>
+                    <h2>Three roles, one Firestore-backed source of truth.</h2>
+                </div>
+                <div class="container process-grid">
+                    <article class="process-step reveal in-view">
+                        <span>01</span>
+                        <h3>Administration</h3>
+                        <p>Publish announcements, manage faculty and student records, oversee departments and admissions information, and send targeted notifications.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>02</span>
+                        <h3>Faculty</h3>
+                        <p>Read announcements relevant to teaching staff, and publish results for their own students without going through an administrator.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>03</span>
+                        <h3>Students</h3>
+                        <p>A single feed of everything that applies to them &mdash; announcements, results, departmental information, and admissions detail.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>04</span>
+                        <h3>Shared backend</h3>
+                        <p>Firebase Authentication for identity, Firestore for live data, Storage for attachments, and Cloud Messaging for delivery.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Engineering highlights</p>
+                    <h2>The parts that were harder than they look.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Role is a data boundary, not a UI toggle</p>
+                        <p>
+                            Each role gets its own navigation graph and its own set of screens rather than one screen with
+                            hidden buttons. A student's build has no path to an admin action at all, which is a stronger
+                            guarantee than a disabled control.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Announcements that arrive</p>
+                        <p>
+                            Firestore keeps the feed live for anyone with the app open; Cloud Messaging reaches everyone who
+                            does not. Both paths write to the same record, so an announcement cannot exist as a notification
+                            without also existing in the feed.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Bulk student migration</p>
+                        <p>
+                            Onboarding an existing cohort is the unglamorous part that decides whether a campus app gets used.
+                            A dedicated migration flow imports student records in bulk rather than expecting an administrator
+                            to type in a year group by hand.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Offline-friendly reading</p>
+                        <p>
+                            Firestore's local cache plus DataStore-held preferences mean an announcement already delivered
+                            stays readable on a patchy campus connection, rather than showing a blank screen.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section stack-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Technology</p>
+                    <h2>The stack behind WUM Connect.</h2>
+                </div>
+                <div class="container stack-cloud">
+                    <span>Kotlin</span>
+                    <span>Jetpack Compose</span>
+                    <span>Material 3</span>
+                    <span>Hilt</span>
+                    <span>Coroutines &amp; Flow</span>
+                    <span>Firebase Auth</span>
+                    <span>Cloud Firestore</span>
+                    <span>Firebase Storage</span>
+                    <span>Firebase Cloud Messaging</span>
+                    <span>DataStore</span>
+                    <span>Navigation Compose</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">More case studies</p>
+                    <h2>Other systems we have built.</h2>
+                </div>
+                <div class="container case-grid">
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Data-heavy utility</span>
+                            <h3>Attendance Management</h3>
+                            <p>Multi-role institutional attendance with offline capture, background sync, analytics, and an append-only audit log.</p>
+                        </div>
+                        <a href="/work/attendance-management/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Events platform</span>
+                            <h3>Sports Society Events</h3>
+                            <p>Event coordination for a university sports society with registrations, per-event chat, leaderboards, and coach performance tracking.</p>
+                        </div>
+                        <a href="/work/sports-society-events/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">All work</span>
+                            <h3>Full portfolio</h3>
+                            <p>Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.</p>
+                        </div>
+                        <a href="/work/">Browse all case studies</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Running an institution on notice boards and group chats?</h2>
+                    <p>
+                        Announcements, records, results, and role-specific access are a well-understood problem with a well-understood
+                        shape. Bring the workflow and we will scope it properly.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="WUM Connect case study strategy call">Book a 20-min App Strategy Session</a>
+                        <a class="button secondary" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" data-contact-action="whatsapp" data-contact-label="WUM Connect case study WhatsApp">WhatsApp us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <a href="/#contact">Start a project</a>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

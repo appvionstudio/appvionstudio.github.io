@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w6x06tsd9x");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Society Events Case Study | Event Management App | AppVion Studio</title>
+    <meta name="description" content="How AppVion Studio built a sports society events platform — trial and fixture registration, per-event chat, leaderboards, and coach performance tracking across three user roles.">
+    <meta name="keywords" content="event management app development, sports app development, event registration app, leaderboard app, university society app, Jetpack Compose case study, Firebase event app">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/work/sports-society-events/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="Sports Society Events — Event Management Platform | AppVion Studio">
+    <meta property="og:description" content="Registration, per-event chat, leaderboards, and coach performance tracking in one mobile platform.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/work/sports-society-events/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sports Society Events — Event Management Platform">
+    <meta name="twitter:description" content="Registration, per-event chat, leaderboards, and performance tracking across three roles.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Sports Society Events: registration, chat, leaderboards and performance tracking",
+      "description": "Case study of a sports society event platform engineered by AppVion Studio, covering event registration, per-event chat, leaderboards, and coach performance tracking across three roles.",
+      "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://appvionstudio.com/work/sports-society-events/" },
+      "author": { "@type": "Organization", "name": "AppVion Studio", "url": "https://appvionstudio.com/" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "logo": { "@type": "ImageObject", "url": "https://appvionstudio.com/appvion-logo-icon.png" }
+      },
+      "about": ["Event management app development", "Sports technology", "Jetpack Compose", "Firebase"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://appvionstudio.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://appvionstudio.com/work/" },
+        { "@type": "ListItem", "position": 3, "name": "Sports Society Events", "item": "https://appvionstudio.com/work/sports-society-events/" }
+      ]
+    }
+    </script>
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon.png" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Case study</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Case study navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section study-hero-section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / <a href="/work/">Work</a> / Sports Society Events
+                    </nav>
+                </div>
+                <div class="container study-hero">
+                    <div>
+                        <p class="eyebrow">Events platform</p>
+                        <h1>Sports Society Events: trials, fixtures, and results in one place.</h1>
+                        <p class="lead">
+                            A sports society runs on sign-up sheets, group chats, and a coach's notebook. This replaces all
+                            three &mdash; event listings with real registration, per-event chat, leaderboards, and performance
+                            tracking that follows a participant across the season.
+                        </p>
+                        <div class="case-tags">
+                            <span>Jetpack Compose</span>
+                            <span>Firebase</span>
+                            <span>Material 3</span>
+                            <span>Real-time chat</span>
+                            <span>Multi-role</span>
+                        </div>
+                        <div class="hero-proof">
+                            <span>3 user roles</span>
+                            <span>Live event chat</span>
+                            <span>Season leaderboards</span>
+                        </div>
+                        <div class="case-actions">
+                            <a class="button primary" href="https://youtube.com/shorts/1dSV-00hZr4" target="_blank" rel="noreferrer">Watch the Demo</a>
+                            <a class="button secondary" href="/#contact">Build something like this</a>
+                        </div>
+                    </div>
+
+                    <div class="case-visual" aria-label="Event participation flow">
+                        <div class="workflow-panel">
+                            <div class="workflow-header">
+                                <span>Event flow</span>
+                                <strong>Announce to leaderboard</strong>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>01</span>
+                                <div>
+                                    <strong>Event published</strong>
+                                    <small>Trials and fixtures with full detail</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>02</span>
+                                <div>
+                                    <strong>Participants register</strong>
+                                    <small>A real roster, not a comment thread</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row live">
+                                <span>03</span>
+                                <div>
+                                    <strong>Event chat live</strong>
+                                    <small>Scoped to the people actually attending</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row">
+                                <span>04</span>
+                                <div>
+                                    <strong>Performance recorded</strong>
+                                    <small>Coach scoring feeds the leaderboard</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The problem</p>
+                    <h2>Nobody knows who is actually turning up.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Context</p>
+                        <p>
+                            A society runs trials, fixtures, and training sessions across several sports at once, with a
+                            membership that changes every intake and coaches who only see their own group.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">What kept breaking</p>
+                        <p>
+                            "Interested" in a group chat is not a registration, so numbers were guesswork until the day.
+                            Announcements reached whoever happened to be in the right chat. And performance across a season
+                            lived in a coach's own notes, so selection decisions were hard to explain.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">The real requirement</p>
+                        <p>
+                            A registration that means something, a conversation scoped to the people in the event, and a
+                            performance record that survives past the end of the fixture.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The approach</p>
+                    <h2>Three roles built around the event record.</h2>
+                </div>
+                <div class="container process-grid">
+                    <article class="process-step reveal in-view">
+                        <span>01</span>
+                        <h3>Participant</h3>
+                        <p>Browse and filter events, register, keep a personal list of registrations, join the event chat, and see standing on the leaderboard.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>02</span>
+                        <h3>Coach</h3>
+                        <p>See who registered, run the event, and record performance against individual participants so selection has evidence behind it.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>03</span>
+                        <h3>Administrator</h3>
+                        <p>Create and manage events across sports, oversee participation, and review performance across the whole society.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>04</span>
+                        <h3>Shared backend</h3>
+                        <p>Firebase Authentication for role-gated access and Firestore for events, registrations, chat messages, and performance records.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Engineering highlights</p>
+                    <h2>The parts that were harder than they look.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Chat scoped to an event</p>
+                        <p>
+                            The chat belongs to the event rather than to a permanent group, so it appears with the fixture and
+                            stops mattering when the fixture is over. That single scoping choice is what keeps it useful instead
+                            of becoming another muted group.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Performance to leaderboard</p>
+                        <p>
+                            A coach's score against a participant is the same record the leaderboard reads. There is no separate
+                            tally to reconcile, which is how season standings usually drift out of agreement with reality.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Role-gated navigation</p>
+                        <p>
+                            Each role enters its own navigation graph after authentication. A participant's build has no route
+                            to a coach's scoring screen at all, rather than hiding it behind a disabled control.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Filtering that matches reality</p>
+                        <p>
+                            A society member cares about two or three sports, not twenty. Filtering is a first-class part of the
+                            event list rather than a secondary screen, because an unfiltered feed is the same as no feed.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section stack-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Technology</p>
+                    <h2>The stack behind Sports Society Events.</h2>
+                </div>
+                <div class="container stack-cloud">
+                    <span>Kotlin</span>
+                    <span>Jetpack Compose</span>
+                    <span>Material 3</span>
+                    <span>Coroutines &amp; Flow</span>
+                    <span>Firebase Auth</span>
+                    <span>Cloud Firestore</span>
+                    <span>Navigation Compose</span>
+                    <span>Real-time Chat</span>
+                    <span>Role-Based Access</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">More case studies</p>
+                    <h2>Other systems we have built.</h2>
+                </div>
+                <div class="container case-grid">
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">University product</span>
+                            <h3>WUM Connect</h3>
+                            <p>Role-based campus communication with real-time announcements, faculty and student management, and push notifications.</p>
+                        </div>
+                        <a href="/work/wum-connect/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Data-heavy utility</span>
+                            <h3>Attendance Management</h3>
+                            <p>Multi-role institutional attendance with offline capture, background sync, analytics, and an append-only audit log.</p>
+                        </div>
+                        <a href="/work/attendance-management/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">All work</span>
+                            <h3>Full portfolio</h3>
+                            <p>Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.</p>
+                        </div>
+                        <a href="/work/">Browse all case studies</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Coordinating events, teams, or memberships?</h2>
+                    <p>
+                        Registration, communication, and a record that lasts past the event are the three pieces most community
+                        platforms get wrong. Bring the workflow and we will scope it properly.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Sports Society case study strategy call">Book a 20-min App Strategy Session</a>
+                        <a class="button secondary" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" data-contact-action="whatsapp" data-contact-label="Sports Society case study WhatsApp">WhatsApp us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <a href="/#contact">Start a project</a>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
