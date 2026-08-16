@@ -90,6 +90,7 @@
         snowgrid: "/assets/screens/snowgrid-dispatch-board.webp",
         gmasspulse: "/assets/screens/gmasspulse-pulse-dashboard.webp",
         profix: "/assets/screens/profix-dashboard.webp",
+        wumconnect: "/assets/screens/wumconnect-student-dashboard.webp",
         propfix: "/assets/screens/profix-dashboard.webp"
     };
 
@@ -108,9 +109,14 @@
         const title = escapeHtml(project.title || "Product");
         const shot = screenshotFor(project);
         if (shot) {
+            // Keep the card's theme tint — the frame replaces the generated mockup,
+            // not the themed background it sits on.
+            const shotTheme = escapeHtml(project.theme || "campus");
             return `
-            <div class="case-card-visual shot-visual">
-                <img src="${escapeHtml(shot)}" alt="${title} app screen" loading="lazy" decoding="async">
+            <div class="case-card-visual ${shotTheme} shot-visual">
+                <div class="shot-phone">
+                    <img src="${escapeHtml(shot)}" alt="${title} app screen" loading="lazy" decoding="async">
+                </div>
             </div>`;
         }
         const status = escapeHtml(project.status || "Live");
