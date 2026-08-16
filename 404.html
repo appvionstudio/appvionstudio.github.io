@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | AppVion Studio</title>
+    <meta name="description" content="This page could not be found. Browse AppVion Studio's mobile app development case studies and services instead.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon.png" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Elite mobile products</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Primary navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">404</p>
+                    <h1>That page does not exist.</h1>
+                    <p>
+                        The link may be outdated, or the address may have a typo. Everything below is still where it should be.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="/">Back to Home</a>
+                        <a class="button secondary" href="/work/">Browse Case Studies</a>
+                    </div>
+                </div>
+
+                <div class="container case-grid">
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Logistics platform</span>
+                            <h3>D. Delivery</h3>
+                            <p>Three-app Kotlin Multiplatform delivery platform with dual video proof of delivery and expanding-radius dispatch.</p>
+                        </div>
+                        <a href="/work/d-delivery/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Fleet dispatch platform</span>
+                            <h3>SnowGrid</h3>
+                            <p>Three-role dispatch platform with live mapping, area measurement, photo verification, and Stripe escrow.</p>
+                        </div>
+                        <a href="/work/snowgrid/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Email automation platform</span>
+                            <h3>GMassPulse</h3>
+                            <p>Mobile-first outreach platform with Google OAuth, automated follow-ups, and real-time open tracking.</p>
+                        </div>
+                        <a href="/work/gmasspulse/">Read the Case Study</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <a href="/#contact">Start a project</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -3924,3 +3924,11 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
     color: var(--copy) !important;
     -webkit-text-fill-color: var(--copy) !important;
 }
+
+/* ============================================================
+   MULTIPLE FLAGSHIP CASE BLOCKS
+   .container is a plain block, so sibling .case-hero articles
+   have no gap between them. .case-grid carries its own
+   margin-top; .case-hero does not.
+   ============================================================ */
+.case-hero + .case-hero { margin-top: 18px; }

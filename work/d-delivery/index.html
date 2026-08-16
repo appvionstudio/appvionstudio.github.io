@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w6x06tsd9x");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D. Delivery Case Study | Kotlin Multiplatform Logistics App Development | AppVion Studio</title>
+    <meta name="description" content="How AppVion Studio designed and engineered D. Delivery — a three-app Kotlin Multiplatform logistics platform with dual video proof of delivery, expanding-radius dispatch, live GPS tracking, and COD cash reconciliation.">
+    <meta name="keywords" content="logistics app development, delivery app development, courier app development, Kotlin Multiplatform case study, proof of delivery app, rider tracking app, COD reconciliation app, mobile app development case study, Android app development Pakistan">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/work/d-delivery/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="D. Delivery — Kotlin Multiplatform Logistics Platform | AppVion Studio">
+    <meta property="og:description" content="A three-app delivery platform built around mandatory dual video proof of delivery, expanding-radius dispatch, and server-enforced money integrity.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/work/d-delivery/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="D. Delivery — Kotlin Multiplatform Logistics Platform">
+    <meta name="twitter:description" content="Dual video proof of delivery, expanding-radius dispatch, live tracking, and COD reconciliation in one KMP codebase.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "D. Delivery: a Kotlin Multiplatform logistics platform built around verifiable proof of delivery",
+      "description": "Case study of a three-app delivery and courier platform engineered by AppVion Studio, covering dual video proof of delivery, expanding-radius rider dispatch, live GPS tracking, and cash-on-delivery reconciliation.",
+      "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://appvionstudio.com/work/d-delivery/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "url": "https://appvionstudio.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://appvionstudio.com/appvion-logo-icon.png"
+        }
+      },
+      "about": [
+        "Logistics app development",
+        "Delivery app development",
+        "Kotlin Multiplatform",
+        "Proof of delivery",
+        "Mobile app development"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://appvionstudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Work",
+          "item": "https://appvionstudio.com/work/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "D. Delivery",
+          "item": "https://appvionstudio.com/work/d-delivery/"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon.png" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Case study</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Case study navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section study-hero-section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / <a href="/work/">Work</a> / D. Delivery
+                    </nav>
+                </div>
+                <div class="container study-hero">
+                    <div>
+                        <p class="eyebrow">Logistics &amp; delivery platform</p>
+                        <h1>D. Delivery: a Kotlin Multiplatform logistics platform built around verifiable proof of delivery.</h1>
+                        <p class="lead">
+                            Three connected products &mdash; a customer booking app, a rider job app, and an admin control tower &mdash;
+                            engineered so that every parcel movement leaves behind evidence that holds up in a dispute, and every
+                            rupee of cash-on-delivery is reconciled against the platform's own ledger rather than a rider's word.
+                        </p>
+                        <div class="case-tags">
+                            <span>Kotlin Multiplatform</span>
+                            <span>Jetpack Compose</span>
+                            <span>Supabase</span>
+                            <span>Realtime dispatch</span>
+                            <span>Proof of delivery</span>
+                        </div>
+                        <div class="hero-proof">
+                            <span>3 apps, 1 shared codebase</span>
+                            <span>2 mandatory video proofs per delivery</span>
+                            <span>Release candidate</span>
+                        </div>
+                        <div class="case-actions">
+                            <a class="button primary" href="/#contact" data-contact-action="case-study-cta" data-contact-label="D. Delivery case study CTA">Build something like this</a>
+                            <a class="button secondary" href="/work/">See more work</a>
+                        </div>
+                    </div>
+
+                    <div class="case-visual" aria-label="D. Delivery rider workflow">
+                        <div class="workflow-panel">
+                            <div class="workflow-header">
+                                <span>Rider job flow</span>
+                                <strong>Evidence at every step</strong>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>01</span>
+                                <div>
+                                    <strong>Job broadcast</strong>
+                                    <small>Search radius expands from 3km until a rider accepts</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>02</span>
+                                <div>
+                                    <strong>Pickup video</strong>
+                                    <small>Device condition recorded before the parcel moves</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row live">
+                                <span>03</span>
+                                <div>
+                                    <strong>Live tracking</strong>
+                                    <small>Traffic-aware ETA streamed to the customer</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row">
+                                <span>04</span>
+                                <div>
+                                    <strong>Drop-off proof</strong>
+                                    <small>Second video plus recipient e-signature</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The problem</p>
+                    <h2>Courier disputes are won by whoever has evidence &mdash; and nobody had any.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Context</p>
+                        <p>
+                            The brief was a courier service for high-value goods in Pakistan &mdash; mobile phones, laptops, and
+                            electronics &mdash; where a single disputed parcel can cost more than a month of delivery revenue.
+                            The existing way of working was WhatsApp messages, phone calls, and a rider's memory.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">What kept breaking</p>
+                        <p>
+                            Nobody could prove what condition a device was in when it was collected. Cash collected on delivery
+                            was reconciled by hand and never quite matched. Riders were assigned by whoever answered first, not
+                            by who was actually closest. Customers called for status updates because there was nothing to look at.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">The real requirement</p>
+                        <p>
+                            Not "an app that books deliveries." A system where the evidence, the money, and the dispatch decision
+                            are all produced by the platform itself &mdash; so that the answer to "what happened to my parcel"
+                            is a record, not an argument.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The approach</p>
+                    <h2>One Kotlin Multiplatform codebase, three products, one source of truth.</h2>
+                    <p>
+                        Business logic, domain models, and data access live in a shared Kotlin module. The customer app and the
+                        rider app are native Jetpack Compose surfaces on top of it, and the admin control tower is a web panel
+                        against the same Postgres database. Shared logic means a pricing rule or an order-state rule is written
+                        once and cannot drift between apps.
+                    </p>
+                </div>
+                <div class="container process-grid">
+                    <article class="process-step reveal in-view">
+                        <span>01</span>
+                        <h3>Customer app</h3>
+                        <p>Category-aware booking, address search with a manual fallback, insurance based on declared value, live order tracking with a traffic-aware ETA, invoice and rating.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>02</span>
+                        <h3>Rider app</h3>
+                        <p>Job broadcast, GPS foreground tracking, guided delivery steps, dual video capture, recipient e-signature, wallet and earnings ledger, offline-first sync.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>03</span>
+                        <h3>Admin control tower</h3>
+                        <p>Manual dispatch, rider approval and document review, pricing configuration, dispute flags, and end-of-day cash settlement against the platform ledger.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>04</span>
+                        <h3>Shared backend</h3>
+                        <p>Postgres with row-level security, realtime channels, storage for delivery evidence, edge functions for push dispatch, and scheduled jobs for the dispatch loop.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Engineering highlights</p>
+                    <h2>The parts that were harder than they look.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Expanding-radius dispatch</p>
+                        <p>
+                            A new order starts searching for riders inside a small radius and widens in steps on a scheduled
+                            server loop until someone accepts or the radius caps out and an admin is alerted. All loop state
+                            lives in the order row and is re-evaluated from scratch on every tick, so a missed notification or
+                            a dropped tick can never leave an order stuck in a phantom state.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Evidence pipeline</p>
+                        <p>
+                            Pickup video, drop-off video, and a recipient e-signature are captured on-device, compressed before
+                            upload rather than after, and written to object storage under a per-order path. Uploads are queued
+                            through a background worker so a rider on a weak signal is never blocked from finishing a job.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Money integrity</p>
+                        <p>
+                            Fares are computed on the server at order creation, not trusted from the client. Rider earnings are
+                            credited by a database trigger with a uniqueness guarantee, so a retried delivery confirmation can
+                            never pay twice. Cash owed back to the platform is calculated server-side and always nets out the
+                            rider's own commission &mdash; so the rider's figure and the admin's figure cannot disagree.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Server-enforced order states</p>
+                        <p>
+                            The delivery lifecycle is a state machine enforced in the database, not just in the UI. A modified
+                            client cannot skip from "accepted" straight to "delivered" and bypass video capture, and a completed
+                            or cancelled order cannot be reopened.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Offline-first rider sync</p>
+                        <p>
+                            Every job-progress mutation goes through a local outbox backed by an encrypted on-device database
+                            and is drained by a sync engine. A rider in a basement or a dead-zone keeps working; the server
+                            catches up when signal returns, and state is reconciled on resume rather than assumed.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Realtime that admits when it is unsure</p>
+                        <p>
+                            Live subscriptions are treated as a latency optimisation, never as the only path for anything
+                            safety- or money-relevant. Each live screen is paired with a coarser reconciliation fetch on resume
+                            and on reconnect, so a dropped socket shows a reconnecting state instead of confidently stale data.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section metrics-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Scope at a glance</p>
+                    <h2>What the build actually covers.</h2>
+                </div>
+                <div class="container metric-grid">
+                    <article>
+                        <strong>03</strong>
+                        <span>Connected products delivered from one shared Kotlin Multiplatform codebase.</span>
+                    </article>
+                    <article>
+                        <strong>02</strong>
+                        <span>Mandatory video proofs per delivery, plus a recipient e-signature at drop-off.</span>
+                    </article>
+                    <article>
+                        <strong>13</strong>
+                        <span>Database tables placed under row-level security with per-role access policies.</span>
+                    </article>
+                    <article>
+                        <strong>100km</strong>
+                        <span>Operational service radius, enforced on the client and again as a database constraint.</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section stack-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Technology</p>
+                    <h2>The stack behind D. Delivery.</h2>
+                </div>
+                <div class="container stack-cloud">
+                    <span>Kotlin Multiplatform</span>
+                    <span>Jetpack Compose</span>
+                    <span>Coroutines &amp; Flow</span>
+                    <span>Supabase Postgres</span>
+                    <span>Supabase Realtime</span>
+                    <span>Supabase Storage</span>
+                    <span>Row-Level Security</span>
+                    <span>Ktor Client</span>
+                    <span>SQLDelight</span>
+                    <span>SQLCipher</span>
+                    <span>Koin</span>
+                    <span>WorkManager</span>
+                    <span>CameraX</span>
+                    <span>ML Kit</span>
+                    <span>Firebase Cloud Messaging</span>
+                    <span>Firebase Crashlytics</span>
+                    <span>Google Maps &amp; Places</span>
+                    <span>Google Routes API</span>
+                    <span>Edge Functions</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Where it stands</p>
+                    <h2>Feature-complete and security-hardened, in pre-launch.</h2>
+                    <p>
+                        The customer and rider apps are functionally complete across booking, dispatch, tracking, proof capture,
+                        payments, wallet, and settlement. The platform has been through a structured security pass covering
+                        access control, fare tampering, rate limiting, input validation, encrypted session and database storage,
+                        and crash reporting. Remaining work before public release is signing, store submission, and a final
+                        device-verification pass on the release build &mdash; deliberately not claimed as done until it is.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">More case studies</p>
+                    <h2>Other operational systems we have built.</h2>
+                </div>
+                <div class="container case-grid">
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Fleet dispatch platform</span>
+                            <h3>SnowGrid</h3>
+                            <p>Three-role snow removal management platform with live dispatch mapping, map-based area measurement, photo verification, and Stripe escrow payments.</p>
+                        </div>
+                        <a href="/work/snowgrid/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Email automation platform</span>
+                            <h3>GMassPulse</h3>
+                            <p>Mobile-first outreach platform with Google OAuth, Drive lead import, automated follow-ups, and real-time open tracking.</p>
+                        </div>
+                        <a href="/work/gmasspulse/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">All work</span>
+                            <h3>Full portfolio</h3>
+                            <p>Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.</p>
+                        </div>
+                        <a href="/work/">Browse all case studies</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Have an operations problem that needs a real mobile system?</h2>
+                    <p>
+                        Dispatch, proof of work, field teams, cash handling, approvals &mdash; if the workflow currently lives in
+                        WhatsApp and a spreadsheet, it is usually a strong candidate for the same treatment.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="D. Delivery case study strategy call">Book a 20-min App Strategy Session</a>
+                        <a class="button secondary" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" data-contact-action="whatsapp" data-contact-label="D. Delivery case study WhatsApp">WhatsApp us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <a href="/#contact">Start a project</a>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

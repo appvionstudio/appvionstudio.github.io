@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w6x06tsd9x");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnowGrid Case Study | Fleet Dispatch &amp; Field Service App Development | AppVion Studio</title>
+    <meta name="description" content="How AppVion Studio built SnowGrid — a three-role snow removal management platform with live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and Stripe escrow payments.">
+    <meta name="keywords" content="fleet management app development, dispatch app development, field service app development, snow removal software, GPS tracking app, Stripe payments app, multi-role platform, mobile app development case study">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/work/snowgrid/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="SnowGrid — Fleet Dispatch &amp; Field Service Platform | AppVion Studio">
+    <meta property="og:description" content="Three roles, one platform: live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and Stripe escrow payments.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/work/snowgrid/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SnowGrid — Fleet Dispatch &amp; Field Service Platform">
+    <meta name="twitter:description" content="Live dispatch, GPS fleet tracking, area measurement, photo proof, and Stripe escrow in one multi-role platform.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "SnowGrid: a three-role dispatch and field service platform for snow removal operations",
+      "description": "Case study of a multi-role fleet dispatch platform engineered by AppVion Studio, covering live dispatch mapping, GPS tracking, map-based area measurement, photo verification, and Stripe escrow payments.",
+      "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://appvionstudio.com/work/snowgrid/"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "url": "https://appvionstudio.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://appvionstudio.com/appvion-logo-icon.png"
+        }
+      },
+      "about": [
+        "Fleet management app development",
+        "Dispatch software",
+        "Field service app development",
+        "Mobile app development"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://appvionstudio.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://appvionstudio.com/work/" },
+        { "@type": "ListItem", "position": 3, "name": "SnowGrid", "item": "https://appvionstudio.com/work/snowgrid/" }
+      ]
+    }
+    </script>
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon.png" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Case study</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Case study navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section study-hero-section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / <a href="/work/">Work</a> / SnowGrid
+                    </nav>
+                </div>
+                <div class="container study-hero">
+                    <div>
+                        <p class="eyebrow">Fleet dispatch &amp; field service</p>
+                        <h1>SnowGrid: a three-role dispatch platform for snow removal operations.</h1>
+                        <p class="lead">
+                            One platform serving three completely different jobs &mdash; an operator running the fleet, a property
+                            owner buying a service, and a contractor working in the field in bad weather. Live dispatch mapping,
+                            map-based area measurement, photo verification, and Stripe escrow payments.
+                        </p>
+                        <div class="case-tags">
+                            <span>Fleet management</span>
+                            <span>Real-time dispatch</span>
+                            <span>GPS tracking</span>
+                            <span>Stripe payments</span>
+                            <span>Multi-role platform</span>
+                        </div>
+                        <div class="hero-proof">
+                            <span>3 user roles</span>
+                            <span>14 screens</span>
+                            <span>Live GPS dispatch</span>
+                        </div>
+                        <div class="case-actions">
+                            <a class="button primary" href="/Demos/appvion_snowgrid_COMPLETE.html" target="_blank" rel="noreferrer">Explore the Interactive Demo</a>
+                            <a class="button secondary" href="/#contact">Build something like this</a>
+                        </div>
+                    </div>
+
+                    <div class="case-visual" aria-label="SnowGrid dispatch workflow">
+                        <div class="workflow-panel">
+                            <div class="workflow-header">
+                                <span>Job lifecycle</span>
+                                <strong>Quote to payout</strong>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>01</span>
+                                <div>
+                                    <strong>Property mapped</strong>
+                                    <small>Owner pins the area on a satellite map</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>02</span>
+                                <div>
+                                    <strong>Instant quote</strong>
+                                    <small>Priced by area, snow depth, and priority</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row live">
+                                <span>03</span>
+                                <div>
+                                    <strong>Dispatched</strong>
+                                    <small>Nearest available contractor assigned</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row">
+                                <span>04</span>
+                                <div>
+                                    <strong>Verified &amp; paid</strong>
+                                    <small>Before/after photos release the escrow</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The problem</p>
+                    <h2>Snow work is priced by guesswork and paid on trust.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Context</p>
+                        <p>
+                            Snow removal is a weather-driven business. Demand arrives in unpredictable bursts, the work has to be
+                            dispatched within hours, and the size of a job depends on a physical area nobody has actually measured.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">What kept breaking</p>
+                        <p>
+                            Quotes were eyeballed, so margin varied wildly between jobs. Dispatch happened over the phone with no
+                            view of who was closest or already busy. And once the snow melted, there was no way to prove a
+                            property had actually been cleared &mdash; which made every disputed invoice a stalemate.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">The real requirement</p>
+                        <p>
+                            Three separate products that stay in sync: an operator command centre, a self-serve customer app, and
+                            a field-first contractor app &mdash; all reading and writing the same job state in real time.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The approach</p>
+                    <h2>One platform, three deliberately different products.</h2>
+                    <p>
+                        Each role got an interface designed around its actual working conditions, not a shared screen with
+                        features hidden by permission flags. The contractor app in particular is built for gloved hands, cold
+                        weather, and one-handed use in a vehicle.
+                    </p>
+                </div>
+                <div class="container process-grid">
+                    <article class="process-step reveal in-view">
+                        <span>01</span>
+                        <h3>Admin command centre</h3>
+                        <p>Seven screens for fleet management, live dispatch, revenue and escrow monitoring, pricing configuration, and oversight of every job in the system.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>02</span>
+                        <h3>Customer app</h3>
+                        <p>Four screens: register a property, pin and measure its area on a live satellite map, choose snow depth and priority, get an instant quote, authorise payment.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>03</span>
+                        <h3>Contractor app</h3>
+                        <p>Three screens: receive real-time assignments, toggle availability, submit before and after photo verification, handle disputes, and track earnings and payouts.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>04</span>
+                        <h3>Shared services</h3>
+                        <p>Role-based authentication, a dynamic pricing engine, live GPS streaming, and Stripe escrow holding funds until work is verified.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Engineering highlights</p>
+                    <h2>The parts that were harder than they look.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Map-based area measurement</p>
+                        <p>
+                            Customers draw a polygon over their property on a satellite map and the system computes exact square
+                            footage from it. This is what turns a guessed quote into a calculated one &mdash; the single change
+                            with the largest effect on margin consistency across jobs.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Dynamic pricing engine</p>
+                        <p>
+                            Price is a matrix, not a number: measured area combined with snow depth, priority tier, and
+                            environmental multipliers. Operators tune the matrix from the admin panel without a code change,
+                            so pricing can react to a season rather than waiting on a release.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Live dispatch map</p>
+                        <p>
+                            Every active contractor streams position to a single operator map. Assignment decisions are made
+                            against who is genuinely nearest and available, rather than whoever picks up the phone first.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Escrow tied to proof</p>
+                        <p>
+                            Payment is authorised up front and held in Stripe escrow. Before and after photos are the condition
+                            for release, which means the customer's protection and the contractor's payout depend on the same
+                            piece of evidence instead of on a phone call.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section metrics-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Scope at a glance</p>
+                    <h2>What the build actually covers.</h2>
+                </div>
+                <div class="container metric-grid">
+                    <article>
+                        <strong>03</strong>
+                        <span>Distinct user roles, each with a purpose-built interface rather than a shared screen.</span>
+                    </article>
+                    <article>
+                        <strong>14</strong>
+                        <span>Designed and built screens across the admin, customer, and contractor apps.</span>
+                    </article>
+                    <article>
+                        <strong>08</strong>
+                        <span>Core platform capabilities, from area measurement to escrow payout.</span>
+                    </article>
+                    <article>
+                        <strong>Live</strong>
+                        <span>GPS fleet positions streamed to the operator dispatch map in real time.</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section stack-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Technology</p>
+                    <h2>The stack behind SnowGrid.</h2>
+                </div>
+                <div class="container stack-cloud">
+                    <span>Mobile App</span>
+                    <span>Real-Time Dispatch</span>
+                    <span>GPS Tracking</span>
+                    <span>Satellite Mapping</span>
+                    <span>Polygon Area Tool</span>
+                    <span>Stripe Payments</span>
+                    <span>Stripe Escrow</span>
+                    <span>Stripe Payouts</span>
+                    <span>Role-Based Auth</span>
+                    <span>Photo Verification</span>
+                    <span>Dynamic Pricing Engine</span>
+                    <span>Revenue Dashboard</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">More case studies</p>
+                    <h2>Other operational systems we have built.</h2>
+                </div>
+                <div class="container case-grid">
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Logistics platform</span>
+                            <h3>D. Delivery</h3>
+                            <p>Three-app Kotlin Multiplatform delivery platform with dual video proof of delivery, expanding-radius dispatch, and server-enforced cash reconciliation.</p>
+                        </div>
+                        <a href="/work/d-delivery/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Email automation platform</span>
+                            <h3>GMassPulse</h3>
+                            <p>Mobile-first outreach platform with Google OAuth, Drive lead import, automated follow-ups, and real-time open tracking.</p>
+                        </div>
+                        <a href="/work/gmasspulse/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">All work</span>
+                            <h3>Full portfolio</h3>
+                            <p>Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.</p>
+                        </div>
+                        <a href="/work/">Browse all case studies</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Running a fleet, a crew, or a dispatch operation?</h2>
+                    <p>
+                        Scheduling, job assignment, proof of work, and getting paid for it &mdash; if that currently runs on phone
+                        calls and a spreadsheet, it is usually a strong candidate for the same treatment.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="SnowGrid case study strategy call">Book a 20-min App Strategy Session</a>
+                        <a class="button secondary" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" data-contact-action="whatsapp" data-contact-label="SnowGrid case study WhatsApp">WhatsApp us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <a href="/#contact">Start a project</a>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
