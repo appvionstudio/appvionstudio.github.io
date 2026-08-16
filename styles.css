@@ -3492,7 +3492,8 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
 }
 
 .phone-visual,
-.case-card-visual.phone-visual {
+.case-card-visual.phone-visual,
+.case-card-visual.shot-visual {
     position: relative;
     min-height: 230px !important;
     display: grid !important;
@@ -3504,15 +3505,18 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
     box-shadow: none !important;
 }
 
-.case-card-visual.phone-visual.campus {
+.case-card-visual.phone-visual.campus,
+.case-card-visual.shot-visual.campus {
     background: linear-gradient(180deg, #ecfdf5, #eef9f1) !important;
 }
 
-.case-card-visual.phone-visual.data {
+.case-card-visual.phone-visual.data,
+.case-card-visual.shot-visual.data {
     background: linear-gradient(180deg, #fff7cc, #fff2b6) !important;
 }
 
-.case-card-visual.phone-visual.event {
+.case-card-visual.phone-visual.event,
+.case-card-visual.shot-visual.event {
     background: linear-gradient(180deg, #eef2ff, #e0f2fe) !important;
 }
 
@@ -3655,7 +3659,8 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
 
 @media (max-width: 720px) {
     .phone-visual,
-    .case-card-visual.phone-visual {
+    .case-card-visual.phone-visual,
+    .case-card-visual.shot-visual {
         min-height: 220px !important;
     }
 
@@ -3933,73 +3938,6 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
    ============================================================ */
 .case-hero + .case-hero { margin-top: 18px; }
 
-/* ============================================================
-   APP SCREENSHOT GALLERY
-   Real device screenshots on case study pages. Full screen is
-   shown (height:auto), never cropped — .study-gallery's
-   object-fit:cover would chop the top and bottom off a
-   720x1600 phone capture.
-   ============================================================ */
-.screens-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-}
-
-.screens-grid figure {
-    margin: 0;
-    display: grid;
-    gap: 12px;
-    align-content: start;
-}
-
-.screens-grid img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 18px;
-    border: 1px solid rgba(79, 70, 229, 0.12);
-    background: var(--bg-soft);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 16px 40px rgba(79, 70, 229, 0.10);
-}
-
-.screens-grid figcaption {
-    display: grid;
-    gap: 3px;
-    text-align: center;
-}
-
-.screens-grid figcaption strong {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--copy);
-}
-
-.screens-grid figcaption span {
-    font-size: 12px;
-    color: var(--muted);
-}
-
-@media (max-width: 1080px) {
-    .screens-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-}
-
-@media (max-width: 780px) {
-    .screens-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-}
-
-/* Real screenshot used in place of the CSS mockup inside .case-visual */
-.case-visual .case-visual-shot {
-    width: auto;
-    max-width: 100%;
-    max-height: 520px;
-    height: auto;
-    display: block;
-    border-radius: 22px;
-    border: 1px solid rgba(79, 70, 229, 0.12);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06), 0 22px 56px rgba(79, 70, 229, 0.14);
-}
-
 /* Footer NAP block (name / address / phone) — local SEO consistency */
 .footer-address {
     margin-top: 14px;
@@ -4012,21 +3950,103 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
 .footer-address a { color: inherit; text-decoration: none; }
 .footer-address a:hover { text-decoration: underline; }
 
-/* Grid card visual carrying a real screenshot instead of the generated mockup */
-.case-card-visual.shot-visual {
-    display: grid;
-    place-items: center;
-    padding: 16px;
-    min-height: 200px;
+
+/* ============================================================
+   REAL APP SCREENSHOTS IN A DEVICE FRAME
+   Matches the existing .portfolio-phone language (dark bezel,
+   notch pill, white screen) so a real capture sits in the same
+   design system as the generated mockups it replaces.
+   The frame owns the aspect ratio, so screenshots of differing
+   source heights still line up in a grid.
+   ============================================================ */
+.shot-phone {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 19.5;
+    margin-inline: auto;
+    border: 4px solid #111827;
+    border-radius: 20px;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 20px 44px rgba(15, 23, 42, 0.16);
 }
 
-.case-card-visual.shot-visual img {
-    width: auto;
-    max-width: 100%;
-    max-height: 300px;
-    height: auto;
+.shot-phone::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    z-index: 2;
+    width: 34px;
+    height: 7px;
+    border-radius: 99px;
+    background: #111827;
+    transform: translateX(-50%);
+}
+
+.shot-phone img {
+    width: 100%;
+    height: 100%;
     display: block;
-    border-radius: 14px;
-    border: 1px solid rgba(79, 70, 229, 0.12);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05), 0 14px 34px rgba(79, 70, 229, 0.12);
+    object-fit: contain;
+    object-position: center;
+    background: #ffffff;
+}
+
+/* Grid card: frame sized to match .portfolio-phone */
+/* Match .portfolio-phone exactly so a real capture and a generated
+   mockup are the same object in the same grid. */
+.case-card-visual.shot-visual .shot-phone {
+    width: 106px;
+    height: 220px;
+    aspect-ratio: auto;
+    border-radius: 18px 18px 0 0;
+    border-bottom: 0;
+    box-shadow: 0 24px 48px rgba(15, 23, 42, 0.14);
+}
+
+.case-card-visual.shot-visual .shot-phone img {
+    object-fit: cover;
+    object-position: top center;
+}
+
+@media (max-width: 720px) {
+    .case-card-visual.shot-visual .shot-phone {
+        width: 104px;
+        height: 214px;
+    }
+}
+
+/* Flagship / case-study hero */
+.case-visual .shot-phone { max-width: 250px; }
+
+/* Detail gallery on a case study page */
+.screens-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.screens-grid figure {
+    margin: 0;
+    display: grid;
+    gap: 12px;
+    align-content: start;
+}
+
+.screens-grid figcaption {
+    display: grid;
+    gap: 3px;
+    text-align: center;
+}
+
+.screens-grid figcaption strong { font-size: 14px; font-weight: 600; color: var(--copy); }
+.screens-grid figcaption span { font-size: 12px; color: var(--muted); }
+
+@media (max-width: 1080px) {
+    .screens-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 780px) {
+    .screens-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 }
