@@ -32,8 +32,25 @@
       "contact": true
     }
   },
-  "proofLogos": ["ProFix", "WUM Connect", "Attendance Suite", "Pay Portal"],
+  "proofLogos": ["D. Delivery", "ProFix", "WUM Connect", "Attendance Suite", "Pay Portal"],
   "projects": [
+    {
+      "id": "d-delivery",
+      "title": "D. Delivery",
+      "kicker": "Logistics platform",
+      "description": "Three-app Kotlin Multiplatform delivery platform with dual video proof of delivery, expanding-radius dispatch, live tracking, and server-enforced COD reconciliation.",
+      "status": "Live",
+      "metric": "Dispatch",
+      "theme": "data",
+      "visualLabel": "Rider job flow",
+      "visualHeadline": "Order #4192 in transit",
+      "visualDetail": "Pickup video captured. Drop-off proof pending.",
+      "visualItems": "Broadcast\nPickup video\nLive tracking\nDrop-off proof",
+      "visualRows": "",
+      "visualBars": "",
+      "linkLabel": "Read the Case Study",
+      "linkUrl": "https://appvionstudio.com/work/d-delivery/"
+    },
     {
       "id": "wum-connect",
       "title": "WUM Connect",
