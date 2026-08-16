@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w6x06tsd9x");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management Case Study | Institutional Attendance App | AppVion Studio</title>
+    <meta name="description" content="How AppVion Studio built an institutional attendance platform — offline capture with background sync, HOD analytics, CSV export, an append-only audit log, and four distinct user roles.">
+    <meta name="keywords" content="attendance app development, attendance management system, biometric free attendance, offline sync app, WorkManager background sync, education app development, Firebase attendance app">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/work/attendance-management/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="Attendance Management — Institutional Attendance Platform | AppVion Studio">
+    <meta property="og:description" content="Offline attendance capture with background sync, analytics for heads of department, CSV export, and an append-only audit log.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/work/attendance-management/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Attendance Management — Institutional Attendance Platform">
+    <meta name="twitter:description" content="Offline capture, background sync, analytics, and an audit log — no biometric hardware required.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Attendance Management: institutional attendance without biometric hardware",
+      "description": "Case study of a multi-role attendance platform engineered by AppVion Studio, covering offline capture, background sync, head-of-department analytics, CSV export, and an append-only audit log.",
+      "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://appvionstudio.com/work/attendance-management/" },
+      "author": { "@type": "Organization", "name": "AppVion Studio", "url": "https://appvionstudio.com/" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AppVion Studio",
+        "logo": { "@type": "ImageObject", "url": "https://appvionstudio.com/appvion-logo-icon.png" }
+      },
+      "about": ["Attendance management software", "Education technology", "Offline-first mobile apps", "Jetpack Compose"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://appvionstudio.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://appvionstudio.com/work/" },
+        { "@type": "ListItem", "position": 3, "name": "Attendance Management", "item": "https://appvionstudio.com/work/attendance-management/" }
+      ]
+    }
+    </script>
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon.png" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Case study</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Case study navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section study-hero-section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / <a href="/work/">Work</a> / Attendance Management
+                    </nav>
+                </div>
+                <div class="container study-hero">
+                    <div>
+                        <p class="eyebrow">Institutional attendance platform</p>
+                        <h1>Attendance Management: institutional attendance without a biometric machine.</h1>
+                        <p class="lead">
+                            Attendance is marked on the phone already in the room, works with no signal, syncs when the network
+                            returns, and leaves an audit trail nobody can quietly edit. Four roles &mdash; teacher, head of
+                            department, administrator, and student &mdash; each with a purpose-built view of the same records.
+                        </p>
+                        <div class="case-tags">
+                            <span>Jetpack Compose</span>
+                            <span>Firebase</span>
+                            <span>WorkManager</span>
+                            <span>Offline-first</span>
+                            <span>Analytics</span>
+                        </div>
+                        <div class="hero-proof">
+                            <span>4 user roles</span>
+                            <span>Works offline</span>
+                            <span>Append-only audit log</span>
+                        </div>
+                        <div class="case-actions">
+                            <a class="button primary" href="https://youtu.be/NnlCmr_C4Cw" target="_blank" rel="noreferrer">Watch the Demo</a>
+                            <a class="button secondary" href="/#contact">Build something like this</a>
+                        </div>
+                    </div>
+
+                    <div class="case-visual" aria-label="Attendance capture flow">
+                        <div class="workflow-panel">
+                            <div class="workflow-header">
+                                <span>Capture flow</span>
+                                <strong>Mark now, sync later</strong>
+                            </div>
+                            <div class="workflow-row complete">
+                                <span>01</span>
+                                <div>
+                                    <strong>Marked in class</strong>
+                                    <small>Section roster loaded and stored locally</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row live">
+                                <span>02</span>
+                                <div>
+                                    <strong>Queued offline</strong>
+                                    <small>No signal required to finish the register</small>
+                                </div>
+                            </div>
+                            <div class="workflow-row">
+                                <span>03</span>
+                                <div>
+                                    <strong>Synced &amp; logged</strong>
+                                    <small>Background worker writes and audits the change</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The problem</p>
+                    <h2>Attendance hardware fails in exactly the places attendance matters.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Context</p>
+                        <p>
+                            Biometric attendance machines are expensive per room, queue students at the door, and stop working
+                            entirely when the power or the network does. Paper registers avoid all of that and create a
+                            different problem: nothing is aggregated and nothing is verifiable.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">What kept breaking</p>
+                        <p>
+                            Registers were transcribed into spreadsheets weeks later, so shortfalls surfaced long after anything
+                            could be done. Corrections were made in place with no record of who changed what. And a lecture hall
+                            with poor connectivity meant any online-only system simply could not be used.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">The real requirement</p>
+                        <p>
+                            Capture that never depends on the network, aggregation that is immediate once synced, and a change
+                            history that makes a disputed attendance record answerable.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The approach</p>
+                    <h2>Four roles, one record, offline by default.</h2>
+                </div>
+                <div class="container process-grid">
+                    <article class="process-step reveal in-view">
+                        <span>01</span>
+                        <h3>Teacher</h3>
+                        <p>Open the section, mark the register, done. The screen is designed for speed in front of a room, and it does not care whether there is signal.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>02</span>
+                        <h3>Head of department</h3>
+                        <p>Analytics across sections and cohorts, so a developing attendance problem is visible while the term is still running.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>03</span>
+                        <h3>Administrator</h3>
+                        <p>Master student records, section setup, user management, CSV export, and the audit log covering every change made in the system.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>04</span>
+                        <h3>Student</h3>
+                        <p>Claim a student identity once, then see an honest personal attendance record rather than finding out at the end of term.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Engineering highlights</p>
+                    <h2>The parts that were harder than they look.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Offline capture with background sync</p>
+                        <p>
+                            Marking is written locally and drained by a WorkManager job when connectivity returns. The teacher
+                            never waits on a spinner and never loses a register because a lecture hall has thick walls.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Large-list performance</p>
+                        <p>
+                            Institutional rosters are long. Records are paged rather than loaded wholesale, so scrolling a large
+                            cohort stays smooth on the mid-range devices staff actually carry.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Append-only audit log</p>
+                        <p>
+                            Corrections are legitimate and expected; silent corrections are not. Every administrative change is
+                            appended to a log rather than overwriting history, which is what makes a contested record settleable.
+                        </p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Identity claiming</p>
+                        <p>
+                            Students authenticate themselves and then claim their institutional student ID, so the roster
+                            imported by an administrator and the person holding the phone are linked without an administrator
+                            handing out credentials.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section stack-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Technology</p>
+                    <h2>The stack behind Attendance Management.</h2>
+                </div>
+                <div class="container stack-cloud">
+                    <span>Kotlin</span>
+                    <span>Jetpack Compose</span>
+                    <span>Material 3</span>
+                    <span>Coroutines &amp; Flow</span>
+                    <span>Firebase Auth</span>
+                    <span>Cloud Firestore</span>
+                    <span>WorkManager</span>
+                    <span>DataStore</span>
+                    <span>Navigation Compose</span>
+                    <span>Paging</span>
+                    <span>CSV Export</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">More case studies</p>
+                    <h2>Other systems we have built.</h2>
+                </div>
+                <div class="container case-grid">
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">University product</span>
+                            <h3>WUM Connect</h3>
+                            <p>Role-based campus communication with real-time announcements, faculty and student management, and push notifications.</p>
+                        </div>
+                        <a href="/work/wum-connect/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Events platform</span>
+                            <h3>Sports Society Events</h3>
+                            <p>Event coordination with registrations, per-event chat, leaderboards, and coach performance tracking.</p>
+                        </div>
+                        <a href="/work/sports-society-events/">Read the Case Study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">All work</span>
+                            <h3>Full portfolio</h3>
+                            <p>Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.</p>
+                        </div>
+                        <a href="/work/">Browse all case studies</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Tracking something that has to work without a network?</h2>
+                    <p>
+                        Attendance, inspections, stock counts, field surveys &mdash; anything captured away from a desk needs
+                        offline-first design from the start, not bolted on later.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Attendance case study strategy call">Book a 20-min App Strategy Session</a>
+                        <a class="button secondary" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" data-contact-action="whatsapp" data-contact-label="Attendance case study WhatsApp">WhatsApp us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <a href="/#contact">Start a project</a>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

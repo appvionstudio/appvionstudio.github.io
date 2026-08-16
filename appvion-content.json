@@ -32,7 +32,14 @@
       "contact": true
     }
   },
-  "proofLogos": ["D. Delivery", "SnowGrid", "GMassPulse", "ProFix", "WUM Connect", "Attendance Suite"],
+  "proofLogos": [
+    "D. Delivery",
+    "SnowGrid",
+    "GMassPulse",
+    "ProFix",
+    "WUM Connect",
+    "Attendance Suite"
+  ],
   "projects": [
     {
       "id": "d-delivery",
@@ -99,8 +106,8 @@
       "visualItems": "Students\nFaculty\nAdmin",
       "visualRows": "",
       "visualBars": "",
-      "linkLabel": "View Live Demo",
-      "linkUrl": "https://youtu.be/9I1OX1Z4w-Q"
+      "linkLabel": "Read the Case Study",
+      "linkUrl": "https://appvionstudio.com/work/wum-connect/"
     },
     {
       "id": "attendance-management",
@@ -116,8 +123,8 @@
       "visualItems": "",
       "visualRows": "ID-01 | Present | 08:55\nID-02 | Late | 09:08",
       "visualBars": "54\n78\n42\n88\n66",
-      "linkLabel": "View Live Demo",
-      "linkUrl": "https://youtu.be/NnlCmr_C4Cw"
+      "linkLabel": "Read the Case Study",
+      "linkUrl": "https://appvionstudio.com/work/attendance-management/"
     },
     {
       "id": "sports-society-events",
@@ -133,8 +140,8 @@
       "visualItems": "Register\nFilter\nNotify",
       "visualRows": "",
       "visualBars": "",
-      "linkLabel": "View Live Demo",
-      "linkUrl": "https://youtube.com/shorts/1dSV-00hZr4"
+      "linkLabel": "Read the Case Study",
+      "linkUrl": "https://appvionstudio.com/work/sports-society-events/"
     }
   ],
   "services": [
@@ -303,7 +310,20 @@
       "featured": false
     }
   ],
-  "stack": ["Android Native", "Kotlin", "Jetpack Compose", "Kotlin Multiplatform", "Ktor", "Supabase", "Firebase", "SQLDelight", "Paging 3", "Realtime Systems", "Secure WebView", "AI-ready UX"],
+  "stack": [
+    "Android Native",
+    "Kotlin",
+    "Jetpack Compose",
+    "Kotlin Multiplatform",
+    "Ktor",
+    "Supabase",
+    "Firebase",
+    "SQLDelight",
+    "Paging 3",
+    "Realtime Systems",
+    "Secure WebView",
+    "AI-ready UX"
+  ],
   "demoLibrary": [],
   "insights": [
     {
