@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your SnowGrid account — AppVion Studio</title>
+<meta name="description" content="Request deletion of your SnowGrid account and personal data, with or without the app installed.">
+<style>
+  :root{--ink:#16202a;--muted:#5b6b7a;--rule:#dde4ea;--bg:#fff;--accent:#c2410c;--card:#f6f8fa;--danger:#b3261e;--ok:#116149}
+  @media (prefers-color-scheme:dark){
+    :root{--ink:#e6eef5;--muted:#9fb0be;--rule:#26333d;--bg:#0e141a;--accent:#f08a4b;--card:#161f27;--danger:#e8695c;--ok:#3fb3a0}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+  h1{font-size:2rem;line-height:1.15;margin:0 0 .3rem}
+  h2{font-size:1.15rem;margin:2.2rem 0 .6rem;padding-top:1.1rem;border-top:1px solid var(--rule)}
+  .meta{color:var(--muted);font-size:.9rem;margin:0 0 2rem}
+  a{color:var(--accent)}
+  ol,ul{padding-left:1.2rem}
+  li{margin:.35rem 0}
+  .card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:1.1rem 1.25rem;margin:1.2rem 0}
+  .card h3{margin:0 0 .5rem;font-size:1rem}
+  table{border-collapse:collapse;width:100%;font-size:.93rem;margin:.8rem 0}
+  th,td{border:1px solid var(--rule);padding:.55rem .6rem;text-align:left;vertical-align:top}
+  th{background:var(--card);font-weight:600}
+  .erase{color:var(--danger);font-weight:600}
+  .keep{color:var(--ok);font-weight:600}
+  label{display:block;font-size:.9rem;font-weight:600;margin:.9rem 0 .3rem}
+  input,textarea,select{width:100%;padding:.6rem .7rem;border:1px solid var(--rule);border-radius:6px;
+    background:var(--bg);color:var(--ink);font:inherit;font-size:.95rem}
+  textarea{min-height:5rem;resize:vertical}
+  button{margin-top:1.1rem;padding:.7rem 1.2rem;border:0;border-radius:6px;background:var(--accent);
+    color:#fff;font:inherit;font-weight:600;cursor:pointer}
+  button:hover{filter:brightness(1.08)}
+  button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .hint{color:var(--muted);font-size:.87rem;margin:.4rem 0 0}
+  footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Delete your SnowGrid account</h1>
+<p class="meta">SnowGrid mobile app (<code>com.snowgrid.app</code>) &middot; AppVion Studio &middot; Updated 14 August 2026</p>
+
+<p>You can delete your SnowGrid account and personal data at any time. You do not need the app
+installed to make the request.</p>
+
+<h2>Option 1 — In the app (immediate)</h2>
+<div class="card">
+  <ol>
+    <li>Open SnowGrid and sign in.</li>
+    <li>Tap the <strong>account button</strong> in the top right of your dashboard.</li>
+    <li>Choose <strong>Delete account</strong>.</li>
+    <li>Type <code>DELETE</code> to confirm.</li>
+  </ol>
+  <p class="hint">This takes effect straight away. Your sign-in stops working immediately and cannot be restored.</p>
+</div>
+
+<h2>Option 2 — Request by email (no app needed)</h2>
+
+<p>Fill this in and it will open your email app with the request ready to send. Nothing is submitted
+from this page and no information is stored here.</p>
+
+<div class="card">
+  <label for="email">The email address on your SnowGrid account</label>
+  <input id="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+  <label for="role">Your account type</label>
+  <select id="role">
+    <option value="Customer">Customer — I book snow removal</option>
+    <option value="Contractor">Contractor — I do the work</option>
+    <option value="Company admin">Company admin — I run a snow removal business</option>
+  </select>
+
+  <label for="company">Company you deal with <span style="font-weight:400;color:var(--muted)">(optional, helps us find you)</span></label>
+  <input id="company" type="text" placeholder="e.g. Northside Snow Removal">
+
+  <label for="notes">Anything else <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+  <textarea id="notes" placeholder="Optional"></textarea>
+
+  <button id="send" type="button">Open email to send request</button>
+  <p class="hint">Not working? Email <a href="mailto:privacy@appvionstudio.com">privacy@appvionstudio.com</a>
+  with the subject &ldquo;SnowGrid account deletion request&rdquo; and include the email address on your account.</p>
+</div>
+
+<h2>What happens next</h2>
+<ul>
+  <li>We confirm you own the account by replying to the email address on it. <strong>We will not act on a request we cannot verify</strong> &mdash; otherwise anyone could delete someone else's account.</li>
+  <li>We complete the deletion and confirm it to you, normally within <strong>7 days</strong> and always within <strong>30 days</strong>.</li>
+</ul>
+
+<h2>What is deleted, and what is kept</h2>
+
+<p>Being straight about this matters more than sounding reassuring.</p>
+
+<table>
+  <tr><th>Data</th><th>What happens</th></tr>
+  <tr><td>Your sign-in and password</td><td class="erase">Permanently deleted</td></tr>
+  <tr><td>Your name, email address, phone number</td><td class="erase">Erased</td></tr>
+  <tr><td>Your service address and any notes about you</td><td class="erase">Erased</td></tr>
+  <tr><td>Stored location (contractor accounts)</td><td class="erase">Erased</td></tr>
+  <tr><td>Push notification token</td><td class="erase">Deleted</td></tr>
+  <tr><td>Jobs you booked or worked on</td><td class="keep">Kept by the company, no longer linked to your name</td></tr>
+  <tr><td>Payment records for those jobs</td><td class="keep">Kept as the company's financial records</td></tr>
+</table>
+
+<p>Job and payment records stay with the snow removal company you dealt with because they are that
+company's own financial and tax records &mdash; evidence of work performed and money owed or paid. They
+are not ours to erase. After deletion they are no longer connected to a name, email address or phone
+number.</p>
+
+<h2>If you run a snow removal company</h2>
+
+<div class="card">
+  <h3>Company admin accounts are deleted by us, not in the app</h3>
+  <p>Deleting a company account also removes its contractors, its live jobs, and payment records other
+  people depend on &mdash; including money still owed to the crew. That is not something to trigger with a
+  single tap, so we handle it with you directly.</p>
+  <p>Email <a href="mailto:support@appvionstudio.com">support@appvionstudio.com</a> and we will confirm
+  what will be removed before anything is deleted.</p>
+</div>
+
+<h2>Related</h2>
+<p><a href="/snowgrid/privacy-policy">SnowGrid Privacy Policy</a> &middot;
+   <a href="mailto:privacy@appvionstudio.com">privacy@appvionstudio.com</a></p>
+
+<footer>
+  <p>SnowGrid is a product of AppVion Studio.</p>
+</footer>
+
+</div>
+
+<script>
+  // Builds a mailto: link only. Deliberately no form submission, no backend, and
+  // nothing stored on this page — a deletion request page that quietly collected
+  // the very data it is meant to remove would be its own privacy problem.
+  document.getElementById('send').addEventListener('click', function () {
+    var email = document.getElementById('email').value.trim();
+    if (!email) {
+      document.getElementById('email').focus();
+      return;
+    }
+    var role = document.getElementById('role').value;
+    var company = document.getElementById('company').value.trim();
+    var notes = document.getElementById('notes').value.trim();
+
+    var body =
+      'I would like to delete my SnowGrid account and personal data.\n\n' +
+      'Account email: ' + email + '\n' +
+      'Account type: ' + role + '\n' +
+      'Company: ' + (company || '(not given)') + '\n\n' +
+      'Notes: ' + (notes || '(none)') + '\n\n' +
+      'I understand that job and payment records are retained by the company as ' +
+      'its financial records, no longer linked to my name.';
+
+    window.location.href =
+      'mailto:privacy@appvionstudio.com' +
+      '?subject=' + encodeURIComponent('SnowGrid account deletion request') +
+      '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

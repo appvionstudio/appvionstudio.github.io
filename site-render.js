@@ -82,8 +82,43 @@
         }
     }
 
+    // Real app screenshots, keyed by a normalised project id or title. Firestore-authored
+    // projects can override this with their own `screenshotUrl`. Anything without a match
+    // falls through to the generated phone mockup below, so this degrades cleanly.
+    const projectScreenshots = {
+        ddelivery: "/assets/screens/ddelivery-live-tracking.webp",
+        snowgrid: "/assets/screens/snowgrid-dispatch-board.webp",
+        gmasspulse: "/assets/screens/gmasspulse-pulse-dashboard.webp",
+        profix: "/assets/screens/profix-dashboard.webp",
+        wumconnect: "/assets/screens/wumconnect-student-dashboard.webp",
+        propfix: "/assets/screens/profix-dashboard.webp"
+    };
+
+    function screenshotFor(project) {
+        if (project.screenshotUrl) return project.screenshotUrl;
+        const keys = [project.id, project.title]
+            .filter(Boolean)
+            .map((value) => String(value).toLowerCase().replace(/[^a-z0-9]+/g, ""));
+        for (const key of keys) {
+            if (projectScreenshots[key]) return projectScreenshots[key];
+        }
+        return null;
+    }
+
     function projectVisual(project) {
         const title = escapeHtml(project.title || "Product");
+        const shot = screenshotFor(project);
+        if (shot) {
+            // Keep the card's theme tint — the frame replaces the generated mockup,
+            // not the themed background it sits on.
+            const shotTheme = escapeHtml(project.theme || "campus");
+            return `
+            <div class="case-card-visual ${shotTheme} shot-visual">
+                <div class="shot-phone">
+                    <img src="${escapeHtml(shot)}" alt="${title} app screen" loading="lazy" decoding="async">
+                </div>
+            </div>`;
+        }
         const status = escapeHtml(project.status || "Live");
         const theme = escapeHtml(project.theme || "campus");
         const visualLabel = escapeHtml(project.visualLabel || project.kicker || "Product flow");

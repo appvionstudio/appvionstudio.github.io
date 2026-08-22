@@ -711,6 +711,9 @@
         var visual = document.querySelector(".case-hero .case-visual");
         if (!visual || visual.dataset.avMounted === "true") return;
 
+        // A real screenshot already sits here - leave it alone.
+        if (visual.querySelector("img")) return;
+
         var app = DATA.byId("profix") || DATA.apps[0];
         var screens = app.screens || [];
         if (!screens.length) return;
@@ -792,6 +795,9 @@
             var app = appForCard(card);
             var visual = card.querySelector(".case-card-visual");
             if (!app || !visual) return;
+
+            // site-render.js may already have put a real screenshot in the card.
+            if (visual.querySelector("img")) { card.dataset.avMounted = "true"; return; }
 
             card.dataset.avMounted = "true";
             card.classList.add("av-card");
