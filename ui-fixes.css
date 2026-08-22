@@ -1,0 +1,202 @@
+/* ============================================================
+   AppVion Studio - UI corrections
+   Loaded after styles.css and content.css on every page.
+
+   styles.css is a stack of theme layers and uses
+   -webkit-text-fill-color with !important in many places. In Blink
+   and WebKit that property overrides `color` for rendering, so any
+   correction has to set BOTH. Each fix below notes what it corrects.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. CRITICAL - contact routes went white-on-white on hover.
+
+   styles.css:2379  .contact-route:hover { background: #ffffff !important }
+   styles.css:3151  .contact-route strong { color: #fff !important }
+
+   The routes sit in the dark CTA band, so their text is white. The
+   hover rule turned the card white and the heading disappeared -
+   on "Book a 20-min App Strategy Session", the primary CTA.
+   The hover state now stays dark and lifts instead.
+   ------------------------------------------------------------ */
+
+.cta-section .contact-route:hover,
+.cta-section .contact-route:focus-visible,
+.cta-layout .contact-route:hover,
+.cta-layout .contact-route:focus-visible {
+    border-color: rgba(96, 165, 250, 0.55) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.26) !important;
+    transform: translateY(-2px);
+}
+
+.cta-section .contact-route.featured:hover,
+.cta-section .contact-route.featured:focus-visible {
+    border-color: rgba(96, 165, 250, 0.75) !important;
+    background: rgba(37, 99, 235, 0.26) !important;
+}
+
+/* Keep every layer of the card legible in all states. */
+.cta-section .contact-route strong,
+.cta-section .contact-route:hover strong,
+.cta-section .contact-route:focus-visible strong {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.cta-section .contact-route small,
+.cta-section .contact-route:hover small,
+.cta-section .contact-route:focus-visible small {
+    color: rgba(203, 213, 225, 0.92) !important;
+    -webkit-text-fill-color: rgba(203, 213, 225, 0.92) !important;
+}
+
+.cta-section .contact-route span,
+.cta-section .contact-route:hover span,
+.cta-section .contact-route:focus-visible span {
+    color: #93c5fd !important;
+    -webkit-text-fill-color: #93c5fd !important;
+}
+
+/* ------------------------------------------------------------
+   2. Secondary buttons on dark bands rendered dark-on-dark.
+
+   styles.css sets .button.secondary { -webkit-text-fill-color:
+   var(--ink) !important }, which wins over `color` when rendering.
+   Any secondary button placed on a dark background needs the fill
+   set as well.
+   ------------------------------------------------------------ */
+
+.page-cta .button.secondary,
+.cta-section .button.secondary,
+.confidence-section .button.secondary,
+.stack-section .button.secondary {
+    color: #f8fafc !important;
+    -webkit-text-fill-color: #f8fafc !important;
+    border-color: rgba(255, 255, 255, 0.24) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.page-cta .button.secondary:hover,
+.page-cta .button.secondary:focus-visible,
+.cta-section .button.secondary:hover,
+.cta-section .button.secondary:focus-visible {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.44) !important;
+    background: rgba(255, 255, 255, 0.16) !important;
+}
+
+/* ------------------------------------------------------------
+   3. Step numerals were too faint to read.
+
+   styles.css:3099 set them to #cbd5e1 on white - 1.48:1 contrast.
+   Kept as a ghosted numeral, raised to a legible weight.
+   ------------------------------------------------------------ */
+
+.service-card > span,
+.process-step > span,
+.engagement-card > span {
+    color: #94a3b8 !important;
+    -webkit-text-fill-color: #94a3b8 !important;
+}
+
+.process-section .process-step > span {
+    color: rgba(191, 219, 254, 0.85) !important;
+    -webkit-text-fill-color: rgba(191, 219, 254, 0.85) !important;
+}
+
+/* ------------------------------------------------------------
+   4. Visible keyboard focus everywhere.
+
+   Several interactive elements had no focus ring at all, which
+   makes the site hard to use without a mouse and reads as
+   unfinished to anyone auditing it.
+   ------------------------------------------------------------ */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+.cta-section a:focus-visible,
+.cta-section button:focus-visible,
+.confidence-section a:focus-visible,
+.footer a:focus-visible {
+    outline-color: #93c5fd;
+}
+
+/* ------------------------------------------------------------
+   5. Selected text stayed unreadable on dark bands.
+   ------------------------------------------------------------ */
+
+.cta-section ::selection,
+.confidence-section ::selection,
+.page-cta ::selection {
+    background: rgba(147, 197, 253, 0.32);
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+}
+
+/* ------------------------------------------------------------
+   6. Route from the home page work section into the case studies.
+   ------------------------------------------------------------ */
+
+.work-cta {
+    margin: 0 0 30px;
+}
+
+.work-cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: 999px;
+    background: #ffffff;
+    color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
+    font-size: 14px;
+    font-weight: 700;
+    transition: border-color 200ms ease, transform 200ms ease;
+}
+
+.work-cta a::after { content: "\2192"; }
+
+.work-cta a:hover {
+    border-color: rgba(37, 99, 235, 0.4);
+    color: #2563eb !important;
+    -webkit-text-fill-color: #2563eb !important;
+    transform: translateY(-1px);
+}
+
+/* ------------------------------------------------------------
+   7. Namespaced components follow their own colour.
+
+   styles.css applies -webkit-text-fill-color with !important to
+   broad selectors including bare buttons and links. Anything inside
+   the showcase, explorer or case-study components would inherit an
+   ink-coloured fill regardless of the colour it sets, which turned
+   the active screen chip into dark-on-dark. Binding the fill to
+   currentColor makes these components immune to that.
+   ------------------------------------------------------------ */
+
+.av-embed,
+.av-embed *,
+.av-explorer,
+.av-explorer *,
+.av-card-explore,
+.av-card-actions > a,
+.av-seg-item,
+.av-open-proto,
+.av-hero-caption,
+.av-hero-caption * {
+    -webkit-text-fill-color: currentColor !important;
+}

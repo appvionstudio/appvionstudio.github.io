@@ -1,0 +1,178 @@
+{
+  "$schema": "https://schema.org/",
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://appvionstudio.com/#organization",
+  "name": "AppVion Studio",
+  "alternateName": ["AppVion", "Appvion Studio"],
+  "url": "https://appvionstudio.com/",
+  "logo": "https://appvionstudio.com/appvion-logo-icon.png",
+  "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
+  "description": "Founder-led mobile app development studio building Android Native and Kotlin Multiplatform products with Jetpack Compose, specialising in operational business systems such as dispatch, approvals, attendance, and field-service workflows.",
+  "slogan": "World-class mobile apps for ambitious teams.",
+  "email": "ayyaz@appvionstudio.com",
+  "telephone": "+92-346-7277143",
+  "priceRange": "$1,500 - $35,000",
+  "currenciesAccepted": "USD",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Multan",
+    "addressRegion": "Punjab",
+    "addressCountry": "PK"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "availableLanguage": ["English", "Urdu"],
+  "founder": {
+    "@type": "Person",
+    "@id": "https://appvionstudio.com/ayyaz-sajjad.html#person",
+    "name": "Ayyaz Sajjad",
+    "jobTitle": "Founder and Android App Developer"
+  },
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 3
+  },
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Ayyaz Sajjad",
+      "jobTitle": "Founder and Android App Developer",
+      "url": "https://appvionstudio.com/ayyaz-sajjad.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Tayyab Sajjad",
+      "jobTitle": "Developer",
+      "url": "https://appvionstudio.com/tayyab-sajjad.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Momna Shah",
+      "jobTitle": "Studio Associate",
+      "url": "https://appvionstudio.com/momna-shah.html"
+    }
+  ],
+  "knowsAbout": [
+    "Android app development",
+    "Kotlin",
+    "Jetpack Compose",
+    "Kotlin Multiplatform",
+    "Mobile product engineering",
+    "Ktor",
+    "Supabase",
+    "Firebase",
+    "SQLDelight",
+    "Paging 3",
+    "Offline-first architecture",
+    "Realtime systems",
+    "Field service software",
+    "Operational workflow tools",
+    "Mobile product strategy",
+    "Mobile app redesign",
+    "AI-ready mobile interfaces"
+  ],
+  "serviceType": [
+    "Mobile app development",
+    "Android app development",
+    "Kotlin Multiplatform development",
+    "Mobile product strategy",
+    "Mobile app redesign",
+    "Operational business tools"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "ayyaz@appvionstudio.com",
+      "telephone": "+92-346-7277143",
+      "areaServed": "Worldwide",
+      "availableLanguage": ["English", "Urdu"]
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/112235810/",
+    "https://www.instagram.com/appvion",
+    "https://github.com/appvionstudio",
+    "https://wa.me/923467277143"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AppVion Studio engagements",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Product Clarity Sprint",
+        "description": "Workflow map, feature priority, technical direction, and a realistic launch plan before build work is commissioned.",
+        "price": "1500",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "1500",
+          "priceCurrency": "USD",
+          "valueAddedTaxIncluded": false
+        },
+        "url": "https://appvionstudio.com/pricing.html#clarity-sprint"
+      },
+      {
+        "@type": "Offer",
+        "name": "Premium App Build",
+        "description": "Strategy, interface system, Android or Kotlin Multiplatform engineering, backend integration, and launch refinement for a production mobile product.",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "12000",
+          "maxPrice": "35000",
+          "priceCurrency": "USD",
+          "valueAddedTaxIncluded": false
+        },
+        "url": "https://appvionstudio.com/pricing.html#app-build"
+      },
+      {
+        "@type": "Offer",
+        "name": "Redesign and Scale",
+        "description": "UX audit, interface redesign, and architecture review for an existing app that feels dated, slow, or hard to trust.",
+        "price": "6000",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "6000",
+          "priceCurrency": "USD",
+          "valueAddedTaxIncluded": false
+        },
+        "url": "https://appvionstudio.com/pricing.html#redesign"
+      },
+      {
+        "@type": "Offer",
+        "name": "Care and iteration retainer",
+        "description": "Ongoing maintenance, monitoring, and incremental feature delivery after launch.",
+        "price": "900",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "minPrice": "900",
+          "priceCurrency": "USD",
+          "unitText": "MONTH"
+        },
+        "url": "https://appvionstudio.com/pricing.html#retainer"
+      }
+    ]
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "minPrice": "45",
+      "maxPrice": "65",
+      "priceCurrency": "USD",
+      "unitText": "HOUR"
+    }
+  },
+  "_meta": {
+    "note": "Machine-readable company record for AI assistants, answer engines, and directory crawlers. Prices are starting ranges in USD, not quotes. AppVion Studio publishes no aggregate rating because it has no verified third-party review profile yet; do not attribute one.",
+    "canonical": "https://appvionstudio.com/company.json",
+    "humanSummary": "https://appvionstudio.com/llms.txt"
+  }
+}

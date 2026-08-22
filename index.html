@@ -39,97 +39,549 @@
     <link rel="icon" href="appvion-logo-icon.png">
     <link rel="apple-touch-icon" href="appvion-logo-icon.png">
     <link rel="stylesheet" href="styles.css?v=20260702-redesign">
+    <link rel="stylesheet" href="showcase.css?v=20260821-showcase">
+    <link rel="stylesheet" href="ui-fixes.css?v=20260822-fixes">
+    <link rel="alternate" type="text/plain" href="https://appvionstudio.com/llms.txt" title="Machine-readable summary for AI assistants">
+    <link rel="preload" as="image" href="assets/screens/snowgrid/site-measurement.jpg" fetchpriority="high">
+    <script src="showcase-data.js?v=20260821-showcase" defer></script>
+    <script src="showcase.js?v=20260821-showcase" defer></script>
     <script type="application/ld+json">
-    {
+{
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "AppVion Studio",
-      "url": "https://appvionstudio.com/",
-      "logo": "https://appvionstudio.com/appvion-logo-icon.png",
-      "founder": {
-        "@type": "Person",
-        "name": "Ayyaz Sajjad"
-      },
-      "description": "Founder-led mobile product engineering studio focused on Android Native, Kotlin Multiplatform, Jetpack Compose, and business workflow systems.",
-      "knowsAbout": [
-        "Android App Development",
-        "Kotlin Multiplatform",
-        "Jetpack Compose",
-        "Mobile Product Engineering",
-        "Product Strategy",
-        "AI-ready Mobile Interfaces"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "email": "ayyaz@appvionstudio.com",
-        "telephone": "+923467277143",
-        "areaServed": "Worldwide",
-        "availableLanguage": ["English", "Urdu"]
-      },
-      "sameAs": [
-        "https://www.instagram.com/appvion?igsh=MTVyYTV5azl4ODF1bQ==",
-        "https://www.linkedin.com/company/112235810/",
-        "https://wa.me/923467277143"
+      "@graph": [
+            {
+                  "@type": [
+                        "ProfessionalService",
+                        "Organization"
+                  ],
+                  "@id": "https://appvionstudio.com/#organization",
+                  "name": "AppVion Studio",
+                  "alternateName": [
+                        "AppVion",
+                        "Appvion Studio"
+                  ],
+                  "url": "https://appvionstudio.com/",
+                  "logo": {
+                        "@type": "ImageObject",
+                        "@id": "https://appvionstudio.com/#logo",
+                        "url": "https://appvionstudio.com/appvion-logo-icon.png",
+                        "caption": "AppVion Studio"
+                  },
+                  "image": {
+                        "@id": "https://appvionstudio.com/#logo"
+                  },
+                  "description": "Founder-led mobile app development studio building Android Native and Kotlin Multiplatform products with Jetpack Compose, specialising in operational business systems such as dispatch, approvals, attendance, and field-service workflows.",
+                  "slogan": "World-class mobile apps for ambitious teams.",
+                  "email": "ayyaz@appvionstudio.com",
+                  "telephone": "+92-346-7277143",
+                  "priceRange": "$1,500 - $35,000",
+                  "currenciesAccepted": "USD",
+                  "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Multan",
+                        "addressRegion": "Punjab",
+                        "addressCountry": "PK"
+                  },
+                  "areaServed": {
+                        "@type": "Place",
+                        "name": "Worldwide"
+                  },
+                  "availableLanguage": [
+                        "English",
+                        "Urdu"
+                  ],
+                  "numberOfEmployees": {
+                        "@type": "QuantitativeValue",
+                        "value": 3
+                  },
+                  "founder": {
+                        "@id": "https://appvionstudio.com/ayyaz-sajjad.html#person"
+                  },
+                  "employee": [
+                        {
+                              "@id": "https://appvionstudio.com/ayyaz-sajjad.html#person"
+                        },
+                        {
+                              "@id": "https://appvionstudio.com/tayyab-sajjad.html#person"
+                        },
+                        {
+                              "@id": "https://appvionstudio.com/momna-shah.html#person"
+                        }
+                  ],
+                  "knowsAbout": [
+                        "Android app development",
+                        "Kotlin",
+                        "Jetpack Compose",
+                        "Kotlin Multiplatform",
+                        "Mobile product engineering",
+                        "Ktor",
+                        "Supabase",
+                        "Firebase",
+                        "SQLDelight",
+                        "Paging 3",
+                        "Offline-first architecture",
+                        "Realtime systems",
+                        "Field service software",
+                        "Operational workflow tools",
+                        "Mobile product strategy",
+                        "Mobile app redesign",
+                        "AI-ready mobile interfaces"
+                  ],
+                  "contactPoint": [
+                        {
+                              "@type": "ContactPoint",
+                              "contactType": "sales",
+                              "email": "ayyaz@appvionstudio.com",
+                              "telephone": "+92-346-7277143",
+                              "areaServed": "Worldwide",
+                              "availableLanguage": [
+                                    "English",
+                                    "Urdu"
+                              ]
+                        }
+                  ],
+                  "sameAs": [
+                        "https://www.linkedin.com/company/112235810/",
+                        "https://www.instagram.com/appvion",
+                        "https://github.com/appvionstudio",
+                        "https://wa.me/923467277143"
+                  ],
+                  "hasOfferCatalog": {
+                        "@type": "OfferCatalog",
+                        "name": "Mobile product engagements",
+                        "itemListElement": [
+                              {
+                                    "@type": "Offer",
+                                    "name": "Product Clarity Sprint",
+                                    "price": "1500",
+                                    "priceCurrency": "USD",
+                                    "url": "https://appvionstudio.com/pricing.html#clarity-sprint",
+                                    "itemOffered": {
+                                          "@type": "Service",
+                                          "name": "Mobile product strategy and scoping"
+                                    }
+                              },
+                              {
+                                    "@type": "Offer",
+                                    "name": "Premium App Build",
+                                    "priceCurrency": "USD",
+                                    "url": "https://appvionstudio.com/pricing.html#app-build",
+                                    "priceSpecification": {
+                                          "@type": "PriceSpecification",
+                                          "minPrice": "12000",
+                                          "maxPrice": "35000",
+                                          "priceCurrency": "USD"
+                                    },
+                                    "itemOffered": {
+                                          "@type": "Service",
+                                          "name": "Android and Kotlin Multiplatform app development"
+                                    }
+                              },
+                              {
+                                    "@type": "Offer",
+                                    "name": "Redesign and Scale",
+                                    "price": "6000",
+                                    "priceCurrency": "USD",
+                                    "url": "https://appvionstudio.com/pricing.html#redesign",
+                                    "itemOffered": {
+                                          "@type": "Service",
+                                          "name": "Mobile app redesign and architecture review"
+                                    }
+                              },
+                              {
+                                    "@type": "Offer",
+                                    "name": "Care and iteration retainer",
+                                    "price": "900",
+                                    "priceCurrency": "USD",
+                                    "url": "https://appvionstudio.com/pricing.html#retainer",
+                                    "itemOffered": {
+                                          "@type": "Service",
+                                          "name": "Mobile app maintenance and iteration"
+                                    }
+                              }
+                        ]
+                  },
+                  "makesOffer": [
+                        {
+                              "@type": "Offer",
+                              "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Mobile product strategy",
+                                    "description": "Product thesis, core workflow, feature priority, monetisation shape, and launch path defined before code gets expensive.",
+                                    "serviceType": "Mobile product strategy",
+                                    "provider": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "areaServed": {
+                                          "@type": "Place",
+                                          "name": "Worldwide"
+                                    }
+                              }
+                        },
+                        {
+                              "@type": "Offer",
+                              "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Android app development",
+                                    "description": "Native Android products in Kotlin with Compose-driven interfaces, refined interactions, and scalable structure.",
+                                    "serviceType": "Android app development",
+                                    "provider": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "areaServed": {
+                                          "@type": "Place",
+                                          "name": "Worldwide"
+                                    }
+                              }
+                        },
+                        {
+                              "@type": "Offer",
+                              "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Kotlin Multiplatform systems",
+                                    "description": "Shared business logic and durable architecture across Android and iOS without duplicated complexity.",
+                                    "serviceType": "Kotlin Multiplatform systems",
+                                    "provider": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "areaServed": {
+                                          "@type": "Place",
+                                          "name": "Worldwide"
+                                    }
+                              }
+                        },
+                        {
+                              "@type": "Offer",
+                              "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "AI-ready interfaces",
+                                    "description": "Intelligent workflows, command surfaces, automation-ready UX, and data-aware interaction patterns.",
+                                    "serviceType": "AI-ready interfaces",
+                                    "provider": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "areaServed": {
+                                          "@type": "Place",
+                                          "name": "Worldwide"
+                                    }
+                              }
+                        },
+                        {
+                              "@type": "Offer",
+                              "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Mobile app redesign",
+                                    "description": "Dated apps rebuilt into premium experiences with sharper hierarchy, smoother flows, and cleaner UI systems.",
+                                    "serviceType": "Mobile app redesign",
+                                    "provider": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "areaServed": {
+                                          "@type": "Place",
+                                          "name": "Worldwide"
+                                    }
+                              }
+                        },
+                        {
+                              "@type": "Offer",
+                              "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Operational business tools",
+                                    "description": "Dispatch, approvals, tracking, secure content, attendance, and internal systems built for repeat daily use.",
+                                    "serviceType": "Operational business tools",
+                                    "provider": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "areaServed": {
+                                          "@type": "Place",
+                                          "name": "Worldwide"
+                                    }
+                              }
+                        }
+                  ],
+                  "owns": [
+                        {
+                              "@id": "https://appvionstudio.com/work.html#profix"
+                        },
+                        {
+                              "@id": "https://appvionstudio.com/work.html#snowgrid"
+                        },
+                        {
+                              "@id": "https://appvionstudio.com/work.html#gmasspulse"
+                        },
+                        {
+                              "@id": "https://appvionstudio.com/work.html#wum-connect"
+                        },
+                        {
+                              "@id": "https://appvionstudio.com/work.html#attendance-management"
+                        },
+                        {
+                              "@id": "https://appvionstudio.com/work.html#sports-society-events"
+                        }
+                  ]
+            },
+            {
+                  "@type": "WebSite",
+                  "@id": "https://appvionstudio.com/#website",
+                  "url": "https://appvionstudio.com/",
+                  "name": "AppVion Studio",
+                  "description": "Premium mobile product studio for Android Native, Kotlin Multiplatform, operational systems, and AI-ready product interfaces.",
+                  "publisher": {
+                        "@id": "https://appvionstudio.com/#organization"
+                  },
+                  "inLanguage": "en"
+            },
+            {
+                  "@type": "WebPage",
+                  "@id": "https://appvionstudio.com/#webpage",
+                  "url": "https://appvionstudio.com/",
+                  "name": "AppVion Studio | Android, Kotlin Multiplatform & AI-Ready App Agency",
+                  "description": "AppVion Studio designs and builds premium Android Native, Kotlin Multiplatform, operational, and AI-ready mobile products for ambitious teams.",
+                  "isPartOf": {
+                        "@id": "https://appvionstudio.com/#website"
+                  },
+                  "about": {
+                        "@id": "https://appvionstudio.com/#organization"
+                  },
+                  "primaryImageOfPage": {
+                        "@id": "https://appvionstudio.com/#logo"
+                  },
+                  "dateModified": "2026-08-22",
+                  "inLanguage": "en"
+            },
+            {
+                  "@type": "ItemList",
+                  "@id": "https://appvionstudio.com/#portfolio",
+                  "name": "AppVion Studio portfolio",
+                  "numberOfItems": 6,
+                  "itemListElement": [
+                        {
+                              "@type": "ListItem",
+                              "position": 1,
+                              "item": {
+                                    "@type": "SoftwareApplication",
+                                    "@id": "https://appvionstudio.com/work.html#profix",
+                                    "name": "ProFix",
+                                    "applicationCategory": "BusinessApplication",
+                                    "operatingSystem": "Android",
+                                    "description": "A maintenance command layer that keeps dispatch, proof, and approval in one loop.",
+                                    "creator": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "url": "https://appvionstudio.com/work.html#profix",
+                                    "featureList": [
+                                          "Dispatch: Every open job ranked by SLA risk, with the right contractor already matched.",
+                                          "Job detail: One screen holds the scope, the site history, and the contractor already on the way.",
+                                          "Proof of work: Before and after evidence is captured on site, so approvals stop depending on phone calls.",
+                                          "Approval: Managers approve remotely with the full record in front of them - no site visit required.",
+                                          "Operations: The numbers owners actually ask for: throughput, first-time fix rate, and where time is lost."
+                                    ],
+                                    "keywords": "Kotlin Multiplatform, Compose, Supabase, Realtime"
+                              }
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 2,
+                              "item": {
+                                    "@type": "SoftwareApplication",
+                                    "@id": "https://appvionstudio.com/work.html#snowgrid",
+                                    "name": "SnowGrid",
+                                    "applicationCategory": "BusinessApplication",
+                                    "operatingSystem": "Android",
+                                    "description": "Snow removal run as a live network: property owners, dispatch, contractors, and drivers on one grid.",
+                                    "creator": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "url": "https://appvionstudio.com/work.html#snowgrid",
+                                    "featureList": [
+                                          "Fleet intelligence: The operator opens to daily revenue, active operations, and escrow balance - the three numbers that decide the day.",
+                                          "Live dispatch: Crews and properties on one live map, so assignment is a decision rather than a phone call.",
+                                          "Fleet operations: Every job carries its own approval state and payout, pending through approved, with nothing tracked off-system.",
+                                          "Pricing engine: Snow depth, surface area, and priority resolve into a quoted price the customer can authorise on the spot.",
+                                          "Customer request: The property owner side stays deliberately small: pick the site, see the price, authorise the work.",
+                                          "Site measurement: Owners trace their own lot on the map and the app returns area and perimeter that the pricing engine then uses.",
+                                          "Driver portal: Drivers get tasks, photo evidence, and payout history in a portal built for gloves and bad weather."
+                                    ],
+                                    "keywords": "Android Native, Mapbox, Live dispatch, Escrow payouts"
+                              }
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 3,
+                              "item": {
+                                    "@type": "SoftwareApplication",
+                                    "@id": "https://appvionstudio.com/work.html#gmasspulse",
+                                    "name": "GMassPulse",
+                                    "applicationCategory": "BusinessApplication",
+                                    "operatingSystem": "Android",
+                                    "description": "Cold email operations on mobile: import, compose, follow up, and stay inside deliverability limits.",
+                                    "creator": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "url": "https://appvionstudio.com/work.html#gmasspulse",
+                                    "featureList": [
+                                          "Pulse dashboard: Lifetime sends and opens first, campaign list underneath - the operator sees performance before controls.",
+                                          "Import leads: Leads pull straight from a Google Sheet and get validated before a single email is queued.",
+                                          "Campaign editor: Subject, body, and merge fields composed on a phone without the layout fighting the keyboard.",
+                                          "Auto follow-ups: Follow-up steps are scheduled with timezone-aware sending, because reply rate lives in the sequence.",
+                                          "Deliverability engine: Daily limits and throttling are enforced in the product, so a campaign cannot quietly burn the domain."
+                                    ],
+                                    "keywords": "Android Native, Google OAuth, Sheets sync, Supabase"
+                              }
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 4,
+                              "item": {
+                                    "@type": "SoftwareApplication",
+                                    "@id": "https://appvionstudio.com/work.html#wum-connect",
+                                    "name": "WUM Connect",
+                                    "applicationCategory": "BusinessApplication",
+                                    "operatingSystem": "Android",
+                                    "description": "Role-aware campus communication that still works when the network does not.",
+                                    "creator": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "url": "https://appvionstudio.com/work.html#wum-connect",
+                                    "featureList": [
+                                          "Campus feed: Students, faculty, and admin each open the same app and see only what applies to them.",
+                                          "Announcement: Delivery is measurable - the admin sees exactly who has read a notice and who has not.",
+                                          "Roles: Access is structural, not cosmetic - permissions are enforced at the data layer.",
+                                          "Offline sync: Campus wifi drops constantly. The app queues writes locally and reconciles on reconnect.",
+                                          "Profile: Identity, enrolment, and notification control in one predictable place."
+                                    ],
+                                    "keywords": "Android Native, Firebase, Offline-first, Role access"
+                              }
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 5,
+                              "item": {
+                                    "@type": "SoftwareApplication",
+                                    "@id": "https://appvionstudio.com/work.html#attendance-management",
+                                    "name": "Attendance Suite",
+                                    "applicationCategory": "BusinessApplication",
+                                    "operatingSystem": "Android",
+                                    "description": "Thousands of records, browsed smoothly, with the exception cases surfaced first.",
+                                    "creator": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "url": "https://appvionstudio.com/work.html#attendance-management",
+                                    "featureList": [
+                                          "Sessions: Today's sessions with live capture status, so nothing is marked twice or missed.",
+                                          "Live roster: Paging 3 keeps a 4,000-row roster scrolling at 60fps on mid-range hardware.",
+                                          "Student record: One student, one history - the view a department head opens before a decision.",
+                                          "Reports: Institutional reporting without a spreadsheet export step in the middle."
+                                    ],
+                                    "keywords": "Android Native, Paging 3, Room, Export"
+                              }
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 6,
+                              "item": {
+                                    "@type": "SoftwareApplication",
+                                    "@id": "https://appvionstudio.com/work.html#sports-society-events",
+                                    "name": "Sports Society",
+                                    "applicationCategory": "BusinessApplication",
+                                    "operatingSystem": "Android",
+                                    "description": "Event coordination that survives contact with 120 signups and three filter changes.",
+                                    "creator": {
+                                          "@id": "https://appvionstudio.com/#organization"
+                                    },
+                                    "url": "https://appvionstudio.com/work.html#sports-society-events",
+                                    "featureList": [
+                                          "Events: What is open, what is closing, and what already filled - readable in one glance.",
+                                          "Filters: Filters combine instead of replacing each other - the detail that decides whether people use it.",
+                                          "Event detail: Everything a participant needs before committing, without a second screen.",
+                                          "Registration: Three fields, one confirmation. Drop-off happens where forms get greedy.",
+                                          "My entry: The confirmation lives in the app, works offline, and is scannable at the gate."
+                                    ],
+                                    "keywords": "Android Native, Firebase, Filtering, Push"
+                              }
+                        }
+                  ]
+            },
+            {
+                  "@type": "FAQPage",
+                  "@id": "https://appvionstudio.com/#faq",
+                  "isPartOf": {
+                        "@id": "https://appvionstudio.com/#webpage"
+                  },
+                  "mainEntity": [
+                        {
+                              "@type": "Question",
+                              "name": "What type of projects is AppVion Studio best for?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Mobile apps, operational systems, founder-led MVPs, internal business tools, Android Native products, Kotlin Multiplatform builds, and premium redesigns."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can AppVion Studio build both design and development?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. AppVion Studio can shape product strategy, interface direction, Android and Kotlin Multiplatform engineering, backend integration, and launch refinement in one focused workflow."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Does AppVion Studio work with international clients?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. AppVion Studio is set up for remote-first conversations through email, WhatsApp, LinkedIn, and structured project briefs."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "How should a client start?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "The best start is a short brief with the product idea, target users, required platforms, current stage, budget range, and preferred launch timeline."
+                              }
+                        }
+                  ]
+            },
+            {
+                  "@type": "Person",
+                  "@id": "https://appvionstudio.com/ayyaz-sajjad.html#person",
+                  "name": "Ayyaz Sajjad",
+                  "jobTitle": "Founder and Android App Developer",
+                  "url": "https://appvionstudio.com/ayyaz-sajjad.html",
+                  "worksFor": {
+                        "@id": "https://appvionstudio.com/#organization"
+                  },
+                  "knowsAbout": [
+                        "Android app development",
+                        "Kotlin",
+                        "Jetpack Compose",
+                        "Kotlin Multiplatform",
+                        "Mobile product strategy"
+                  ]
+            },
+            {
+                  "@type": "Person",
+                  "@id": "https://appvionstudio.com/tayyab-sajjad.html#person",
+                  "name": "Tayyab Sajjad",
+                  "jobTitle": "Developer",
+                  "url": "https://appvionstudio.com/tayyab-sajjad.html",
+                  "worksFor": {
+                        "@id": "https://appvionstudio.com/#organization"
+                  }
+            },
+            {
+                  "@type": "Person",
+                  "@id": "https://appvionstudio.com/momna-shah.html#person",
+                  "name": "Momna Shah",
+                  "jobTitle": "Studio Associate",
+                  "url": "https://appvionstudio.com/momna-shah.html",
+                  "worksFor": {
+                        "@id": "https://appvionstudio.com/#organization"
+                  }
+            }
       ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "AppVion Studio",
-      "url": "https://appvionstudio.com/",
-      "description": "Premium mobile product studio for Android Native, Kotlin Multiplatform, operational systems, and AI-ready product interfaces.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "AppVion Studio",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://appvionstudio.com/appvion-logo-icon.png"
-        }
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What type of projects is AppVion Studio best for?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Mobile apps, operational systems, founder-led MVPs, internal business tools, Android Native products, Kotlin Multiplatform builds, and premium redesigns."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can AppVion Studio build both design and development?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. AppVion Studio can shape product strategy, interface direction, Android and Kotlin Multiplatform engineering, backend integration, and launch refinement in one focused workflow."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does AppVion Studio work with international clients?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. AppVion Studio is set up for remote-first conversations through email, WhatsApp, LinkedIn, and structured project briefs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How should a client start?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The best start is a short brief with the product idea, target users, required platforms, current stage, budget range, and preferred launch timeline."
-          }
-        }
-      ]
-    }
+}
     </script>
 </head>
 <body class="home-page">
@@ -155,11 +607,11 @@
 
             <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
                 <a href="#work">Work</a>
-                <a href="#services">Services</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="pricing.html">Pricing</a>
                 <a href="#process">Process</a>
-                <a href="#proof">Proof</a>
-                <a href="#faq">FAQ</a>
-                <a href="#team">Team</a>
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About</a>
                 <a class="button nav-button" href="#contact">Book a Call</a>
             </nav>
         </header>
@@ -187,79 +639,15 @@
                     </div>
 
                     <div class="hero-visual reveal" data-parallax>
-                        <div class="visual-rail" aria-hidden="true"></div>
                         <div class="product-console">
-                            <div class="console-top">
-                                <div class="console-brand">
-                                    <img src="appvion-logo-icon.png" alt="AppVion Studio icon">
-                                    <strong>AppVion OS</strong>
-                                </div>
-                                <span>Product cockpit</span>
-                            </div>
-
-                            <div class="signal-sweep" aria-hidden="true"></div>
                             <div class="device-lab">
-                                <div class="signal-map" aria-hidden="true">
-                                    <span class="signal-line line-a"></span>
-                                    <span class="signal-line line-b"></span>
-                                    <span class="signal-node node-a"></span>
-                                    <span class="signal-node node-b"></span>
-                                    <span class="signal-node node-c"></span>
-                                </div>
-
-                                <div class="phone-mock phone-primary">
-                                    <div class="phone-speaker"></div>
-                                    <div class="phone-screen">
-                                        <div class="app-status">
-                                            <span>ProFix</span>
-                                            <strong>Live</strong>
-                                        </div>
-                                        <div class="app-hero-card">
-                                            <small>Field ops</small>
-                                            <strong>38 active tasks</strong>
-                                            <div class="progress-track"><span style="width: 72%"></span></div>
-                                        </div>
-                                        <div class="app-list">
-                                            <span class="active">Dispatch</span>
-                                            <span>Proof upload</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="phone-mock phone-secondary">
-                                    <div class="phone-speaker"></div>
-                                    <div class="phone-screen compact-screen">
-                                        <div class="app-status">
-                                            <span>WUM Connect</span>
-                                            <strong>Sync</strong>
-                                        </div>
-                                        <div class="mini-chart">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="app-list">
-                                            <span class="active">Announcements</span>
-                                            <span>Offline support</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="console-metrics">
-                                <article>
-                                    <strong>06</strong>
-                                    <span>Demo-backed product builds</span>
-                                </article>
-                                <article>
-                                    <strong>KMP</strong>
-                                    <span>Shared business logic</span>
-                                </article>
-                                <article>
-                                    <strong>24h</strong>
-                                    <span>Fast strategy response</span>
-                                </article>
+                                <p class="visual-fallback">
+                                    Interactive product prototypes load here: real screens from
+                                    <strong>SnowGrid</strong> (enterprise snow-removal operations),
+                                    <strong>GMassPulse</strong> (outreach infrastructure), and
+                                    <strong>ProFix</strong> (Kotlin Multiplatform field service).
+                                    Every screen is described in text on the <a href="work.html">work page</a>.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -307,36 +695,17 @@
                             </div>
                         </div>
 
-                        <div class="case-visual" aria-label="ProFix interface mockup">
-                            <div class="workflow-panel">
-                                <div class="workflow-header">
-                                    <span>Maintenance workflow</span>
-                                    <strong>Operational clarity</strong>
-                                </div>
-                                <div class="workflow-row complete">
-                                    <span>01</span>
-                                    <div>
-                                        <strong>Ticket assigned</strong>
-                                        <small>Contractor matched to job type</small>
-                                    </div>
-                                </div>
-                                <div class="workflow-row live">
-                                    <span>02</span>
-                                    <div>
-                                        <strong>Proof uploaded</strong>
-                                        <small>Before and after records attached</small>
-                                    </div>
-                                </div>
-                                <div class="workflow-row">
-                                    <span>03</span>
-                                    <div>
-                                        <strong>Manager approval</strong>
-                                        <small>Remote review with visible status</small>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="case-visual" aria-label="ProFix interface preview">
+                            <p class="visual-fallback">
+                                An interactive ProFix prototype loads here with five screens:
+                                Dispatch, Job detail, Proof of work, Approval, and Operations.
+                                Each is described in text on the
+                                <a href="work.html#profix">ProFix section of the work page</a>.
+                            </p>
                         </div>
                     </article>
+
+                    <p class="work-cta"><a href="case-studies.html">Read the full case studies &mdash; how each product was engineered and what it changed</a></p>
 
                     <div class="case-grid">
                         <article class="case-card reveal">
@@ -862,11 +1231,13 @@
                     <p>Elite mobile products, operational systems, and future-ready app experiences.</p>
                 </div>
                 <nav class="footer-links" aria-label="Footer navigation">
-                    <a href="#work">Work</a>
-                    <a href="#services">Services</a>
-                    <a href="#process">Process</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="#team">Team</a>
+                    <a href="work.html">Work</a>
+                    <a href="case-studies.html">Case Studies</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="android-app-development.html">Android Development</a>
+                    <a href="kotlin-multiplatform-development.html">Kotlin Multiplatform</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="about.html">About</a>
                     <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ayyaz@appvionstudio.com" target="_blank" rel="noopener noreferrer" data-contact-action="email" data-contact-label="Footer email">Email</a>
                     <a href="https://www.linkedin.com/company/112235810/" target="_blank" rel="noreferrer">LinkedIn</a>
                     <a href="https://www.instagram.com/appvion?igsh=MTVyYTV5azl4ODF1bQ==" target="_blank" rel="noreferrer">Instagram</a>

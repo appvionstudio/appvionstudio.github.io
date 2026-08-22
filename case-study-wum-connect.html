@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <title>WUM Connect Case Study | Offline-First University Communication App | AppVion Studio</title>
+    <meta name="description" content="How AppVion Studio built WUM Connect, a role-aware university attendance and communication app with an offline-first sync engine. Measured results: 18 percent better p95 frame time, 320ms faster cold start, ~99 percent sync success on poor connectivity.">
+    <meta name="keywords" content="university app development, campus communication app, offline first android app, firebase android app, attendance and announcements app">
+    <meta name="author" content="AppVion Studio">
+    <link rel="canonical" href="https://appvionstudio.com/case-study-wum-connect.html">
+    <meta name="geo.region" content="PK-PB">
+    <meta name="geo.placename" content="Multan, Punjab, Pakistan">
+    <meta name="theme-color" content="#fafaf7">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="WUM Connect Case Study | Offline-First University Communication App | AppVion Studio">
+    <meta property="og:description" content="How AppVion Studio built WUM Connect, a role-aware university attendance and communication app with an offline-first sync engine. Measured results: 18 percent better p95 frame time, 320ms faster cold start, ~99 percent sync success on poor connectivity.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/case-study-wum-connect.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WUM Connect Case Study | Offline-First University Communication App | AppVion Studio">
+    <meta name="twitter:description" content="How AppVion Studio built WUM Connect, a role-aware university attendance and communication app with an offline-first sync engine. Measured results: 18 percent better p95 frame time, 320ms faster cold start, ~99 percent sync success on poor connectivity.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="icon" href="appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="appvion-logo-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260702-redesign">
+    <link rel="stylesheet" href="content.css?v=20260822-content">
+    <link rel="stylesheet" href="showcase.css?v=20260822-cases">
+    <link rel="stylesheet" href="ui-fixes.css?v=20260822-fixes">
+    <link rel="alternate" type="text/plain" href="https://appvionstudio.com/llms.txt" title="Machine-readable summary for AI assistants">
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+            {
+                  "@type": [
+                        "WebPage",
+                        "Article"
+                  ],
+                  "@id": "https://appvionstudio.com/case-study-wum-connect.html",
+                  "url": "https://appvionstudio.com/case-study-wum-connect.html",
+                  "headline": "WUM Connect Case Study | Offline-First University Communication App | AppVion Studio",
+                  "name": "WUM Connect Case Study | Offline-First University Communication App | AppVion Studio",
+                  "description": "How AppVion Studio built WUM Connect, a role-aware university attendance and communication app with an offline-first sync engine. Measured results: 18 percent better p95 frame time, 320ms faster cold start, ~99 percent sync success on poor connectivity.",
+                  "isPartOf": {
+                        "@id": "https://appvionstudio.com/#website"
+                  },
+                  "about": {
+                        "@id": "https://appvionstudio.com/work.html#wum-connect"
+                  },
+                  "author": {
+                        "@id": "https://appvionstudio.com/#organization"
+                  },
+                  "publisher": {
+                        "@id": "https://appvionstudio.com/#organization"
+                  },
+                  "dateModified": "2026-08-22",
+                  "datePublished": "2026-08-22",
+                  "inLanguage": "en",
+                  "articleSection": "Case study",
+                  "breadcrumb": {
+                        "@id": "https://appvionstudio.com/case-study-wum-connect.html#crumbs"
+                  }
+            },
+            {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://appvionstudio.com/case-study-wum-connect.html#crumbs",
+                  "itemListElement": [
+                        {
+                              "@type": "ListItem",
+                              "position": 1,
+                              "name": "Home",
+                              "item": "https://appvionstudio.com/"
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 2,
+                              "name": "Case studies",
+                              "item": "https://appvionstudio.com/case-studies.html"
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 3,
+                              "name": "WUM Connect",
+                              "item": "https://appvionstudio.com/case-study-wum-connect.html"
+                        }
+                  ]
+            }
+      ]
+}
+    </script>
+</head><body class="profile-page content-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="index.html" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="appvion-logo-icon.png?v=20260510-elite" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Case study</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
+                <a href="work.html">Work</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About</a>
+                <a class="button nav-button" href="index.html#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section page-hero">
+                <div class="container">
+                    <ol class="crumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="case-studies.html">Case studies</a></li>
+                    <li><span aria-current="page">WUM Connect</span></li>
+                    </ol>
+                    <p class="eyebrow">Case study &middot; Education</p>
+                    <h1>Built for a campus where the wifi keeps dropping.</h1>
+                    <p class="lead">Announcements that only arrive when the network is good are announcements that do not arrive. WUM Connect assumes the connection will fail and is designed around that.</p>
+
+                    <div class="answer-box">
+                        <span class="answer-label">In short</span>
+                        <p><strong>WUM Connect is a role-aware university attendance and communication app</strong> for
+                        Android, built with Jetpack Compose, MVVM and Firestore, on top of an offline-first sync
+                        engine using Room and WorkManager.</p>
+                        <p>Students, teachers and administrators open the same app and see only what applies to
+                        their role, enforced by Firestore security rules with role-based access control rather
+                        than by hiding screens. Attendance marked without a connection is queued locally and
+                        reconciles on reconnect.</p>
+                        <p>Measured engineering results: <strong>p95 frame time improved 18 percent</strong>,
+                        <strong>cold start reduced by 320ms</strong>, and <strong>sync success around 99 percent
+                        on low connectivity</strong>.</p>
+                    </div>
+
+                    <ul class="page-toc">
+                        <li><a href="#prototype">The product</a></li>
+                        <li><a href="#problem">The problem</a></li>
+                        <li><a href="#engineering">Engineering decisions</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#stack">Stack</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-block" id="facts">
+                <div class="container">
+                    <dl class="fact-list">
+                        <div><dt>Product type</dt><dd>University communication and attendance</dd></div>
+                        <div><dt>Platform</dt><dd>Android Native</dd></div>
+                        <div><dt>Roles</dt><dd>Admin, teacher, student</dd></div>
+                        <div><dt>Backend</dt><dd>Firestore with RBAC rules and composite indexes</dd></div>
+                        <div><dt>Offline engine</dt><dd>Room + WorkManager, idempotent retries</dd></div>
+                        <div><dt>p95 frame time</dt><dd>18% improvement</dd></div>
+                        <div><dt>Cold start</dt><dd>320ms faster</dd></div>
+                        <div><dt>Sync success</dt><dd>~99% on low connectivity</dd></div>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="section-block" id="prototype">
+                <div class="container">
+                    <div class="prose">
+                        <h2>How it works, screen by screen.</h2>
+                    </div>
+                    <div data-av-showcase="wum-connect" data-av-start="feed"></div>
+                </div>
+            </section>
+
+            <section class="section-block" id="problem">
+                <div class="container">
+                    <div class="prose">
+                        <h2>The problem with campus software.</h2>
+                        <p>A university has four audiences with different rights and one shared reality: the
+                        network is unreliable. Notices go out by noticeboard, WhatsApp group and email, so
+                        nobody knows who actually received anything. Attendance is taken on paper and typed up
+                        later, which means the record is always a day behind and occasionally invented.</p>
+                        <p>Most campus apps fail for the same reason. They are built as if the connection is
+                        always there, so a teacher in a concrete lecture theatre taps submit, sees a spinner,
+                        and goes back to paper.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block" id="engineering">
+                <div class="container">
+                    <div class="prose"><h2>Decisions that shaped it.</h2></div>
+                    <div class="qa-list">
+                    <div class="qa-item">
+                        <h3>Offline-first as the default path, not a fallback</h3>
+                        <p>Attendance writes go to Room first and are queued through WorkManager with backoff and retry. The queue is idempotent, so a retry after a partial failure cannot double-mark a student. Sync success sits around 99 percent on poor connectivity because the app never depended on the network being there at the moment of the tap.</p>
+                    </div>
+                    <div class="qa-item">
+                        <h3>Roles enforced in Firestore rules, not in the interface</h3>
+                        <p>Role-based access control lives in security rules with composite indexes behind the queries. Hiding a screen from a student does not stop a determined student from reading the underlying collection; a rule does.</p>
+                    </div>
+                    <div class="qa-item">
+                        <h3>Performance treated as a feature and measured</h3>
+                        <p>Cold start was cut by 320ms and p95 frame time improved 18 percent. On the mid-range Android hardware that dominates a campus, those are the differences between an app people open and an app people avoid.</p>
+                    </div>
+                    <div class="qa-item">
+                        <h3>App Check and Crashlytics from the start</h3>
+                        <p>App Check keeps unverified clients out of the backend, and Crashlytics turns a vague report of intermittent closures into a stack trace. Both are cheap on day one and expensive to retrofit.</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block" id="impact">
+                <div class="container">
+                    <div class="prose">
+                        <h2>What it changes for an institution.</h2>
+                        <ul>
+                            <li><strong>Delivery becomes measurable.</strong> An administrator can see how many
+                            people received a notice and how many opened it, which no noticeboard has ever done.</li>
+                            <li><strong>Attendance is same-day.</strong> Marked at the point of teaching rather
+                            than typed up later, so the record reflects the room.</li>
+                            <li><strong>Bad connectivity stops causing lost data.</strong> Work queued offline
+                            lands when the signal returns, without the teacher thinking about it.</li>
+                            <li><strong>One app replaces four channels.</strong> Notices stop being duplicated
+                            across noticeboard, email, and messaging groups where nobody can confirm receipt.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block" id="stack">
+                <div class="container">
+                    <div class="prose"><h2>What it is built with.</h2></div>
+                    <div class="tech-row">
+                        <span>Kotlin</span><span>Jetpack Compose</span><span>MVVM + UseCases</span>
+                        <span>Hilt</span><span>Room</span><span>WorkManager</span><span>DataStore</span>
+                        <span>Firestore</span><span>FCM</span><span>Remote Config</span>
+                        <span>Crashlytics</span><span>App Check</span><span>Material 3</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-block">
+                <div class="container">
+                    <div class="page-cta">
+                        <h2>Software for an institution rather than a startup?</h2>
+                        <p>Different constraints: many roles, poor connectivity, and users who cannot be trained. That is a shape we know well.</p>
+                        <div class="cta-actions">
+                            <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Content page strategy call">Book a 20-min Strategy Call</a>
+                            <a class="button secondary" href="index.html#contact">Send a Project Brief</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-block">
+                <div class="container">
+                    <h2 class="prose" style="max-width:20ch">Keep reading</h2>
+                    <div class="related">
+                        <a href="case-study-attendance.html"><strong>Attendance Suite</strong><span>Thousands of records, browsed smoothly.</span></a>
+                        <a href="case-study-vu-sports.html"><strong>VU Sports Society</strong><span>Campus events and role management.</span></a>
+                        <a href="android-app-development.html"><strong>Android development</strong><span>How these are built.</span></a>
+                    </div>
+                </div>
+            </section>        </main>
+
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div>
+                    <a class="brand footer-brand" href="index.html" aria-label="AppVion Studio Home">
+                        <span class="brand-mark">
+                            <img class="brand-mark-image" src="appvion-logo-icon.png?v=20260510-elite" alt="AppVion Studio logo">
+                        </span>
+                        <span class="brand-text">
+                            <strong>AppVion Studio</strong>
+                            <small>Mobile app development studio</small>
+                        </span>
+                    </a>
+                    <p>Android Native and Kotlin Multiplatform products, built in Multan and delivered worldwide.</p>
+                </div>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="work.html">Work</a>
+                    <a href="case-studies.html">Case Studies</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="android-app-development.html">Android Development</a>
+                    <a href="kotlin-multiplatform-development.html">Kotlin Multiplatform</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="https://www.linkedin.com/company/112235810/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </nav>
+            </div>
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <span>Multan, Pakistan &middot; Working worldwide</span>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        window.APPVION_FIREBASE_CONFIG = {
+            apiKey: "AIzaSyC44enadsgl9w1a0mRE51zaLY-1uc5AWwI",
+            authDomain: "appvion-studio.firebaseapp.com",
+            projectId: "appvion-studio",
+            storageBucket: "appvion-studio.firebasestorage.app",
+            messagingSenderId: "4195907711",
+            appId: "1:4195907711:web:3cdf11646b9b7bc876e74a",
+            measurementId: "G-DEV3NRR902"
+        };
+    </script>
+    <script src="showcase-data.js?v=20260822-cases" defer></script>
+    <script src="showcase.js?v=20260822-cases" defer></script>
+    <script src="app.js?v=20260602-professional-polish"></script>
+</body>
+</html>

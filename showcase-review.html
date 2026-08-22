@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>AppVion showcase - screen review</title>
+<!-- Internal tool: renders every screen in the catalog for visual review.
+     Not linked from the site. Open directly after editing showcase-data.js. -->
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="showcase.css">
+<style>
+body{margin:0;background:#fafaf7;font-family:"Plus Jakarta Sans",sans-serif}
+.grid{display:flex;flex-wrap:wrap;gap:28px;padding:28px}
+.cell{display:grid;gap:8px;justify-items:center}
+.cell p{margin:0;font-size:11px;font-weight:700;color:#475569;max-width:230px;text-align:center}
+</style></head><body>
+<div class="grid" id="g"></div>
+<script src="showcase-data.js"></script>
+<script>
+window.addEventListener('load',()=>{
+  const R=window.__AVRENDER;
+});
+</script>
+<script src="showcase.js"></script>
+<script>
+setTimeout(()=>{
+ const g=document.getElementById('g');
+ const apps=window.APPVION_SHOWCASE.apps;
+ apps.forEach(app=>app.screens.forEach(sc=>{
+   const cell=document.createElement('div');cell.className='cell';
+   const holder=document.createElement('div');
+   holder.innerHTML='<div class="av-device" style="--av-scale:0.62"><div class="av-device-tilt"><div class="av-device-frame"><span class="av-device-notch"></span><div class="av-device-screen"><div class="av-stage"></div></div></div></div></div>';
+   cell.appendChild(holder);
+   const p=document.createElement('p');p.textContent=app.name+' / '+sc.name;cell.appendChild(p);
+   g.appendChild(cell);
+   window.__AV_MOUNT(holder.querySelector('.av-stage'),app,sc);
+ }));
+},500);
+</script>
+</body></html>

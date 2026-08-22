@@ -1,0 +1,1557 @@
+# AppVion Studio - full site content
+
+> Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
+> Short version: https://appvionstudio.com/llms.txt
+> Machine-readable company record: https://appvionstudio.com/company.json
+> Generated 2026-08-22. Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
+
+
+======================================================================
+## Home
+URL: https://appvionstudio.com/
+======================================================================
+
+AppVion Studio | Android, Kotlin Multiplatform & AI-Ready App Agency
+Skip to content
+Premium mobile app agency
+World class mobile apps for ambitious teams.
+AppVion Studio designs and engineers polished Android Native, Kotlin Multiplatform, and AI-ready products that look expensive, feel effortless, and hold up under real business pressure.
+Book Strategy Call
+View Our Work
+Founder-led delivery
+Compose-first UI
+KMP systems
+Interactive product prototypes load here: real screens from
+SnowGrid (enterprise snow-removal operations),
+GMassPulse (outreach infrastructure), and
+ProFix (Kotlin Multiplatform field service).
+Every screen is described in text on the work page .
+Product experience across field operations, university systems, attendance workflows, events, secure web layers, and finance concepts.
+ProFix
+WUM Connect
+Attendance Suite
+Pay Portal
+Featured work
+Case studies built around real operational pressure.
+The portfolio is shaped around practical systems: dispatch, approval, communication, data-heavy browsing, secure access, and mobile-first business execution.
+Flagship build
+ProFix: a field service command layer for modern maintenance teams.
+A Kotlin Multiplatform maintenance workflow that brings contractor assignment, proof of work, progress visibility, and manager approval into one focused mobile system.
+Kotlin Multiplatform
+Supabase
+Realtime workflow
+SaaS-ready
+Watch Demo
+Download APK
+An interactive ProFix prototype loads here with five screens:
+Dispatch, Job detail, Proof of work, Approval, and Operations.
+Each is described in text on the
+ProFix section of the work page .
+Read the full case studies — how each product was engineered and what it changed
+WUM Connect
+Live
+Admin broadcast
+Exam schedule updated
+Sent to 4 active roles with offline sync.
+Students
+Faculty
+Admin
+University product
+WUM Connect
+Role-based communication with real-time announcements, Firebase architecture, and offline-friendly usage.
+View Live Demo
+Attendance Suite
+98%
+ID
+Status
+Time
+CS-21
+Present
+08:55
+CS-22
+Late
+09:08
+Data-heavy utility
+Attendance Management
+Large-list browsing, record clarity, and Paging 3 implementation for smoother institutional workflows.
+View Live Demo
+Sports Society
+Open
+Upcoming event
+Cricket Trials
+120 signups | 3 filters active
+Register
+Filter
+Notify
+Events platform
+Sports Society Events
+Mobile event coordination with filtering, structured updates, and participant-facing activity flows.
+View Live Demo
+Interactive proof
+Demo library for product workflows, concepts, and live interface samples.
+Add demos from the admin panel when you want public proof for real product behavior, app flows, and interactive interface quality.
+Services
+Strategy, design, and engineering in one accountable motion.
+AppVion is intentionally focused: fewer layers, faster decisions, and one product standard from first concept to launch.
+01
+Mobile Product Strategy
+Define the product thesis, core workflow, feature priority, monetization shape, and launch path before code gets expensive.
+02
+Premium Android Apps
+Native Android products with Compose-driven interfaces, refined interactions, scalable structure, and crisp mobile ergonomics.
+03
+Kotlin Multiplatform Systems
+Shared business logic and durable architecture for teams that want cleaner delivery across platforms without duplicated complexity.
+04
+AI-Ready Interfaces
+Intelligent workflows, command surfaces, automation-ready UX, and data-aware interaction patterns built with restraint.
+05
+Product Redesigns
+Transform dated apps into premium experiences with sharper hierarchy, smoother flows, better trust signals, and cleaner UI systems.
+06
+Operational Tools
+Dispatch, approvals, tracking, secure content, attendance, communication, and internal systems built for repeat daily use.
+Process
+A high-clarity build system for serious product decisions.
+Every phase is built to reduce ambiguity, protect momentum, and turn a vague app idea into a launch-ready product system.
+01
+Signal Audit
+We map the business model, user roles, core workflows, risk areas, and the few screens that must feel exceptional.
+02
+Product Blueprint
+Information architecture, feature sequencing, data model direction, and interface system are aligned before build sprints.
+03
+Design Engineering
+UI, motion, backend integration, state handling, and product logic come together in focused releases.
+04
+Launch Refinement
+Polish, QA, deployment support, analytics readiness, and post-launch improvement loops keep the product moving.
+Proof system
+Premium trust is built through clarity, not noise.
+AppVion presents verifiable product depth: public demos, concrete workflows, visible founder accountability, and a modern technical base.
+06
+Portfolio products and concepts presented with demos or clear product scope.
+04
+Core domains covered: operations, education, events, and finance-oriented systems.
+01
+Founder-led accountability path from strategy to implementation review.
+24h
+Fast first response target for qualified strategy conversations.
+Why choose AppVion
+Built for buyers who care about taste, trust, and technical discipline.
+Founder-level thinking
+Strategy stays close to execution, so decisions move fast and the product does not drift into agency theater.
+Mobile-first obsession
+The interface is planned for thumbs, glances, permissions, loading states, empty states, and daily operational use.
+Premium perception design
+Visual hierarchy, motion, contrast, and spacing are used to create confidence before a user reads every word.
+Modern architecture
+Compose, Kotlin Multiplatform, Supabase, Firebase, Ktor, and SQLDelight patterns for products that can evolve.
+Client confidence
+The buying experience is designed to feel calm, premium, and accountable.
+No fabricated testimonials. Instead, the site makes trust inspectable: real demos, named team members, direct contact routes, and clear product reasoning.
+Before the build
+You get a crisp product direction, core workflow map, and realistic launch path.
+During the build
+You see steady progress through concrete milestones, not vague status updates.
+After launch
+The product is structured for iteration, measurement, and new business requirements.
+Engagements
+Choose the build path that matches your product stage.
+From fast strategy clarity to full product delivery, every engagement is designed around visible outcomes and practical next steps.
+01
+Product Clarity Sprint
+Best for founders or teams who need scope, user flows, feature priority, and a realistic launch roadmap before hiring build work.
+- Workflow map
+- Feature priority
+- Tech direction
+02
+Premium App Build
+Best for serious mobile products that need strategy, UI, Android/KMP engineering, backend integration, and launch refinement.
+- Compose UI system
+- API/backend integration
+- Release support
+03
+Redesign & Scale
+Best for existing apps that feel dated, confusing, slow, or hard to trust and need a premium product experience upgrade.
+- UX audit
+- Interface redesign
+- Architecture review
+Technology
+A modern mobile stack selected for speed, clarity, and longevity.
+Android Native
+Kotlin
+Jetpack Compose
+Kotlin Multiplatform
+Ktor
+Supabase
+Firebase
+SQLDelight
+Paging 3
+Realtime Systems
+Secure WebView
+AI-ready UX
+Studio team
+A focused team with a sharp founder-led product culture.
+Small by design, direct by default, and shaped around product quality rather than bloated handoff layers.
+Founder | Android App Developer
+Ayyaz Sajjad
+Leads AppVion Studio across product strategy, Android engineering, Kotlin Multiplatform systems, and premium mobile execution.
+View Profile
+Developer
+Tayyab Sajjad
+Supports product delivery, UI implementation, and growing development execution within the studio workflow.
+View Profile
+Studio Associate
+Momna Shah
+Strengthens the team-facing studio presence with space for future coordination, support, and client-facing contributions.
+View Profile
+Insights
+Product thinking behind premium mobile experiences.
+UX strategy
+Why premium apps feel calmer before they feel beautiful.
+Trust comes from rhythm, spacing, hierarchy, and fast recognition of what matters next.
+Engineering
+How KMP helps teams move faster without making the product brittle.
+Shared logic can reduce duplication while keeping the native interface precise and responsive.
+Conversion
+The mobile screens that decide whether a product feels enterprise-ready.
+Onboarding, status, empty states, permissions, and review flows carry more trust than decoration.
+FAQ
+Clear answers before the first call.
+A good project starts with aligned expectations. These are the questions most buyers need answered before sharing a brief.
+What type of projects is AppVion Studio best for?
+Mobile apps, operational systems, founder-led MVPs, internal business tools, Android Native products, Kotlin Multiplatform builds, and premium redesigns.
+Can you build both design and development?
+Yes. The studio can shape product strategy, interface direction, Android/KMP engineering, backend integration, and launch refinement in one focused workflow.
+Do you work with international clients?
+Yes. The site is set up for remote-first conversations through email, WhatsApp, LinkedIn, and structured project briefs.
+How should a client start?
+The best start is a short brief with the product idea, target users, required platforms, current stage, budget range, and preferred launch timeline.
+Start the conversation
+Bring a serious mobile product idea. Leave with a sharper path.
+Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade. AppVion will help turn it into a focused product direction.
+Priority route
+Book a 20-min App Strategy Session
+Direct scheduling for founders and B2B teams ready to scope the build.
+Email
+ayyaz@appvionstudio.com
+Opens Gmail compose for briefs, RFP notes, and project context.
+WhatsApp
++92 346 7277143
+Fast route for availability, timeline, and quick fit checks.
+- Founder-led response within 24 hours.
+- Clear next step: strategy call, estimate, or technical review.
+- Remote-ready for international clients and product teams.
+Project brief
+Share the essentials. We will shape the next move.
+Keep it practical: product goal, target users, platform, timeline, and the business outcome you want.
+Name
+Email
+Project type
+Select one
+Android app
+Kotlin Multiplatform app
+Business tool
+App redesign
+Product strategy
+Timeline
+Select one
+ASAP
+2-4 weeks
+1-3 months
+Planning stage
+Project brief
+Send Project Brief
+Secure intake: saved to the AppVion dashboard with admin email notification.
+WhatsApp
+Start Project
+
+======================================================================
+## Case studies
+URL: https://appvionstudio.com/case-studies.html
+======================================================================
+
+Case Studies | Real Mobile Products Built by AppVion Studio
+Skip to content
+- Home
+- Case studies
+Case studies
+How these products were actually built.
+Not a gallery. Each one covers the problem, the engineering decisions that
+made it trustworthy, and what changed for the business running it — with the real
+prototype embedded so you can check the claims against the product.
+What you will find
+Six products across operations, logistics, property management and education.
+Every technical claim comes from the project's own repository documentation, and every
+performance figure is a measured engineering result rather than a marketing number.
+AppVion Studio publishes no testimonials and no star ratings it has not earned.
+These case studies are the proof instead.
+Enterprise operations
+SnowGrid
+Where the paywall is a database trigger, not a screen.
+A multi-tenant snow-removal platform for four roles, with 46 production migrations and server-authoritative pricing. Seven real screens.
+Multi-tenant Mapbox dispatch Settlement ledger TOTP-gated admin
+Read the case study
+Logistics
+D. Delivery
+Two videos, and the argument is over.
+A delivery platform where every parcel is recorded at pickup and drop-off, and those two videos are what a parcel insurance claim is settled with.
+Kotlin Multiplatform Video proof of delivery Rider wallet Expanding dispatch
+Read the case study
+Property management
+ProFix
+One repair, four people, no phone calls.
+A Kotlin Multiplatform property platform joining managers, contractors and tenants, with plan limits enforced in Postgres and a 56-case test plan.
+Kotlin Multiplatform Four roles Invite-gated access Offline-first
+Read the case study
+Education
+WUM Connect
+Built for a campus where the wifi keeps dropping.
+Role-aware university communication and attendance on an offline-first sync engine. 18% better p95 frame time, 320ms faster cold start, ~99% sync success.
+Offline-first Firestore RBAC WorkManager Measured performance
+Read the case study
+Data-heavy utility
+Attendance Suite
+Four thousand rows that still scroll at sixty frames.
+An institutional attendance system with conflict-safe writes, paged rosters, and exceptions surfaced ahead of the routine.
+Paging 3 Conflict-safe writes Play Integrity ~99% sync
+Read the case study
+Events
+VU Sports Society
+Sign-ups that close themselves.
+Campus event and role management with stacked filters, automatic capacity locking, and FCM reminders. Event publish flow 35% faster.
+Realtime Firestore Capacity locking FCM reminders 35% faster publish
+Read the case study
+Recognise your own problem in one of these?
+That is usually the fastest way to start. Point at the closest case study and tell us where yours differs.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+All work Six products, screen by screen.
+Pricing What builds like these cost.
+About the studio Who does the work.
+WhatsApp
+Start Project
+
+======================================================================
+## Case study: SnowGrid
+URL: https://appvionstudio.com/case-study-snowgrid.html
+======================================================================
+
+SnowGrid Case Study | Multi-Tenant Snow Operations Platform | AppVion Studio
+Skip to content
+- Home
+- Case studies
+- SnowGrid
+Case study · Enterprise operations
+Where the paywall is a database trigger, not a screen.
+SnowGrid runs a snow-removal business as a live network: property owners, dispatchers, contractors and drivers on one grid. The hard part was never the map. It was making sure no one can lie to the server.
+In short
+SnowGrid is a multi-tenant B2B platform that lets a snow-removal company run its
+entire operation from one Android app. Four roles share it: super admin, dispatcher,
+contractor and customer. Property owners trace their own lot on a map, the app returns area
+and perimeter, and a pricing engine turns snow depth plus surface area plus priority into a
+quotable figure the customer authorises on the spot.
+It is production-grade with 46 database migrations applied , and the
+commercial rules live in Postgres rather than in Kotlin: job prices are recomputed
+server-side, money splits are calculated by a database trigger, and plan limits are
+BEFORE INSERT triggers. A company admin cannot award itself a paid plan even
+though it holds write access to its own row.
+- The product
+- The problem
+- Engineering decisions
+- Impact
+- Stack
+Product type
+Multi-tenant B2B SaaS
+Platform
+Android (Compose Multiplatform)
+Roles
+Super admin, dispatcher, contractor, customer
+Backend
+Supabase — Auth, Postgrest, Realtime, Storage, Edge Functions
+Database migrations
+46 applied to production
+Target markets
+USA, Canada, Europe
+Status
+Production-grade, pre Play Store release
+Screens in the prototype
+7 real captures
+Walk through the real thing.
+These are captures from the running app, not mockups. Move through the screens
+below or open the full prototype.
+The problem with snow.
+Snow removal is an industry that runs on phone calls at four in the morning. A storm
+lands, a dispatcher starts ringing round contractors, property owners ring the dispatcher
+to ask whether anyone is coming, and the price for each job is negotiated per call by
+whoever picks up.
+Three things break at once. Nobody agrees what a job costs, because the price was
+agreed verbally under time pressure. Nobody can prove the work happened, because the
+evidence is a contractor's word. And nobody knows what they are owed, because the money
+split was worked out on paper after the season ended.
+Software that only shows a map on a screen does not fix any of that. It has to be the
+thing that decides the price, holds the evidence, and computes the split.
+Four decisions that made it trustworthy.
+Anyone can build screens. These are the choices that decide whether a platform
+survives contact with people who have a financial reason to game it.
+The price is computed on the server, and the client's number is thrown away
+When a customer submits a job, the app sends the parameters, not the total. A database insert trigger recomputes the price from the pricing matrix and discards whatever the client claimed the total was. It is one of the oldest holes in commerce software — trusting a figure that travelled through a device the customer controls — and closing it is a three-line decision that has to be made before the first payment, not after the first dispute.
+Money splits are a database trigger, and the shares sum exactly
+Contractor share, company share and platform share are computed by a SECURITY DEFINER trigger, never sent by the client. They are also derived so that the parts sum to the job total exactly, rather than each being rounded independently — the classic way a ledger drifts by a cent per job until nobody can reconcile a season.
+The paywall lives in Postgres, so the app cannot be tricked into granting a plan
+A company admin legitimately holds update rights on its own company row. That means any plan check written in Kotlin can be bypassed by anyone willing to talk to the API directly. So plan_tier and plan_expires_at sit inside a trigger that rejects self-promotion, and the free-tier ceilings — five contractors, thirty customers — are BEFORE INSERT triggers that raise a real error. They are deliberately not implemented by hiding rows through row-level security, because that fails silently and users never learn why the app stopped working.
+Cross-tenant access needs a second factor, enforced in the database
+The super admin can read across every tenant, which makes that one account the most valuable credential in the system. Database policy requires an aal2 session — a verified TOTP factor — before any cross-tenant read resolves. A stolen password on its own grants nothing. Local storage is encrypted with SQLCipher, auth tokens sit in a three-tier Keystore strategy, and a rooted device is blocked at launch.
+What it changes for the business running it.
+- Pricing stops being a negotiation. Depth, area and priority
+produce a number the customer authorises before anyone drives anywhere. The
+argument about what was agreed at 4am cannot happen, because nothing was agreed
+verbally.
+- Proof replaces trust. Before and after photographs are attached
+to the job by the contractor on site. A disputed job is settled by looking at it.
+- The season reconciles itself. Because every split was computed
+by the same trigger and the parts always sum to the total, the ledger at the end of
+a season is arithmetic rather than an investigation.
+- Owners onboard themselves. A customer draws their own lot on
+the map and the app returns the measurement. That removes a site visit from the
+sales process entirely.
+- Growth is not gated by features. The free tier is limited by
+size — five contractors, thirty customers — and every capability is
+switched on. A small operator experiences the whole product, which is the only
+version of a free tier that has anything to sell.
+Engineering targets held throughout: cold start under two seconds, screen
+transitions under 300ms, a loading state on screen within 100ms of any request, and
+crash and ANR rates inside Google's Play vitals thresholds.
+What it is built with.
+Clean Architecture with MVVM across five modules. The domain layer holds no Android
+dependency at all, ViewModels expose only immutable state, and every network call
+returns a typed result rather than throwing.
+Kotlin Compose Multiplatform Supabase
+Postgres RLS Realtime Mapbox
+Voyager Koin Firebase Cloud Messaging
+SQLCipher Brevo SMTP GitHub Actions CI
+Running an operation on phone calls and spreadsheets?
+That is the shape of problem SnowGrid was built for. Twenty minutes is usually enough to tell whether software fixes it or just moves it.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+D. Delivery Logistics where two videos back an insurance claim.
+ProFix Property management across four roles.
+Pricing What a build like this costs.
+WhatsApp
+Start Project
+
+======================================================================
+## Case study: D. Delivery
+URL: https://appvionstudio.com/case-study-d-delivery.html
+======================================================================
+
+D. Delivery Case Study | Logistics Platform with Video Proof of Delivery | AppVion Studio
+Skip to content
+- Home
+- Case studies
+- D. Delivery
+Case study · Logistics
+Two videos, and the argument is over.
+Every delivery dispute is the same dispute: it arrived broken, or it never arrived. D. records the parcel at pickup and again at drop-off, and those two videos are what an insurance claim is settled with.
+In short
+D. is a Kotlin Multiplatform delivery and logistics platform built as three
+pieces: a customer app for booking, live tracking and payment; a rider app for accepting
+jobs, navigating and recording proof; and a web control tower for dispatch, the ledger and
+disputes.
+Its differentiator is structural rather than cosmetic. Every delivery requires
+two mandatory video recordings — one at pickup, one at drop-off — stored server
+side. Those videos are the backbone of a parcel insurance product, which is only
+possible because the evidence is captured by default instead of requested after something
+goes wrong.
+It carries real money through cash on delivery, real legal identifiers such as device
+IMEI, and real physical goods, so correctness is enforced at the database rather than
+assumed in the app.
+- Architecture
+- The problem
+- Engineering decisions
+- Impact
+- Stack
+Product type
+Delivery and logistics marketplace
+Modules
+Customer app, rider app, admin control tower
+Platform
+Kotlin Multiplatform — Android and iOS
+Backend
+Supabase — Postgres, RLS, Realtime, Storage
+Proof of delivery
+Two mandatory videos per parcel
+Payments
+Cash on delivery, rider wallet, settlement ledger
+Pricing
+Google Routes distance, weight surcharge, fragile fee
+Status
+In active development
+Three apps, one source of truth.
+D. Delivery system architecture
+Customer app and rider app both write to a shared Supabase
+backend. The rider records a pickup video and a drop-off video; both are stored
+and become the evidence behind a parcel insurance claim. An admin control tower
+handles dispatch, the ledger and disputes.
+Customer app
+Book, track live, pay
+Android + iOS
+Rider app
+Accept, navigate, record
+Offline-first wallet
+Supabase
+Postgres, RLS, Realtime
+Storage for video proof
+Control tower
+Dispatch, ledger, disputes
+Web admin
+Parcel insurance
+Two videos settle the claim
+Pickup + drop-off
+Both apps write to one Postgres source of truth. The two mandatory
+videos are not a feature bolted on the side — they are what makes the insurance
+product possible.
+Why courier disputes never resolve.
+A customer says the laptop arrived with a cracked screen. The rider says it was
+handed over intact. The company has a delivery timestamp and a signature scrawled on a
+phone, neither of which says anything about the condition of the item.
+So the company does one of two things. It refuses the claim, and loses the customer.
+Or it pays out on every claim, and becomes a target. Both are expensive, and both happen
+because the evidence was never captured at the moment it existed.
+Insurance is impossible on top of that. You cannot underwrite a parcel when nobody
+can establish what condition it was in when it changed hands.
+Decisions that shaped it.
+Video proof is mandatory, not optional
+A rider cannot complete a job without recording at pickup and at drop-off. Making it optional would mean it is captured on the deliveries that go well and missing on exactly the ones that matter. The videos go to server-side storage rather than the rider's camera roll, so the evidence does not belong to the person it might be used against.
+Money is never a raw floating-point number
+Financial values are rounded deliberately at defined boundaries rather than accumulating floating-point error across a ledger. On a cash-on-delivery platform, a fraction of a rupee per order becomes a reconciliation problem at volume, and it is the kind of bug that is nearly impossible to unwind once a month of orders has been settled on top of it.
+The database is the source of truth, not the Kotlin model
+Every domain model and UI state is treated as a projection of Postgres state. When Kotlin and the database disagree, the database is right. That sounds obvious and is routinely violated: an app that trusts its own cached model is an app that shows a rider a job that was reassigned four minutes ago.
+Riders work offline, because delivery happens in dead zones
+The rider app is built offline-first with a local store and a sync queue. Stairwells, basements and industrial estates are where parcels actually change hands, and an app that needs a connection to record a handover fails precisely where it is needed.
+Dispatch expands outward instead of broadcasting to everyone
+A new order is offered to the closest available riders first and the radius widens if nobody accepts. Broadcasting to the whole fleet at once looks simpler and produces a race that annoys every rider who lost it.
+What it changes commercially.
+- Insurance becomes a product, not a liability. Because condition
+is evidenced at both ends of every journey by default, a parcel insurance offering
+can be priced instead of guessed at.
+- Disputes stop being someone's word. A claim is resolved by
+watching two short videos, which takes a support agent a minute rather than a week
+of correspondence.
+- Riders are paid on arithmetic. The wallet and settlement ledger
+compute what is owed from recorded jobs rather than from an end-of-week reckoning.
+- Pricing is defensible. Distance comes from a routing API, not a
+straight line, with explicit surcharges for weight and fragility. A customer who asks
+why a delivery cost what it did gets an answer.
+- High-value goods become carryable. Recording device identifiers
+such as IMEI alongside video evidence is what makes moving electronics a business
+rather than a risk.
+What it is built with.
+Kotlin Multiplatform Compose Multiplatform
+Supabase Postgres RLS Realtime
+Supabase Storage Google Routes API
+Firebase Cloud Messaging Offline-first sync
+TypeScript admin panel
+Moving goods, money, or evidence between strangers?
+Those are the products where the architecture decides whether the business works. Bring the problem and we will map it.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+SnowGrid Operations where the database owns the money.
+Kotlin Multiplatform Why the logic is shared and the UI is not.
+Pricing What a platform of this size costs.
+WhatsApp
+Start Project
+
+======================================================================
+## Case study: ProFix
+URL: https://appvionstudio.com/case-study-profix.html
+======================================================================
+
+ProFix Case Study | Property Management SaaS in Kotlin Multiplatform | AppVion Studio
+Skip to content
+- Home
+- Case studies
+- ProFix
+Case study · Property management
+One repair, four people, no phone calls.
+A tenant reports a leak, a property manager assigns it, a contractor fixes and evidences it, and the manager closes it. ProFix is that loop, with the business rules written once and shared across platforms.
+In short
+ProFix is a Kotlin Multiplatform property management SaaS. Four roles use it:
+the platform owner, property managers, contractors, and tenants. A tenant raises a
+complaint against their unit, a manager turns it into a work order and assigns a
+contractor from an invite-only directory, the contractor updates status and attaches
+evidence, and the manager approves remotely.
+Because it is built on Kotlin Multiplatform, the rules that must never differ —
+who can see what, when a work order may close, how plan limits apply — are written
+once in shared Kotlin rather than twice in two languages that quietly drift apart.
+- The product
+- The problem
+- Engineering decisions
+- Impact
+- Stack
+Product type
+B2B SaaS, freemium
+Platform
+Kotlin Multiplatform — Android primary, iOS target
+Roles
+Platform owner, property manager, contractor, tenant
+Backend
+Supabase — PostgreSQL 17.6, GoTrue, Storage, Edge Functions
+Local database
+SQLDelight, offline-first sync
+Access control
+Invite codes for contractors and tenants
+Test plan
+56 documented test cases across all four roles
+Status
+Play Store launch hardening
+The workflow, screen by screen.
+Dispatch through to approval, in the order a real job moves.
+Why property maintenance goes wrong.
+A property manager sits between people who never speak to each other. Tenants report
+problems by phone, text and in person. Contractors are booked by whoever was reachable.
+Evidence that work happened arrives as a photo in a WhatsApp thread, if at all. Invoices
+arrive weeks later against jobs nobody can now identify.
+The failure is not that any single step is hard. It is that the record of what
+happened is spread across four people's phones, so closing a job means reconstructing it
+from memory.
+Decisions that shaped it.
+Kotlin Multiplatform, with the interface left native
+The shared module holds the domain models, repository interfaces, sync engine and the rules governing who may do what. That is the code where a difference between Android and iOS becomes a bug someone finds in production. The interface stays native on each platform, so nothing has to pretend to be a platform it is not.
+Plan limits enforced by database trigger, not by hiding buttons
+The free tier allows three properties, twenty work orders and three contractors. Those ceilings are migrations in Postgres, so they hold regardless of which client is talking to the API. A limit implemented in the interface is a suggestion; a limit implemented as a constraint is a limit.
+Contractors and tenants join by invite, never by open signup
+A property manager generates an invite code from settings. A contractor signs up and enters it; a tenant signs up and enters a code that links them to a specific unit. Nobody lands inside a manager's portfolio by guessing an email domain, and the manager can see exactly who they let in.
+Offline-first, because maintenance happens in basements
+SQLDelight holds a local copy and the sync engine reconciles on reconnect. A contractor in a plant room with no signal can still update a job, and the update lands when the phone comes back rather than being lost with a spinner.
+What changes for a property manager.
+- One record per job, not four. The complaint, the assignment,
+the evidence and the approval are the same object, so closing a job is reading it.
+- Approval stops requiring a site visit. The manager sees the
+evidence attached to the job and approves from wherever they are.
+- The contractor directory is curated, not accidental. Skills and
+availability sit against real people the manager invited.
+- Tenants stop chasing. A tenant who can see the status of their
+own complaint does not phone to ask about it, which removes the single largest
+interruption from a manager's day.
+- Growth is priced honestly. A three-property landlord uses it
+free. A management company with a real portfolio pays for the volume it uses, and
+the ceiling is enforced where it cannot be argued with.
+Before release the product was taken through a documented 56-case test plan covering
+every role, plus a dedicated Play Store launch hardening pass.
+What it is built with.
+Kotlin Multiplatform Compose Multiplatform
+Supabase PostgreSQL 17.6 SQLDelight
+Ktor Koin Coil
+Firebase Cloud Messaging Edge Functions
+Managing property, people and evidence in three places?
+ProFix started as exactly that description. Send yours and we will map it into a workflow before anyone writes code.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+SnowGrid Multi-tenant operations with server-authoritative money.
+Kotlin Multiplatform What KMP shares, and what it does not.
+Pricing What a build like this costs.
+WhatsApp
+Start Project
+
+======================================================================
+## Case study: WUM Connect
+URL: https://appvionstudio.com/case-study-wum-connect.html
+======================================================================
+
+WUM Connect Case Study | Offline-First University Communication App | AppVion Studio
+Skip to content
+- Home
+- Case studies
+- WUM Connect
+Case study · Education
+Built for a campus where the wifi keeps dropping.
+Announcements that only arrive when the network is good are announcements that do not arrive. WUM Connect assumes the connection will fail and is designed around that.
+In short
+WUM Connect is a role-aware university attendance and communication app for
+Android, built with Jetpack Compose, MVVM and Firestore, on top of an offline-first sync
+engine using Room and WorkManager.
+Students, teachers and administrators open the same app and see only what applies to
+their role, enforced by Firestore security rules with role-based access control rather
+than by hiding screens. Attendance marked without a connection is queued locally and
+reconciles on reconnect.
+Measured engineering results: p95 frame time improved 18 percent ,
+cold start reduced by 320ms , and sync success around 99 percent
+on low connectivity .
+- The product
+- The problem
+- Engineering decisions
+- Impact
+- Stack
+Product type
+University communication and attendance
+Platform
+Android Native
+Roles
+Admin, teacher, student
+Backend
+Firestore with RBAC rules and composite indexes
+Offline engine
+Room + WorkManager, idempotent retries
+p95 frame time
+18% improvement
+Cold start
+320ms faster
+Sync success
+~99% on low connectivity
+How it works, screen by screen.
+The problem with campus software.
+A university has four audiences with different rights and one shared reality: the
+network is unreliable. Notices go out by noticeboard, WhatsApp group and email, so
+nobody knows who actually received anything. Attendance is taken on paper and typed up
+later, which means the record is always a day behind and occasionally invented.
+Most campus apps fail for the same reason. They are built as if the connection is
+always there, so a teacher in a concrete lecture theatre taps submit, sees a spinner,
+and goes back to paper.
+Decisions that shaped it.
+Offline-first as the default path, not a fallback
+Attendance writes go to Room first and are queued through WorkManager with backoff and retry. The queue is idempotent, so a retry after a partial failure cannot double-mark a student. Sync success sits around 99 percent on poor connectivity because the app never depended on the network being there at the moment of the tap.
+Roles enforced in Firestore rules, not in the interface
+Role-based access control lives in security rules with composite indexes behind the queries. Hiding a screen from a student does not stop a determined student from reading the underlying collection; a rule does.
+Performance treated as a feature and measured
+Cold start was cut by 320ms and p95 frame time improved 18 percent. On the mid-range Android hardware that dominates a campus, those are the differences between an app people open and an app people avoid.
+App Check and Crashlytics from the start
+App Check keeps unverified clients out of the backend, and Crashlytics turns a vague report of intermittent closures into a stack trace. Both are cheap on day one and expensive to retrofit.
+What it changes for an institution.
+- Delivery becomes measurable. An administrator can see how many
+people received a notice and how many opened it, which no noticeboard has ever done.
+- Attendance is same-day. Marked at the point of teaching rather
+than typed up later, so the record reflects the room.
+- Bad connectivity stops causing lost data. Work queued offline
+lands when the signal returns, without the teacher thinking about it.
+- One app replaces four channels. Notices stop being duplicated
+across noticeboard, email, and messaging groups where nobody can confirm receipt.
+What it is built with.
+Kotlin Jetpack Compose MVVM + UseCases
+Hilt Room WorkManager DataStore
+Firestore FCM Remote Config
+Crashlytics App Check Material 3
+Software for an institution rather than a startup?
+Different constraints: many roles, poor connectivity, and users who cannot be trained. That is a shape we know well.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+Attendance Suite Thousands of records, browsed smoothly.
+VU Sports Society Campus events and role management.
+Android development How these are built.
+WhatsApp
+Start Project
+
+======================================================================
+## Case study: Attendance Suite
+URL: https://appvionstudio.com/case-study-attendance.html
+======================================================================
+
+Attendance Suite Case Study | Offline-First Android Attendance System | AppVion Studio
+Skip to content
+- Home
+- Case studies
+- Attendance Suite
+Case study · Data-heavy utility
+Four thousand rows that still scroll at sixty frames.
+Attendance software is easy at fifty students and breaks at four thousand. This one was built for the second number from the beginning.
+In short
+Attendance Suite is an offline-first Android attendance system for
+universities, academies and institutes, built with Jetpack Compose, MVVM and Firestore.
+Attendance can be marked present, absent or late with no connection, and updates are
+conflict-safe using unique identifiers and timestamp checks so two devices marking the
+same session cannot corrupt each other.
+Large rosters are paged rather than loaded, so a four-thousand-row list stays smooth
+on mid-range hardware. Sync success sits at roughly 99 percent on low-bandwidth
+connections.
+- The product
+- The problem
+- Engineering decisions
+- Impact
+- Stack
+Product type
+Institutional attendance system
+Platform
+Android Native
+Roles
+Admin, teacher, student
+Offline engine
+Room + WorkManager with backoff
+Conflict handling
+Unique IDs and timestamp checks
+Large lists
+Paging 3
+Security
+Strict Firestore rules, App Check, Play Integrity
+Sync success
+~99% on low bandwidth
+How it works, screen by screen.
+Where attendance systems fall over.
+Three failures repeat across every institution. The list is loaded in one request, so
+it stutters the moment enrolment grows. The app requires a connection, so it is useless
+in the rooms where teaching actually happens. And two people marking the same session
+overwrite each other, so the record is quietly wrong.
+None of these show up in a demo with thirty students on office wifi. All of them show
+up in week three of a real term.
+Decisions that shaped it.
+Paging 3 instead of loading the roster
+Rows are fetched in pages as the list scrolls, so memory stays flat regardless of enrolment and the list holds sixty frames a second on the mid-range devices institutions actually buy.
+Conflict-safe writes, so two markers cannot corrupt a session
+Each attendance record carries a unique identifier and a timestamp, and updates are checked against both. Two teachers marking the same session produce a resolvable result rather than a last-write-wins mess nobody notices until an audit.
+Exceptions surfaced ahead of the routine
+A coordinator does not need to see the four thousand students who were present. They need the late marks, the duplicates, and the students below the attendance threshold. Those are grouped so they are cleared in one pass rather than found by scrolling.
+Security hardened where the data actually sits
+Strict Firestore rules with user-level validation, composite indexes for the queries that matter, App Check and Play Integrity, and Crashlytics triage with ANR prevention. Attendance is a record that affects whether someone sits an exam, so it is treated as one.
+What it changes for an institution.
+- Scale stops being a problem. The system behaves the same at
+four thousand records as at forty.
+- Marking happens in the room. No connection required, so the
+paper fallback disappears and with it the transcription errors.
+- The record can be defended. Conflict-safe updates and strict
+rules mean an attendance figure holds up when a student disputes it.
+- Reporting is in the product. Departmental figures and
+below-threshold students are available without an export-to-spreadsheet step.
+What it is built with.
+Kotlin Jetpack Compose MVVM Room
+WorkManager Paging 3 Firestore
+App Check Play Integrity Crashlytics
+Material 3
+Have a list that breaks when it gets long?
+Data-heavy mobile is a specific discipline. Tell us the volume and we will tell you what it takes.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+WUM Connect Role-aware campus communication.
+VU Sports Society Events and role management.
+Pricing What a build like this costs.
+WhatsApp
+Start Project
+
+======================================================================
+## Case study: VU Sports Society
+URL: https://appvionstudio.com/case-study-vu-sports.html
+======================================================================
+
+VU Sports Society Case Study | Campus Events and Role Management App | AppVion Studio
+Skip to content
+- Home
+- Case studies
+- VU Sports Society
+Case study · Events
+Sign-ups that close themselves.
+Campus sport runs on a spreadsheet, a group chat, and one person who becomes the bottleneck. This replaced all three.
+In short
+VU Sports Society is an Android event and role management app for campus sport ,
+built with Jetpack Compose, Firestore and an MVVM architecture with real-time updates and
+FCM reminders.
+Three roles share it: administrators create events, managers run them, and participants
+register. Filters stack rather than replacing one another, entries lock automatically when
+a slot limit is reached, and a confirmed entry lives in the app and works offline.
+Measured result: event publish flow time reduced 35 percent , with ANRs
+minimised through correct threading.
+- The product
+- The problem
+- Engineering decisions
+- Impact
+- Stack
+Product type
+Campus events platform
+Platform
+Android Native
+Roles
+Admin, manager, participant
+Backend
+Firestore with composite indexes
+Notifications
+FCM reminders
+Publish flow time
+35% faster
+Offline
+Cached event lists
+Architecture
+MVVM + UseCase pattern
+How it works, screen by screen.
+Why a spreadsheet stops working.
+Trials are announced in a group chat. Sign-ups arrive as replies. Somebody copies
+them into a sheet. The sheet fills past the slot limit and the organiser starts telling
+people they are on a waitlist that exists only in their head. On the day, nobody is sure
+who is actually registered.
+Every part of that is a coordination problem, not a sports problem, and it lands on
+one volunteer.
+Decisions that shaped it.
+Entries lock themselves at the limit
+The slot ceiling is enforced when the entry is written, not checked by the organiser afterwards. That single decision removes the waitlist, the awkward message, and the argument about who registered first.
+Filters combine instead of replacing each other
+Sport, timeframe and availability stack. It sounds trivial and it is the difference between a filter people use and a filter people abandon after the second tap resets the first.
+Real-time lists without the ANRs
+Firestore listeners with composite indexes behind them, and work kept off the main thread. Real-time updates are the easiest way to build a janky Android app, and correct threading is the difference between live and frozen.
+Reminders that arrive before the event, not after
+FCM reminders are scheduled against the event, so a participant who registered three weeks ago is told the day before. Attendance at campus events is mostly a memory problem.
+What it changes for an organiser.
+- Publishing an event got 35 percent faster , measured across the
+flow from creation to live.
+- The waitlist disappears. Capacity is enforced by the system, so
+no one has to police it.
+- Registration is verifiable at the gate. A confirmed entry lives
+in the app and works without a signal.
+- The volunteer stops being the bottleneck. Roles mean managers
+run their own events without going through one administrator.
+What it is built with.
+Kotlin Jetpack Compose MVVM + UseCase
+Firestore Composite indexes WorkManager
+Hilt Coroutines / Flow FCM Material 3
+Running something on a spreadsheet and goodwill?
+That is usually a two-week clarity sprint away from being a product. Tell us what breaks first.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+WUM Connect Role-aware campus communication.
+Attendance Suite Data-heavy attendance at scale.
+All work Six products, screen by screen.
+WhatsApp
+Start Project
+
+======================================================================
+## Pricing
+URL: https://appvionstudio.com/pricing.html
+======================================================================
+
+Mobile App Development Cost in 2026 | AppVion Studio Pricing
+Skip to content
+- Home
+- Pricing
+Pricing
+What a mobile app actually costs in 2026.
+Most studios hide this behind a contact form. Here are real numbers, what moves
+them, and how offshore pricing compares to a US or European agency.
+Short answer
+A production-ready mobile app built by AppVion Studio costs $12,000 to $35,000 .
+A first release with a focused feature set typically lands between $12,000 and $18,000
+and takes 8 to 12 weeks. Multi-role operational platforms — dispatch, approvals, live tracking,
+payments — run $20,000 to $35,000 over 12 to 16 weeks.
+Before committing to a build, a Product Clarity Sprint from $1,500 over one to
+two weeks produces the scope, workflow map, and technical direction needed to price the work
+accurately. Redesigns of an existing app start at $6,000 .
+All figures are USD starting ranges for a studio based in Multan, Pakistan, working remotely
+with clients worldwide.
+- Engagements
+- Market comparison
+- What drives the price
+- What is and is not included
+- Pricing questions
+Four ways to work together.
+Every engagement is fixed price. The figure is agreed after the scope is clear, and delivery
+runs against milestones you can inspect rather than status reports you have to trust.
+01 · 1–2 weeks
+Product Clarity Sprint
+from $1,500 USD
+For founders and teams who need scope, user flows, feature priority, and a realistic launch roadmap before commissioning build work.
+- Business model and user role map
+- Core workflow and screen inventory
+- Feature priority with a cut line
+- Technical direction and stack choice
+- Build estimate you can take to any studio
+Discuss this
+02 · 8–16 weeks
+Premium App Build
+$12,000 – $35,000 USD
+For serious mobile products that need strategy, interface design, Android or Kotlin Multiplatform engineering, backend integration, and launch refinement in one accountable motion.
+- A first production release typically lands at $12,000–$18,000
+- Multi-role operational platforms run $20,000–$35,000
+- Jetpack Compose interface system
+- Backend integration: Supabase, Firebase, or your existing API
+- Store submission and launch support
+Discuss this
+03 · 4–8 weeks
+Redesign & Scale
+from $6,000 USD
+For existing apps that feel dated, confusing, slow, or hard to trust and need a premium product experience upgrade without a full rebuild.
+- UX audit against real user tasks
+- Interface redesign and design system
+- Architecture and performance review
+- Staged rollout so the app keeps shipping
+Discuss this
+04 · Rolling
+Care & Iteration
+from $900/mo USD
+For products that are live and still moving. Maintenance, monitoring, and a steady flow of small improvements rather than a big-bang second version.
+- OS and dependency updates
+- Store policy compliance
+- Bug fixes with agreed response times
+- A budgeted slice of new feature work each month
+Discuss this
+How this compares to the rest of the market.
+The largest single variable in software pricing is not the app. It is where the engineers sit.
+The same product specification produces wildly different invoices depending on the team's cost base,
+and a large part of a Western agency's rate funds sales, account management, and office overhead
+rather than engineering.
+Typical 2026 rates for mobile app development
+Where the team is Hourly rate Typical production app
+United States agency $150 – $250 $100,000 – $500,000
+Western Europe agency $80 – $150 $60,000 – $150,000
+Eastern Europe agency $50 – $100 $40,000 – $100,000
+AppVion Studio (Multan, Pakistan) $45 – $65 $12,000 – $35,000
+Commodity freelance marketplace $10 – $25 $3,000 – $8,000
+Comparison figures are drawn from published 2026 industry pricing guides,
+including Netguru, TechAhead, Velvetech, and Pakistan market reports. They are indicative ranges for
+a comparable product, not quotes from those firms. AppVion's rate sits at the top of the Pakistani
+market rather than the bottom — the studio competes on judgement, not on being the cheapest bid.
+What actually moves the number.
+Screen count is the weakest predictor of cost. These seven factors decide almost everything:
+- Number of user roles. One role is a list and a detail screen. Four roles with different permissions is four products sharing a backend. This is the single biggest driver on operational apps.
+- Whether the data is live. A screen that refreshes on pull is cheap. A screen that updates the moment a driver moves or a job status changes needs realtime infrastructure, conflict handling, and a great deal more testing.
+- Offline behaviour. Working offline is not a toggle. It means a local database, a sync queue, and a decision about what happens when two people edit the same record on a bad connection.
+- Integrations. Payments, maps, SMS, calendars, and existing ERP or CRM systems each carry their own edge cases, credentials, and failure states. Three integrations often cost more than ten screens.
+- Interface ambition. A functional interface and a premium one differ by motion, empty states, loading states, error states, and the hundred small decisions that make an app feel expensive.
+- Platform count. Android only is the baseline. Adding iOS through Kotlin Multiplatform typically adds 35 to 55 percent rather than doubling the cost, because the business logic is shared and only the interface is rebuilt.
+- How clear the scope is on day one. The most expensive projects are the ones that changed direction in week six. This is why the Clarity Sprint exists.
+What is included, and what is not.
+Included in a build
+- Product strategy and workflow mapping
+- Interface design and a reusable Compose design system
+- Android Native or Kotlin Multiplatform engineering
+- Backend integration and data modelling
+- Testing on real devices across screen sizes and OS versions
+- Play Store submission and launch support
+- Source code, repository, and design files handed over in full
+- A founder-led point of contact from first call to launch
+Not included
+- Apple Developer Program membership ($99 per year, paid by you, in your name)
+- Google Play Console registration (one-off $25, in your name)
+- Hosting, database, mapping, SMS, and payment-processor fees
+- Paid marketing, app store optimisation campaigns, and content production
+- Ongoing maintenance after launch, which is a separate retainer
+Third-party accounts are always registered in the client's name. If the working relationship
+ends, nothing needs to be transferred and nothing can be withheld.
+Pricing questions, answered directly.
+How much does it cost to build a mobile app in 2026?
+A production-ready mobile app costs between $12,000 and $35,000 when built by AppVion Studio. The same product costs $40,000 to $100,000 through an Eastern European agency and $100,000 or more through a US agency, because the largest single cost driver in software is where the engineering team sits, not the app itself. Simple apps with a handful of screens and no backend logic can land below $12,000, and multi-role operational platforms with live tracking and payments run to the top of the range.
+What is the cheapest way to start?
+A Product Clarity Sprint, from $1,500 over one to two weeks. It produces a workflow map, a prioritised feature list, a technical direction, and a realistic launch plan. Most cost overruns happen because a build started before anyone agreed what was being built, so the sprint usually saves more than it costs.
+Why is AppVion cheaper than a US or European agency?
+Because the team is in Multan, Pakistan, and the studio is small. There is no account management layer, no sales team, and no city-centre office to fund. Senior engineering rates in Pakistan run $40 to $80 per hour at the top tier compared with $150 to $250 in the United States. AppVion charges a blended $45 to $65 per hour, which is the top of the local market, not the bottom.
+Is a fixed price or an hourly rate better?
+Fixed price, in almost every case. AppVion quotes a fixed figure per engagement after the scope is clear, and delivery runs against milestones. Hourly billing transfers all the estimation risk to the client and rewards a slow team. The exception is open-ended iteration after launch, which is better suited to a monthly retainer.
+What does the price not include?
+Third-party costs that belong to the client and are paid directly: Apple Developer Program at $99 per year, Google Play Console at a one-off $25, and any hosting, database, mapping, SMS, or payment-processor fees. AppVion sets these accounts up in the client's name so the client owns them outright.
+How much does an app cost to run after launch?
+Budget 15 to 25 percent of the original build cost per year for maintenance across the industry. On a $20,000 build that is roughly $3,000 to $5,000 a year for keeping the app current with OS releases, store policy changes, and dependency updates. AppVion's care and iteration retainer starts at $900 per month and covers both maintenance and ongoing feature work.
+Do you require full payment upfront?
+No. Engagements are split across milestones, with a deposit to begin and the remainder released as each milestone is delivered and reviewed. The client sees working software at each stage rather than a status report.
+Who owns the code and the app?
+The client does, in full, on final payment. That includes the source code, the repository, the store listings, the backend accounts, and the design files. AppVion does not retain a licence or hold accounts hostage.
+Get a real number for your product.
+Send a short brief or book a 20-minute call. You will get a scope view and an honest range, whether or not you build with AppVion.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+See the work Six products, described screen by screen.
+Android development What native Kotlin and Compose buy you.
+Full FAQ Timelines, ownership, process, and technology.
+WhatsApp
+Start Project
+
+======================================================================
+## Android app development
+URL: https://appvionstudio.com/android-app-development.html
+======================================================================
+
+Android App Development with Kotlin and Jetpack Compose | AppVion Studio
+Skip to content
+- Home
+- Android App Development
+Android app development
+Android apps, built natively in Kotlin.
+AppVion Studio builds Android products in Kotlin and Jetpack Compose — the
+operational kind that people open forty times a day and cannot afford to have fail.
+Short answer
+AppVion Studio is a native Android development studio. Apps are written in
+Kotlin against the Android SDK with Jetpack Compose interfaces, backed by Room or SQLDelight for
+offline storage and Supabase, Firebase, or an existing API for data.
+A production Android release costs $12,000 to $35,000 and takes
+8 to 16 weeks . The studio specialises in operational software — dispatch,
+approvals, attendance, field service, and internal business tools — rather than consumer
+social or gaming apps.
+- Why native
+- The stack
+- Architecture
+- Work
+- Questions
+Why native still wins for operational apps.
+Cross-platform frameworks are a reasonable answer to a real problem: two platforms, one
+budget. They are a poor answer when the app is the operational spine of a business.
+Field and operations apps live at the edges of the platform. They run in the background,
+capture photographs on bad connections, hold a GPS lock while the screen is off, queue writes
+offline, and fire notifications that people act on within seconds. Those are precisely the areas
+where an abstraction layer leaks — where you spend a week discovering that a plugin does not
+expose the API you need, and a second week working around it.
+Native Kotlin removes that class of problem. When the platform changes, you adapt directly
+instead of waiting for a framework to catch up.
+The stack, and why each piece is there.
+- Kotlin. The official Android language. Null safety and coroutines
+remove two of the largest historical sources of crashes and callback complexity.
+- Jetpack Compose. Declarative interfaces as a function of state.
+Less code, fewer synchronisation bugs, and motion that is cheap enough to actually do well.
+- Coroutines and Flow. Structured concurrency for network, database,
+and realtime streams without a thread-management layer of your own.
+- Room or SQLDelight. A real local database so the app works on a
+train, in a basement, or on a site with no signal.
+- Paging 3. Large lists that stay at 60fps on mid-range hardware
+instead of loading four thousand rows into memory.
+- Supabase, Firebase, or your API. Backend chosen to fit the product,
+not to fit a template. Realtime where realtime earns its cost.
+- WorkManager. Background sync that survives process death, reboots,
+and aggressive battery optimisation from manufacturers.
+How the apps are structured.
+Every build uses a layered architecture with a single source of truth for each piece of
+state: an interface layer in Compose, a domain layer holding business rules, and a data layer
+that owns the network and the local database. The interface never talks to the network directly.
+That sounds like ceremony until the second year, when a new requirement arrives and it turns
+out to be a change in one layer rather than a search across forty files. Most of what makes an
+app expensive to maintain is decided in the first three weeks of building it.
+Android work you can actually inspect.
+The studio publishes working prototypes rather than testimonials. Each product below can be
+explored screen by screen on the work page or through the interactive
+prototypes on the home page .
+- SnowGrid — enterprise snow-removal operations: live dispatch on a
+Mapbox map, a dynamic pricing engine, escrow payouts, and separate owner and driver portals.
+- GMassPulse — cold-email outreach infrastructure with Google Sheets
+lead import, a campaign editor, and a deliverability throttling engine.
+- WUM Connect — role-aware university communication on Firebase with
+offline-first sync across student, faculty, and admin roles.
+- Attendance Suite — thousands of attendance records browsed smoothly
+with Paging 3, exceptions surfaced ahead of the routine.
+Android questions, answered directly.
+What is native Android app development?
+Native Android development means writing the app in Kotlin against Android's own SDK and interface toolkit, rather than through a cross-platform layer that translates to Android at runtime. The app uses platform components directly, so it gets new Android features on the day they ship, behaves the way users expect, and has no translation layer to debug when something goes wrong.
+Should I build native Android or cross-platform?
+Build native Android when the app is Android-first, leans on device capability such as camera, location, background work, or notifications, or must feel indistinguishable from a first-party app. Choose cross-platform when you need iOS and Android simultaneously on one budget and the app is largely screens over an API. Kotlin Multiplatform is a middle path: shared business logic with a genuinely native interface on each platform.
+What is Jetpack Compose?
+Jetpack Compose is Google's modern declarative UI toolkit for Android, and it is now the default way Android interfaces are written. Instead of describing screens in XML layouts and mutating them from code, the interface is a function of state. In practice it means less code, fewer state-synchronisation bugs, and animation and theming that are far cheaper to build well.
+How long does an Android app take to build?
+A focused first release takes 8 to 12 weeks from a clear scope. A multi-role operational platform with realtime data and payments takes 12 to 16 weeks. A one to two week Product Clarity Sprint before the build is what makes those numbers reliable rather than optimistic.
+Do you publish the app to Google Play for us?
+Yes. The Play Console account is registered in the client's name, and AppVion handles the build signing, store listing, content rating, data safety declarations, and staged rollout. The client owns the listing and the app from day one.
+What Android versions do you support?
+Typically the current Android release back four or five versions, which covers the overwhelming majority of active devices. The exact floor is a business decision made during scoping, because supporting older versions costs testing time that may be better spent elsewhere.
+Can you take over an existing Android app?
+Yes. That usually starts with an architecture and code review to establish what is salvageable, followed by a staged plan so the app keeps shipping while it is modernised. A full stop-and-rewrite is rarely the right answer for a product with live users.
+Have an Android product in mind?
+Send a short brief or book a 20-minute call. You will leave with a clearer scope and an honest range.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+Kotlin Multiplatform Share logic, keep the interface native.
+Pricing Real numbers, not a contact form.
+See the work Six products, screen by screen.
+WhatsApp
+Start Project
+
+======================================================================
+## Kotlin Multiplatform development
+URL: https://appvionstudio.com/kotlin-multiplatform-development.html
+======================================================================
+
+Kotlin Multiplatform (KMP) Development Services | AppVion Studio
+Skip to content
+- Home
+- Kotlin Multiplatform
+Kotlin Multiplatform
+Share the logic. Keep the interface native.
+Kotlin Multiplatform gives you one codebase for the rules that must never differ
+between platforms, and two interfaces that each feel like they belong.
+Short answer
+Kotlin Multiplatform (KMP) shares business logic across Android and iOS while the
+interface stays fully native on each platform. Networking, data models, local storage,
+sync, and validation are written once in Kotlin and compiled to a native binary on iOS. The
+interface is built in Jetpack Compose on Android and SwiftUI on iOS.
+Unlike Flutter or React Native, there is no shared UI layer and no runtime bridge. Building
+for both platforms with KMP typically costs 35 to 55 percent more than Android
+alone, not double, and KMP can be adopted one module at a time inside an app
+that already exists.
+- What gets shared
+- KMP vs Flutter vs React Native
+- When KMP is wrong
+- Work
+- Questions
+What is shared, and what is not.
+The dividing line matters more than the technology. Everything that represents a business
+rule is shared. Everything a user touches is native.
+Written once, in Kotlin
+- Data models and the domain layer
+- API clients and serialisation, typically with Ktor
+- Local database and caching, typically with SQLDelight
+- Offline sync and conflict resolution
+- Validation, permissions logic, and pricing or scheduling rules
+- Analytics events, so both platforms report identically
+Written natively, per platform
+- The interface: Jetpack Compose on Android, SwiftUI on iOS
+- Navigation and platform conventions
+- Permissions dialogs, notifications, and background execution
+- Anything using a platform capability that has no shared equivalent
+On a data-driven product that split usually puts 40 to 60 percent of the codebase in shared
+Kotlin. The number is lower for a visually elaborate consumer app and higher for an operational
+tool where most of the complexity is rules rather than pixels.
+KMP, Flutter, and React Native compared.
+These three are often presented as competitors solving the same problem. They are not.
+Flutter and React Native share the interface; KMP deliberately does not.
+Cross-platform approaches compared
+Kotlin Multiplatform Flutter React Native
+What is shared Business logic only Logic and UI Logic and UI
+Interface Fully native (Compose / SwiftUI) Flutter-drawn widgets Bridged native components
+Language Kotlin Dart JavaScript / TypeScript
+Platform look and feel Identical to native Consistent, not native Close to native
+Adopt incrementally Yes, one module at a time No, generally all-or-nothing Possible but awkward
+Access to new OS features Immediate Waits for framework support Waits for a bridge or plugin
+Interface build effort Twice Once Once
+There is no universally correct answer here. The right choice depends on
+whether the interface or the logic carries most of your product's complexity, and on what your
+team can maintain after the studio hands over.
+When KMP is the wrong choice.
+A studio that recommends the same technology for every project is selling a preference,
+not advice. KMP is a poor fit when:
+- The product is Android-only with no real iOS plan. You pay the
+structural cost of sharing and never collect the benefit.
+- The app is mostly screens over a simple API and your team already
+ships confidently in Flutter or React Native.
+- The interface is the product. Highly visual consumer apps spend most
+of their budget on the layer KMP does not share.
+- Nobody on the receiving team writes Kotlin. Handover matters more
+than architectural elegance.
+In those cases AppVion will say so during the Product Clarity Sprint, which is a great deal
+cheaper than discovering it in month three.
+KMP in production.
+ProFix is AppVion's Kotlin Multiplatform field-service platform. Dispatch
+assignment, SLA rules, photo proof of work, and the manager approval chain all live in shared
+Kotlin, so a change to an approval rule cannot behave differently on one platform. The interface
+is native. You can explore it screen by screen on the work page .
+Kotlin Multiplatform Jetpack Compose Ktor
+SQLDelight Supabase Realtime sync
+Kotlin Multiplatform questions, answered directly.
+What is Kotlin Multiplatform?
+Kotlin Multiplatform, usually shortened to KMP, is a JetBrains technology that lets one Kotlin codebase share business logic, data models, networking, and local storage across Android, iOS, desktop, and web, while the user interface is written natively on each platform. It is not a cross-platform UI framework. The shared code compiles to a native binary on iOS rather than running through an interpreter or bridge.
+How is KMP different from Flutter or React Native?
+Flutter and React Native share the interface as well as the logic, and draw or bridge their own components. KMP shares only the logic and leaves the interface fully native: Jetpack Compose on Android, SwiftUI on iOS. That means the app looks and behaves exactly like a platform app, at the cost of building the interface twice. KMP is also incremental: you can share a single module inside an existing native app rather than committing to a rewrite.
+What exactly gets shared in a KMP project?
+Typically the business rules, data models, API clients, local database, caching and sync logic, validation, and analytics. That is usually 40 to 60 percent of the codebase on a data-driven product. What stays native is the interface, navigation, platform permissions, and anything touching a platform-specific capability.
+Does KMP cost less than building two separate apps?
+Yes, but not half. Building the same product for Android and iOS with KMP typically costs 35 to 55 percent more than Android alone, rather than 100 percent more, because the logic is written once and only the interface is rebuilt. The larger saving arrives later: a business rule changes in one place instead of two, and the two apps cannot silently drift apart.
+Is Kotlin Multiplatform production-ready?
+Yes. KMP reached stable status for sharing business logic and is used in production by large engineering organisations. The shared code is compiled ahead of time to a native framework on iOS, so there is no runtime bridge to debug. Compose Multiplatform for shared UI is a separate and less mature choice, and AppVion generally recommends keeping the interface native.
+When is KMP the wrong choice?
+When the app is Android-only with no credible iOS plan, KMP adds structure you will never cash in. When the product is mostly screens over a simple API and the team is already fluent in Flutter or React Native, those will ship faster. And when a team has no Kotlin experience at all, the learning curve is real.
+Can KMP be added to an existing app?
+Yes, and that is often the best way to adopt it. A single module — the API client, or the offline cache — can be extracted into shared Kotlin and consumed by the existing Android and iOS apps without either being rewritten. It is one of the few architectural migrations that can be done in slices.
+Deciding between native, KMP, and cross-platform?
+A 20-minute call is usually enough to rule out two of the three. No pitch, and no obligation to build with us.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+Android development Native Kotlin and Jetpack Compose.
+Pricing What each path actually costs.
+Full FAQ Ownership, process, timelines, and technology.
+WhatsApp
+Start Project
+
+======================================================================
+## Work
+URL: https://appvionstudio.com/work.html
+======================================================================
+
+Our Work | Mobile Apps Built by AppVion Studio
+Skip to content
+- Home
+- Work
+Work
+Seven products, described screen by screen.
+Not a gallery of thumbnails. Every screen below is named and explained, so you can
+judge the thinking rather than the styling. All 31 screens are explorable as interactive
+prototypes on the home page .
+- ProFix
+- SnowGrid
+- GMassPulse
+- WUM Connect
+- Attendance Suite
+- Sports Society
+- D. Delivery
+Field service platform · Kotlin Multiplatform
+ProFix
+ProFix closes the loop between a reported fault and a signed-off repair. Jobs are ranked by SLA risk and matched to a qualified contractor, work is evidenced with before and after photographs on site, and a manager approves remotely with the full record in front of them. The business rules live in shared Kotlin so they cannot drift between platforms.
+- Dispatch Every open job ranked by SLA risk, with the right contractor already matched.
+- Job detail One screen holds the scope, the site history, and the contractor already on the way.
+- Proof of work Before and after evidence is captured on site, so approvals stop depending on phone calls.
+- Approval Managers approve remotely with the full record in front of them - no site visit required.
+- Operations The numbers owners actually ask for: throughput, first-time fix rate, and where time is lost.
+Kotlin Multiplatform Compose Supabase Realtime
+Watch demo
+Enterprise operations · Android Native
+SnowGrid
+SnowGrid runs a snow-removal business as a live network rather than a phone tree. Property owners request service and trace their own lot on a map to get a price; the operations centre sees crews and jobs on a live dispatch map; drivers get tasks, capture photo evidence, and track payouts. Pricing is computed from snow depth, surface area, and priority rather than negotiated per call.
+- Fleet intelligence The operator opens to daily revenue, active operations, and escrow balance - the three numbers that decide the day.
+- Live dispatch Crews and properties on one live map, so assignment is a decision rather than a phone call.
+- Fleet operations Every job carries its own approval state and payout, pending through approved, with nothing tracked off-system.
+- Pricing engine Snow depth, surface area, and priority resolve into a quoted price the customer can authorise on the spot.
+- Customer request The property owner side stays deliberately small: pick the site, see the price, authorise the work.
+- Site measurement Owners trace their own lot on the map and the app returns area and perimeter that the pricing engine then uses.
+- Driver portal Drivers get tasks, photo evidence, and payout history in a portal built for gloves and bad weather.
+Android Native Mapbox Live dispatch Escrow payouts
+Outreach infrastructure · Android Native
+GMassPulse
+GMassPulse puts cold-email operations on a phone. Leads import straight from a Google Sheet and are validated before anything is queued, campaigns are composed with merge fields, follow-up steps are scheduled in the recipient's timezone, and a throttling engine enforces daily sending limits so a campaign cannot quietly burn the sending domain.
+- Pulse dashboard Lifetime sends and opens first, campaign list underneath - the operator sees performance before controls.
+- Import leads Leads pull straight from a Google Sheet and get validated before a single email is queued.
+- Campaign editor Subject, body, and merge fields composed on a phone without the layout fighting the keyboard.
+- Auto follow-ups Follow-up steps are scheduled with timezone-aware sending, because reply rate lives in the sequence.
+- Deliverability engine Daily limits and throttling are enforced in the product, so a campaign cannot quietly burn the domain.
+Android Native Google OAuth Sheets sync Supabase
+University product · Android Native
+WUM Connect
+WUM Connect gives a university one communication channel with four audiences. Students, faculty, staff, and administrators open the same app and see only what applies to their role, with read receipts so the registrar knows a notice actually landed. Campus wifi is unreliable, so the app caches aggressively and queues writes until it reconnects.
+- Campus feed Students, faculty, and admin each open the same app and see only what applies to them.
+- Announcement Delivery is measurable - the admin sees exactly who has read a notice and who has not.
+- Roles Access is structural, not cosmetic - permissions are enforced at the data layer.
+- Offline sync Campus wifi drops constantly. The app queues writes locally and reconciles on reconnect.
+- Profile Identity, enrolment, and notification control in one predictable place.
+Android Native Firebase Offline-first Role access
+Watch demo
+Data-heavy utility · Android Native
+Attendance Suite
+Attendance Suite handles institutional attendance at a scale that breaks naive implementations. Paging 3 keeps a four-thousand-row roster scrolling smoothly on mid-range hardware, exceptions such as late marks and duplicate scans are grouped so a coordinator clears them in one pass, and reporting happens in the app rather than in a spreadsheet afterwards.
+- Sessions Today's sessions with live capture status, so nothing is marked twice or missed.
+- Live roster Paging 3 keeps a 4,000-row roster scrolling at 60fps on mid-range hardware.
+- Student record One student, one history - the view a department head opens before a decision.
+- Reports Institutional reporting without a spreadsheet export step in the middle.
+Android Native Paging 3 Room Export
+Watch demo
+Events platform · Android Native
+Sports Society
+Sports Society Events coordinates campus sport without a waitlist spreadsheet. Filters stack rather than replacing one another, entries lock automatically when a slot limit is reached, and a confirmed entry lives in the app, works offline, and is scannable at the gate.
+- Events What is open, what is closing, and what already filled - readable in one glance.
+- Filters Filters combine instead of replacing each other - the detail that decides whether people use it.
+- Event detail Everything a participant needs before committing, without a second screen.
+- Registration Three fields, one confirmation. Drop-off happens where forms get greedy.
+- My entry The confirmation lives in the app, works offline, and is scannable at the gate.
+Android Native Firebase Filtering Push
+Watch demo
+Logistics · Kotlin Multiplatform
+D. Delivery
+A delivery and logistics platform built as three pieces: a customer app for booking, live tracking and payment; a rider app for accepting jobs, navigating and recording proof; and a web control tower for dispatch, the ledger and disputes. Every parcel is recorded on video at pickup and again at drop-off, and those two recordings are the evidence behind a parcel insurance product.
+- Booking and live tracking Customers book a delivery and watch it move in real time.
+- Dual video proof Pickup and drop-off recordings are mandatory and stored server side.
+- Expanding radius dispatch Offered to the nearest riders first, widening if nobody accepts.
+- Rider wallet Cash on delivery reconciled through a settlement ledger.
+- Dynamic pricing Routed distance, weight surcharge and a fragile-handling fee.
+- Control tower Web admin for dispatch, disputes and the ledger.
+Kotlin Multiplatform Supabase Postgres RLS Google Routes API FCM
+Read the case study
+Want something in this shape?
+Most of these started as a rough description of a broken workflow. Send yours.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+Pricing What products like these cost.
+Android development How they are built.
+About the studio Who does the work.
+WhatsApp
+Start Project
+
+======================================================================
+## Frequently asked questions
+URL: https://appvionstudio.com/faq.html
+======================================================================
+
+Frequently Asked Questions | AppVion Studio Mobile App Development
+Skip to content
+- Home
+- FAQ
+Frequently asked questions
+Everything a buyer asks before the first call.
+28 questions on cost, timelines, ownership, process, technology, and what
+it is actually like to work with a small studio on the other side of the world.
+Last reviewed August 2026
+- Getting started
+- Cost and commercials
+- Process and timelines
+- Ownership and risk
+- Technology
+- Working with a studio in Pakistan
+- After launch
+Getting started
+What does AppVion Studio actually do?
+AppVion Studio designs and builds mobile applications, principally native Android apps in Kotlin and Jetpack Compose, and cross-platform products using Kotlin Multiplatform. The studio specialises in operational software: dispatch, approvals, attendance, field service, communication, and internal business tools. It also takes on redesigns of existing apps that have aged badly.
+What kind of projects are you best suited to?
+Products where the difficulty is in the workflow rather than the visuals. Multi-role systems, offline-capable field apps, data-heavy tools, realtime dispatch and tracking, and founder-led MVPs that need to look credible in front of a buyer or an investor.
+What are you not a good fit for?
+Games, blockchain speculation projects, and anyone shopping for the cheapest possible bid. The studio also declines work where the client wants to skip scoping entirely and start building on a verbal description, because that reliably ends badly for both sides.
+How do I start a conversation?
+Send a short brief through the contact form, email ayyaz@appvionstudio.com, or message +92 346 7277143 on WhatsApp. Include the product idea, who uses it, which platforms you need, your stage, and a rough budget and timeline. The first response comes within 24 hours.
+Do I need to know exactly what I want first?
+No. That is what the Product Clarity Sprint is for. It costs from $1,500, runs one to two weeks, and turns a rough idea into a workflow map, a prioritised feature list, a technical direction, and an estimate you could take to any studio.
+Cost and commercials
+How much will my app cost?
+A production mobile app from AppVion Studio costs $12,000 to $35,000. A focused first release usually lands at $12,000 to $18,000. Multi-role operational platforms run to $35,000. Redesigns start at $6,000 and a scoping sprint starts at $1,500. The pricing page breaks down what moves those numbers.
+Is the price fixed?
+Yes. AppVion quotes a fixed figure per engagement once the scope is clear, and delivery runs against milestones. If the scope changes mid-build, the change is priced and agreed before it is built rather than appearing on an invoice afterwards.
+How are payments structured?
+Across milestones, with a deposit to begin and the balance released as each milestone is delivered and reviewed. You see working software at each stage.
+Are there costs beyond your fee?
+Yes, and they are paid by you directly so you own them: Google Play Console registration is a one-off $25, the Apple Developer Program is $99 per year, and hosting, database, mapping, SMS, or payment-processing fees depend on the product and its usage.
+Process and timelines
+How long does a build take?
+Eight to twelve weeks for a focused first release, twelve to sixteen for a multi-role operational platform with realtime data. A redesign takes four to eight weeks. Those figures assume the scope was settled first; they are not reliable if the product is still being invented while it is built.
+What does the process look like week to week?
+Four phases. A Signal Audit maps the business model, user roles, and the screens that must feel exceptional. A Product Blueprint fixes information architecture, feature sequencing, and the data model. Design Engineering builds the interface, backend integration, and product logic in focused releases. Launch Refinement covers polish, QA, deployment, and the first improvement loop.
+How often will I hear from you?
+A working build at each milestone, plus a written update in between. The studio deliberately does not run daily stand-ups with clients, because they consume the time that produces the software.
+What happens if the project runs late?
+You are told as soon as it is known rather than at the deadline, along with the options: cut scope, move the date, or change the approach. Fixed-price engagements mean a delay caused by AppVion is AppVion's problem, not a change order.
+Ownership and risk
+Who owns the code?
+You do, entirely, on final payment. That covers the source code, the repository, the design files, the store listings, and the backend accounts. AppVion retains no licence and holds no accounts.
+Will I be locked in to AppVion?
+No, and the architecture is deliberately conventional to make sure of it. The apps use standard Kotlin, Jetpack Compose, and mainstream backends, so another competent Android team can pick the project up. Being hard to replace is not a business model the studio is interested in.
+Do you sign an NDA?
+Yes, before any detailed discussion of your product if you prefer.
+What if I already have a development team?
+That is common. AppVion can take a defined slice — the Android app, a Kotlin Multiplatform module, an architecture review, or an interface redesign — and work alongside your team rather than replacing it.
+Technology
+What technology do you build with?
+Kotlin and Jetpack Compose for Android, Kotlin Multiplatform with Ktor and SQLDelight for shared logic, and Supabase or Firebase for backend and realtime where a custom backend is not already in place. Room and Paging 3 handle local storage and large lists, and WorkManager handles background sync.
+Do you build iOS apps?
+Through Kotlin Multiplatform, yes: shared business logic in Kotlin with a native SwiftUI interface. The studio does not take on iOS-only projects, because Android is where its depth is.
+Can you build a backend as well?
+Yes, using Supabase, Firebase, or Ktor depending on the product. If you already have an API, AppVion integrates with it rather than insisting on a rewrite.
+Do you work with AI features?
+Yes, where they earn their place: intelligent workflows, command surfaces, automation-ready interactions, and data-aware interface patterns. The studio does not add a chatbot to a product that does not need one.
+Working with a studio in Pakistan
+Where are you based?
+Multan, Punjab, Pakistan. The studio is remote-first and works with clients worldwide.
+How do time zones work?
+Pakistan Standard Time is UTC+5. That gives a full working overlap with Europe, the Middle East, and Asia, and a morning overlap with the eastern United States. Calls are scheduled inside the client's working hours rather than the studio's.
+What language do you work in?
+English for all project communication, documentation, and code. The team also speaks Urdu.
+Why should I trust an offshore studio?
+You should not, on assertion alone. That is why AppVion publishes working prototypes rather than testimonials, names every team member with an individual profile page, and lists direct contact routes to the founder. Start with a $1,500 scoping sprint rather than a $20,000 build, and judge the work before committing to it.
+After launch
+Do you maintain the app after launch?
+Yes, through a care and iteration retainer from $900 per month covering OS and dependency updates, store policy compliance, bug fixes with agreed response times, and a budgeted slice of new feature work.
+What does maintenance normally cost across the industry?
+Fifteen to twenty-five percent of the original build cost per year is the usual guidance. On a $20,000 build that is roughly $3,000 to $5,000 annually just to keep the app current with Android releases and store policy.
+What if I want to take maintenance in-house?
+Then you take it in-house. You already own everything, the architecture is conventional, and AppVion will run a handover with your team.
+Question not answered here?
+Ask it directly. Email, WhatsApp, or a 20-minute call — you will get a straight answer within 24 hours.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+Pricing Real numbers and what moves them.
+About the studio Who does the work, and where.
+See the work Six products, screen by screen.
+WhatsApp
+Start Project
+
+======================================================================
+## About
+URL: https://appvionstudio.com/about.html
+======================================================================
+
+About AppVion Studio | Mobile App Development Studio in Multan, Pakistan
+Skip to content
+- Home
+- About
+About
+A small studio that does the work itself.
+AppVion Studio builds mobile products for businesses that need software to hold up
+under daily operational pressure. It is three people in Multan, Pakistan, working with clients
+worldwide.
+In one paragraph
+AppVion Studio is a founder-led mobile app development studio based in Multan,
+Punjab, Pakistan. It builds native Android applications in Kotlin and Jetpack Compose,
+and cross-platform products using Kotlin Multiplatform, with a focus on operational business
+systems: dispatch, approvals, attendance, field service, and internal tools. The studio works
+remotely with clients worldwide, in English, and responds to new enquiries within 24 hours.
+Engagements run from a $1,500 scoping sprint to a $35,000 full product build.
+The facts, in one place.
+Studio name
+AppVion Studio
+Type
+Mobile app development studio
+Location
+Multan, Punjab, Pakistan
+Service area
+Worldwide, remote-first
+Team size
+3
+Founder
+Ayyaz Sajjad
+Primary platform
+Android (Kotlin, Jetpack Compose)
+Cross-platform
+Kotlin Multiplatform
+Languages
+English, Urdu
+Time zone
+PKT, UTC+5
+Email
+ayyaz@appvionstudio.com
+WhatsApp
++92 346 7277143
+Engagement range
+$1,500 – $35,000 USD
+First response
+Within 24 hours
+Why the studio is small on purpose.
+Most agencies grow by inserting people between the client and the engineer. It is a
+reasonable way to scale revenue and a terrible way to keep a product coherent. Decisions get
+relayed, context is lost in the handoff, and the person who understood why a rule existed has
+moved to another account by month three.
+AppVion is built the other way round. The founder does the strategy and writes the Android
+code, so the person deciding what to build is the person who knows what it costs to build it.
+That caps how many projects run at once. It also means nothing is lost in translation.
+Proof you can inspect, not testimonials.
+The site publishes no star ratings and no client quotes, because a studio at this size cannot
+produce a credible volume of them and invented ones are worse than none. Instead the work is
+made inspectable: six products described screen by screen, interactive prototypes you can click
+through on the home page, public video demos, and a downloadable APK. Judge the software.
+Who does the work.
+Ayyaz Sajjad — Founder and Android App Developer
+Leads AppVion Studio across product strategy, Android engineering, Kotlin Multiplatform systems, and premium mobile execution. Every engagement runs through him rather than an account manager. View profile .
+Tayyab Sajjad — Developer
+Supports product delivery, interface implementation, and development execution within the studio workflow. View profile .
+Momna Shah — Studio Associate
+Strengthens the team-facing studio presence, coordination, support, and client-facing contributions. View profile .
+What the studio does.
+- Android app development in Kotlin and Jetpack Compose
+- Kotlin Multiplatform systems sharing business logic across Android and iOS
+- Mobile product strategy, workflow mapping, and scoping
+- Operational business tools: dispatch, approvals, tracking, attendance, communication
+- Redesigns and architecture reviews of existing apps
+- Backend integration with Supabase, Firebase, Ktor, or an existing API
+- AI-ready interfaces and automation-aware interaction patterns
+Android Native Kotlin Jetpack Compose
+Kotlin Multiplatform Ktor Supabase
+Firebase SQLDelight Paging 3
+Realtime systems Offline-first AI-ready UX
+How to verify any of this.
+Every claim on this site is checkable. The product demos are public on YouTube, the ProFix
+APK can be downloaded and installed, the team members have individual profile pages, and the
+studio's company record is published in machine-readable form.
+- Company record for machines: company.json
+- Summary for AI assistants: llms.txt
+- LinkedIn: AppVion Studio
+- Direct line to the founder: ayyaz@appvionstudio.com
+Start with a conversation, not a contract.
+Twenty minutes is usually enough to tell whether this is a good fit in either direction.
+Book a 20-min Strategy Call
+Send a Project Brief
+Keep reading
+See the work Six products, screen by screen.
+Pricing What engagements cost.
+Full FAQ Twenty-seven questions answered directly.
+WhatsApp
+Start Project

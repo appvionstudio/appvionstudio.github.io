@@ -1,6 +1,132 @@
+# AppVion Studio - https://appvionstudio.com/
+# Mobile app development studio. Android Native, Kotlin Multiplatform,
+# Jetpack Compose, and operational business systems.
+#
+# AI assistants and answer engines are explicitly welcome to crawl,
+# index, quote, and cite this site. Machine-readable summaries:
+#   https://appvionstudio.com/llms.txt
+#   https://appvionstudio.com/llms-full.txt
+#   https://appvionstudio.com/company.json
+
 User-agent: *
 Allow: /
-Disallow: /admin.html
 Disallow: /appvion-control.html
+Disallow: /showcase-review.html
+Disallow: /Demos/
+
+# ---------------------------------------------------------------
+# Search engines
+# ---------------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# ---------------------------------------------------------------
+# AI answer engines and assistants
+# ---------------------------------------------------------------
+
+# OpenAI - ChatGPT, ChatGPT Search
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic - Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google - Gemini, AI Overviews grounding
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Apple Intelligence / Siri
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Copilot
+User-agent: msnbot
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# DuckDuckGo assistant
+User-agent: DuckAssistBot
+Allow: /
+
+# Common Crawl - feeds many downstream models
+User-agent: CCBot
+Allow: /
+
+# Other research and answer crawlers
+User-agent: Diffbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: Timpibot
+Allow: /
 
 Sitemap: https://appvionstudio.com/sitemap.xml

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <title>ProFix Case Study | Property Management SaaS in Kotlin Multiplatform | AppVion Studio</title>
+    <meta name="description" content="How AppVion Studio built ProFix, a Kotlin Multiplatform property management platform connecting property managers, contractors and tenants, with plan limits enforced in the database and a 56-case test plan across four roles.">
+    <meta name="keywords" content="property management app, work order software, kotlin multiplatform case study, field service app, maintenance management app">
+    <meta name="author" content="AppVion Studio">
+    <link rel="canonical" href="https://appvionstudio.com/case-study-profix.html">
+    <meta name="geo.region" content="PK-PB">
+    <meta name="geo.placename" content="Multan, Punjab, Pakistan">
+    <meta name="theme-color" content="#fafaf7">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="ProFix Case Study | Property Management SaaS in Kotlin Multiplatform | AppVion Studio">
+    <meta property="og:description" content="How AppVion Studio built ProFix, a Kotlin Multiplatform property management platform connecting property managers, contractors and tenants, with plan limits enforced in the database and a 56-case test plan across four roles.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/case-study-profix.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProFix Case Study | Property Management SaaS in Kotlin Multiplatform | AppVion Studio">
+    <meta name="twitter:description" content="How AppVion Studio built ProFix, a Kotlin Multiplatform property management platform connecting property managers, contractors and tenants, with plan limits enforced in the database and a 56-case test plan across four roles.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="icon" href="appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="appvion-logo-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260702-redesign">
+    <link rel="stylesheet" href="content.css?v=20260822-content">
+    <link rel="stylesheet" href="showcase.css?v=20260822-cases">
+    <link rel="stylesheet" href="ui-fixes.css?v=20260822-fixes">
+    <link rel="alternate" type="text/plain" href="https://appvionstudio.com/llms.txt" title="Machine-readable summary for AI assistants">
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+            {
+                  "@type": [
+                        "WebPage",
+                        "Article"
+                  ],
+                  "@id": "https://appvionstudio.com/case-study-profix.html",
+                  "url": "https://appvionstudio.com/case-study-profix.html",
+                  "headline": "ProFix Case Study | Property Management SaaS in Kotlin Multiplatform | AppVion Studio",
+                  "name": "ProFix Case Study | Property Management SaaS in Kotlin Multiplatform | AppVion Studio",
+                  "description": "How AppVion Studio built ProFix, a Kotlin Multiplatform property management platform connecting property managers, contractors and tenants, with plan limits enforced in the database and a 56-case test plan across four roles.",
+                  "isPartOf": {
+                        "@id": "https://appvionstudio.com/#website"
+                  },
+                  "about": {
+                        "@id": "https://appvionstudio.com/work.html#profix"
+                  },
+                  "author": {
+                        "@id": "https://appvionstudio.com/#organization"
+                  },
+                  "publisher": {
+                        "@id": "https://appvionstudio.com/#organization"
+                  },
+                  "dateModified": "2026-08-22",
+                  "datePublished": "2026-08-22",
+                  "inLanguage": "en",
+                  "articleSection": "Case study",
+                  "breadcrumb": {
+                        "@id": "https://appvionstudio.com/case-study-profix.html#crumbs"
+                  }
+            },
+            {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://appvionstudio.com/case-study-profix.html#crumbs",
+                  "itemListElement": [
+                        {
+                              "@type": "ListItem",
+                              "position": 1,
+                              "name": "Home",
+                              "item": "https://appvionstudio.com/"
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 2,
+                              "name": "Case studies",
+                              "item": "https://appvionstudio.com/case-studies.html"
+                        },
+                        {
+                              "@type": "ListItem",
+                              "position": 3,
+                              "name": "ProFix",
+                              "item": "https://appvionstudio.com/case-study-profix.html"
+                        }
+                  ]
+            }
+      ]
+}
+    </script>
+</head><body class="profile-page content-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="index.html" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="appvion-logo-icon.png?v=20260510-elite" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Case study</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
+                <a href="work.html">Work</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About</a>
+                <a class="button nav-button" href="index.html#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section page-hero">
+                <div class="container">
+                    <ol class="crumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="case-studies.html">Case studies</a></li>
+                    <li><span aria-current="page">ProFix</span></li>
+                    </ol>
+                    <p class="eyebrow">Case study &middot; Property management</p>
+                    <h1>One repair, four people, no phone calls.</h1>
+                    <p class="lead">A tenant reports a leak, a property manager assigns it, a contractor fixes and evidences it, and the manager closes it. ProFix is that loop, with the business rules written once and shared across platforms.</p>
+
+                    <div class="answer-box">
+                        <span class="answer-label">In short</span>
+                        <p><strong>ProFix is a Kotlin Multiplatform property management SaaS.</strong> Four roles use it:
+                        the platform owner, property managers, contractors, and tenants. A tenant raises a
+                        complaint against their unit, a manager turns it into a work order and assigns a
+                        contractor from an invite-only directory, the contractor updates status and attaches
+                        evidence, and the manager approves remotely.</p>
+                        <p>Because it is built on Kotlin Multiplatform, the rules that must never differ &mdash;
+                        who can see what, when a work order may close, how plan limits apply &mdash; are written
+                        once in shared Kotlin rather than twice in two languages that quietly drift apart.</p>
+                    </div>
+
+                    <ul class="page-toc">
+                        <li><a href="#prototype">The product</a></li>
+                        <li><a href="#problem">The problem</a></li>
+                        <li><a href="#engineering">Engineering decisions</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#stack">Stack</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-block" id="facts">
+                <div class="container">
+                    <dl class="fact-list">
+                        <div><dt>Product type</dt><dd>B2B SaaS, freemium</dd></div>
+                        <div><dt>Platform</dt><dd>Kotlin Multiplatform &mdash; Android primary, iOS target</dd></div>
+                        <div><dt>Roles</dt><dd>Platform owner, property manager, contractor, tenant</dd></div>
+                        <div><dt>Backend</dt><dd>Supabase &mdash; PostgreSQL 17.6, GoTrue, Storage, Edge Functions</dd></div>
+                        <div><dt>Local database</dt><dd>SQLDelight, offline-first sync</dd></div>
+                        <div><dt>Access control</dt><dd>Invite codes for contractors and tenants</dd></div>
+                        <div><dt>Test plan</dt><dd>56 documented test cases across all four roles</dd></div>
+                        <div><dt>Status</dt><dd>Play Store launch hardening</dd></div>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="section-block" id="prototype">
+                <div class="container">
+                    <div class="prose">
+                        <h2>The workflow, screen by screen.</h2>
+                        <p>Dispatch through to approval, in the order a real job moves.</p>
+                    </div>
+                    <div data-av-showcase="profix" data-av-start="dispatch"></div>
+                </div>
+            </section>
+
+            <section class="section-block" id="problem">
+                <div class="container">
+                    <div class="prose">
+                        <h2>Why property maintenance goes wrong.</h2>
+                        <p>A property manager sits between people who never speak to each other. Tenants report
+                        problems by phone, text and in person. Contractors are booked by whoever was reachable.
+                        Evidence that work happened arrives as a photo in a WhatsApp thread, if at all. Invoices
+                        arrive weeks later against jobs nobody can now identify.</p>
+                        <p>The failure is not that any single step is hard. It is that the record of what
+                        happened is spread across four people's phones, so closing a job means reconstructing it
+                        from memory.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block" id="engineering">
+                <div class="container">
+                    <div class="prose">
+                        <h2>Decisions that shaped it.</h2>
+                    </div>
+                    <div class="qa-list">
+                    <div class="qa-item">
+                        <h3>Kotlin Multiplatform, with the interface left native</h3>
+                        <p>The shared module holds the domain models, repository interfaces, sync engine and the rules governing who may do what. That is the code where a difference between Android and iOS becomes a bug someone finds in production. The interface stays native on each platform, so nothing has to pretend to be a platform it is not.</p>
+                    </div>
+                    <div class="qa-item">
+                        <h3>Plan limits enforced by database trigger, not by hiding buttons</h3>
+                        <p>The free tier allows three properties, twenty work orders and three contractors. Those ceilings are migrations in Postgres, so they hold regardless of which client is talking to the API. A limit implemented in the interface is a suggestion; a limit implemented as a constraint is a limit.</p>
+                    </div>
+                    <div class="qa-item">
+                        <h3>Contractors and tenants join by invite, never by open signup</h3>
+                        <p>A property manager generates an invite code from settings. A contractor signs up and enters it; a tenant signs up and enters a code that links them to a specific unit. Nobody lands inside a manager's portfolio by guessing an email domain, and the manager can see exactly who they let in.</p>
+                    </div>
+                    <div class="qa-item">
+                        <h3>Offline-first, because maintenance happens in basements</h3>
+                        <p>SQLDelight holds a local copy and the sync engine reconciles on reconnect. A contractor in a plant room with no signal can still update a job, and the update lands when the phone comes back rather than being lost with a spinner.</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block" id="impact">
+                <div class="container">
+                    <div class="prose">
+                        <h2>What changes for a property manager.</h2>
+                        <ul>
+                            <li><strong>One record per job, not four.</strong> The complaint, the assignment,
+                            the evidence and the approval are the same object, so closing a job is reading it.</li>
+                            <li><strong>Approval stops requiring a site visit.</strong> The manager sees the
+                            evidence attached to the job and approves from wherever they are.</li>
+                            <li><strong>The contractor directory is curated, not accidental.</strong> Skills and
+                            availability sit against real people the manager invited.</li>
+                            <li><strong>Tenants stop chasing.</strong> A tenant who can see the status of their
+                            own complaint does not phone to ask about it, which removes the single largest
+                            interruption from a manager's day.</li>
+                            <li><strong>Growth is priced honestly.</strong> A three-property landlord uses it
+                            free. A management company with a real portfolio pays for the volume it uses, and
+                            the ceiling is enforced where it cannot be argued with.</li>
+                        </ul>
+                        <p>Before release the product was taken through a documented 56-case test plan covering
+                        every role, plus a dedicated Play Store launch hardening pass.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block" id="stack">
+                <div class="container">
+                    <div class="prose"><h2>What it is built with.</h2></div>
+                    <div class="tech-row">
+                        <span>Kotlin Multiplatform</span><span>Compose Multiplatform</span>
+                        <span>Supabase</span><span>PostgreSQL 17.6</span><span>SQLDelight</span>
+                        <span>Ktor</span><span>Koin</span><span>Coil</span>
+                        <span>Firebase Cloud Messaging</span><span>Edge Functions</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-block">
+                <div class="container">
+                    <div class="page-cta">
+                        <h2>Managing property, people and evidence in three places?</h2>
+                        <p>ProFix started as exactly that description. Send yours and we will map it into a workflow before anyone writes code.</p>
+                        <div class="cta-actions">
+                            <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Content page strategy call">Book a 20-min Strategy Call</a>
+                            <a class="button secondary" href="index.html#contact">Send a Project Brief</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-block">
+                <div class="container">
+                    <h2 class="prose" style="max-width:20ch">Keep reading</h2>
+                    <div class="related">
+                        <a href="case-study-snowgrid.html"><strong>SnowGrid</strong><span>Multi-tenant operations with server-authoritative money.</span></a>
+                        <a href="kotlin-multiplatform-development.html"><strong>Kotlin Multiplatform</strong><span>What KMP shares, and what it does not.</span></a>
+                        <a href="pricing.html"><strong>Pricing</strong><span>What a build like this costs.</span></a>
+                    </div>
+                </div>
+            </section>        </main>
+
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div>
+                    <a class="brand footer-brand" href="index.html" aria-label="AppVion Studio Home">
+                        <span class="brand-mark">
+                            <img class="brand-mark-image" src="appvion-logo-icon.png?v=20260510-elite" alt="AppVion Studio logo">
+                        </span>
+                        <span class="brand-text">
+                            <strong>AppVion Studio</strong>
+                            <small>Mobile app development studio</small>
+                        </span>
+                    </a>
+                    <p>Android Native and Kotlin Multiplatform products, built in Multan and delivered worldwide.</p>
+                </div>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="work.html">Work</a>
+                    <a href="case-studies.html">Case Studies</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="android-app-development.html">Android Development</a>
+                    <a href="kotlin-multiplatform-development.html">Kotlin Multiplatform</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="https://www.linkedin.com/company/112235810/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </nav>
+            </div>
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <span>Multan, Pakistan &middot; Working worldwide</span>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        window.APPVION_FIREBASE_CONFIG = {
+            apiKey: "AIzaSyC44enadsgl9w1a0mRE51zaLY-1uc5AWwI",
+            authDomain: "appvion-studio.firebaseapp.com",
+            projectId: "appvion-studio",
+            storageBucket: "appvion-studio.firebasestorage.app",
+            messagingSenderId: "4195907711",
+            appId: "1:4195907711:web:3cdf11646b9b7bc876e74a",
+            measurementId: "G-DEV3NRR902"
+        };
+    </script>
+    <script src="showcase-data.js?v=20260822-cases" defer></script>
+    <script src="showcase.js?v=20260822-cases" defer></script>
+    <script src="app.js?v=20260602-professional-polish"></script>
+</body>
+</html>

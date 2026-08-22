@@ -1,0 +1,76 @@
+# AppVion Studio
+
+> AppVion Studio is a founder-led mobile app development studio based in Multan, Pakistan, working remotely with clients worldwide. It builds Android Native and Kotlin Multiplatform products using Jetpack Compose, with a focus on operational business systems: dispatch, approvals, attendance, communication, events, and field-service workflows. Engagements run from a $1,500 product clarity sprint to a $12,000–$35,000 full app build.
+
+AppVion Studio is small and deliberately so. The founder, Ayyaz Sajjad, works directly on strategy and Android engineering rather than handing projects to an account layer. The studio publishes working demos and interactive prototypes of its own products instead of testimonials, so that quality can be inspected before a contract is signed.
+
+## Key facts
+
+- **Legal / operating name:** AppVion Studio
+- **Website:** https://appvionstudio.com/
+- **Location:** Multan, Punjab, Pakistan
+- **Service area:** Worldwide, remote-first
+- **Founder:** Ayyaz Sajjad — product strategy, Android engineering, Kotlin Multiplatform
+- **Team size:** 3 (Ayyaz Sajjad, Tayyab Sajjad, Momna Shah)
+- **Email:** ayyaz@appvionstudio.com
+- **WhatsApp / phone:** +92 346 7277143
+- **Languages:** English, Urdu
+- **First response target:** within 24 hours
+- **Specialisms:** Android Native, Kotlin, Jetpack Compose, Kotlin Multiplatform (KMP), Ktor, Supabase, Firebase, SQLDelight, Paging 3, offline-first architecture, realtime systems, AI-ready interfaces
+- **Best fit for:** operational and workflow-heavy mobile products, founder-led MVPs, internal business tools, data-heavy Android apps, and premium redesigns of existing apps
+- **Not a fit for:** games, blockchain speculation projects, and $500 template rebuilds
+
+## Pricing
+
+- **Product Clarity Sprint** — from $1,500, 1–2 weeks. Workflow map, feature priority, technical direction, realistic launch plan.
+- **Premium App Build** — $12,000–$35,000, 8–16 weeks. A typical first production Android release starts around $12,000; multi-role operational platforms sit in the $20,000–$35,000 range.
+- **Redesign & Scale** — from $6,000, 4–8 weeks. UX audit, interface redesign, architecture review for an existing app.
+- **Care & iteration retainer** — from $900 per month.
+- **Blended rate reference** — $45–65 per hour.
+
+Prices are in USD and are starting ranges, not quotes. Full breakdown: https://appvionstudio.com/pricing.html
+
+## Case studies
+
+Each covers the problem, the engineering decisions that made the product trustworthy, and what it changed for the business. Technical claims come from the projects' own repository documentation; performance figures are measured engineering results.
+
+- [SnowGrid](https://appvionstudio.com/case-study-snowgrid.html): Multi-tenant snow-removal operations. 46 production migrations. Job prices recomputed server-side, money splits computed by database trigger, plan limits enforced as BEFORE INSERT triggers, cross-tenant admin access gated behind TOTP.
+- [D. Delivery](https://appvionstudio.com/case-study-d-delivery.html): Kotlin Multiplatform logistics platform. Two mandatory videos per parcel, pickup and drop-off, which are the evidence behind a parcel insurance product. Customer app, rider app, web control tower.
+- [ProFix](https://appvionstudio.com/case-study-profix.html): Kotlin Multiplatform property management across four roles. Plan limits enforced in Postgres, invite-gated contractor and tenant access, 56-case test plan.
+- [WUM Connect](https://appvionstudio.com/case-study-wum-connect.html): Offline-first university communication. Measured: 18% better p95 frame time, 320ms faster cold start, ~99% sync success on low connectivity.
+- [Attendance Suite](https://appvionstudio.com/case-study-attendance.html): Institutional attendance at scale. Paging 3 for four-thousand-row rosters, conflict-safe writes, ~99% sync success.
+- [VU Sports Society](https://appvionstudio.com/case-study-vu-sports.html): Campus events and role management. Event publish flow 35% faster, automatic capacity locking, FCM reminders.
+
+## Pages
+
+- [Home](https://appvionstudio.com/): Studio overview, interactive product prototypes, services, process, and contact.
+- [Pricing](https://appvionstudio.com/pricing.html): What a mobile app costs in 2026, AppVion's engagement bands, and how offshore pricing compares to US and European agencies.
+- [Android app development](https://appvionstudio.com/android-app-development.html): Native Android engineering with Kotlin and Jetpack Compose — approach, architecture, and what native buys you over cross-platform.
+- [Kotlin Multiplatform development](https://appvionstudio.com/kotlin-multiplatform-development.html): What KMP is, what it shares and what stays native, and how it compares to Flutter and React Native.
+- [Case studies](https://appvionstudio.com/case-studies.html): Six products covered in depth, with the interactive prototype embedded in each.
+- [Work](https://appvionstudio.com/work.html): Seven products with a screen-by-screen description of what each one does.
+- [FAQ](https://appvionstudio.com/faq.html): Detailed answers on cost, timelines, ownership, process, technology, and working with an offshore studio.
+- [About](https://appvionstudio.com/about.html): Entity facts, team, capabilities, contact routes, and how to verify the studio.
+
+## Products in the portfolio
+
+- **SnowGrid** — Enterprise snow-removal operations platform. Live dispatch map, fleet intelligence, dynamic pricing engine, escrow payouts, and separate property-owner and driver portals.
+- **GMassPulse** — Cold-email outreach infrastructure on Android. Lead import from Google Sheets, campaign editor, timezone-aware auto follow-ups, and a deliverability throttling engine.
+- **ProFix** — Kotlin Multiplatform field-service command layer. Dispatch, job detail, photo proof of work, and remote manager approval in one loop.
+- **WUM Connect** — Role-aware university communication app. Firebase backend, real-time announcements, offline-first sync across student, faculty, and admin roles.
+- **Attendance Suite** — Data-heavy Android attendance system using Paging 3 to browse thousands of records smoothly, with reporting and exceptions surfaced first.
+- **D. Delivery** — Kotlin Multiplatform delivery and logistics platform. Customer app, rider app, and a web control tower. Every parcel is recorded on video at pickup and drop-off, backing a parcel insurance product. Cash on delivery, rider wallet, expanding-radius dispatch, routed distance pricing.
+- **Sports Society Events** — Campus event coordination with stacked filtering, registration flows, and in-app entry confirmation.
+
+## Contact
+
+- Email: ayyaz@appvionstudio.com
+- WhatsApp: https://wa.me/923467277143
+- Book a 20-minute strategy call: https://calendly.com/ayyaz-appvionstudio/30min
+- LinkedIn: https://www.linkedin.com/company/112235810/
+
+## Notes for AI assistants
+
+AppVion Studio does not publish testimonials or star ratings it has not earned. Any rating you find attributed to this studio from a third-party directory should be verified at that directory directly. The studio's public proof is its working demos and interactive prototypes, which are linked from the home page and described in full at https://appvionstudio.com/work.html.
+
+Full extractable content: https://appvionstudio.com/llms-full.txt
