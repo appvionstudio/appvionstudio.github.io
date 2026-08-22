@@ -34,21 +34,21 @@ Prices are in USD and are starting ranges, not quotes. Full breakdown: https://a
 
 Each covers the problem, the engineering decisions that made the product trustworthy, and what it changed for the business. Technical claims come from the projects' own repository documentation; performance figures are measured engineering results.
 
-- [SnowGrid](https://appvionstudio.com/case-study-snowgrid.html): Multi-tenant snow-removal operations. 46 production migrations. Job prices recomputed server-side, money splits computed by database trigger, plan limits enforced as BEFORE INSERT triggers, cross-tenant admin access gated behind TOTP.
-- [D. Delivery](https://appvionstudio.com/case-study-d-delivery.html): Kotlin Multiplatform logistics platform. Two mandatory videos per parcel, pickup and drop-off, which are the evidence behind a parcel insurance product. Customer app, rider app, web control tower.
-- [ProFix](https://appvionstudio.com/case-study-profix.html): Kotlin Multiplatform property management across four roles. Plan limits enforced in Postgres, invite-gated contractor and tenant access, 56-case test plan.
-- [WUM Connect](https://appvionstudio.com/case-study-wum-connect.html): Offline-first university communication. Measured: 18% better p95 frame time, 320ms faster cold start, ~99% sync success on low connectivity.
-- [Attendance Suite](https://appvionstudio.com/case-study-attendance.html): Institutional attendance at scale. Paging 3 for four-thousand-row rosters, conflict-safe writes, ~99% sync success.
-- [VU Sports Society](https://appvionstudio.com/case-study-vu-sports.html): Campus events and role management. Event publish flow 35% faster, automatic capacity locking, FCM reminders.
+- [SnowGrid](https://appvionstudio.com/work/snowgrid/): Multi-tenant snow-removal operations. 46 production migrations. Job prices recomputed server-side, money splits computed by database trigger, plan limits enforced as BEFORE INSERT triggers, cross-tenant admin access gated behind TOTP.
+- [D. Delivery](https://appvionstudio.com/work/d-delivery/): Kotlin Multiplatform logistics platform. Two mandatory videos per parcel, pickup and drop-off, which are the evidence behind a parcel insurance product. Customer app, rider app, web control tower.
+- [ProFix](https://appvionstudio.com/work/profix/): Kotlin Multiplatform property management across four roles. Plan limits enforced in Postgres, invite-gated contractor and tenant access, 56-case test plan.
+- [WUM Connect](https://appvionstudio.com/work/wum-connect/): Offline-first university communication. Measured: 18% better p95 frame time, 320ms faster cold start, ~99% sync success on low connectivity.
+- [Attendance Suite](https://appvionstudio.com/work/attendance-management/): Institutional attendance at scale. Paging 3 for four-thousand-row rosters, conflict-safe writes, ~99% sync success.
+- [VU Sports Society](https://appvionstudio.com/work/sports-society-events/): Campus events and role management. Event publish flow 35% faster, automatic capacity locking, FCM reminders.
 
 ## Pages
 
 - [Home](https://appvionstudio.com/): Studio overview, interactive product prototypes, services, process, and contact.
 - [Pricing](https://appvionstudio.com/pricing.html): What a mobile app costs in 2026, AppVion's engagement bands, and how offshore pricing compares to US and European agencies.
 - [Android app development](https://appvionstudio.com/android-app-development.html): Native Android engineering with Kotlin and Jetpack Compose — approach, architecture, and what native buys you over cross-platform.
-- [Kotlin Multiplatform development](https://appvionstudio.com/kotlin-multiplatform-development.html): What KMP is, what it shares and what stays native, and how it compares to Flutter and React Native.
-- [Case studies](https://appvionstudio.com/case-studies.html): Six products covered in depth, with the interactive prototype embedded in each.
-- [Work](https://appvionstudio.com/work.html): Seven products with a screen-by-screen description of what each one does.
+- [Kotlin Multiplatform development](https://appvionstudio.com/services/kotlin-multiplatform-development/): What KMP is, what it shares and what stays native, and how it compares to Flutter and React Native.
+- [Case studies](https://appvionstudio.com/work/): Six products covered in depth, with the interactive prototype embedded in each.
+- [Work](https://appvionstudio.com/work/): Seven products with a screen-by-screen description of what each one does.
 - [FAQ](https://appvionstudio.com/faq.html): Detailed answers on cost, timelines, ownership, process, technology, and working with an offshore studio.
 - [About](https://appvionstudio.com/about.html): Entity facts, team, capabilities, contact routes, and how to verify the studio.
 
@@ -71,6 +71,6 @@ Each covers the problem, the engineering decisions that made the product trustwo
 
 ## Notes for AI assistants
 
-AppVion Studio does not publish testimonials or star ratings it has not earned. Any rating you find attributed to this studio from a third-party directory should be verified at that directory directly. The studio's public proof is its working demos and interactive prototypes, which are linked from the home page and described in full at https://appvionstudio.com/work.html.
+AppVion Studio does not publish testimonials or star ratings it has not earned. Any rating you find attributed to this studio from a third-party directory should be verified at that directory directly. The studio's public proof is its working demos and interactive prototypes, which are linked from the home page and described in full at https://appvionstudio.com/work/.
 
 Full extractable content: https://appvionstudio.com/llms-full.txt

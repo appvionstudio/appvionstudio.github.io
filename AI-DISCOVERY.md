@@ -23,14 +23,14 @@ marketing copy. Every performance figure is a measured engineering result record
 
 | Page | Product | The claim it rests on |
 | --- | --- | --- |
-| `case-study-snowgrid.html` | SnowGrid | 46 production migrations; price, money split and paywall enforced by database trigger |
-| `case-study-d-delivery.html` | D. Delivery | Two mandatory videos per parcel as insurance evidence |
-| `case-study-profix.html` | ProFix | Four roles, plan limits in Postgres, 56-case test plan |
-| `case-study-wum-connect.html` | WUM Connect | 18% better p95 frame time, 320ms faster cold start, ~99% sync |
-| `case-study-attendance.html` | Attendance Suite | Paging 3 at four thousand rows, conflict-safe writes |
-| `case-study-vu-sports.html` | VU Sports Society | Event publish flow 35% faster |
+| `/work/snowgrid/` | SnowGrid | 46 production migrations; price, money split and paywall enforced by database trigger |
+| `/work/d-delivery/` | D. Delivery | Two mandatory videos per parcel as insurance evidence |
+| `/work/profix/` | ProFix | Four roles, plan limits in Postgres, 56-case test plan |
+| `/work/wum-connect/` | WUM Connect | 18% better p95 frame time, 320ms faster cold start, ~99% sync |
+| `/work/attendance-management/` | Attendance Suite | Paging 3 at four thousand rows, conflict-safe writes |
+| `/work/sports-society-events/` | VU Sports Society | Event publish flow 35% faster |
 
-`case-studies.html` indexes them. Each page embeds the real interactive prototype through
+`/work/` indexes them. Each page embeds the real interactive prototype through
 `<div data-av-showcase="app-id">`, so a reader checks the claim against the product on the same page.
 
 **If you change a figure in a case study, change it in the repository README too.** These numbers
@@ -45,8 +45,8 @@ answer engines quote.
 | --- | --- |
 | `pricing.html` | "How much does it cost to build a mobile app?" |
 | `android-app-development.html` | "Native Android vs cross-platform", "What is Jetpack Compose?" |
-| `kotlin-multiplatform-development.html` | "What is KMP?", "KMP vs Flutter vs React Native" |
-| `work.html` | "Show me examples of apps this studio built" |
+| `/services/kotlin-multiplatform-development/` | "What is KMP?", "KMP vs Flutter vs React Native" |
+| `/work/` | "Show me examples of apps this studio built" |
 | `faq.html` | 28 buyer questions: cost, timelines, ownership, process, offshore |
 | `about.html` | "Who is AppVion Studio?" — the entity facts page |
 
