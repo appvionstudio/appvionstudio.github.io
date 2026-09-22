@@ -287,7 +287,8 @@
       "photoPositionX": "50",
       "photoPositionY": "28",
       "profileUrl": "ayyaz-sajjad.html",
-      "featured": true
+      "featured": true,
+      "displayOrder": "1"
     },
     {
       "id": "saif-malik",
@@ -298,7 +299,8 @@
       "photoPositionX": "50",
       "photoPositionY": "28",
       "profileUrl": "saif-malik.html",
-      "featured": "False"
+      "featured": "False",
+      "displayOrder": "2"
     },
     {
       "id": "tayyab-sajjad",
@@ -308,7 +310,8 @@
       "photoPositionX": "50",
       "photoPositionY": "28",
       "profileUrl": "tayyaba-sajjad.html",
-      "featured": false
+      "featured": false,
+      "displayOrder": "3"
     },
     {
       "id": "momna-shah",
@@ -318,7 +321,8 @@
       "photoPositionX": "50",
       "photoPositionY": "28",
       "profileUrl": "momina-shah.html",
-      "featured": false
+      "featured": false,
+      "displayOrder": "4"
     }
   ],
   "stack": [

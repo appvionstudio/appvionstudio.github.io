@@ -74,6 +74,7 @@ const schema = {
         ["photoUrl", "Profile Photo URL", "url"],
         ["photoPositionX", "Photo Focus X (%)", "number"],
         ["photoPositionY", "Photo Focus Y (%)", "number"],
+        ["displayOrder", "Display Order", "number"],
         ["role", "Role", "text"],
         ["name", "Name", "text"],
         ["description", "Description", "textarea"],
@@ -122,6 +123,7 @@ const fieldHelp = {
     photoUrl: "Paste a direct portrait image URL. Best shape: square or 4:5, clear face, professional background.",
     photoPositionX: "Adjust only if the face sits left or right in the frame. 50 is centered.",
     photoPositionY: "Adjust the vertical focus. Use 22-34 for most portraits so the top of the head stays visible.",
+    displayOrder: "Position on the team grid. 1 shows first. Two cards fit per row, so 1 and 2 share the top row, 3 and 4 the next. Leave blank to fall to the end.",
     thumbnailUrl: "Paste one strong project image URL. This becomes the first visual proof on project cards.",
     screenshotUrls: "Paste one screenshot URL per line. Case studies can show up to 6 screenshots.",
     demoVideoUrl: "Paste a YouTube, Shorts, Drive, Loom, or hosted video URL for the case study demo button.",
@@ -632,6 +634,7 @@ function isRequiredField(key, fieldType) {
         "photoUrl",
         "photoPositionX",
         "photoPositionY",
+        "displayOrder",
         "profileUrl",
         "demoUrl",
         "proofPoints"
@@ -644,6 +647,7 @@ function fieldPlaceholder(key, fieldType) {
         photoUrl: "https://your-image-host.com/team/ayyaz.jpg",
         photoPositionX: "50",
         photoPositionY: "28",
+        displayOrder: "1",
 
         thumbnailUrl: "https://your-image-host.com/projects/profix-cover.jpg",
         screenshotUrls: "https://your-image-host.com/projects/profix-screen-1.jpg\nhttps://your-image-host.com/projects/profix-screen-2.jpg",

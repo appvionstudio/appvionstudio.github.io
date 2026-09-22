@@ -252,7 +252,19 @@
         const grid = document.querySelector(".team-grid");
         if (!grid || !Array.isArray(team)) return;
 
-        grid.innerHTML = team.map((member) => `
+        // The admin panel appends new members to the end and has no way to reorder
+        // them, so the grid order was simply the order people happened to be added.
+        // "Display Order" in Admin > Team controls it instead: 1 shows first.
+        // Anyone left blank keeps their relative position, after the numbered ones.
+        const ordered = team.slice().sort((a, b) => {
+            const left = Number(a && a.displayOrder);
+            const right = Number(b && b.displayOrder);
+            const leftRank = Number.isFinite(left) ? left : Number.MAX_SAFE_INTEGER;
+            const rightRank = Number.isFinite(right) ? right : Number.MAX_SAFE_INTEGER;
+            return leftRank - rightRank;
+        });
+
+        grid.innerHTML = ordered.map((member) => `
             <article class="team-card ${member.featured ? "featured" : ""} reveal in-view">
                 ${member.photoUrl
                     ? `<img class="team-photo" src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy" style="${photoPositionStyle(member)}">`

@@ -1422,8 +1422,11 @@ h3 { font-size: 22px; line-height: 1.2; }
 
 .team-section { background: var(--bg); }
 
+/* Two per row, so the founder and the project manager share the top row and the
+   other two sit beneath them. The tablet rule further down already uses two
+   columns and the phone rule one, so only this desktop rule needed changing. */
 .team-grid {
-    display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 18px;
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px;
 }
 
 .team-card {
