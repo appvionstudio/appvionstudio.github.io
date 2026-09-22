@@ -199,11 +199,11 @@ Ayyaz Sajjad
 Leads AppVion Studio across product strategy, Android engineering, Kotlin Multiplatform systems, and premium mobile execution.
 View Profile
 Developer
-Tayyab Sajjad
+Tayyaba Sajjad
 Supports product delivery, UI implementation, and growing development execution within the studio workflow.
 View Profile
 Studio Associate
-Momna Shah
+Momina Shah
 Strengthens the team-facing studio presence with space for future coordination, support, and client-facing contributions.
 View Profile
 Insights
@@ -1521,9 +1521,9 @@ through on the home page, public video demos, and a downloadable APK. Judge the 
 Who does the work.
 Ayyaz Sajjad — Founder and Android App Developer
 Leads AppVion Studio across product strategy, Android engineering, Kotlin Multiplatform systems, and premium mobile execution. Every engagement runs through him rather than an account manager. View profile .
-Tayyab Sajjad — Developer
+Tayyaba Sajjad — Developer
 Supports product delivery, interface implementation, and development execution within the studio workflow. View profile .
-Momna Shah — Studio Associate
+Momina Shah — Studio Associate
 Strengthens the team-facing studio presence, coordination, support, and client-facing contributions. View profile .
 What the studio does.
 - Android app development in Kotlin and Jetpack Compose

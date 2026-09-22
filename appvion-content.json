@@ -303,21 +303,21 @@
     {
       "id": "tayyab-sajjad",
       "role": "Developer",
-      "name": "Tayyab Sajjad",
+      "name": "Tayyaba Sajjad",
       "description": "Supports product delivery, UI implementation, and growing development execution within the studio workflow.",
       "photoPositionX": "50",
       "photoPositionY": "28",
-      "profileUrl": "tayyab-sajjad.html",
+      "profileUrl": "tayyaba-sajjad.html",
       "featured": false
     },
     {
       "id": "momna-shah",
       "role": "Studio Associate",
-      "name": "Momna Shah",
+      "name": "Momina Shah",
       "description": "Strengthens the team-facing studio presence with space for future coordination, support, and client-facing contributions.",
       "photoPositionX": "50",
       "photoPositionY": "28",
-      "profileUrl": "momna-shah.html",
+      "profileUrl": "momina-shah.html",
       "featured": false
     }
   ],
