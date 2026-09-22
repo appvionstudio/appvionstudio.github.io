@@ -35,7 +35,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <!-- Calendly's widget stylesheet is only needed once the widget opens, so it is
+         loaded without blocking first paint. Behaviour is unchanged. -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"></noscript>
+    <!-- site-render.js pulls page content from Firestore before the hero text,
+         the team grid and the project screenshots can render. Left alone, its
+         dynamic import() does not even begin until the script itself has run
+         (~5.8s on a cold load), and every screenshot waits behind it. These four
+         hints start that chain during HTML parsing instead. -->
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
+    <link rel="modulepreload" href="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js" crossorigin>
+    <link rel="modulepreload" href="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js" crossorigin>
     <link rel="icon" href="appvion-logo-icon.png">
     <link rel="apple-touch-icon" href="appvion-logo-icon.png">
     <link rel="stylesheet" href="styles.css?v=20260702-redesign">
