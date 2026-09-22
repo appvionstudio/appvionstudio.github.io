@@ -33,7 +33,7 @@
   },
   "numberOfEmployees": {
     "@type": "QuantitativeValue",
-    "value": 3
+    "value": 4
   },
   "employee": [
     {

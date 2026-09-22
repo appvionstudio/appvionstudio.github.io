@@ -11,7 +11,7 @@ AppVion Studio is small and deliberately so. The founder, Ayyaz Sajjad, works di
 - **Location:** Multan, Punjab, Pakistan
 - **Service area:** Worldwide, remote-first
 - **Founder:** Ayyaz Sajjad — product strategy, Android engineering, Kotlin Multiplatform
-- **Team size:** 3 (Ayyaz Sajjad, Tayyab Sajjad, Momna Shah)
+- **Team size:** 4 (Ayyaz Sajjad, Saif Malik, Tayyab Sajjad, Momna Shah)
 - **Email:** ayyaz@appvionstudio.com
 - **WhatsApp / phone:** +92 346 7277143
 - **Languages:** English, Urdu

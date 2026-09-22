@@ -290,6 +290,17 @@
       "featured": true
     },
     {
+      "id": "saif-malik",
+      "role": "Project Manager",
+      "name": "Saif Malik",
+      "description": "Keeps projects moving and communication clear between the studio, the team, and clients. Ten years managing delivery across online platforms.",
+      "photoUrl": "https://appvionstudio.com/assets/team/saif-malik.jpg",
+      "photoPositionX": "50",
+      "photoPositionY": "28",
+      "profileUrl": "saif-malik.html",
+      "featured": "False"
+    },
+    {
       "id": "tayyab-sajjad",
       "role": "Developer",
       "name": "Tayyab Sajjad",
