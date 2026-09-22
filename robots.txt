@@ -8,11 +8,15 @@
 #   https://appvionstudio.com/llms-full.txt
 #   https://appvionstudio.com/company.json
 
+# Note on /Demos/, /appvion-control.html and /showcase-review.html:
+# each of those pages carries <meta name="robots" content="noindex">.
+# They are deliberately NOT disallowed here. A crawler blocked from
+# fetching a page can never read that page's noindex tag, which is how
+# /Demos/appvion_snowgrid_COMPLETE.html stayed in Google's index while
+# being disallowed. Crawling is allowed so the noindex is seen and obeyed.
+
 User-agent: *
 Allow: /
-Disallow: /appvion-control.html
-Disallow: /showcase-review.html
-Disallow: /Demos/
 
 # ---------------------------------------------------------------
 # Search engines

@@ -51,6 +51,11 @@ Each covers the problem, the engineering decisions that made the product trustwo
 - [Work](https://appvionstudio.com/work/): Seven products with a screen-by-screen description of what each one does.
 - [FAQ](https://appvionstudio.com/faq.html): Detailed answers on cost, timelines, ownership, process, technology, and working with an offshore studio.
 - [About](https://appvionstudio.com/about.html): Entity facts, team, capabilities, contact routes, and how to verify the studio.
+- [Insights](https://appvionstudio.com/insights/): Practical writing on framework choices, real costs, and what breaks in production.
+
+## Insights articles
+
+- [Kotlin Multiplatform vs React Native for business apps](https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/) — React Native shares the user interface and renders it itself; Kotlin Multiplatform shares the business logic and keeps each interface natively platform-owned. The article sets out what each framework shares, the characteristic failure mode of each, and four questions that settle the choice: does the app work offline, how expensive is a rule being wrong, who maintains it in two years, and is iOS needed on day one. Written by Ayyaz Sajjad, founder and Android engineer.
 
 ## Products in the portfolio
 

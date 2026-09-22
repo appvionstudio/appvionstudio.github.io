@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w6x06tsd9x");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotlin Multiplatform vs React Native for Business Apps | AppVion Studio</title>
+    <meta name="description" content="A straight comparison of Kotlin Multiplatform and React Native for operational business apps — what each shares, where each breaks, and how to choose. Written by a studio that ships both platforms.">
+    <meta name="keywords" content="kotlin multiplatform vs react native, KMP vs react native, cross platform app development comparison, kotlin multiplatform business apps, react native alternatives, choosing cross platform framework">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="Kotlin Multiplatform vs React Native for Business Apps">
+    <meta property="og:description" content="What each framework actually shares, where each one breaks, and a decision rule you can apply in ten minutes.">
+    <meta property="og:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <meta property="og:url" content="https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kotlin Multiplatform vs React Native for Business Apps">
+    <meta name="twitter:description" content="What each shares, where each breaks, and how to choose. From a studio that ships both.">
+    <meta name="twitter:image" content="https://appvionstudio.com/appvion-logo-wordmark.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
+    <link rel="stylesheet" href="/ui-fixes.css?v=20260822-fixes">
+    <link rel="alternate" type="text/plain" href="https://appvionstudio.com/llms.txt" title="Machine-readable summary for AI assistants">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/#article",
+          "headline": "Kotlin Multiplatform vs React Native for business apps",
+          "description": "A comparison of Kotlin Multiplatform and React Native for operational business apps: what each framework shares, where each one breaks, and how to choose between them.",
+          "datePublished": "2026-09-22",
+          "dateModified": "2026-09-22",
+          "inLanguage": "en",
+          "author": {
+            "@type": "Person",
+            "name": "Ayyaz Sajjad",
+            "jobTitle": "Founder and Android Engineer",
+            "url": "https://appvionstudio.com/ayyaz-sajjad.html"
+          },
+          "publisher": {
+            "@id": "https://appvionstudio.com/#organization"
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/"
+          },
+          "about": [
+            { "@type": "Thing", "name": "Kotlin Multiplatform" },
+            { "@type": "Thing", "name": "React Native" },
+            { "@type": "Thing", "name": "Cross-platform mobile development" }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://appvionstudio.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://appvionstudio.com/insights/" },
+            { "@type": "ListItem", "position": 3, "name": "Kotlin Multiplatform vs React Native" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is Kotlin Multiplatform better than React Native?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Neither is better in general. They share different things. React Native shares the user interface and renders it itself, which is fastest when the app is mostly screens and forms and one team owns both platforms. Kotlin Multiplatform shares the business logic and keeps each interface genuinely native, which wins when correctness matters, when the app is offline-first, or when it uses hardware heavily."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Kotlin Multiplatform production ready in 2026?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Kotlin Multiplatform reached stable status in 2024 and is backed by Google for cross-platform development. It is used in production by large engineering teams, and by smaller studios shipping multi-role operational platforms with realtime dispatch, payments and offline sync."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which is cheaper to build, Kotlin Multiplatform or React Native?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "React Native is usually cheaper for a first version, because one team writes one interface. Kotlin Multiplatform is usually cheaper over a two to three year life, because the rules that cause expensive bugs exist once rather than twice, and native interface work does not accumulate a backlog of platform workarounds."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can we migrate an existing React Native app to Kotlin Multiplatform?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, but not incrementally in the way an Android-to-KMP migration can be. A React Native app shares its interface, so moving to KMP means rewriting the interface natively on each platform while the business rules move into a shared Kotlin module. Plan it as a rebuild with a reusable backend, not as a refactor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Kotlin Multiplatform work for iOS?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The shared Kotlin module compiles to a native framework that Swift and SwiftUI consume like any other dependency. The iOS interface is written in Swift, so it behaves like a native iOS app, not a port."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon.png" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Insights</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Primary navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/#process">Process</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / <a href="/insights/">Insights</a> / Kotlin Multiplatform vs React Native
+                    </nav>
+                </div>
+                <div class="container section-heading">
+                    <p class="eyebrow">Choosing a framework</p>
+                    <h1>Kotlin Multiplatform vs React Native for business apps.</h1>
+                    <p>
+                        Most comparisons of these two frameworks are written by people who sell one of them. This one is
+                        written by a studio that builds Kotlin Multiplatform products and has shipped against React Native
+                        teams. The honest summary is that they share different things, and the right answer depends on one
+                        question about your product rather than on which framework is newer.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">The short answer</p>
+                    <h2>React Native shares the interface. Kotlin Multiplatform shares the logic.</h2>
+                    <p>
+                        That single sentence explains almost every practical difference between them, including cost,
+                        hiring, performance and the kind of bug you will spend your evenings on.
+                    </p>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">React Native shares</p>
+                        <ul class="study-list">
+                            <li>All screens and components</li>
+                            <li>Navigation and layout</li>
+                            <li>Business rules and validation</li>
+                            <li>Networking and state</li>
+                            <li>One JavaScript or TypeScript codebase</li>
+                        </ul>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Kotlin Multiplatform shares</p>
+                        <ul class="study-list">
+                            <li>Domain models and business rules</li>
+                            <li>Validation and use cases</li>
+                            <li>Networking and API contracts</li>
+                            <li>Local database, caching and sync</li>
+                            <li>Nothing in the interface, deliberately</li>
+                        </ul>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">What that costs you</p>
+                        <p>
+                            React Native gives you one interface to build and one to maintain, which is genuinely fast.
+                            The price is that the interface is rendered by a bridge rather than by the platform, so every
+                            native capability arrives through a library someone else maintains.
+                        </p>
+                        <p>
+                            Kotlin Multiplatform gives you two interfaces to build. The price is real. What you get back is
+                            that the interface is the platform&rsquo;s own, and the rules that decide whether an invoice is
+                            correct exist exactly once.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Where each one breaks</p>
+                    <h2>The failure modes nobody puts in the pitch deck.</h2>
+                    <p>
+                        Both frameworks work. Both have a characteristic way of going wrong, and knowing which one you can
+                        live with matters more than any benchmark.
+                    </p>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Where React Native struggles</p>
+                        <ul class="study-list">
+                            <li>Background work and offline sync, where each platform&rsquo;s rules differ and the abstraction leaks</li>
+                            <li>Heavy hardware use &mdash; continuous GPS, camera pipelines, Bluetooth &mdash; which usually ends in a native module anyway</li>
+                            <li>Long lists of live data, where the bridge becomes the bottleneck</li>
+                            <li>Dependency risk: a critical library going unmaintained is your problem, not the framework&rsquo;s</li>
+                            <li>OS upgrades, where you wait for the ecosystem rather than for the platform</li>
+                        </ul>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">Where Kotlin Multiplatform struggles</p>
+                        <ul class="study-list">
+                            <li>First-version cost, because two interfaces are two interfaces</li>
+                            <li>Hiring, if you want one developer to cover both platforms &mdash; you need Android and iOS skills</li>
+                            <li>A smaller library ecosystem than JavaScript, though the gap has closed sharply</li>
+                            <li>iOS tooling and debugging, which is better than it was but still rougher than Android</li>
+                            <li>Teams that treat it as &ldquo;write once&rdquo; and then fight it when it is not</li>
+                        </ul>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">The honest version</p>
+                        <p>
+                            If your app is mostly screens, forms and a server that does the thinking, React Native will get
+                            you there faster and cheaper, and the compromises may never bite.
+                        </p>
+                        <p>
+                            If your app makes decisions on the device, works when the signal drops, or leans on hardware,
+                            Kotlin Multiplatform puts the difficult code in one place and leaves the platform to do what
+                            it is good at.
+                        </p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">A decision rule</p>
+                    <h2>Four questions that settle it in ten minutes.</h2>
+                </div>
+                <div class="container choice-grid">
+                    <article class="choice-card reveal in-view">
+                        <p class="eyebrow">Question one</p>
+                        <h3>Does the app work offline?</h3>
+                        <p>
+                            Not &ldquo;does it cache&rdquo; &mdash; does a user complete real work with no signal, and does that
+                            work reconcile later? If yes, lean Kotlin Multiplatform. Offline-first means conflict rules, sync
+                            state and a local database, and those are exactly what you do not want written twice.
+                        </p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <p class="eyebrow">Question two</p>
+                        <h3>How expensive is a rule being wrong?</h3>
+                        <p>
+                            If a mis-calculated price, a missed approval or a wrong dispatch costs real money or safety,
+                            share the logic. If the worst case is a cosmetic bug, that pressure is absent and React Native
+                            is a reasonable call.
+                        </p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <p class="eyebrow">Question three</p>
+                        <h3>Who maintains it in two years?</h3>
+                        <p>
+                            A React team that will own this app forever is a strong argument for React Native. A team that
+                            will hand it to mobile engineers, or no in-house team at all, is an argument for the platform&rsquo;s
+                            own languages, where hiring is easier and knowledge is not framework-specific.
+                        </p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <p class="eyebrow">Question four</p>
+                        <h3>Do you actually need iOS on day one?</h3>
+                        <p>
+                            Many operational apps are Android-only for years, because the field hardware is Android. If that
+                            is you, the comparison dissolves: build native Android now and structure it so the domain layer
+                            can move into a shared module later, without a rewrite.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">What we use, and why</p>
+                    <h2>We build Kotlin Multiplatform, and we will tell you when not to.</h2>
+                    <p>
+                        Our work is operational: dispatch, approvals, attendance, proof of delivery, field service. That
+                        category answers question one and question two the same way almost every time &mdash; the app must work
+                        without signal, and a wrong record is expensive. So the shared-logic model fits, and that is why we
+                        build the way we do.
+                    </p>
+                    <p>
+                        <a href="/work/d-delivery/">D. Delivery</a> is a three-app Kotlin Multiplatform logistics platform with
+                        realtime dispatch, payments and offline-first sync &mdash; the clearest example of why the line sits where
+                        it does. <a href="/work/profix/">ProFix</a> applies the same structure to property maintenance and field
+                        work orders.
+                    </p>
+                    <p>
+                        If you describe your product and it turns out React Native is the right tool for it, you will get that
+                        answer straight. It is a cheaper thing to hear now than in month five. Our
+                        <a href="/pricing.html">pricing page</a> publishes real numbers, including what a clarity sprint costs
+                        if you want the decision documented before committing to a build.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section faq-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">FAQ</p>
+                    <h2>Questions people ask before choosing.</h2>
+                </div>
+                <div class="container faq-list">
+                    <details class="faq-item reveal in-view" open>
+                        <summary>Is Kotlin Multiplatform better than React Native?</summary>
+                        <p>Neither is better in general, and anyone who says otherwise is selling something. They share different things. React Native shares the user interface and renders it itself, which is fastest when the app is mostly screens and forms and one team owns both platforms. Kotlin Multiplatform shares the business logic and keeps each interface genuinely native, which wins when correctness matters, when the app is offline-first, or when it uses hardware heavily.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>Is Kotlin Multiplatform production ready in 2026?</summary>
+                        <p>Yes. Kotlin Multiplatform reached stable status in 2024 and is backed by Google for cross-platform development. It runs in production at large engineering organisations, and at smaller studios shipping multi-role operational platforms with realtime dispatch, payments and offline sync.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>Which is cheaper to build?</summary>
+                        <p>React Native is usually cheaper for a first version, because one team writes one interface. Kotlin Multiplatform is usually cheaper across a two to three year life, because the rules that cause expensive bugs exist once rather than twice, and you do not accumulate a backlog of platform workarounds in the interface layer. If the app will be rewritten in eighteen months either way, that long-run argument does not apply and you should take the cheaper first version.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>Can we migrate an existing React Native app to Kotlin Multiplatform?</summary>
+                        <p>Yes, but not incrementally in the way an Android-to-KMP migration can be. A React Native app shares its interface, so moving to KMP means rewriting the interface natively on each platform while the business rules move into a shared Kotlin module. Plan it as a rebuild that reuses your backend, not as a refactor, and be honest about whether the reason justifies it.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>Does Kotlin Multiplatform work for iOS?</summary>
+                        <p>Yes. The shared Kotlin module compiles to a native framework that Swift and SwiftUI consume like any other dependency. The iOS interface is written in Swift, so it behaves like a native iOS app rather than a port. This is the part people find surprising: KMP does not put a Kotlin interface on iOS, and is not trying to.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>What about Flutter?</summary>
+                        <p>Flutter sits on the same side of the line as React Native: it shares the interface and renders it itself, with its own engine rather than a bridge, which makes it faster than React Native at list-heavy screens. The trade-off is the same one in a different form &mdash; your interface is not the platform&rsquo;s, and every native capability arrives through a plugin. The four questions above apply to Flutter unchanged.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Not sure which side of the line your product sits on?</h2>
+                    <p>
+                        Bring the product, the platforms you need, and the constraints. Twenty minutes is usually enough to
+                        answer the four questions above &mdash; and if the answer is that you do not need us, you will get that
+                        straight.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="KMP vs RN article strategy call">Book a 20-min App Strategy Session</a>
+                        <a class="button secondary" href="/services/kotlin-multiplatform-development/">Read about our KMP work</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <a href="/#contact">Start a project</a>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
