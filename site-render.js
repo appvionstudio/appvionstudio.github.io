@@ -264,17 +264,50 @@
             return leftRank - rightRank;
         });
 
-        grid.innerHTML = ordered.map((member) => `
-            <article class="team-card ${member.featured ? "featured" : ""} reveal in-view">
-                ${member.photoUrl
-                    ? `<img class="team-photo" src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy" style="${photoPositionStyle(member)}">`
-                    : `<div class="team-photo-placeholder" aria-hidden="true">${escapeHtml(initials(member.name))}</div>`}
+        grid.innerHTML = ordered.map((member) => member.featured ? founderCard(member) : `
+            <article class="team-card reveal in-view">
+                ${memberPhoto(member)}
                 <span>${escapeHtml(member.role)}</span>
                 <h3>${escapeHtml(member.name)}</h3>
                 <p>${escapeHtml(member.description)}</p>
                 <a class="button secondary" href="${escapeHtml(member.profileUrl || "#")}">View Profile</a>
             </article>
         `).join("");
+    }
+
+    function memberPhoto(member) {
+        return member.photoUrl
+            ? `<img class="team-photo" src="${escapeHtml(member.photoUrl)}" alt="${escapeHtml(member.name)}" loading="lazy" style="${photoPositionStyle(member)}">`
+            : `<div class="team-photo-placeholder" aria-hidden="true">${escapeHtml(initials(member.name))}</div>`;
+    }
+
+    // The featured (founder) card spans the full row and carries a signed
+    // founder's note and a direct booking button instead of the usual bio. The
+    // note and title are fixed here, not in the admin panel; only the name,
+    // photo and profile link come from the team data.
+    function founderCard(member) {
+        const name = escapeHtml(member.name);
+        const firstName = escapeHtml(String(member.name || "").trim().split(/\s+/)[0] || "us");
+        return `
+            <article class="team-card featured reveal in-view">
+                <div class="founder-photo">
+                    ${memberPhoto(member)}
+                    <div class="founder-badge"><i aria-hidden="true"></i>Founder &amp; CEO</div>
+                </div>
+                <blockquote class="founder-quote">I started AppVion Studio to build apps that field teams can <em>rely on every single day</em>. I stay close to every project, from the first call to launch day.</blockquote>
+                <div class="founder-sign">
+                    <div class="founder-signature" aria-hidden="true">${name}</div>
+                    <div>
+                        <h3>${name}</h3>
+                        <div class="founder-meta">Founder &amp; CEO · Android &amp; Kotlin Multiplatform</div>
+                    </div>
+                </div>
+                <div class="founder-actions">
+                    <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Team founder card">Book 20 min with ${firstName}</a>
+                    <a class="button secondary" href="${escapeHtml(member.profileUrl || "#")}">View Profile</a>
+                </div>
+            </article>
+        `;
     }
 
     function initials(name) {

@@ -3887,6 +3887,188 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
     }
 }
 
+/* Founder spotlight: the featured member gets a full-width horizontal card on
+   top and everyone else sits in one row of three beneath it. order: -1 keeps the
+   founder first even if Display Order in the admin panel says otherwise. The
+   card holds a signed founder's note instead of the usual role/bio/button. */
+.founder-photo {
+    position: relative;
+}
+
+.founder-photo .team-photo {
+    display: block;
+    margin: 0 !important;
+}
+
+/* The badge sits on the photo's bottom-right corner, which is also where the
+   source image carries a small generator mark; the badge covers it. */
+.founder-badge {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 18px;
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.18);
+    color: var(--ink);
+    font: 700 12px/1 "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+    letter-spacing: 0.04em;
+}
+
+.founder-badge i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
+}
+
+.founder-quote {
+    position: relative;
+    margin: 12px 24px 0;
+    padding-top: 22px;
+    color: var(--ink);
+    font: 400 26px/1.2 "Instrument Serif", Georgia, serif;
+}
+
+.founder-quote::before {
+    content: "\201C";
+    position: absolute;
+    top: -30px;
+    left: -6px;
+    color: #dbeafe;
+    font: 400 96px/1 "Instrument Serif", Georgia, serif;
+}
+
+.founder-quote em {
+    color: var(--blue);
+    font-style: italic;
+}
+
+.founder-sign {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 6px 18px;
+    margin: 22px 24px 0;
+    padding-top: 18px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.founder-signature {
+    color: #1e293b;
+    font: 400 48px/0.8 "Mrs Saint Delafield", "Brush Script MT", cursive;
+    white-space: nowrap;
+}
+
+.team-card .founder-sign h3 {
+    margin: 0 0 4px;
+    font-size: 17px;
+}
+
+.founder-meta {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.founder-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 24px 28px;
+}
+
+.team-card .founder-actions .button {
+    margin: 0;
+}
+
+@media (min-width: 721px) {
+    .team-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .team-card.featured {
+        order: -1;
+        grid-column: 1 / -1;
+        grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
+        grid-template-rows: 1fr auto auto auto 1fr;
+        align-items: start;
+    }
+
+    .team-card.featured .founder-photo {
+        grid-column: 1;
+        grid-row: 1 / -1;
+        align-self: stretch;
+    }
+
+    /* Anchoring the crop to the bottom-right keeps the badge over the same
+       corner of the image whatever shape the card ends up. */
+    .team-card.featured .founder-photo .team-photo,
+    .team-card.featured .founder-photo .team-photo-placeholder {
+        height: 100% !important;
+        min-height: 440px;
+        max-height: none;
+        aspect-ratio: auto;
+        object-position: 100% 100%;
+    }
+
+    .team-card.featured .founder-quote,
+    .team-card.featured .founder-sign,
+    .team-card.featured .founder-actions {
+        grid-column: 2;
+        margin-left: clamp(28px, 4.5vw, 64px);
+        margin-right: clamp(28px, 4.5vw, 64px);
+    }
+
+    .team-card.featured .founder-quote { grid-row: 2; margin-top: 24px; font-size: clamp(26px, 2.6vw, 36px); }
+    .team-card.featured .founder-sign { grid-row: 3; }
+    .team-card.featured .founder-actions { grid-row: 4; margin-bottom: 0; }
+}
+
+@media (min-width: 721px) and (max-width: 960px) {
+    .team-card.featured {
+        grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr);
+    }
+
+    .team-card.featured .founder-quote,
+    .team-card.featured .founder-sign,
+    .team-card.featured .founder-actions {
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+
+    .team-card.featured .founder-photo .team-photo {
+        min-height: 400px;
+    }
+
+    .team-card:not(.featured) p {
+        font-size: 14px;
+    }
+}
+
+/* Bigger screens show a bigger photo, so the badge grows to keep covering
+   the corner mark. */
+@media (min-width: 1441px) {
+    .founder-badge {
+        padding: 17px 22px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 720px) {
+    .founder-photo {
+        margin-bottom: 8px;
+    }
+
+    .founder-signature {
+        font-size: 42px;
+    }
+}
+
 /* Static labels should not look like buttons */
 .proof-logos span,
 .stack-cloud span,
