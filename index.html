@@ -40,15 +40,6 @@
          loaded without blocking first paint. Behaviour is unchanged. -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"></noscript>
-    <!-- site-render.js pulls page content from Firestore before the hero text,
-         the team grid and the project screenshots can render. Left alone, its
-         dynamic import() does not even begin until the script itself has run
-         (~5.8s on a cold load), and every screenshot waits behind it. These four
-         hints start that chain during HTML parsing instead. -->
-    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
-    <link rel="modulepreload" href="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js" crossorigin>
-    <link rel="modulepreload" href="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js" crossorigin>
     <link rel="icon" href="appvion-logo-icon.png">
     <link rel="apple-touch-icon" href="appvion-logo-icon.png">
     <link rel="stylesheet" href="styles.css?v=20260928-founder-note">
@@ -762,7 +753,7 @@
                                 <h3>WUM Connect</h3>
                                 <p>Role-based communication with real-time announcements, Firebase architecture, and offline-friendly usage.</p>
                             </div>
-                            <a href="https://youtu.be/9I1OX1Z4w-Q" target="_blank" rel="noreferrer">View Live Demo</a>
+                            <a href="/work/wum-connect/">Read the case study</a>
                         </article>
 
                         <article class="case-card reveal">
@@ -795,7 +786,7 @@
                                 <h3>Attendance Management</h3>
                                 <p>Large-list browsing, record clarity, and Paging 3 implementation for smoother institutional workflows.</p>
                             </div>
-                            <a href="https://youtu.be/NnlCmr_C4Cw" target="_blank" rel="noreferrer">View Live Demo</a>
+                            <a href="/work/attendance-management/">Read the case study</a>
                         </article>
 
                         <article class="case-card reveal">
@@ -820,7 +811,7 @@
                                 <h3>Sports Society Events</h3>
                                 <p>Mobile event coordination with filtering, structured updates, and participant-facing activity flows.</p>
                             </div>
-                            <a href="https://youtube.com/shorts/1dSV-00hZr4" target="_blank" rel="noreferrer">View Live Demo</a>
+                            <a href="/work/sports-society-events/">Read the case study</a>
                         </article>
                     </div>
 
@@ -833,10 +824,10 @@
             <section id="demos" class="section demo-library-section" hidden>
                 <div class="container">
                     <div class="section-heading reveal">
-                        <p class="eyebrow">Interactive proof</p>
-                        <h2>Demo library for product workflows, concepts, and live interface samples.</h2>
+                        <p class="eyebrow">Demo videos</p>
+                        <h2>Watch the apps in use.</h2>
                         <p>
-                            Add demos from the admin panel when you want public proof for real product behavior, app flows, and interactive interface quality.
+                            Short screen recordings of products we have built, showing real workflows from start to finish.
                         </p>
                     </div>
                     <div class="demo-library-grid"></div>
@@ -1088,7 +1079,7 @@
                     <div class="team-grid">
                         <article class="team-card featured reveal">
                             <div class="founder-photo">
-                                <img class="team-photo" src="Demos/aa3b41af-b10d-405c-9d0e-3217e745ceaf.jpg" alt="Ayyaz Sajjad" loading="lazy">
+                                <img class="team-photo" src="assets/team/ayyaz-sajjad.jpg" alt="Ayyaz Sajjad, founder of AppVion Studio" loading="lazy" style="--team-photo-x:50%;--team-photo-y:28%;">
                                 <div class="founder-badge"><i aria-hidden="true"></i>Founder &amp; CEO</div>
                             </div>
                             <blockquote class="founder-quote">I started AppVion Studio to build apps that field teams can <em>rely on every single day</em>. I stay close to every project, from the first call to launch day.</blockquote>
@@ -1105,18 +1096,21 @@
                             </div>
                         </article>
                         <article class="team-card reveal">
+                            <img class="team-photo" src="assets/team/saif-malik.jpg" alt="Saif Malik, Project Manager at AppVion Studio" loading="lazy" style="--team-photo-x:50%;--team-photo-y:28%;">
                             <span>Project Manager</span>
                             <h3>Saif Malik</h3>
                             <p>Keeps projects moving and communication clear between the studio, the team, and clients. Ten years managing delivery across online platforms.</p>
                             <a class="button secondary" href="saif-malik.html">View Profile</a>
                         </article>
                         <article class="team-card reveal">
+                            <img class="team-photo" src="assets/team/tayyaba-sajjad.jpg" alt="Tayyaba Sajjad, Developer at AppVion Studio" loading="lazy" style="--team-photo-x:50%;--team-photo-y:28%;">
                             <span>Developer</span>
                             <h3>Tayyaba Sajjad</h3>
                             <p>Supports product delivery, UI implementation, and growing development execution within the studio workflow.</p>
                             <a class="button secondary" href="tayyaba-sajjad.html">View Profile</a>
                         </article>
                         <article class="team-card reveal">
+                            <img class="team-photo" src="assets/team/momina-shah.jpg" alt="Momina Shah, Studio Associate at AppVion Studio" loading="lazy" style="--team-photo-x:50%;--team-photo-y:28%;">
                             <span>Studio Associate</span>
                             <h3>Momina Shah</h3>
                             <p>Strengthens the team-facing studio presence with space for future coordination, support, and client-facing contributions.</p>
@@ -1328,7 +1322,7 @@
         };
         window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
     </script>
-    <script src="site-render.js?v=20260928-founder-note"></script>
+    <script src="site-render.js?v=20261020-seo" defer></script>
     <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <script src="app.js?v=20260602-professional-polish"></script>
 </body>

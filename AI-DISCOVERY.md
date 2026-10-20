@@ -10,9 +10,9 @@ by conventional search.
 | --- | --- |
 | `robots.txt` | Explicitly allows 30+ crawlers by name, including GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, and CCBot. Blocks the admin panel and the internal review tool. |
 | `llms.txt` | The emerging convention for a machine-readable site summary. Key facts, pricing, products, and contact routes in ~900 words. |
-| `llms-full.txt` | Every content page as plain text, ~8,600 words. Regenerate after any content change. |
+| `llms-full.txt` | Every content page as plain text, ~8,600 words. Regenerate after any content change. **Stale as of October 2026:** 9 of its 14 URLs return 404; regenerate it from the current pages (SEO task 12). |
 | `company.json` | The company record as schema.org JSON, fetchable directly by a crawler that wants structured facts without parsing HTML. |
-| `sitemap.xml` | All 13 public pages with `lastmod`. |
+| `sitemap.xml` | All public pages with `lastmod` (33 URLs as of October 2026; submitted in Google Search Console). |
 | `content.css` | Styling for the content pages only. |
 | `ui-fixes.css` | Contrast and hover-state corrections, loaded last on every page. Each fix is commented with the `styles.css` line it overrides. |
 
@@ -25,7 +25,7 @@ marketing copy. Every performance figure is a measured engineering result record
 | --- | --- | --- |
 | `/work/snowgrid/` | SnowGrid | 46 production migrations; price, money split and paywall enforced by database trigger |
 | `/work/d-delivery/` | D. Delivery | Two mandatory videos per parcel as insurance evidence |
-| `/work/profix/` | ProFix | Four roles, plan limits in Postgres, 56-case test plan |
+| `/work/profix/` | PropFix | Four roles, plan limits in Postgres, 56-case test plan |
 | `/work/wum-connect/` | WUM Connect | 18% better p95 frame time, 320ms faster cold start, ~99% sync |
 | `/work/attendance-management/` | Attendance Suite | Paging 3 at four thousand rows, conflict-safe writes |
 | `/work/sports-society-events/` | VU Sports Society | Event publish flow 35% faster |

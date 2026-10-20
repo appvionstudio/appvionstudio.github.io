@@ -27,7 +27,7 @@ Append an entry to `APPS` in `showcase-data.js`:
     tagline: "One sentence on what the product does.",
     accent: "blue",               // blue | green | amber | rose
     stack: ["Android Native", "Firebase"],
-    link: { label: "Watch demo", url: "https://..." },   // optional
+    link: { label: "Read the case study", url: "/work/my-app/" },   // optional
     screens: [ /* see below */ ]
 }
 ```
@@ -80,5 +80,8 @@ data** — names, email addresses, phone numbers — before the file goes in
 - `prefers-reduced-motion` removes the tilt, the auto-cycle, and all screen
   transitions.
 - A missing image falls back to a labelled card instead of a broken image.
-- Portfolio cards are re-rendered by `site-render.js` from admin content; the
-  showcase watches for that and re-attaches itself.
+- Portfolio cards are static HTML in `index.html`. `site-render.js` only renders
+  the Demo library, but it still fires `appvion:content-rendered`, and the
+  showcase re-attaches itself on that event.
+- Do not link to a YouTube video unless it plays. Dead links found in October
+  2026 were removed; new demo videos go in through the admin Demo library.

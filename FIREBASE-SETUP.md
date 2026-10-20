@@ -44,6 +44,16 @@ After this:
 4. Click **Publish Live**.
 5. The public website reads the Firestore content from `siteContent/home`.
 
+### What the admin panel controls (since October 2026)
+
+Only the **Demo library** section (`#demos`) on the homepage goes live from the admin panel.
+`site-render.js` loads the admin content after the page has finished loading and renders just that
+section; the section stays hidden while the library is empty.
+
+Everything else on the homepage (title, headline, project cards, team, FAQs, links) is static HTML in
+`index.html`, so search engines always read the same content. Change those in Git, not in the panel.
+Team photos live in `assets/team/`.
+
 ## Project Brief Form
 
 The public contact form now saves new leads to Firestore:

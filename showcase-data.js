@@ -358,7 +358,7 @@
             tagline: "Thousands of records, browsed smoothly, with the exception cases surfaced first.",
             accent: "amber",
             stack: ["Android Native", "Paging 3", "Room", "Export"],
-            link: { label: "Watch demo", url: "https://youtu.be/NnlCmr_C4Cw" },
+            link: { label: "Watch demo", url: "https://youtu.be/NnICmr_C4Cw" },
             screens: [
                 {
                     id: "sessions",
@@ -455,7 +455,7 @@
             tagline: "Event coordination that survives contact with 120 signups and three filter changes.",
             accent: "rose",
             stack: ["Android Native", "Firebase", "Filtering", "Push"],
-            link: { label: "Watch demo", url: "https://youtube.com/shorts/1dSV-00hZr4" },
+            link: { label: "Read the case study", url: "/work/sports-society-events/" },
             screens: [
                 {
                     id: "events",
