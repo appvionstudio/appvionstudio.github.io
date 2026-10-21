@@ -1517,3 +1517,45 @@ a.stat-card:hover { border-color: var(--accent-border) !important; }
     .bar-row { grid-template-columns: minmax(0, 1fr) 80px 30px; }
     .facts div { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* Report, page check, row actions, print */
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+.row-delete {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: #ffffff;
+    color: #991b1b;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.row-delete:hover { border-color: rgba(185, 28, 28, 0.4); background: rgba(185, 28, 28, 0.06); }
+
+.report-table td:not(:first-child),
+.report-table th:not(:first-child) { text-align: right; }
+
+[data-page-check] { margin-top: 12px; }
+
+@media print {
+    .admin-sidebar,
+    .admin-topbar .topbar-actions,
+    .button-row,
+    .toast,
+    .lock-screen { display: none !important; }
+    .admin-shell { display: block !important; }
+    .admin-card { box-shadow: none !important; }
+}
+.lead-form .button-row:not(.wide) { align-self: end; padding-bottom: 2px; }

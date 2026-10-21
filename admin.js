@@ -131,6 +131,7 @@ const viewTitles = {
     overview: "Dashboard",
     briefs: "Leads",
     activity: "Contact activity",
+    report: "Monthly report",
     demoLibrary: "Demo library",
     health: "Site health",
     checks: "Data checks",
@@ -188,6 +189,18 @@ const toolLinks = [
     ["GitHub checks", "https://github.com/appvionstudio/appvionstudio.github.io/actions", "Automatic SEO checks on every update"],
     ["Calendly", "https://calendly.com/app/scheduled_events/user/me", "Booked calls"],
     ["Firebase console", "https://console.firebase.google.com/project/appvion-studio/firestore", "Leads database"]
+];
+
+// Reply drafts. {first}, {type} and {timeline} come from the lead. Facts match the published site.
+const replyTemplates = [
+    ["first", "First reply", "Re: your {type} brief - AppVion Studio",
+        "Hi {first},\n\nThank you for sending the brief about your {type} project.\n\nThe quickest next step is a 20-minute call, where we can walk through the workflow and tell you honestly whether we are the right fit:\nhttps://calendly.com/ayyaz-appvionstudio/30min\n\nTwo questions before then:\n1. Who will use the app day to day, and on which phones?\n2. Is there a spreadsheet or system it replaces today?\n\nYou mentioned a timeline of {timeline}. We will confirm on the call what is realistic.\n\nBest regards,\nAyyaz Sajjad\nFounder & CEO, AppVion Studio\nhttps://appvionstudio.com"],
+    ["sprint", "Clarity Sprint offer", "Next step for your {type} project",
+        "Hi {first},\n\nThanks again for the conversation.\n\nThe right first step is a Product Clarity Sprint: one to two weeks, from $1,500. You get the workflow map, feature priorities, the technical direction and a fixed quote for the build, and you own all of it whether or not we build the app together.\n\nIf that works for you, reply here and I will send the short agreement and a start date.\n\nBest regards,\nAyyaz Sajjad\nFounder & CEO, AppVion Studio\nPricing: https://appvionstudio.com/pricing.html"],
+    ["follow", "Follow-up", "Following up on your {type} project",
+        "Hi {first},\n\nI am following up on the brief you sent about your {type} project. Is it still a priority?\n\nIf the timing has changed, just let me know and I will close the thread. If it is still live, you can book 20 minutes here:\nhttps://calendly.com/ayyaz-appvionstudio/30min\n\nBest regards,\nAyyaz Sajjad\nAppVion Studio"],
+    ["decline", "Not a fit", "Re: your {type} brief",
+        "Hi {first},\n\nThank you for thinking of AppVion Studio. Having read the brief, I do not think we are the right studio for this project, and I would rather say so now than take your time.\n\nI wish you every success with it.\n\nBest regards,\nAyyaz Sajjad\nAppVion Studio"]
 ];
 
 // Spellings agreed in October 2026. Left side is what gets replaced.
@@ -613,10 +626,22 @@ function filteredLeads() {
     });
 }
 
-function replyHref(lead) {
-    const subject = encodeURIComponent("Re: your project brief - AppVion Studio");
-    const body = encodeURIComponent(`Hi ${String(lead.name || "").split(" ")[0] || "there"},\n\nThank you for your brief about ${lead.type || "your project"}.\n\n`);
-    return `mailto:${encodeURIComponent(lead.email || "")}?subject=${subject}&body=${body}`;
+function replyHref(lead, templateKey = "first") {
+    const template = replyTemplates.find(([key]) => key === templateKey) || replyTemplates[0];
+    const fill = (text) => text
+        .replace(/\{first\}/g, String(lead.name || "").trim().split(/\s+/)[0] || "there")
+        .replace(/\{type\}/g, String(lead.type || "app").trim())
+        .replace(/\{timeline\}/g, String(lead.timeline || "not given"));
+    return `mailto:${encodeURIComponent(lead.email || "")}?subject=${encodeURIComponent(fill(template[2]))}&body=${encodeURIComponent(fill(template[3]))}`;
+}
+
+// The site promises a first response within 24 hours.
+function waitingLabel(lead) {
+    if (leadStage(lead) !== "new") return "";
+    const days = daysAgo(lead.createdAt);
+    if (!Number.isFinite(days) || days * 24 < 24) return "";
+    const text = days < 2 ? `${Math.floor(days * 24)} hours` : `${Math.floor(days)} days`;
+    return `<span class="overdue">Waiting ${text} &middot; reply promised within 24 hours</span>`;
 }
 
 function renderLeadFilters() {
@@ -657,7 +682,7 @@ function renderLeads() {
                     <span class="stage-pill stage-${stage}">${escapeHtml(leadStages.find(([key]) => key === stage)[1])}</span>
                 </div>
                 <h3>${escapeHtml(lead.name || "Unnamed lead")}</h3>
-                <p><a href="${replyHref(lead)}">${escapeHtml(lead.email || "No email")}</a>${overdue ? ` <span class="overdue">Follow-up due ${escapeHtml(lead.followUpAt)}</span>` : ""}</p>
+                <p><a href="${replyHref(lead)}">${escapeHtml(lead.email || "No email")}</a>${overdue ? ` <span class="overdue">Follow-up due ${escapeHtml(lead.followUpAt)}</span>` : ""}${waitingLabel(lead)}</p>
                 <p class="lead-message">${escapeHtml(lead.message || "No brief text")}</p>
                 <form class="lead-form" data-lead-form="${escapeHtml(lead.id)}">
                     <label>
@@ -674,9 +699,17 @@ function renderLeads() {
                         <span>Private notes</span>
                         <textarea name="notes" placeholder="Call summary, budget, next step...">${escapeHtml(lead.notes || "")}</textarea>
                     </label>
+                    <label>
+                        <span>Email draft</span>
+                        <select data-reply-template>
+                            ${replyTemplates.map(([key, label]) => `<option value="${key}">${escapeHtml(label)}</option>`).join("")}
+                        </select>
+                    </label>
+                    <div class="button-row">
+                        <button class="button ghost" type="button" data-reply-lead="${escapeHtml(lead.id)}">Open email draft</button>
+                    </div>
                     <div class="button-row wide">
                         <button class="button primary" type="submit">Save lead</button>
-                        <a class="button ghost" href="${replyHref(lead)}">Reply by email</a>
                         <button class="button danger" type="button" data-delete-lead="${escapeHtml(lead.id)}">Delete</button>
                     </div>
                 </form>
@@ -721,6 +754,87 @@ async function deleteLead(id) {
         showToast("Lead deleted.");
     } catch (error) {
         showToast(error.message || "Could not delete the lead.");
+    }
+}
+
+async function deleteEvent(id) {
+    const event = contactEvents.find((item) => item.id === id);
+    if (!event) return;
+    if (!window.confirm(`Delete this ${routeLabels[event.route] || event.route} click from ${formatDate(event.createdAt)}? Use this for your own test clicks.`)) return;
+    try {
+        if (!mockData) {
+            const { db, modules } = await getFirebase();
+            await modules.deleteDoc(modules.doc(db, "contactEvents", id));
+        }
+        contactEvents = contactEvents.filter((item) => item.id !== id);
+        renderAll();
+        showToast("Click deleted.");
+    } catch (error) {
+        showToast(error.message || "Could not delete the click.");
+    }
+}
+
+function monthKey(date) {
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+}
+
+function reportRows() {
+    const months = [];
+    const now = new Date();
+    for (let i = 5; i >= 0; i -= 1) months.push(monthKey(new Date(now.getFullYear(), now.getMonth() - i, 1)));
+    const row = (key) => {
+        const inMonth = (value) => { const date = toDate(value); return date && monthKey(date) === key; };
+        const leads = projectBriefs.filter((lead) => inMonth(lead.createdAt));
+        const events = contactEvents.filter((event) => inMonth(event.createdAt));
+        const routeCount = (route) => events.filter((event) => event.route === route).length;
+        const label = new Date(`${key}-01T00:00:00`).toLocaleString([], { month: "long", year: "numeric" });
+        return [label, leads.length, leads.filter((lead) => leadStage(lead) === "won").length, routeCount("calendly-scheduled"),
+            routeCount("strategy-call"), routeCount("whatsapp"), routeCount("email")];
+    };
+    return months.map(row);
+}
+
+const reportHeader = ["Month", "Leads", "Won", "Calls booked", "Book-a-call clicks", "WhatsApp clicks", "Email clicks"];
+
+function renderReport() {
+    const target = document.querySelector("[data-report]");
+    if (!target) return;
+    if (!inboxLoaded) {
+        target.innerHTML = `<p class="editor-empty">Sign in to build the report.</p>`;
+        return;
+    }
+    const rows = reportRows();
+    target.innerHTML = `
+        <table class="data-table report-table">
+            <thead><tr>${reportHeader.map((cell) => `<th>${cell}</th>`).join("")}</tr></thead>
+            <tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+        </table>
+        <p class="muted">Counts come from the website's own forms and buttons. Search impressions, clicks and rankings are in Search Console; visitors are in Google Analytics (links under Site health).</p>
+    `;
+}
+
+function exportReport() {
+    if (!inboxLoaded) return showToast("Sign in to export the report.");
+    downloadCsv(`appvion-monthly-report-${todayIso()}.csv`, reportHeader, reportRows());
+    showToast("Report exported.");
+}
+
+async function checkAllPages() {
+    const target = document.querySelector("[data-page-check]");
+    if (!target) return;
+    target.innerHTML = `<p class="editor-empty">Checking every page in the sitemap...</p>`;
+    try {
+        const sitemap = await fetch("/sitemap.xml", { cache: "no-store" }).then((response) => response.text());
+        const paths = (sitemap.match(/<loc>([^<]+)<\/loc>/g) || []).map((loc) => loc.replace(/<\/?loc>/g, "").replace(/^https:\/\/appvionstudio\.com/, "") || "/");
+        const results = await Promise.all(paths.map((path) => fetch(path, { method: "HEAD", cache: "no-store" })
+            .then((response) => [path, response.status])
+            .catch(() => [path, 0])));
+        const failed = results.filter(([, status]) => status !== 200);
+        target.innerHTML = failed.length
+            ? `<p class="editor-empty">${results.length - failed.length} of ${results.length} pages load. Not loading:</p><ul class="followup-list">${failed.map(([path, status]) => `<li><b>${status || "no answer"}</b> <a href="${escapeHtml(path)}" target="_blank" rel="noopener noreferrer">${escapeHtml(path)}</a></li>`).join("")}</ul>`
+            : `<p class="editor-empty good-note">All ${results.length} pages load (checked ${formatDate(new Date())}).</p>`;
+    } catch (error) {
+        target.innerHTML = `<p class="editor-empty">Could not read the sitemap: ${escapeHtml(error.message)}</p>`;
     }
 }
 
@@ -770,7 +884,7 @@ function renderActivity() {
     }
     table.innerHTML = `
         <table class="data-table">
-            <thead><tr><th>When</th><th>Action</th><th>Button</th><th>Page</th></tr></thead>
+            <thead><tr><th>When</th><th>Action</th><th>Button</th><th>Page</th><th><span class="visually-hidden">Delete</span></th></tr></thead>
             <tbody>
                 ${rows.slice(0, 300).map((event) => `
                     <tr>
@@ -778,6 +892,7 @@ function renderActivity() {
                         <td><span class="route-pill">${escapeHtml(routeLabels[event.route] || event.route || "contact")}</span></td>
                         <td>${escapeHtml(event.label || "")}</td>
                         <td><a href="${escapeHtml(event.page || "/")}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.page || "/")}</a></td>
+                        <td><button class="row-delete" type="button" data-delete-event="${escapeHtml(event.id)}" aria-label="Delete this click" title="Delete this click (for test clicks)">&times;</button></td>
                     </tr>
                 `).join("")}
             </tbody>
@@ -843,9 +958,14 @@ function renderOverview() {
     const count = (route) => inboxLoaded ? month.filter((event) => event.route === route).length : "-";
     const newLeads = inboxLoaded ? projectBriefs.filter((lead) => leadStage(lead) === "new").length : "-";
     const recentLeads = inboxLoaded ? projectBriefs.filter((lead) => daysAgo(lead.createdAt) <= 30).length : "-";
+    const waits = inboxLoaded ? projectBriefs.filter((lead) => leadStage(lead) === "new").map((lead) => daysAgo(lead.createdAt)).filter(Number.isFinite) : [];
+    const longest = waits.length ? Math.max(...waits) : 0;
+    const longestLabel = !inboxLoaded ? "-" : !waits.length ? "None" : longest < 1 ? `${Math.floor(longest * 24)} h` : `${Math.floor(longest)} days`;
     target.innerHTML = [
         overviewCard("New leads", newLeads, "Briefs nobody has answered yet", newLeads > 0 ? "attention" : ""),
+        overviewCard("Longest wait", longestLabel, "The site promises a reply within 24 hours", longest >= 1 ? "attention" : "good"),
         overviewCard("Leads, 30 days", recentLeads, "Project briefs received"),
+        overviewCard("Calls booked", count("calendly-scheduled"), "Calendly bookings, last 30 days"),
         overviewCard("Book a call", count("strategy-call"), "Clicks in the last 30 days"),
         overviewCard("WhatsApp", count("whatsapp"), "Clicks in the last 30 days"),
         overviewCard("Email", count("email"), "Clicks in the last 30 days")
@@ -856,6 +976,7 @@ function renderOverview() {
         badge.hidden = !(inboxLoaded && newLeads > 0);
         badge.textContent = newLeads;
     }
+    document.title = inboxLoaded && newLeads > 0 ? `(${newLeads}) AppVion Control` : "AppVion Control";
 
     const pages = document.querySelector("[data-top-pages]");
     if (pages) {
@@ -1558,6 +1679,7 @@ function renderAll() {
     renderPublish();
     renderLeads();
     renderActivity();
+    renderReport();
     renderChecks();
     renderSignedIn();
     renderDirty();
@@ -1720,6 +1842,12 @@ document.addEventListener("click", (event) => {
         renderLeads();
     }
     if (dataset.deleteLead) deleteLead(dataset.deleteLead);
+    if (dataset.deleteEvent) deleteEvent(dataset.deleteEvent);
+    if (dataset.replyLead) {
+        const lead = projectBriefs.find((item) => item.id === dataset.replyLead);
+        const select = target.closest("form").querySelector("[data-reply-template]");
+        if (lead) window.location.href = replyHref(lead, select ? select.value : "first");
+    }
     if (dataset.activityDays !== undefined) {
         activityRange = Number(dataset.activityDays);
         renderActivity();
@@ -1742,6 +1870,9 @@ document.addEventListener("click", (event) => {
         "refresh-briefs": loadInbox,
         "export-leads": exportLeads,
         "export-activity": exportActivity,
+        "export-report": exportReport,
+        "print-report": () => window.print(),
+        "check-pages": checkAllPages,
         "run-checks": () => { videoProbe = {}; renderChecks(); showToast("Checks run again."); },
         "fix-all": fixAll,
         "reset-password": () => sendResetLink(currentUser() && currentUser().email),

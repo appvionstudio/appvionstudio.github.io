@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="admin.css?v=20261021-command2">
+    <link rel="stylesheet" href="admin.css?v=20261021-command3">
 </head>
 <body>
     <section class="lock-screen" data-lock-screen>
@@ -47,6 +47,7 @@
                 <button class="nav-item active" type="button" data-view="overview">Dashboard</button>
                 <button class="nav-item" type="button" data-view="briefs">Leads <b class="nav-badge" data-new-leads hidden></b></button>
                 <button class="nav-item" type="button" data-view="activity">Contact activity</button>
+                <button class="nav-item" type="button" data-view="report">Monthly report</button>
 
                 <p class="nav-group">Live on the website</p>
                 <button class="nav-item" type="button" data-view="demoLibrary">Demo library</button>
@@ -165,8 +166,34 @@
                 </div>
             </section>
 
+            <section class="admin-view" data-panel="report">
+                <div class="admin-card">
+                    <div class="collection-header">
+                        <div>
+                            <p class="eyebrow">Last six months</p>
+                            <h2>Leads and contacts by month</h2>
+                        </div>
+                        <div class="button-row">
+                            <button class="button ghost" type="button" data-action="print-report">Print or save as PDF</button>
+                            <button class="button primary" type="button" data-action="export-report">Export CSV</button>
+                        </div>
+                    </div>
+                    <div class="table-wrap" data-report><p class="editor-empty">Sign in to build the report.</p></div>
+                </div>
+            </section>
+
             <section class="admin-view" data-panel="health">
                 <div class="overview-grid" data-health-cards></div>
+                <div class="admin-card">
+                    <div class="collection-header">
+                        <div>
+                            <p class="eyebrow">Page check</p>
+                            <h2>Do all the website's pages load?</h2>
+                        </div>
+                        <button class="button primary" type="button" data-action="check-pages">Check all pages</button>
+                    </div>
+                    <div data-page-check><p class="editor-empty">Tests every page in the sitemap. Takes a few seconds.</p></div>
+                </div>
                 <div class="admin-card">
                     <p class="eyebrow">Shortcuts</p>
                     <h2>Tools you sign in to yourself</h2>
@@ -454,6 +481,6 @@
         };
         window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
     </script>
-    <script src="admin.js?v=20261021-command2"></script>
+    <script src="admin.js?v=20261021-command3"></script>
 </body>
 </html>
