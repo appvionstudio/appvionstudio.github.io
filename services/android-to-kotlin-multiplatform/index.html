@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("consent", "default", { analytics_storage: "denied", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" });
+        try { if (localStorage.getItem("appvion-consent") === "granted") gtag("consent", "update", { analytics_storage: "granted" }); } catch (e) {}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script src="/analytics-events.js" defer></script>
+    <script src="/consent.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move an Android App to Kotlin Multiplatform | AppVion Studio</title>
+    <meta name="description" content="Add iOS to an existing Android app without a rewrite: move the business logic and data into shared Kotlin, keep Android shipping, build iOS on top.">
+    <meta name="keywords" content="migrate android app to kotlin multiplatform, android to kmp migration, add ios to android app, kotlin multiplatform migration service">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/services/android-to-kotlin-multiplatform/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="Move an Android App to Kotlin Multiplatform | AppVion Studio">
+    <meta property="og:description" content="Add iOS to an existing Android app without a rewrite: move the business logic and data into shared Kotlin, keep Android shipping, build iOS on top.">
+    <meta property="og:image" content="https://appvionstudio.com/assets/og/android-to-kmp.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Moving an Android app to Kotlin Multiplatform with AppVion Studio">
+    <meta property="og:url" content="https://appvionstudio.com/services/android-to-kotlin-multiplatform/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Move an Android App to Kotlin Multiplatform | AppVion Studio">
+    <meta name="twitter:description" content="Add iOS to an existing Android app without a rewrite: move the business logic and data into shared Kotlin, keep Android shipping, build iOS on top.">
+    <meta name="twitter:image" content="https://appvionstudio.com/assets/og/android-to-kmp.jpg">
+    <meta name="twitter:image:alt" content="Moving an Android app to Kotlin Multiplatform with AppVion Studio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20261021-perf">
+    <link rel="stylesheet" href="/ui-fixes.css?v=20261021-seo2">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Android to Kotlin Multiplatform migration",
+      "serviceType": "Kotlin Multiplatform migration",
+      "url": "https://appvionstudio.com/services/android-to-kotlin-multiplatform/",
+      "description": "Moving an existing Kotlin Android app's business logic and data layer into a shared Kotlin Multiplatform module and building an iOS app on the same core, without a rewrite.",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://appvionstudio.com/#organization",
+        "name": "AppVion Studio",
+        "url": "https://appvionstudio.com/"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do we need to rewrite the Android app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not. A well-structured Android app already separates its domain and data layers. Those move into a shared Kotlin module while the Android interface keeps working untouched."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will our Android users notice anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They should not. The Android app keeps its own interface and keeps shipping while the shared module is introduced underneath it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we need iOS developers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The iOS app needs an interface: native SwiftUI on top of the shared module, or Compose Multiplatform screens shared with Android. We build either and tell you which suits your product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take and what does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on how cleanly the app is layered today, which is exactly what the Clarity Sprint (from $1,500, one to two weeks) establishes. You get a fixed quote and timeline before any build starts; full builds run $12,000 to $35,000."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://appvionstudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://appvionstudio.com/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Android to Kotlin Multiplatform",
+          "item": "https://appvionstudio.com/services/android-to-kotlin-multiplatform/"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon-128.webp" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Services</small>
+                </span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/pricing.html">Pricing</a>
+                <a href="/#process">Process</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/about.html">About</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / <a href="/#services">Services</a> / Android to Kotlin Multiplatform
+                    </nav>
+                </div>
+                <div class="container section-heading">
+                    <p class="eyebrow">Kotlin Multiplatform migration</p>
+                    <h1>Add iOS to your Android app without starting again.</h1>
+                    <p>
+                        If your Android app is written in Kotlin, most of what makes it valuable can be shared with iOS: the business rules, the data layer, the networking and the offline storage. We move those into a shared Kotlin module step by step, keep your Android app shipping the whole time, and build the iOS app on the same core.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Android to KMP hero">Book a free 20-min call</a>
+                        <a class="button secondary" href="/services/kotlin-multiplatform-development/">How we do Kotlin Multiplatform</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">How the move runs</p>
+                    <h2>Five steps, and the Android app never stops.</h2>
+                </div>
+                <div class="container choice-grid">
+                    <article class="choice-card reveal in-view">
+                        <h3>1. Map the layers</h3>
+                        <p>In the Clarity Sprint we read the codebase, mark what is domain, data and interface, and find the code that has to be untangled first.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>2. Share the core</h3>
+                        <p>Domain models, rules, validation, networking and local storage move into a shared Kotlin module, one feature at a time.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>3. Keep Android shipping</h3>
+                        <p>The Android interface stays as it is and keeps releasing on top of the shared module throughout.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>4. Build iOS on the same core</h3>
+                        <p>The iOS app gets its interface, native SwiftUI or shared Compose Multiplatform, and calls the same rules as Android.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>5. Release both</h3>
+                        <p>From here a rule is written and fixed once, and both apps get it in the same release.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">What moves and what stays</p>
+                    <h2>The boundary that keeps a migration safe.</h2>
+                    <p>
+                        Business logic is where correctness lives and where duplication is dangerous. Interface and platform integration are where users notice compromise. We share the first and keep the second platform-specific.
+                    </p>
+                </div>
+                <div class="container study-grid">
+                    <article class="study-panel reveal in-view">
+                        <h3>Moves to shared Kotlin</h3>
+                        <p>Domain models and business rules; use cases and validation; networking and API contracts; local database and caching; repositories and dependency injection.</p>
+                    </article>
+                    <article class="study-panel reveal in-view">
+                        <h3>Stays on each platform</h3>
+                        <p>Interface code (unless you choose Compose Multiplatform); navigation and lifecycle; permissions and system dialogs; camera, location and sensors; push notifications; secure credential storage.</p>
+                    </article>
+                    <article class="study-panel reveal in-view">
+                        <h3>Signs you are ready</h3>
+                        <p>Kotlin code, business rules kept out of Activities and Fragments, and a repository or data layer. Missing pieces are fixed first, inside the plan.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Proof</p>
+                    <h2>Shared Kotlin we have shipped.</h2>
+                </div>
+                <div class="container case-grid">
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Logistics platform</span>
+                            <h3>D. Delivery</h3>
+                            <p>Three apps from one shared Kotlin codebase: customer, rider and admin control tower. The customer app is live on Google Play.</p>
+                        </div>
+                        <a href="/work/d-delivery/">Read the case study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Field service</span>
+                            <h3>PropFix</h3>
+                            <p>Property maintenance across managers, contractors and tenants, with business rules written once for Android and iOS.</p>
+                        </div>
+                        <a href="/work/profix/">Read the case study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Comparison</span>
+                            <h3>KMP vs Flutter</h3>
+                            <p>Why moving a Kotlin app to KMP extends it, while Flutter would replace it.</p>
+                        </div>
+                        <a href="/insights/kotlin-multiplatform-vs-flutter/">Read the article</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Engagements</p>
+                    <h2>What it costs.</h2>
+                    <p>
+                        The same published prices as every AppVion engagement. The full breakdown is on the <a href="/pricing.html">pricing page</a>.
+                    </p>
+                </div>
+                <div class="container choice-grid">
+                    <article class="choice-card reveal in-view">
+                        <h3>Product Clarity Sprint: from $1,500</h3>
+                        <p>One to two weeks. The workflow map, feature priorities, technical direction and a fixed quote for the build. You own the output whether or not we build it.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>First release: $12,000 to $18,000</h3>
+                        <p>8 to 12 weeks for a focused feature set, paid against milestones.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>Operational platform: $20,000 to $35,000</h3>
+                        <p>12 to 16 weeks for multi-role systems with dispatch, approvals, live tracking or payments, shipped in focused releases.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>You own the code</h3>
+                        <p>On final payment you own the source code, repositories, store listings and backend accounts. No lock-in.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section faq-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">FAQ</p>
+                    <h2>Questions people ask first.</h2>
+                </div>
+                <div class="container faq-list">
+                    <details class="faq-item reveal in-view" open>
+                        <summary>Do we need to rewrite the Android app?</summary>
+                        <p>Usually not. A well-structured Android app already separates its domain and data layers. Those move into a shared Kotlin module while the Android interface keeps working untouched.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>Will our Android users notice anything?</summary>
+                        <p>They should not. The Android app keeps its own interface and keeps shipping while the shared module is introduced underneath it.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>Do we need iOS developers?</summary>
+                        <p>The iOS app needs an interface: native SwiftUI on top of the shared module, or Compose Multiplatform screens shared with Android. We build either and tell you which suits your product.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>How long does it take and what does it cost?</summary>
+                        <p>It depends on how cleanly the app is layered today, which is exactly what the Clarity Sprint (from $1,500, one to two weeks) establishes. You get a fixed quote and timeline before any build starts; full builds run $12,000 to $35,000.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Have an Android app and an iOS plan?</h2>
+                    <p>
+                        Send us the repository or describe the app. In twenty minutes we can tell you how much of it can be shared.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Android to KMP">Book a free 20-min call</a>
+                        <a class="button secondary" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" data-contact-action="whatsapp" data-contact-label="Android to KMP WhatsApp">WhatsApp us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div>
+                    <a class="brand footer-brand" href="/" aria-label="AppVion Studio Home">
+                        <span class="brand-mark">
+                            <img class="brand-mark-image" src="/appvion-logo-icon-128.webp" alt="AppVion Studio logo">
+                        </span>
+                        <span class="brand-text">
+                            <strong>AppVion Studio</strong>
+                            <small>Mobile app development studio</small>
+                        </span>
+                    </a>
+                    <p>Android Native and Kotlin Multiplatform products, built in Multan and delivered worldwide.</p>
+                </div>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="/work/">Work</a>
+                    <a href="/pricing.html">Pricing</a>
+                    <a href="/android-app-development.html">Android Development</a>
+                    <a href="/services/kotlin-multiplatform-development/">Kotlin Multiplatform</a>
+                    <a href="/field-service-app-development/">Field Service Apps</a>
+                    <a href="/delivery-app-development/">Delivery Apps</a>
+                    <a href="/insights/">Insights</a>
+                    <a href="/faq.html">FAQ</a>
+                    <a href="/about.html">About</a>
+                    <a href="/mobile-app-development-pakistan/">App Development in Pakistan</a>
+                    <a href="/mobile-app-development-multan/">App Development in Multan</a>
+                    <a href="/#contact">Contact</a>
+                    <a href="https://www.linkedin.com/company/112235810/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="/privacy.html">Privacy</a>
+                    <a href="/terms.html">Terms</a>
+                </nav>
+            </div>
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <span>Multan, Pakistan &middot; Working worldwide</span>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="/nav.js" defer></script>
+</body>
+</html>

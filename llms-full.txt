@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-10-21 from the 20 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-10-21 from the 24 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -15,7 +15,7 @@ URL: https://appvionstudio.com/
 Kotlin Multiplatform & Android studio
 ### Kotlin Multiplatform and Android apps for teams that work in the field.
 AppVion Studio designs and engineers Android Native and Kotlin Multiplatform products for dispatch, approvals, attendance and proof of work — offline-first, and built to hold up under real business pressure. The founder writes the code.
-Book Strategy Call View Our Work
+Book a free 20-min call View Our Work
 Founder-led delivery Compose-first UI KMP systems
 Interactive product prototypes load here: real screens from SnowGrid (enterprise snow-removal operations), GMassPulse (outreach infrastructure), and PropFix (Kotlin Multiplatform field service). Every product is written up in full under our work.
 Product experience across field operations, university systems, attendance workflows, events, and secure web layers.
@@ -168,9 +168,9 @@ What each one shares, where each one breaks, and how to choose for an operationa
 Pricing
 ##### What a mobile app actually costs in 2026.
 Real numbers, what moves them, and how offshore pricing compares to US and European agencies.
-Working together
-##### Twenty-eight straight answers before you hire a studio.
-Cost, timelines, code ownership, time zones, and what happens after launch.
+Engineering
+##### Kotlin Multiplatform vs Flutter for business apps.
+Shared logic or a shared interface: what each one means for an operational app.
 FAQ
 #### Clear answers before the first call.
 A good project starts with aligned expectations. These are the questions most buyers need answered before sharing a brief.
@@ -205,6 +205,10 @@ URL: https://appvionstudio.com/insights/
 Insights
 ### Writing about the decisions, not the buzzwords.
 Notes from building operational mobile products: how frameworks are actually chosen, what things really cost, and what breaks once an app is in the field rather than on a laptop. Written by the people doing the engineering.
+Choosing a framework
+#### Kotlin Multiplatform vs Flutter for business apps
+Flutter shares the interface and draws it itself. Kotlin Multiplatform shares the logic. What that means for cost, native feel and offline work, where each one breaks, and four questions that settle the choice.
+Read it
 Choosing a framework
 #### Kotlin Multiplatform vs React Native for business apps
 React Native shares the interface. Kotlin Multiplatform shares the logic. That one sentence explains almost every practical difference between them — cost, hiring, performance, and the kind of bug you will spend your evenings on. Includes four questions that settle the choice in ten minutes.
@@ -298,6 +302,75 @@ Bring the product, the platforms you need, and the constraints. Twenty minutes i
 Book a 20-min App Strategy Session Read about our KMP work
 
 ======================================================================
+## Kotlin Multiplatform vs Flutter for Business Apps
+URL: https://appvionstudio.com/insights/kotlin-multiplatform-vs-flutter/
+======================================================================
+
+Choosing a framework
+### Kotlin Multiplatform vs Flutter for business apps.
+By Ayyaz Sajjad, Founder & CEO · Published 21 Oct 2026
+Both let one team ship Android and iOS. They get there in opposite ways, and for an operational business app that difference decides cost, risk and how the app feels to the people who use it every day. This is the comparison from a studio that builds Kotlin Multiplatform and will say when Flutter is the better call.
+Book a free 20-min call Read KMP vs React Native
+The short answer
+#### Flutter shares the interface and draws it itself. Kotlin Multiplatform shares the logic.
+Flutter apps are written in Dart and render every pixel with Flutter's own engine. Kotlin Multiplatform shares business logic in Kotlin and, by default, lets each platform draw its own native interface.
+##### Flutter shares
+All screens and widgets, navigation, business rules and networking, in one Dart codebase drawn by Flutter's rendering engine on every platform.
+##### Kotlin Multiplatform shares
+Domain models, business rules, validation, networking and the local database in Kotlin. Screens can stay native, or be shared with Compose Multiplatform when that is the better trade.
+##### What that means for you
+Flutter gives one interface to build and maintain. Kotlin Multiplatform gives one set of rules that cannot drift between Android and iOS, with interfaces that follow each platform's own conventions.
+Where each one breaks
+#### The failure modes to plan for.
+##### Flutter: the platform is imitated
+Flutter redraws native controls rather than using them, so platform conventions, accessibility behaviour and new OS features arrive when the framework catches up.
+##### Flutter: a separate language
+Dart is used almost only for Flutter. Native Android and iOS knowledge still matters for anything below the interface, through plugins and platform channels.
+##### KMP: more interface work if you keep it native
+Sharing only the logic means building two interfaces. That is the price of a fully native feel; Compose Multiplatform removes it when a shared interface is acceptable.
+##### KMP: two build systems
+iOS builds go through Xcode and Gradle together. It is well supported, but the team needs someone comfortable on both sides.
+Choosing in ten minutes
+#### Four questions that settle it.
+##### Where does the value sit?
+Mostly in screens and content: Flutter. Mostly in rules, money, state and sync: Kotlin Multiplatform.
+##### Do you already have a Kotlin Android app?
+Then Kotlin Multiplatform extends it. Flutter replaces it.
+##### How native must it feel?
+Field teams, accessibility needs and heavy use of the camera, location or background work favour native interfaces.
+##### Does it work offline?
+Offline-first data and sync rules are logic. Writing them once in Kotlin is where KMP pays back most.
+Our position
+#### We build Kotlin Multiplatform, and we will tell you when not to.
+Our operational products, like D. Delivery and PropFix, run on shared Kotlin because their value is in rules that must not drift: dispatch, proof of work, payments. For a content-led app with little logic and one design for both platforms, Flutter is a reasonable choice and we will say so in the first call.
+Kotlin Multiplatform
+##### Our KMP service
+How we split shared logic from native interfaces, the stack we use, and what a project costs.
+See the service
+Comparison
+##### KMP vs React Native
+The same question against React Native: what each shares and where each one breaks.
+Read the article
+Pricing
+##### What an app costs
+Published prices for the Clarity Sprint and full builds.
+See pricing
+FAQ
+#### Questions people ask first.
+Is Kotlin Multiplatform better than Flutter?
+Neither is better in general. Flutter is faster when the product is mostly screens and one shared interface is the goal. Kotlin Multiplatform is the stronger choice when the value sits in business rules, offline data and platform behaviour that must stay native.
+Can Kotlin Multiplatform share the interface like Flutter?
+Yes, if you want it to. Compose Multiplatform lets a KMP project share screens across Android and iOS. The difference is that it is optional: you can share only the logic and keep a native interface where it matters.
+Which is cheaper to build?
+For an interface-heavy app with little logic, Flutter is usually cheaper to start. For an operational app where a wrong rule costs money, sharing the logic with Kotlin Multiplatform tends to cost less over the life of the product, because rules are written and fixed once.
+We already have an Android app. Which should we choose?
+If it is written in Kotlin, Kotlin Multiplatform is the natural next step: the domain and data layers can move into a shared module while the Android app keeps working. Moving to Flutter means rewriting the app in Dart. See moving an Android app to Kotlin Multiplatform.
+Start the conversation
+#### Not sure which side of the line your product sits on?
+Twenty minutes is usually enough to tell. We will give you a straight recommendation, even if it is not Kotlin Multiplatform.
+Book a free 20-min call WhatsApp us
+
+======================================================================
 ## Mobile App Case Studies & Portfolio | AppVion Studio
 URL: https://appvionstudio.com/work/
 ======================================================================
@@ -362,7 +435,7 @@ One platform serving three completely different jobs — an operator running the
 Fleet management Real-time dispatch GPS tracking Stripe payments Multi-role platform
 3 user roles 14 screens Live GPS dispatch
 Published 16 Aug 2026 · Updated 21 Oct 2026
-Explore the Interactive Demo Build something like this
+Get it on Google Play Explore the Interactive Demo Build something like this
 The problem
 #### Snow work is priced by guesswork and paid on trust.
 Context
@@ -389,14 +462,12 @@ Role-based authentication, a dynamic pricing engine, live GPS streaming, and Str
 Inside the apps
 #### Screens from the shipped build.
 Real screenshots from the three role-specific apps — the operator command centre, the customer booking flow, and the field contractor portal.
-DashboardAdmin · Fleet intelligence
-Dispatch BoardAdmin · Live map tracking
-Jobs QueueAdmin · Fleet operations
-Pricing EngineAdmin · Dynamic fare matrix
-Residential DashboardCustomer · Property service hub
-Area MeasurementCustomer · Map polygon tool
-Service DetailsCustomer · Booking flow
-Active TaskContractor · Field dispatch
+Measure the propertyCustomer · Map polygon tool
+Request snow removalCustomer · A few taps
+Pricing engineSnow company · Its own rates
+Contractor payoutsContractor · Every job and what is owed
+Three rolesOne app for office, crews and customers
+Plans and billingSnow company · Usage against the plan
 Engineering highlights
 #### The parts that were harder than they look.
 Map-based area measurement
@@ -430,6 +501,10 @@ All work
 ##### Full portfolio
 Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.
 Browse all case studies
+Industry
+##### Field service apps
+Dispatch, work orders, proof of work and offline sync: what a field service app needs, from the products we have shipped.
+See field service apps
 Start the conversation
 #### Running a fleet, a crew, or a dispatch operation?
 Scheduling, job assignment, proof of work, and getting paid for it — if that currently runs on phone calls and a spreadsheet, it is usually a strong candidate for the same treatment.
@@ -446,7 +521,7 @@ Three connected products — a customer booking app, a rider job app, and an adm
 Kotlin Multiplatform Jetpack Compose Supabase Realtime dispatch Proof of delivery
 3 apps, 1 shared codebase 2 mandatory video proofs per delivery Release candidate
 Published 16 Aug 2026 · Updated 21 Oct 2026
-Build something like this See more work
+Get it on Google Play Build something like this See more work
 The problem
 #### Courier disputes are won by whoever has evidence — and nobody had any.
 Context
@@ -521,6 +596,10 @@ All work
 ##### Full portfolio
 Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.
 Browse all case studies
+Industry
+##### Delivery and courier apps
+Customer, rider and admin apps with video proof of delivery and cash reconciliation.
+See delivery apps
 Start the conversation
 #### Have an operations problem that needs a real mobile system?
 Dispatch, proof of work, field teams, cash handling, approvals — if the workflow currently lives in WhatsApp and a spreadsheet, it is usually a strong candidate for the same treatment.
@@ -548,9 +627,12 @@ The real requirement
 A shared state that all three parties read from and write to: the manager who raises the job, the contractor who does it, and the admin who oversees the whole portfolio.
 Inside the app
 #### Screens from the build.
-Sign InRole-based entry
-DashboardOpen, active and done
-SettingsInvite codes and account
+Sign inRole-based entry, encrypted on device
+TodayManager · The board at a glance
+JobsManager · Open, dispatched, in progress
+Job detailManager · Assign and evidence
+My jobsContractor · What to do next
+Your homeTenant · Report and follow up
 The approach
 #### Three roles, one shared job state.
 01
@@ -592,6 +674,10 @@ All work
 ##### Full portfolio
 Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.
 Browse all case studies
+Industry
+##### Field service apps
+Dispatch, work orders, proof of work and offline sync: what a field service app needs, from the products we have shipped.
+See field service apps
 Start the conversation
 #### Managing properties, crews, or contractors?
 Job assignment, proof of work, and getting paid for it — if that runs on phone calls and a spreadsheet today, it is usually a strong candidate for the same treatment.
@@ -1031,7 +1117,7 @@ No. Engagements are split across milestones, with a deposit to begin and the rem
 The client does, in full, on final payment. That includes the source code, the repository, the store listings, the backend accounts, and the design files. AppVion does not retain a licence or hold accounts hostage.
 #### Get a real number for your product.
 Send a short brief or book a 20-minute call. You will get a scope view and an honest range, whether or not you build with AppVion.
-Book a 20-min Strategy Call Send a Project Brief
+Book a free 20-min call Send a Project Brief
 #### Keep reading
 See the workSeven products, described screen by screen. Android developmentWhat native Kotlin and Compose buy you. Full FAQTimelines, ownership, process, and technology.
 
@@ -1091,9 +1177,9 @@ Typically the current Android release back four or five versions, which covers t
 Yes. That usually starts with an architecture and code review to establish what is salvageable, followed by a staged plan so the app keeps shipping while it is modernised. A full stop-and-rewrite is rarely the right answer for a product with live users.
 #### Have an Android product in mind?
 Send a short brief or book a 20-minute call. You will leave with a clearer scope and an honest range.
-Book a 20-min Strategy Call Send a Project Brief
+Book a free 20-min call Send a Project Brief
 #### Keep reading
-Kotlin MultiplatformShare logic, keep the interface native. PricingReal numbers, not a contact form. See the workSeven products, screen by screen.
+Kotlin MultiplatformShare logic, keep the interface native. PricingReal numbers, not a contact form. See the workSeven products, screen by screen. Add iOS laterMove an Android app to Kotlin Multiplatform.
 
 ======================================================================
 ## Kotlin Multiplatform Development Services | AppVion Studio
@@ -1112,7 +1198,7 @@ Pricing, validation, and state transitions live in one place. A fix applies ever
 ##### The interface stays native
 Jetpack Compose on Android, SwiftUI on iOS. Platform conventions, gestures, accessibility, and performance are real rather than approximated by a rendering layer.
 ##### Incremental adoption
-KMP does not demand a rewrite. A well-layered Android app can move its domain and data layers into a shared module while the existing interface keeps working.
+KMP does not demand a rewrite. A well-layered Android app can move its domain and data layers into a shared module while the existing interface keeps working. How a migration runs.
 ##### No framework lock-in tax
 Shared code is plain Kotlin. If a platform ever needs to diverge, it diverges at the interface layer without unpicking a proprietary runtime.
 What we share, and what we do not
@@ -1166,7 +1252,7 @@ For products that are live and still moving: OS and dependency updates, store po
 FAQ
 #### Kotlin Multiplatform questions we get asked.
 How is KMP different from Flutter or React Native?
-Flutter and React Native share the user interface and render it themselves. Kotlin Multiplatform shares the logic — domain models, business rules, networking, local storage — while each platform keeps its own genuinely native interface. The result feels native because it is native, and the rules that matter cannot drift between your Android and iOS users. We go through this in depth, including where each option breaks, in Kotlin Multiplatform vs React Native for business apps.
+Flutter and React Native share the user interface and render it themselves. Kotlin Multiplatform shares the logic — domain models, business rules, networking, local storage — while each platform keeps its own genuinely native interface. The result feels native because it is native, and the rules that matter cannot drift between your Android and iOS users. We go through this in depth, including where each option breaks, in Kotlin Multiplatform vs React Native for business apps and Kotlin Multiplatform vs Flutter.
 Is Kotlin Multiplatform production ready?
 Yes. KMP is stable and used in production by major engineering teams. We have shipped multi-app KMP platforms including a three-app logistics system with realtime dispatch, payments, and offline-first sync.
 Can you migrate our existing Android app to KMP?
@@ -1177,6 +1263,223 @@ Start the conversation
 #### Considering Kotlin Multiplatform for your product?
 Bring the product, the platforms you need, and the constraints. If KMP is the wrong tool for it, that is a useful answer to get early — and you will get it straight.
 Book a 20-min App Strategy Session WhatsApp us
+
+======================================================================
+## Move an Android App to Kotlin Multiplatform | AppVion Studio
+URL: https://appvionstudio.com/services/android-to-kotlin-multiplatform/
+======================================================================
+
+Kotlin Multiplatform migration
+### Add iOS to your Android app without starting again.
+If your Android app is written in Kotlin, most of what makes it valuable can be shared with iOS: the business rules, the data layer, the networking and the offline storage. We move those into a shared Kotlin module step by step, keep your Android app shipping the whole time, and build the iOS app on the same core.
+Book a free 20-min call How we do Kotlin Multiplatform
+How the move runs
+#### Five steps, and the Android app never stops.
+##### 1. Map the layers
+In the Clarity Sprint we read the codebase, mark what is domain, data and interface, and find the code that has to be untangled first.
+##### 2. Share the core
+Domain models, rules, validation, networking and local storage move into a shared Kotlin module, one feature at a time.
+##### 3. Keep Android shipping
+The Android interface stays as it is and keeps releasing on top of the shared module throughout.
+##### 4. Build iOS on the same core
+The iOS app gets its interface, native SwiftUI or shared Compose Multiplatform, and calls the same rules as Android.
+##### 5. Release both
+From here a rule is written and fixed once, and both apps get it in the same release.
+What moves and what stays
+#### The boundary that keeps a migration safe.
+Business logic is where correctness lives and where duplication is dangerous. Interface and platform integration are where users notice compromise. We share the first and keep the second platform-specific.
+##### Moves to shared Kotlin
+Domain models and business rules; use cases and validation; networking and API contracts; local database and caching; repositories and dependency injection.
+##### Stays on each platform
+Interface code (unless you choose Compose Multiplatform); navigation and lifecycle; permissions and system dialogs; camera, location and sensors; push notifications; secure credential storage.
+##### Signs you are ready
+Kotlin code, business rules kept out of Activities and Fragments, and a repository or data layer. Missing pieces are fixed first, inside the plan.
+Proof
+#### Shared Kotlin we have shipped.
+Logistics platform
+##### D. Delivery
+Three apps from one shared Kotlin codebase: customer, rider and admin control tower. The customer app is live on Google Play.
+Read the case study
+Field service
+##### PropFix
+Property maintenance across managers, contractors and tenants, with business rules written once for Android and iOS.
+Read the case study
+Comparison
+##### KMP vs Flutter
+Why moving a Kotlin app to KMP extends it, while Flutter would replace it.
+Read the article
+Engagements
+#### What it costs.
+The same published prices as every AppVion engagement. The full breakdown is on the pricing page.
+##### Product Clarity Sprint: from $1,500
+One to two weeks. The workflow map, feature priorities, technical direction and a fixed quote for the build. You own the output whether or not we build it.
+##### First release: $12,000 to $18,000
+8 to 12 weeks for a focused feature set, paid against milestones.
+##### Operational platform: $20,000 to $35,000
+12 to 16 weeks for multi-role systems with dispatch, approvals, live tracking or payments, shipped in focused releases.
+##### You own the code
+On final payment you own the source code, repositories, store listings and backend accounts. No lock-in.
+FAQ
+#### Questions people ask first.
+Do we need to rewrite the Android app?
+Usually not. A well-structured Android app already separates its domain and data layers. Those move into a shared Kotlin module while the Android interface keeps working untouched.
+Will our Android users notice anything?
+They should not. The Android app keeps its own interface and keeps shipping while the shared module is introduced underneath it.
+Do we need iOS developers?
+The iOS app needs an interface: native SwiftUI on top of the shared module, or Compose Multiplatform screens shared with Android. We build either and tell you which suits your product.
+How long does it take and what does it cost?
+It depends on how cleanly the app is layered today, which is exactly what the Clarity Sprint (from $1,500, one to two weeks) establishes. You get a fixed quote and timeline before any build starts; full builds run $12,000 to $35,000.
+Start the conversation
+#### Have an Android app and an iOS plan?
+Send us the repository or describe the app. In twenty minutes we can tell you how much of it can be shared.
+Book a free 20-min call WhatsApp us
+
+======================================================================
+## Field Service App Development | AppVion Studio
+URL: https://appvionstudio.com/field-service-app-development/
+======================================================================
+
+Field service app development
+### Field service apps for crews, dispatchers and the customers they serve.
+Jobs that live in phone calls, quotes that are guessed, and "it's done" with no proof: we replace that with one system where the office, the crew and the customer read the same job. Built from two field products we have shipped, SnowGrid and PropFix.
+Book a free 20-min call See SnowGrid
+What breaks without a system
+#### Field work is coordinated by whoever keeps chasing it.
+##### Dispatch by phone
+Work goes to whoever answers first, not whoever is nearest or free.
+##### Quotes by guesswork
+When nobody measures the job, margin swings from job to job.
+##### "Done" is a claim
+Without before and after evidence on the job record, every disputed invoice is one word against another.
+##### Nothing is searchable
+Open jobs, owed payments and history live in messages and memory.
+What we build
+#### The parts every field service app needs.
+##### Jobs and work orders
+Raise a job against a property or site, assign it, and watch its status move without calling anyone.
+##### Dispatch
+Assign by who is nearest and free, with live positions on a map when the work needs it.
+##### Proof of work
+Before and after photos attached to the job itself, so the evidence is on the record months later.
+##### Quotes from measurement
+Measure an area on a satellite map and price it from the company's own rates.
+##### Offline-first
+Crews keep working without signal; the app syncs later and says when it last did.
+##### Roles and payments
+Office, crew and customer each get their own app view, with payouts and escrow where money is involved.
+Built before
+#### Field products we have shipped.
+Snow removal operations
+##### SnowGrid
+Three roles on one platform: map measurement, pricing from the company's own rates, contractor payouts. Live on Google Play.
+Read the case study
+Property maintenance
+##### PropFix
+Work orders from report to sign-off across managers, contractors and tenants, in Kotlin Multiplatform.
+Read the case study
+Google Play
+##### SnowGrid on Google Play
+Install the shipped app and judge it yourself.
+Open Google Play
+Engagements
+#### What it costs.
+Published prices; the full breakdown is on the pricing page.
+##### Product Clarity Sprint: from $1,500
+One to two weeks. The workflow map, feature priorities, technical direction and a fixed quote for the build. You own the output whether or not we build it.
+##### First release: $12,000 to $18,000
+8 to 12 weeks for a focused feature set, paid against milestones.
+##### Operational platform: $20,000 to $35,000
+12 to 16 weeks for multi-role systems with dispatch, approvals, live tracking or payments, shipped in focused releases.
+##### You own the code
+On final payment you own the source code, repositories, store listings and backend accounts. No lock-in.
+FAQ
+#### Questions people ask first.
+Does the app work without signal?
+Yes. We build offline-first: work is recorded on the phone and synced when the connection returns, and the app shows its own sync status so a field worker can tell the difference.
+Can contractors use their own phones?
+Yes. In PropFix contractors join by an invite code from the manager, so the contractor list stays curated rather than open to anyone.
+Android, iOS or both?
+Android native when your crews are on Android; Kotlin Multiplatform when you need both, so dispatch and pricing rules are written once.
+What does a field service app cost?
+Multi-role operational platforms run $20,000 to $35,000 over 12 to 16 weeks. A focused first release is $12,000 to $18,000. Most projects start with a $1,500 Clarity Sprint that ends in a fixed quote.
+Start the conversation
+#### Running crews, contractors or a dispatch desk?
+If jobs still run on calls and a spreadsheet, twenty minutes is enough to map what an app would change.
+Book a free 20-min call WhatsApp us
+
+======================================================================
+## Delivery & Courier App Development | AppVion Studio
+URL: https://appvionstudio.com/delivery-app-development/
+======================================================================
+
+Delivery and courier app development
+### Delivery apps where every parcel leaves evidence.
+Customer booking, rider dispatch, live tracking and cash-on-delivery that reconciles against the platform's own ledger. Built from D. Delivery, our three-app Kotlin Multiplatform courier platform, whose customer app is live on Google Play.
+Get D. on Google Play Read the D. Delivery case study
+The real problem
+#### Courier disputes are won by whoever has evidence.
+In D. Delivery the goods were phones, laptops and electronics, where one disputed parcel can cost more than a month of delivery revenue. Bookings ran on WhatsApp, cash was reconciled by hand, and riders were assigned by whoever answered first.
+##### No record of condition
+Nobody could prove what state a device was in at pickup.
+##### Cash that never matched
+Cash on delivery was reconciled by hand at the end of the day.
+##### Dispatch by phone
+The first rider to answer got the job, not the nearest one.
+##### Customers calling for status
+There was nothing for them to look at.
+What we build
+#### Three apps, one source of truth.
+##### Customer app
+Booking with address search, insurance based on declared value, live tracking with a traffic-aware ETA, receipt and rating.
+##### Rider app
+Job alerts, guided pickup and drop-off, dual video proof, recipient e-signature, wallet and earnings, offline-first sync.
+##### Admin control tower
+Manual dispatch, rider approval and documents, pricing, dispute flags and end-of-day cash settlement against the ledger.
+##### Expanding-radius dispatch
+New orders search a small radius first and widen step by step until a rider accepts, with the admin alerted if nobody does.
+##### Evidence pipeline
+Videos and signatures are compressed on the phone and stored per order; uploads queue in the background on weak signal.
+##### Money on the record
+Cash on delivery is settled against the platform's own ledger, not the rider's word.
+Built before
+#### The delivery platform we shipped.
+Logistics platform
+##### D. Delivery
+Three apps from one Kotlin Multiplatform codebase, built around verifiable proof of delivery.
+Read the case study
+Google Play
+##### D. on Google Play
+Install the customer app and try the booking flow yourself.
+Open Google Play
+Kotlin Multiplatform
+##### Why one codebase
+How sharing the rules keeps pricing and order states identical across the apps.
+See the service
+Engagements
+#### What it costs.
+Published prices; the full breakdown is on the pricing page.
+##### Product Clarity Sprint: from $1,500
+One to two weeks. The workflow map, feature priorities, technical direction and a fixed quote for the build. You own the output whether or not we build it.
+##### First release: $12,000 to $18,000
+8 to 12 weeks for a focused feature set, paid against milestones.
+##### Operational platform: $20,000 to $35,000
+12 to 16 weeks for multi-role systems with dispatch, approvals, live tracking or payments, shipped in focused releases.
+##### You own the code
+On final payment you own the source code, repositories, store listings and backend accounts. No lock-in.
+FAQ
+#### Questions people ask first.
+Do you build the rider app and the admin panel too?
+Yes. A delivery business needs three products: a customer booking app, a rider job app and an admin control tower. In D. Delivery all three share one Kotlin codebase and one database.
+How does proof of delivery work?
+The rider records a video at pickup and at drop-off, and the recipient signs on the phone. The evidence is compressed on the device and stored under the order, so it holds up in a dispute.
+Can riders keep working on a weak signal?
+Yes. Uploads are queued by a background worker, so a rider is never blocked from finishing a job by the network.
+What does a delivery app cost?
+A multi-app delivery platform sits in the $20,000 to $35,000 range over 12 to 16 weeks. A focused first release is $12,000 to $18,000. Most projects start with a $1,500 Clarity Sprint that ends in a fixed quote.
+Start the conversation
+#### Running deliveries on WhatsApp and a ledger?
+Twenty minutes is enough to map the booking, dispatch and proof flow your business needs.
+Book a free 20-min call WhatsApp us
 
 ======================================================================
 ## Mobile App Development FAQ | AppVion Studio
@@ -1261,7 +1564,7 @@ Fifteen to twenty-five percent of the original build cost per year is the usual 
 Then you take it in-house. You already own everything, the architecture is conventional, and AppVion will run a handover with your team.
 #### Question not answered here?
 Ask it directly. Email, WhatsApp, or a 20-minute call — you will get a straight answer within 24 hours.
-Book a 20-min Strategy Call Send a Project Brief
+Book a free 20-min call Send a Project Brief
 #### Keep reading
 PricingReal numbers and what moves them. About the studioWho does the work, and where. See the workSeven products, screen by screen.
 
@@ -1336,7 +1639,7 @@ LinkedIn: AppVion Studio
 Direct line to the founder: ayyaz@appvionstudio.com
 #### Start with a conversation, not a contract.
 Twenty minutes is usually enough to tell whether this is a good fit in either direction.
-Book a 20-min Strategy Call Send a Project Brief
+Book a free 20-min call Send a Project Brief
 #### Keep reading
 See the workSeven products, screen by screen. PricingWhat engagements cost. Full FAQTwenty-eight questions answered directly.
 

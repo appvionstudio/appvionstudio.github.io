@@ -53,6 +53,9 @@ Each covers the problem, the engineering decisions that made the product trustwo
 - [FAQ](https://appvionstudio.com/faq.html): Detailed answers on cost, timelines, ownership, process, technology, and working with an offshore studio.
 - [About](https://appvionstudio.com/about.html): Entity facts, team, capabilities, contact routes, and how to verify the studio.
 - [Insights](https://appvionstudio.com/insights/): Practical writing on framework choices, real costs, and what breaks in production.
+- [Move an Android app to Kotlin Multiplatform](https://appvionstudio.com/services/android-to-kotlin-multiplatform/): Adding iOS to an existing Kotlin Android app without a rewrite: shared core first, Android keeps shipping.
+- [Field service app development](https://appvionstudio.com/field-service-app-development/): Dispatch, work orders, proof of work and offline-first apps, from SnowGrid and PropFix.
+- [Delivery and courier app development](https://appvionstudio.com/delivery-app-development/): Customer, rider and admin apps with video proof of delivery and cash reconciliation, from D. Delivery.
 - [Mobile app development in Pakistan](https://appvionstudio.com/mobile-app-development-pakistan/): Founder-led Android Native and Kotlin Multiplatform studio in Pakistan, for local and international clients.
 - [Mobile app development in Multan](https://appvionstudio.com/mobile-app-development-multan/): The studio's home city; LMQ Road, Katchery Chowk, Multan. Apps and field-service systems for businesses in Multan and across Pakistan.
 
@@ -66,6 +69,7 @@ Each covers the problem, the engineering decisions that made the product trustwo
 ## Insights articles
 
 - [Kotlin Multiplatform vs React Native for business apps](https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/) — React Native shares the user interface and renders it itself; Kotlin Multiplatform shares the business logic and keeps each interface natively platform-owned. The article sets out what each framework shares, the characteristic failure mode of each, and four questions that settle the choice: does the app work offline, how expensive is a rule being wrong, who maintains it in two years, and is iOS needed on day one. Written by Ayyaz Sajjad, Founder & CEO.
+- [Kotlin Multiplatform vs Flutter for business apps](https://appvionstudio.com/insights/kotlin-multiplatform-vs-flutter/) - Flutter shares the interface and draws it with its own engine; Kotlin Multiplatform shares the logic and keeps (or optionally shares) the interface. Covers where each breaks and four questions that settle the choice. Written by Ayyaz Sajjad, Founder & CEO.
 
 ## Products in the portfolio
 
