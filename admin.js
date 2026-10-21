@@ -810,13 +810,17 @@ function reportRows() {
         const events = contactEvents.filter((event) => inMonth(event.createdAt));
         const routeCount = (route) => events.filter((event) => event.route === route).length;
         const label = new Date(`${key}-01T00:00:00`).toLocaleString([], { month: "long", year: "numeric" });
-        return [label, leads.length, leads.filter((lead) => leadStage(lead) === "won").length, routeCount("calendly-scheduled"),
-            routeCount("strategy-call"), routeCount("whatsapp"), routeCount("email")];
+        const fromSearch = leads.filter((lead) => ["google", "bing", "other search"].includes(lead.trafficSource)).length;
+        const pages = {};
+        leads.forEach((lead) => { if (lead.landingPage) pages[lead.landingPage] = (pages[lead.landingPage] || 0) + 1; });
+        const topPage = Object.entries(pages).sort((a, b) => b[1] - a[1])[0];
+        return [label, leads.length, leads.filter((lead) => leadStage(lead) === "won").length, fromSearch, topPage ? topPage[0] : "-",
+            routeCount("calendly-scheduled"), routeCount("strategy-call"), routeCount("whatsapp"), routeCount("email")];
     };
     return months.map(row);
 }
 
-const reportHeader = ["Month", "Leads", "Won", "Calls booked", "Book-a-call clicks", "WhatsApp clicks", "Email clicks"];
+const reportHeader = ["Month", "Leads", "Won", "Leads from search", "Top landing page", "Calls booked", "Book-a-call clicks", "WhatsApp clicks", "Email clicks"];
 
 function renderReport() {
     const target = document.querySelector("[data-report]");

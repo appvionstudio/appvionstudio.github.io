@@ -19,6 +19,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://appvionstudio.com/insights/kotlin-multiplatform-app-cost/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://appvionstudio.com/insights/offline-first-mobile-app-development/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://appvionstudio.com/insights/kotlin-multiplatform-vs-flutter/</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>

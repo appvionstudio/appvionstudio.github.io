@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-10-21 from the 24 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-10-22 from the 26 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -205,6 +205,14 @@ URL: https://appvionstudio.com/insights/
 Insights
 ### Writing about the decisions, not the buzzwords.
 Notes from building operational mobile products: how frameworks are actually chosen, what things really cost, and what breaks once an app is in the field rather than on a laptop. Written by the people doing the engineering.
+Real prices
+#### How much does a Kotlin Multiplatform app cost?
+Published prices from $12,000 to $35,000, why adding iOS adds 35 to 55 percent rather than doubling the bill, the seven things that move a quote, and the costs that sit outside it.
+Read it
+Engineering for the field
+#### Offline-first mobile app development: how it actually works
+The five parts every offline-first app needs, three ways to settle a conflicting edit, and why offline has to be designed in from day one. From apps we have shipped.
+Read it
 Choosing a framework
 #### Kotlin Multiplatform vs Flutter for business apps
 Flutter shares the interface and draws it itself. Kotlin Multiplatform shares the logic. What that means for cost, native feel and offline work, where each one breaks, and four questions that settle the choice.
@@ -302,6 +310,227 @@ Bring the product, the platforms you need, and the constraints. Twenty minutes i
 Book a 20-min App Strategy Session Read about our KMP work
 
 ======================================================================
+## Kotlin Multiplatform App Cost in 2026: Real Prices
+URL: https://appvionstudio.com/insights/kotlin-multiplatform-app-cost/
+======================================================================
+
+Real prices
+### How much does a Kotlin Multiplatform app cost?
+By Ayyaz Sajjad, Founder & CEO · Published 22 Oct 2026
+A production Kotlin Multiplatform app built by AppVion Studio costs $12,000 to $35,000. A focused first release on Android and iOS lands at $12,000 to $18,000 over 8 to 12 weeks; a multi-role operational platform runs $20,000 to $35,000 over 12 to 16 weeks. These are our published prices. This page explains what moves a project inside that range, and what sits outside it.
+Book a free 20-min call See the full pricing page
+The short answer
+#### Five ways to work together, all fixed price.
+Every engagement is quoted as a fixed figure once the scope is clear, and paid against milestones you can inspect. All figures are USD starting ranges.
+AppVion Studio engagements for Kotlin Multiplatform apps, 2026
+Engagement
+Price (USD)
+Time
+What it covers
+Product Clarity Sprint
+from $1,500
+1 to 2 weeks
+Workflow map, feature priority, technical direction and a fixed build quote
+First release
+$12,000 to $18,000
+8 to 12 weeks
+A focused feature set on a shared Kotlin core, with the interfaces you need
+Operational platform
+$20,000 to $35,000
+12 to 16 weeks
+Multi-role systems: dispatch, approvals, live tracking or payments
+Redesign and scale
+from $6,000
+4 to 8 weeks
+An existing app made clearer and faster without a full rebuild
+Care and iteration
+from $900 a month
+Rolling
+OS updates, store compliance, bug fixes and a slice of new work each month
+Where the saving comes from
+#### Adding iOS adds 35 to 55 percent, not 100.
+Kotlin Multiplatform shares the expensive part of an app, the rules, once. On a $12,000 Android-only scope, adding iOS this way typically adds about $4,200 to $6,600, not another $12,000.
+##### Written once, in Kotlin
+Domain models and business rules, validation, networking and API contracts, the local database and the offline sync logic.
+##### Built for each platform
+The interface, navigation, permissions and system dialogs, camera and location, push notifications and secure credential storage.
+##### The optional extra saving
+Compose Multiplatform can share the screens too, which cuts interface work further. The trade is an interface that follows each platform's conventions a little less closely.
+What moves the number
+#### Seven things decide almost every quote.
+Screen count is the weakest predictor of cost. These are the strongest.
+##### Number of user roles
+One role is a list and a detail screen. Four roles with different permissions is four products sharing a backend. This is the biggest driver on operational apps.
+##### Whether the data is live
+Pull-to-refresh is cheap. Screens that update the moment a driver moves need realtime infrastructure, conflict handling and much more testing.
+##### Offline behaviour
+Working offline means a local database, a sync queue and a decision about conflicting edits. In Kotlin Multiplatform that logic is written once for both platforms. How offline-first works.
+##### Integrations
+Payments, maps, SMS, calendars and existing ERP or CRM systems each bring their own edge cases. Three integrations often cost more than ten screens.
+##### Interface ambition
+Motion, empty states, loading and error states: the hundred small decisions that make an app feel expensive.
+##### Platform count
+Android only is the baseline. iOS through Kotlin Multiplatform adds 35 to 55 percent.
+##### Scope clarity on day one
+The most expensive projects are the ones that changed direction in week six. That is why the Clarity Sprint exists.
+Costs outside the quote
+#### What you pay directly, in your own name.
+Third-party accounts are always registered to you, so nothing has to be transferred or can be withheld if the working relationship ends.
+Third-party costs for a Kotlin Multiplatform app
+Cost
+Amount
+Paid to
+Apple Developer Program
+$99 a year
+Apple
+Google Play Console
+$25 once
+Google
+Hosting, database, maps, SMS, payments
+Usage-based
+Each provider, for example Supabase or Firebase
+Maintenance after launch
+from $900 a month
+AppVion Studio, as a separate retainer
+Against the market
+#### Where the team sits changes the invoice most.
+Indicative 2026 ranges for a comparable production app, drawn from published industry pricing guides including Netguru, TechAhead and Velvetech. They are not quotes from those firms.
+Typical 2026 rates for mobile app development
+Where the team is
+Hourly rate
+Typical production app
+United States agency
+$150 to $250
+$100,000 to $500,000
+Western Europe agency
+$80 to $150
+$60,000 to $150,000
+Eastern Europe agency
+$50 to $100
+$40,000 to $100,000
+AppVion Studio (Multan, Pakistan)
+$45 to $65
+$12,000 to $35,000
+Already on Android?
+#### Moving an existing Kotlin app costs less than starting again.
+If your Android app is written in Kotlin with its rules kept out of the screens, the domain and data layers move into a shared module while the Android app keeps shipping. How cleanly it is layered today decides the price, and the Clarity Sprint measures exactly that.
+Migration
+##### Android to Kotlin Multiplatform
+How the move runs in five steps, and what moves and what stays.
+See the service
+Kotlin Multiplatform
+##### Our KMP service
+The split between shared logic and native interfaces, and the stack we use.
+See the service
+Comparison
+##### KMP vs Flutter
+What each framework shares, where each breaks, and which costs less for your kind of app.
+Read the article
+FAQ
+#### Questions people ask first.
+How much does a Kotlin Multiplatform app cost?
+At AppVion Studio a production Kotlin Multiplatform app costs $12,000 to $35,000. A focused first release lands at $12,000 to $18,000 over 8 to 12 weeks; a multi-role operational platform with dispatch, approvals, live tracking or payments runs $20,000 to $35,000 over 12 to 16 weeks.
+Is Kotlin Multiplatform cheaper than building two native apps?
+Usually, yes. Adding iOS through Kotlin Multiplatform typically adds 35 to 55 percent to an Android-only build rather than doubling it, because the business logic, networking and local database are written once and only the interface is built per platform.
+Is Kotlin Multiplatform cheaper than Flutter?
+For an interface-heavy app with little logic, Flutter is usually cheaper to start. For an operational app where a wrong rule costs money, Kotlin Multiplatform tends to cost less over the life of the product, because rules are written and fixed once. See Kotlin Multiplatform vs Flutter.
+What is not included in the price?
+Third-party costs that belong to you and are paid directly: the Apple Developer Program at $99 a year, Google Play Console at a one-off $25, and hosting, database, mapping, SMS or payment fees. Maintenance after launch is a separate retainer from $900 a month.
+Why start with a Clarity Sprint?
+Because the most expensive projects are the ones that change direction halfway through. The sprint, from $1,500 over one to two weeks, fixes the scope, the workflow map and the technical direction, including whether Kotlin Multiplatform is the right call at all, and ends in a fixed quote.
+Start the conversation
+#### Want a number for your app?
+Describe the roles, the data and the platforms. In twenty minutes we can tell you where in the range it lands and whether Kotlin Multiplatform is worth it.
+Book a free 20-min call WhatsApp us
+
+======================================================================
+## Offline-First Mobile App Development: How It Works
+URL: https://appvionstudio.com/insights/offline-first-mobile-app-development/
+======================================================================
+
+Engineering for the field
+### Offline-first mobile app development: how it actually works.
+By Ayyaz Sajjad, Founder & CEO · Published 22 Oct 2026
+An offline-first app treats the database on the phone as the place work is recorded, and the server as the place it is shared. Every action is saved on the device first and synced when a connection exists, so a rider in a basement or a teacher in a thick-walled lecture hall never waits on a spinner. This is how we build it, from apps we have shipped.
+Book a free 20-min call See an offline-first build
+The short answer
+#### Offline-first and offline-friendly are not the same thing.
+Most apps that claim to work offline only keep old data readable. Offline-first means new work can be recorded with no signal at all.
+Offline-friendly vs offline-first mobile apps
+Behaviour
+Offline-friendly
+Offline-first
+Reading data with no signal
+Yes, what was already downloaded
+Yes
+Recording new work with no signal
+No, it waits or fails
+Yes, synced later
+Where the truth lives
+On the server
+On the phone first, then the server
+Good for
+News, announcements, catalogues
+Deliveries, inspections, attendance, field jobs
+Our example
+WUM Connect announcements
+D. Delivery rider app, Attendance Management
+How it is built
+#### Five parts every offline-first app needs.
+##### 1. A local database as the source of truth
+Screens read from the database on the phone, never straight from the network. We use SQLDelight in Kotlin Multiplatform and Room on Android, encrypted with SQLCipher when the data is sensitive.
+##### 2. An outbox for every change
+Each action is written as a queued change on the device. In D. Delivery every step of a job goes through a local outbox in an encrypted on-device database.
+##### 3. A background sync worker
+A worker drains the outbox when the connection returns, even if the app is closed. In Attendance Management a WorkManager job does this, so a register is never lost.
+##### 4. Conflict rules the server enforces
+Decide what happens when two people change the same record, and let the server have the final word on money and status. A modified phone cannot skip a step the server forbids.
+##### 5. Sync status the user can see
+PropFix tells a worker the difference between "nothing to do" and "we have not heard from the server lately", a distinction most apps quietly collapse.
+##### Plus: media that waits its turn
+Photos and videos are compressed on the phone before upload and queued in the background, so a weak signal never stops someone finishing a job.
+Conflicts
+#### Three ways to settle a conflicting edit.
+There is no universal answer. The right rule depends on what the record is and what a wrong value costs.
+##### Last write wins
+The most recent change replaces the older one. Simple and fine for personal settings or notes. Wrong for anything two people depend on.
+##### The server decides
+The phone proposes, the server checks the rules and accepts or rejects. Right for order status, payments and anything a business is paid on.
+##### Append-only
+Records are never edited in place; each change is added as a new entry. Our attendance platform keeps an append-only audit log, so a disputed record has a history.
+Cost and platform
+#### Offline is not a toggle, so plan it from day one.
+Offline behaviour is one of the seven things that move an app's price on our pricing page. It is far cheaper to design in from the start than to bolt onto an app that assumed a connection. The sync rules are logic, so with Kotlin Multiplatform they are written once and behave the same on Android and iOS.
+Data-heavy utility
+##### Attendance Management
+Mark now, sync later: offline capture, background sync and an append-only audit log across four roles.
+Read the case study
+Logistics platform
+##### D. Delivery
+An encrypted local outbox for every job step, with video proof uploads queued on weak signal.
+Read the case study
+Field service
+##### PropFix
+Work orders with a sync status the contractor can see, from one shared Kotlin core.
+Read the case study
+FAQ
+#### Questions people ask first.
+What is an offline-first app?
+An offline-first app records every action in a database on the phone first and syncs it with the server when a connection exists. Reading and writing both work with no signal, so the user never waits for the network and never loses work because of it.
+What is the difference between offline-first and offline-friendly?
+An offline-friendly app keeps what it has already downloaded readable without signal, but needs a connection to record anything new. An offline-first app also records new work offline and syncs it later. Field and operational apps usually need the second.
+How does an offline app handle two people editing the same record?
+With a rule decided at design time. Common choices are last write wins for personal data, server decides for anything involving money or status, and append-only records where nothing is edited in place. The server should enforce the rules that matter, because a phone can be modified.
+Does offline-first cost more?
+Yes. It needs a local database, a sync queue, conflict rules and a lot more testing, so it is one of the seven things that move an app's price. It costs far less to design in from the start than to add to an app built online-only.
+Can an existing app be made offline-first?
+Usually, if its data layer is separate from its screens. Writes are routed through a local outbox and a sync worker is added. How much has to change first is what a Clarity Sprint establishes.
+Start the conversation
+#### Building something that has to work without a network?
+Attendance, inspections, deliveries, stock counts: if work happens away from a desk, twenty minutes is enough to map what has to work offline and what can wait.
+Book a free 20-min call WhatsApp us
+
+======================================================================
 ## Kotlin Multiplatform vs Flutter for Business Apps
 URL: https://appvionstudio.com/insights/kotlin-multiplatform-vs-flutter/
 ======================================================================
@@ -339,7 +568,7 @@ Then Kotlin Multiplatform extends it. Flutter replaces it.
 ##### How native must it feel?
 Field teams, accessibility needs and heavy use of the camera, location or background work favour native interfaces.
 ##### Does it work offline?
-Offline-first data and sync rules are logic. Writing them once in Kotlin is where KMP pays back most.
+Offline-first data and sync rules are logic. Writing them once in Kotlin is where KMP pays back most. How offline-first works.
 Our position
 #### We build Kotlin Multiplatform, and we will tell you when not to.
 Our operational products, like D. Delivery and PropFix, run on shared Kotlin because their value is in rules that must not drift: dispatch, proof of work, payments. For a content-led app with little logic and one design for both platforms, Flutter is a reasonable choice and we will say so in the first call.
@@ -914,7 +1143,7 @@ Every case study and product demo in one place, across logistics, field service,
 Browse all case studies
 Start the conversation
 #### Tracking something that has to work without a network?
-Attendance, inspections, stock counts, field surveys — anything captured away from a desk needs offline-first design from the start, not bolted on later.
+Attendance, inspections, stock counts, field surveys — anything captured away from a desk needs offline-first design from the start, not bolted on later. How offline-first apps work.
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
@@ -1076,10 +1305,10 @@ Comparison figures are drawn from published 2026 industry pricing guides, includ
 Screen count is the weakest predictor of cost. These seven factors decide almost everything:
 Number of user roles. One role is a list and a detail screen. Four roles with different permissions is four products sharing a backend. This is the single biggest driver on operational apps.
 Whether the data is live. A screen that refreshes on pull is cheap. A screen that updates the moment a driver moves or a job status changes needs realtime infrastructure, conflict handling, and a great deal more testing.
-Offline behaviour. Working offline is not a toggle. It means a local database, a sync queue, and a decision about what happens when two people edit the same record on a bad connection.
+Offline behaviour. Working offline is not a toggle. It means a local database, a sync queue, and a decision about what happens when two people edit the same record on a bad connection. How offline-first apps work.
 Integrations. Payments, maps, SMS, calendars, and existing ERP or CRM systems each carry their own edge cases, credentials, and failure states. Three integrations often cost more than ten screens.
 Interface ambition. A functional interface and a premium one differ by motion, empty states, loading states, error states, and the hundred small decisions that make an app feel expensive.
-Platform count. Android only is the baseline. Adding iOS through Kotlin Multiplatform typically adds 35 to 55 percent rather than doubling the cost, because the business logic is shared and only the interface is rebuilt.
+Platform count. Android only is the baseline. Adding iOS through Kotlin Multiplatform typically adds 35 to 55 percent rather than doubling the cost, because the business logic is shared and only the interface is rebuilt. What a Kotlin Multiplatform app costs.
 How clear the scope is on day one. The most expensive projects are the ones that changed direction in week six. This is why the Clarity Sprint exists.
 #### What is included, and what is not.
 ##### Included in a build
@@ -1240,7 +1469,7 @@ Every case study and product demo in one place, across logistics, field service,
 Browse all case studies
 Engagements
 #### How a KMP project runs, and what it costs.
-Fixed prices per engagement, milestone payments, and full ownership of the code on final payment. These are the published starting ranges; the full breakdown is on the pricing page.
+Fixed prices per engagement, milestone payments, and full ownership of the code on final payment. These are the published starting ranges; the full breakdown is on the pricing page, and what a Kotlin Multiplatform app costs explains what moves the number.
 ##### Product Clarity Sprint: from $1,500
 One to two weeks. The workflow map, feature priority and technical direction, including whether Kotlin Multiplatform is the right call for your product at all, and a fixed quote for the build.
 ##### First release: $12,000 to $18,000
@@ -1364,7 +1593,7 @@ Before and after photos attached to the job itself, so the evidence is on the re
 ##### Quotes from measurement
 Measure an area on a satellite map and price it from the company's own rates.
 ##### Offline-first
-Crews keep working without signal; the app syncs later and says when it last did.
+Crews keep working without signal; the app syncs later and says when it last did. How offline-first works.
 ##### Roles and payments
 Office, crew and customer each get their own app view, with payouts and escrow where money is involved.
 Built before
