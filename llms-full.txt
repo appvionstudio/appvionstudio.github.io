@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-10-21 from the 22 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-10-21 from the 20 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -1339,39 +1339,29 @@ Mobile app development company in Pakistan
 AppVion Studio is a founder-led mobile product studio. The work is Android Native and Kotlin Multiplatform, and the products are operational: delivery dispatch, field service management, cash reconciliation, proof of work, outreach automation. Software that a team opens every day and depends on — not a brochure with a login screen.
 The studio is based in Multan and works remote-first with clients in Lahore, Karachi, Islamabad, across Pakistan, and internationally.
 Book a 20-min App Strategy Session See our case studies
-Why this matters
-#### Most app projects fail on scope, not on code.
-The common failure in this market is not that an app cannot be built. It is that the wrong app gets built — features nobody uses, a workflow that does not match how the business actually operates, and a launch that quietly stalls. Strategy is where the money is either saved or lost.
-##### Founder-level accountability
-Strategy stays close to execution. The person shaping the product direction is the person reviewing the implementation, so decisions move quickly and nothing gets lost in account-manager relay.
-##### Built for real conditions
-Interfaces are planned for thumbs, weak signal, permission prompts, empty states, and daily operational use — not for a demo on a fast connection.
-##### Server-side where it counts
-Anything involving money, access, or safety gets enforced on the server as well as the client. A client-side rule alone is a suggestion, not a guarantee.
-##### Modern, durable architecture
-Jetpack Compose, Kotlin Multiplatform, Supabase, Ktor, and SQLDelight — chosen so the product can keep evolving after launch instead of needing a rewrite.
-Services
-#### What we build.
-01
-##### Android app development
-Native Android products with Jetpack Compose interfaces, refined interactions, scalable structure, and crisp mobile ergonomics.
-02
-##### Kotlin Multiplatform systems
-Shared business logic across Android and iOS without duplicating rules, so pricing and state logic cannot drift between platforms.
-03
-##### Operational & dispatch tools
-Dispatch, approvals, tracking, attendance, proof capture, and internal systems built for repeat daily use by real teams.
-04
-##### Mobile product strategy
-Product thesis, core workflow, feature priority, and launch path defined before code becomes expensive to change.
-05
-##### Product redesigns
-Dated apps rebuilt into premium experiences with sharper hierarchy, smoother flows, and cleaner interface systems.
-06
-##### Backend & integrations
-Postgres, realtime channels, storage, push notifications, payments, and third-party APIs wired behind a clean domain layer.
+Hiring from abroad
+#### Why teams abroad hire a studio in Pakistan.
+The honest reason is cost without the usual trade-off. A senior studio in Pakistan charges a fraction of a US or European agency, and you can judge the work on a small engagement before committing to a build.
+##### Rates
+AppVion charges a blended $45 to $65 an hour, against $150 to $250 at a US agency and $50 to $100 in Eastern Europe. A production app typically lands at $12,000 to $35,000. The full comparison is on the pricing page.
+##### Time zones
+Pakistan Standard Time is UTC+5: a full working overlap with Europe, the Middle East and Asia, and a morning overlap with the eastern United States. Calls are scheduled inside your working hours.
+##### Language
+English for all project communication, documentation and code. The team also speaks Urdu.
+##### Proof before commitment
+Start with a $1,500 Product Clarity Sprint rather than a $20,000 build. You get the scope, the workflow map and a fixed quote, and you see how the studio works before the larger decision.
+Contracts
+#### How pricing, payments and ownership work.
+##### A fixed price per engagement
+Once the scope is clear you get a fixed figure, and delivery runs against milestones. If the scope changes mid-build, the change is priced and agreed before it is built.
+##### Milestone payments
+A deposit to begin, and the balance released as each milestone is delivered and reviewed. You see working software at every stage.
+##### You own everything
+On final payment you own the source code, the repository, the design files, the store listings and the backend accounts. AppVion keeps no licence and holds no accounts.
+##### No lock-in, NDA on request
+Standard Kotlin, Jetpack Compose and mainstream backends, so another competent team can pick the project up. An NDA can be signed before any detailed discussion of your product.
 Proof
-#### Recent work.
+#### Work you can inspect before you hire.
 Each case study covers the problem, the approach, and the engineering decisions that were harder than they look.
 Logistics platform
 ##### D. Delivery
@@ -1388,18 +1378,18 @@ Read the Case Study
 FAQ
 #### Common questions before the first call.
 How much does mobile app development cost in Pakistan?
-Cost depends on scope rather than platform. A focused MVP with one user role and a straightforward backend sits at the low end; a multi-role operational platform with realtime dispatch, payments, and proof capture sits considerably higher. We scope and price after a strategy session rather than from a rate card, because an accurate number requires knowing the workflow, the user roles, and the integrations first.
+At AppVion Studio a Product Clarity Sprint starts at $1,500, and a production Android or Kotlin Multiplatform app costs $12,000 to $35,000. Senior engineering rates in Pakistan run $40 to $80 an hour at the top tier; AppVion charges a blended $45 to $65. The full breakdown is on the pricing page.
 Do you work with clients outside Pakistan?
-Yes. The studio is remote-first and works with international clients through email, WhatsApp, LinkedIn, and scheduled strategy calls. Projects have covered logistics, field service dispatch, and SaaS automation across different markets.
+Yes. The studio is remote-first and works in English with clients abroad through email, WhatsApp, LinkedIn and scheduled calls, which are booked inside the client's working hours.
 Do you build for iOS as well as Android?
 Yes. Android Native is the deepest specialism here, and Kotlin Multiplatform is used when a product needs both platforms without duplicating business logic. Shared logic lives in one Kotlin module while each platform keeps a native interface.
 How long does it take to build a mobile app?
-A focused MVP typically runs a few months from strategy to launch-ready build. Larger operational platforms with multiple roles, realtime features, and payment handling take longer and ship in focused releases rather than one large drop, so progress stays inspectable throughout.
-What should I prepare before the first call?
-A short brief covering the product idea, who uses it, which platforms you need, what stage you are at, a budget range, and your preferred launch timeline. That is enough to have a genuinely useful first conversation rather than a generic one.
+A first release with a focused feature set typically takes 8 to 12 weeks. Multi-role operational platforms with dispatch, approvals, live tracking or payments take 12 to 16 weeks and ship in focused releases, so progress stays inspectable throughout.
+Why should I trust an offshore studio?
+You should not, on assertion alone. That is why AppVion publishes working prototypes rather than testimonials, names every team member with a profile page, and lists direct contact routes to the founder. Start with a $1,500 scoping sprint and judge the work before committing to a build.
 Start the conversation
-#### Bring a serious mobile product idea. Leave with a sharper path.
-Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade.
+#### Hiring from abroad? Start with a $1,500 scoping sprint.
+Judge the work on a small, fixed-price engagement before committing to a build.
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
@@ -1564,68 +1554,4 @@ Clients get a clear line into the studio and a straight answer on where their pr
 Work does not end at release. Saif carries projects through iteration and maintenance, where most agencies quietly stop paying attention.
 ##### Want to talk about a project?
 Bring the product, the constraints and the deadline. You will get a straight read on what is realistic before anyone quotes you a number.
-Back to Team
-
-======================================================================
-## Tayyaba Sajjad | Developer at AppVion Studio
-URL: https://appvionstudio.com/tayyaba-sajjad.html
-======================================================================
-
-Team profile
-Developer | AppVion Studio
-### Tayyaba Sajjad
-Developer profile for AppVion Studio, positioned around clean implementation support, product consistency, and growing contribution inside premium mobile builds.
-UI implementation support
-Studio delivery workflow
-Growth-ready portfolio
-Developer | AppVion Studio Tayyaba Sajjad
-#### Profile summary
-##### Positioning
-Presented as a developer within a focused mobile product team, with room to add shipped modules, features, and technical wins.
-##### Best fit
-Structured projects where practical execution, consistent UI, and collaborative delivery matter.
-##### Next evolution
-The page is ready for future case studies, project details, responsibilities, and proof of contribution.
-Development path
-#### A clean profile base for stronger future proof.
-##### Interface execution
-Support for screen-level implementation, UI consistency, and practical app delivery tasks.
-##### Product contribution
-Built to showcase real modules, responsibilities, and collaboration highlights as the portfolio grows.
-##### Team credibility
-Strengthens AppVion Studio's public team presence with a polished, expandable profile.
-##### Part of the AppVion product team
-This profile is intentionally simple now, with a premium foundation ready for more proof as new work is shipped.
-Back to Team
-
-======================================================================
-## Momina Shah | AppVion Studio Team
-URL: https://appvionstudio.com/momina-shah.html
-======================================================================
-
-Team profile
-Studio Associate | AppVion Studio
-### Momina Shah
-Team profile for AppVion Studio, designed as a polished public presence with room to add role-specific contributions, client support, and studio work over time.
-Studio presence
-Client-facing readiness
-Expandable profile
-Studio Associate | AppVion Studio Momina Shah
-#### Profile summary
-##### Profile direction
-A refined team page that gives Momina a clear place inside the AppVion Studio brand without overclaiming details.
-##### Brand value
-Supports a stronger agency identity by showing the studio as a real team with individual professional pages.
-##### Expansion ready
-Prepared for responsibilities, certifications, client coordination work, or project contributions as they become available.
-Profile foundation
-#### A premium base for future team proof.
-##### Professional presentation
-Creates an intentional profile that feels aligned with a premium agency brand.
-##### Flexible role framing
-Leaves room for communication, coordination, support, or specialist contributions as the role becomes more defined.
-##### Team trust
-Strengthens the site by making the studio feel more visible, accountable, and human.
-##### Ready for richer details
-The structure is prepared for real project highlights, responsibilities, and proof whenever the content is available.
 Back to Team
