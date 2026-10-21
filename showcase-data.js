@@ -157,46 +157,40 @@
             stack: ["Android Native", "Mapbox", "Live dispatch", "Escrow payouts"],
             screens: [
                 {
+                    id: "site-measurement",
+                    name: "Site measurement",
+                    caption: "Owners trace their own lot on the map and the app returns the area that the pricing engine then uses.",
+                    image: "assets/screens/snowgrid/site-measurement.webp"
+                },
+                {
+                    id: "contractor-payouts",
+                    name: "Contractor payouts",
+                    caption: "Contractors see every job and exactly what they are owed, in review, owed and paid.",
+                    image: "assets/screens/snowgrid/contractor-payouts.webp"
+                },
+                {
                     id: "fleet-intelligence",
                     name: "Fleet intelligence",
                     caption: "The operator opens to daily revenue, active operations, and escrow balance - the three numbers that decide the day.",
                     image: "assets/screens/snowgrid/fleet-intelligence.webp"
                 },
                 {
-                    id: "live-dispatch",
-                    name: "Live dispatch",
-                    caption: "Crews and properties on one live map, so assignment is a decision rather than a phone call.",
-                    image: "assets/screens/snowgrid/live-dispatch.webp"
-                },
-                {
-                    id: "fleet-operations",
-                    name: "Fleet operations",
-                    caption: "Every job carries its own approval state and payout, pending through approved, with nothing tracked off-system.",
-                    image: "assets/screens/snowgrid/fleet-operations.jpg"
-                },
-                {
-                    id: "pricing-engine",
+                    id: "pricing-rates",
                     name: "Pricing engine",
-                    caption: "Snow depth, surface area, and priority resolve into a quoted price the customer can authorise on the spot.",
-                    image: "assets/screens/snowgrid/pricing-engine.jpg"
+                    caption: "Each snow company sets its own base fare and square-foot rate, and every quote is computed from them.",
+                    image: "assets/screens/snowgrid/pricing-rates.webp"
                 },
                 {
-                    id: "service-request",
+                    id: "customer-request",
                     name: "Customer request",
-                    caption: "The property owner side stays deliberately small: pick the site, see the price, authorise the work.",
-                    image: "assets/screens/snowgrid/service-request.jpg"
+                    caption: "The property owner side stays deliberately small: pick the site, request the work, follow it.",
+                    image: "assets/screens/snowgrid/customer-request.webp"
                 },
                 {
-                    id: "site-measurement",
-                    name: "Site measurement",
-                    caption: "Owners trace their own lot on the map and the app returns area and perimeter that the pricing engine then uses.",
-                    image: "assets/screens/snowgrid/site-measurement.webp"
-                },
-                {
-                    id: "driver-portal",
-                    name: "Driver portal",
-                    caption: "Drivers get tasks, photo evidence, and payout history in a portal built for gloves and bad weather.",
-                    image: "assets/screens/snowgrid/driver-portal.jpg"
+                    id: "role-selection",
+                    name: "Three roles",
+                    caption: "Property owners, snow companies and contractors each get their own app experience from one sign-up.",
+                    image: "assets/screens/snowgrid/role-selection.webp"
                 }
             ]
         },

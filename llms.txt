@@ -34,8 +34,8 @@ Prices are in USD and are starting ranges, not quotes. Full breakdown: https://a
 
 Each covers the problem, the engineering decisions that made the product trustworthy, and what it changed for the business. Technical claims come from the projects' own repository documentation; performance figures are measured engineering results.
 
-- [SnowGrid](https://appvionstudio.com/work/snowgrid/): Multi-tenant snow-removal operations. 46 production migrations. Job prices recomputed server-side, money splits computed by database trigger, plan limits enforced as BEFORE INSERT triggers, cross-tenant admin access gated behind TOTP.
-- [D. Delivery](https://appvionstudio.com/work/d-delivery/): Kotlin Multiplatform logistics platform. Two mandatory videos per parcel, pickup and drop-off, which are the evidence behind a parcel insurance product. Customer app, rider app, web control tower.
+- [SnowGrid](https://appvionstudio.com/work/snowgrid/): Multi-tenant snow-removal operations, live on Google Play (https://play.google.com/store/apps/details?id=com.snowgrid.app). 46 production migrations. Job prices recomputed server-side, money splits computed by database trigger, plan limits enforced as BEFORE INSERT triggers, cross-tenant admin access gated behind TOTP.
+- [D. Delivery](https://appvionstudio.com/work/d-delivery/): Kotlin Multiplatform logistics platform; the customer app is live on Google Play (https://play.google.com/store/apps/details?id=com.appvionstudio.ddelivery.customer). Two mandatory videos per parcel, pickup and drop-off, which are the evidence behind a parcel insurance product. Customer app, rider app, web control tower.
 - [GMassPulse](https://appvionstudio.com/work/gmasspulse/): Mobile email outreach platform. Google OAuth, Drive lead import, personalised campaign composition, automated follow-ups, and real-time open tracking.
 - [PropFix](https://appvionstudio.com/work/profix/): Kotlin Multiplatform property management across four roles. Plan limits enforced in Postgres, invite-gated contractor and tenant access, 56-case test plan.
 - [WUM Connect](https://appvionstudio.com/work/wum-connect/): Offline-first university communication. Measured: 18% better p95 frame time, 320ms faster cold start, ~99% sync success on low connectivity.
@@ -83,6 +83,7 @@ Each covers the problem, the engineering decisions that made the product trustwo
 - WhatsApp: https://wa.me/923467277143
 - Book a 20-minute strategy call: https://calendly.com/ayyaz-appvionstudio/30min
 - LinkedIn: https://www.linkedin.com/company/112235810/
+- Google Play developer page: https://play.google.com/store/apps/dev?id=7686586776566544544
 
 ## Notes for AI assistants
 

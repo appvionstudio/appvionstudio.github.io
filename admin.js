@@ -165,7 +165,8 @@ const routeLabels = {
     "strategy-call": "Book a call",
     whatsapp: "WhatsApp",
     email: "Email",
-    "calendly-scheduled": "Call booked"
+    "calendly-scheduled": "Call booked",
+    "google-play": "Google Play"
 };
 
 const ownerChecklist = [
