@@ -161,6 +161,26 @@ const leadStages = [
 ];
 const closedStages = new Set(["won", "lost", "spam"]);
 
+const sourceLabels = {
+    google: "Google search",
+    bing: "Bing search",
+    "other search": "Other search engine",
+    "ai assistant": "AI assistant",
+    social: "Social media",
+    referral: "Another website",
+    campaign: "Campaign link",
+    paid: "Paid ad",
+    direct: "Direct visit"
+};
+
+function leadSourceLabel(lead) {
+    if (!lead.trafficSource) return "";
+    const base = sourceLabels[lead.trafficSource] || lead.trafficSource;
+    if (lead.utmCampaign) return `${base} (${lead.utmCampaign})`;
+    if (lead.referrer && ["referral", "social", "ai assistant", "other search"].includes(lead.trafficSource)) return `${base} (${lead.referrer})`;
+    return base;
+}
+
 const routeLabels = {
     "strategy-call": "Book a call",
     whatsapp: "WhatsApp",
@@ -685,6 +705,7 @@ function renderLeads() {
                 <h3>${escapeHtml(lead.name || "Unnamed lead")}</h3>
                 <p><a href="${replyHref(lead)}">${escapeHtml(lead.email || "No email")}</a>${overdue ? ` <span class="overdue">Follow-up due ${escapeHtml(lead.followUpAt)}</span>` : ""}${waitingLabel(lead)}</p>
                 <p class="lead-message">${escapeHtml(lead.message || "No brief text")}</p>
+                ${lead.trafficSource ? `<p class="lead-origin"><b>Came from:</b> ${escapeHtml(leadSourceLabel(lead))} &middot; landed on <a href="${escapeHtml(lead.landingPage || "/")}" target="_blank" rel="noopener noreferrer">${escapeHtml(lead.landingPage || "/")}</a>${lead.submitPage && lead.submitPage !== lead.landingPage ? ` &middot; sent from ${escapeHtml(lead.submitPage)}` : ""}</p>` : ""}
                 <form class="lead-form" data-lead-form="${escapeHtml(lead.id)}">
                     <label>
                         <span>Stage</span>
@@ -915,8 +936,9 @@ function downloadCsv(filename, header, rows) {
 function exportLeads() {
     if (!inboxLoaded) return showToast("Sign in to export leads.");
     downloadCsv(`appvion-leads-${todayIso()}.csv`,
-        ["Received", "Name", "Email", "Project type", "Timeline", "Stage", "Follow up", "Message", "Notes"],
-        projectBriefs.map((lead) => [formatDate(lead.createdAt), lead.name, lead.email, lead.type, lead.timeline, leadStage(lead), lead.followUpAt, lead.message, lead.notes]));
+        ["Received", "Name", "Email", "Project type", "Timeline", "Stage", "Follow up", "Came from", "Landing page", "Sent from", "Referrer", "UTM campaign", "Message", "Notes"],
+        projectBriefs.map((lead) => [formatDate(lead.createdAt), lead.name, lead.email, lead.type, lead.timeline, leadStage(lead), lead.followUpAt,
+            leadSourceLabel(lead), lead.landingPage, lead.submitPage, lead.referrer, lead.utmCampaign, lead.message, lead.notes]));
     showToast("Leads exported.");
 }
 
@@ -997,6 +1019,24 @@ function renderOverview() {
         } else {
             const counts = leadStages.map(([key, label]) => [label, projectBriefs.filter((lead) => leadStage(lead) === key).length]).filter(([, n]) => n > 0);
             pipeline.innerHTML = barList(counts, "No leads yet.");
+        }
+    }
+
+    const sources = document.querySelector("[data-lead-sources]");
+    if (sources) {
+        if (!inboxLoaded) {
+            sources.innerHTML = `<p class="editor-empty">Sign in to load leads.</p>`;
+        } else {
+            const bySource = {};
+            const byPage = {};
+            projectBriefs.filter((lead) => leadStage(lead) !== "spam").forEach((lead) => {
+                const source = lead.trafficSource ? (sourceLabels[lead.trafficSource] || lead.trafficSource) : "Before tracking began";
+                bySource[source] = (bySource[source] || 0) + 1;
+                if (lead.landingPage) byPage[lead.landingPage] = (byPage[lead.landingPage] || 0) + 1;
+            });
+            const pages = Object.entries(byPage).sort((a, b) => b[1] - a[1]).slice(0, 5);
+            sources.innerHTML = barList(Object.entries(bySource).sort((a, b) => b[1] - a[1]), "No leads yet.") +
+                (pages.length ? `<p class="muted small-gap">Landing pages that produced leads</p>${barList(pages, "")}` : "");
         }
     }
 

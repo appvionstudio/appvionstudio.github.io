@@ -64,7 +64,34 @@ function buildBriefPayload(formData) {
         timeline: String(formData.get("timeline") || "").trim(),
         message: String(formData.get("message") || "").trim(),
         source: "website-contact-form",
-        userAgent: navigator.userAgent
+        userAgent: navigator.userAgent,
+        ...leadOrigin()
+    };
+}
+
+// Which page and which site or search brought this visitor (recorded by analytics-events.js).
+function leadOrigin() {
+    let data = {};
+    try { data = JSON.parse(sessionStorage.getItem("appvion-landing") || "{}"); } catch (error) { data = {}; }
+    const referrer = String(data.referrer || "");
+    const medium = String(data.utmMedium || "").toLowerCase();
+    let trafficSource = "direct";
+    if (data.utmSource) trafficSource = /cpc|ppc|paid/.test(medium) ? "paid" : "campaign";
+    else if (/(^|\.)google\./.test(referrer)) trafficSource = "google";
+    else if (/(^|\.)bing\./.test(referrer)) trafficSource = "bing";
+    else if (/duckduckgo|yahoo|yandex|ecosia|brave|baidu/.test(referrer)) trafficSource = "other search";
+    else if (/chatgpt|openai|perplexity|claude\.ai|gemini|copilot/.test(referrer)) trafficSource = "ai assistant";
+    else if (/linkedin|facebook|instagram|(^|\.)t\.co$|twitter|x\.com|youtube|whatsapp|reddit/.test(referrer)) trafficSource = "social";
+    else if (referrer) trafficSource = "referral";
+    const clip = (value, size) => String(value || "").slice(0, size);
+    return {
+        landingPage: clip(data.landingPage || window.location.pathname, 200),
+        submitPage: clip(window.location.pathname, 200),
+        referrer: clip(referrer, 200),
+        trafficSource,
+        utmSource: clip(data.utmSource, 100),
+        utmMedium: clip(data.utmMedium, 100),
+        utmCampaign: clip(data.utmCampaign, 100)
     };
 }
 
@@ -159,6 +186,8 @@ function sendBriefEmailAlert(payload) {
         project_type: payload.type,
         timeline: payload.timeline,
         message: payload.message,
+        came_from: `${payload.trafficSource}${payload.referrer ? ` (${payload.referrer})` : ""}`,
+        landing_page: payload.landingPage,
         source: "AppVion website project brief",
         admin_inbox: `${window.location.origin}${window.location.pathname.replace(/[^/]*$/, "")}appvion-control.html`
     });
