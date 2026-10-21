@@ -1,0 +1,23 @@
+name: SEO checks
+
+# Catches the problems fixed in the October 2026 SEO work if they come back:
+# broken or redirecting internal links, missing canonicals, stray noindex,
+# invalid JSON-LD, missing alt text, stale llms-full.txt URLs and wrong facts.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python .github/scripts/seo_check.py
