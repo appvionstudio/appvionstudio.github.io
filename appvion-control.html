@@ -8,8 +8,8 @@
     <link rel="icon" href="appvion-logo-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="admin.css?v=20260619-light-readable">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css?v=20261021-command2">
 </head>
 <body>
     <section class="lock-screen" data-lock-screen>
@@ -27,6 +27,7 @@
                 <input name="password" type="password" autocomplete="current-password" placeholder="Enter password" required>
             </label>
             <button class="button primary" type="submit" data-lock-button>Unlock Admin</button>
+            <button class="button ghost" type="button" data-action="forgot-password">Forgot password? Email me a reset link</button>
             <button class="button ghost local-unlock" type="button" data-action="local-unlock">Local Preview Unlock</button>
         </form>
     </section>
@@ -37,61 +38,185 @@
                 <img src="appvion-logo-icon.png" alt="AppVion Studio">
                 <span>
                     <strong>AppVion Studio</strong>
-                    <small>Content command center</small>
+                    <small>Command center</small>
                 </span>
             </a>
 
             <nav class="admin-nav" aria-label="Admin sections">
-                <button class="nav-item active" type="button" data-view="overview">Overview</button>
-                <button class="nav-item" type="button" data-view="projects">Projects</button>
-                <button class="nav-item" type="button" data-view="services">Services</button>
-                <button class="nav-item" type="button" data-view="processSteps">Process</button>
-                <button class="nav-item" type="button" data-view="metrics">Metrics</button>
-                <button class="nav-item" type="button" data-view="choiceReasons">Why Choose</button>
-                <button class="nav-item" type="button" data-view="engagements">Engagements</button>
-                <button class="nav-item" type="button" data-view="team">Team</button>
-                <button class="nav-item" type="button" data-view="mediaGuide">Media Guide</button>
-                <button class="nav-item" type="button" data-view="stack">Tech Stack</button>
-                <button class="nav-item" type="button" data-view="demoLibrary">Demo Library</button>
-                <button class="nav-item" type="button" data-view="insights">Blogs</button>
-                <button class="nav-item" type="button" data-view="faqs">FAQ</button>
-                <button class="nav-item" type="button" data-view="briefs">Briefs</button>
-                <button class="nav-item" type="button" data-view="settings">Settings</button>
-                <button class="nav-item" type="button" data-view="publish">Publish</button>
+                <p class="nav-group">Run the business</p>
+                <button class="nav-item active" type="button" data-view="overview">Dashboard</button>
+                <button class="nav-item" type="button" data-view="briefs">Leads <b class="nav-badge" data-new-leads hidden></b></button>
+                <button class="nav-item" type="button" data-view="activity">Contact activity</button>
+
+                <p class="nav-group">Live on the website</p>
+                <button class="nav-item" type="button" data-view="demoLibrary">Demo library</button>
+                <button class="nav-item" type="button" data-view="health">Site health</button>
+
+                <p class="nav-group">Tools</p>
+                <button class="nav-item" type="button" data-view="checks">Data checks <b class="nav-badge warn" data-issue-count hidden></b></button>
+                <button class="nav-item" type="button" data-view="publish">Publish &amp; backup</button>
+                <button class="nav-item" type="button" data-view="account">Account &amp; security</button>
+
+                <details class="nav-archive">
+                    <summary>Archive &middot; not on the website</summary>
+                    <button class="nav-item" type="button" data-view="projects">Projects</button>
+                    <button class="nav-item" type="button" data-view="services">Services</button>
+                    <button class="nav-item" type="button" data-view="processSteps">Process</button>
+                    <button class="nav-item" type="button" data-view="metrics">Metrics</button>
+                    <button class="nav-item" type="button" data-view="choiceReasons">Why Choose</button>
+                    <button class="nav-item" type="button" data-view="engagements">Engagements</button>
+                    <button class="nav-item" type="button" data-view="team">Team</button>
+                    <button class="nav-item" type="button" data-view="stack">Tech Stack</button>
+                    <button class="nav-item" type="button" data-view="insights">Blogs</button>
+                    <button class="nav-item" type="button" data-view="faqs">FAQ</button>
+                    <button class="nav-item" type="button" data-view="settings">Settings</button>
+                    <button class="nav-item" type="button" data-view="mediaGuide">Media Guide</button>
+                </details>
+
                 <button class="nav-item" type="button" data-action="logout">Lock Admin</button>
             </nav>
 
             <div class="admin-sidebar-card">
-                <span>Local CMS mode</span>
-                <p>Local saves are drafts on this browser only. Click Publish Live to update the public website for every computer and phone.</p>
+                <span>What this panel changes</span>
+                <p>The website's text, case studies, team and FAQ live in the website code, so Google can read them. From here, only the Demo library goes live. Leads and contact activity are read from Firebase.</p>
             </div>
         </aside>
 
         <main class="admin-main">
             <header class="admin-topbar">
                 <div>
-                    <p class="eyebrow">Admin panel</p>
-                    <h1 data-page-title>Overview</h1>
+                    <p class="eyebrow" data-signed-in>Admin panel</p>
+                    <h1 data-page-title>Dashboard</h1>
                 </div>
                 <div class="topbar-actions">
-                    <a class="button ghost" href="index.html" target="_blank" rel="noreferrer">Open Site</a>
-                    <button class="button primary" type="button" data-action="export">Export Content</button>
+                    <span class="dirty-badge" data-dirty-badge hidden>Unpublished changes</span>
+                    <a class="button ghost" href="/" target="_blank" rel="noreferrer">Open Site</a>
+                    <button class="button primary" type="button" data-action="export">Backup JSON</button>
                 </div>
             </header>
 
             <section class="admin-view active" data-panel="overview">
                 <div class="overview-grid" data-overview></div>
-                <div class="admin-card roadmap-card">
-                    <div>
-                        <p class="eyebrow">Publishing path</p>
-                        <h2>From local edits to Firebase live content</h2>
-                        <p>Edit safely as a local draft, preview it, then click Publish Live so the public website reads the update from Firebase. Note: the homepage text, project cards, team and FAQs are now managed in the website code (for Google search), so from this panel only the Demo library appears on the live site.</p>
+                <div class="dashboard-grid">
+                    <div class="admin-card">
+                        <p class="eyebrow">Last 30 days</p>
+                        <h2>Where contacts come from</h2>
+                        <div data-top-pages><p class="editor-empty">Sign in to load contact activity.</p></div>
                     </div>
-                    <div class="roadmap-steps">
-                        <span>Local edit</span>
-                        <span>Preview website</span>
-                        <span>Backup JSON</span>
-                        <span>Publish Firebase</span>
+                    <div class="admin-card">
+                        <p class="eyebrow">Pipeline</p>
+                        <h2>Leads by stage</h2>
+                        <div data-pipeline><p class="editor-empty">Sign in to load leads.</p></div>
+                    </div>
+                    <div class="admin-card">
+                        <p class="eyebrow">Follow-ups</p>
+                        <h2>Due or overdue</h2>
+                        <div data-followups><p class="editor-empty">No follow-ups set yet.</p></div>
+                    </div>
+                    <div class="admin-card">
+                        <p class="eyebrow">Owner checklist</p>
+                        <h2>Jobs only you can do</h2>
+                        <p class="muted">Ticks are saved in this browser.</p>
+                        <div data-checklist></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="briefs">
+                <div class="admin-card briefs-card">
+                    <div class="collection-header">
+                        <div>
+                            <p class="eyebrow">Inbox</p>
+                            <h2>Leads from the project brief form</h2>
+                        </div>
+                        <div class="button-row">
+                            <button class="button ghost" type="button" data-action="export-leads">Export CSV</button>
+                            <button class="button primary" type="button" data-action="refresh-briefs">Refresh</button>
+                        </div>
+                    </div>
+                    <div class="toolbar">
+                        <input type="search" placeholder="Search name, email or message" data-lead-search aria-label="Search leads">
+                        <div class="chip-row" data-lead-filters></div>
+                    </div>
+                    <div class="collection-list briefs-list" data-briefs-list>
+                        <p class="editor-empty">Sign in to load leads.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="activity">
+                <div class="admin-card">
+                    <div class="collection-header">
+                        <div>
+                            <p class="eyebrow">Contact clicks</p>
+                            <h2>Book Call, WhatsApp and Email clicks</h2>
+                        </div>
+                        <div class="button-row">
+                            <button class="button ghost" type="button" data-action="export-activity">Export CSV</button>
+                            <button class="button primary" type="button" data-action="refresh-briefs">Refresh</button>
+                        </div>
+                    </div>
+                    <div class="toolbar">
+                        <div class="chip-row" data-activity-range></div>
+                        <div class="chip-row" data-activity-route></div>
+                    </div>
+                    <div data-activity-summary></div>
+                    <div class="table-wrap" data-activity-table><p class="editor-empty">Sign in to load contact activity.</p></div>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="health">
+                <div class="overview-grid" data-health-cards></div>
+                <div class="admin-card">
+                    <p class="eyebrow">Shortcuts</p>
+                    <h2>Tools you sign in to yourself</h2>
+                    <div class="link-grid" data-tool-links></div>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="checks">
+                <div class="admin-card">
+                    <div class="collection-header">
+                        <div>
+                            <p class="eyebrow">Data quality</p>
+                            <h2>Problems found in the panel's content</h2>
+                        </div>
+                        <div class="button-row">
+                            <button class="button ghost" type="button" data-action="run-checks">Run again</button>
+                            <button class="button primary" type="button" data-action="fix-all">Fix text issues</button>
+                        </div>
+                    </div>
+                    <p class="muted">Fixes are saved as a draft in this browser. Open Publish &amp; backup and click Publish Live to save them to Firebase.</p>
+                    <div data-checks-list><p class="editor-empty">Running checks...</p></div>
+                </div>
+            </section>
+
+            <section class="admin-view" data-panel="account">
+                <div class="publish-grid">
+                    <div class="admin-card">
+                        <p class="eyebrow">Signed in</p>
+                        <h2>Your session</h2>
+                        <div data-account-info><p class="editor-empty">Not signed in.</p></div>
+                        <div class="button-row">
+                            <button class="button primary" type="button" data-action="reset-password">Email me a password reset link</button>
+                            <button class="button ghost" type="button" data-action="logout">Lock now</button>
+                        </div>
+                    </div>
+                    <div class="admin-card">
+                        <p class="eyebrow">Auto-lock</p>
+                        <h2>Lock the panel when idle</h2>
+                        <p class="muted">The panel signs out after this long without a click or key press on this device.</p>
+                        <div class="chip-row" data-idle-options></div>
+                    </div>
+                    <div class="admin-card">
+                        <p class="eyebrow">Good practice</p>
+                        <h2>Keep the account safe</h2>
+                        <ul class="media-checklist">
+                            <li>Use a long, unique password and never share it in chats or email.</li>
+                            <li>If a password was ever shared, send yourself a reset link and change it.</li>
+                            <li>Only the two owner emails in the Firestore rules can read leads or publish.</li>
+                            <li>Lock the panel on shared computers.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -217,6 +342,16 @@
             </section>
 
             <section class="admin-view" data-panel="demoLibrary">
+                <div class="admin-card live-note">
+                    <p><strong>This list is live.</strong> Demos appear in the homepage Demo videos section once at least one demo exists and the Demos section is switched on below. Save your edits, then click Publish Live.</p>
+                    <div class="button-row">
+                        <label class="section-toggle inline-toggle">
+                            <span>Show the Demos section on the homepage</span>
+                            <input type="checkbox" data-demos-visible>
+                        </label>
+                        <button class="button primary" type="button" data-action="publish-live">Publish Live</button>
+                    </div>
+                </div>
                 <div class="collection-layout">
                     <div class="admin-card">
                         <div class="collection-header">
@@ -268,27 +403,23 @@
                 <form class="admin-card settings-form" data-settings-form></form>
             </section>
 
-            <section class="admin-view" data-panel="briefs">
-                <div class="admin-card briefs-card">
-                    <div class="collection-header">
-                        <div>
-                            <p class="eyebrow">Inbox</p>
-                            <h2>Project Briefs & Contact Activity</h2>
-                        </div>
-                        <button class="button primary" type="button" data-action="refresh-briefs">Refresh Inbox</button>
-                    </div>
-                    <div class="collection-list briefs-list" data-briefs-list>
-                        <p class="editor-empty">Login with Firebase to load project briefs and contact activity.</p>
-                    </div>
-                </div>
-            </section>
-
             <section class="admin-view" data-panel="publish">
                 <div class="publish-grid">
+                    <div class="admin-card backend-card">
+                        <p class="eyebrow">Live publishing</p>
+                        <h2>Publish through Firebase</h2>
+                        <p class="muted">Saves in this panel stay in this browser until you publish. Publish Live sends the Demo library (and the archived content) to Firebase for every visitor.</p>
+                        <div data-publish-meta></div>
+                        <div class="button-row">
+                            <button class="button primary" type="button" data-action="publish-live">Publish Live</button>
+                            <button class="button ghost" type="button" data-action="reload-remote">Discard local draft and reload from Firebase</button>
+                        </div>
+                        <span class="publish-status" data-publish-status>Firebase configuration required for live publishing.</span>
+                    </div>
                     <div class="admin-card">
                         <p class="eyebrow">Export</p>
                         <h2>Content JSON</h2>
-                        <p class="muted">Export creates a backup `appvion-content.json` file. Firebase publishing is the main live method.</p>
+                        <p class="muted">Download a backup before big changes.</p>
                         <textarea data-json-output readonly></textarea>
                         <div class="button-row">
                             <button class="button primary" type="button" data-action="export">Download JSON</button>
@@ -303,15 +434,6 @@
                         <div class="button-row">
                             <button class="button primary" type="button" data-action="import">Import JSON</button>
                             <button class="button danger" type="button" data-action="reset">Reset Local Changes</button>
-                        </div>
-                    </div>
-                    <div class="admin-card backend-card">
-                        <p class="eyebrow">Live publishing</p>
-                        <h2>Publish through Firebase</h2>
-                        <p class="muted">This is the final step. Local saves stay on this browser only; Publish Live sends the current dashboard content to Firebase for all visitors.</p>
-                        <div class="button-row">
-                            <button class="button primary" type="button" data-action="publish-live">Publish Live</button>
-                            <span class="publish-status" data-publish-status>Firebase configuration required for live publishing.</span>
                         </div>
                     </div>
                 </div>
@@ -332,6 +454,6 @@
         };
         window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
     </script>
-    <script src="admin.js?v=20260602-media-cms"></script>
+    <script src="admin.js?v=20261021-command2"></script>
 </body>
 </html>
