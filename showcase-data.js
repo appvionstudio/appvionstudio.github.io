@@ -160,13 +160,13 @@
                     id: "fleet-intelligence",
                     name: "Fleet intelligence",
                     caption: "The operator opens to daily revenue, active operations, and escrow balance - the three numbers that decide the day.",
-                    image: "assets/screens/snowgrid/fleet-intelligence.jpg"
+                    image: "assets/screens/snowgrid/fleet-intelligence.webp"
                 },
                 {
                     id: "live-dispatch",
                     name: "Live dispatch",
                     caption: "Crews and properties on one live map, so assignment is a decision rather than a phone call.",
-                    image: "assets/screens/snowgrid/live-dispatch.jpg"
+                    image: "assets/screens/snowgrid/live-dispatch.webp"
                 },
                 {
                     id: "fleet-operations",
@@ -190,7 +190,7 @@
                     id: "site-measurement",
                     name: "Site measurement",
                     caption: "Owners trace their own lot on the map and the app returns area and perimeter that the pricing engine then uses.",
-                    image: "assets/screens/snowgrid/site-measurement.jpg"
+                    image: "assets/screens/snowgrid/site-measurement.webp"
                 },
                 {
                     id: "driver-portal",
