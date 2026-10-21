@@ -27,6 +27,12 @@
         });
     }, true);
 
+    // Calendly's popup reports a finished booking through postMessage.
+    window.addEventListener("message", (event) => {
+        if (event.origin !== "https://calendly.com") return;
+        if (event.data && event.data.event === "calendly.event_scheduled") send("call_booked", { method: "calendly" });
+    });
+
     document.addEventListener("submit", (event) => {
         if (!event.target.matches("[data-contact-form]")) return;
         send("generate_lead", { form_name: "project_brief" });
