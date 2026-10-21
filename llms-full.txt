@@ -1152,6 +1152,17 @@ All work
 ##### Full portfolio
 Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.
 Browse all case studies
+Engagements
+#### How a KMP project runs, and what it costs.
+Fixed prices per engagement, milestone payments, and full ownership of the code on final payment. These are the published starting ranges; the full breakdown is on the pricing page.
+##### Product Clarity Sprint: from $1,500
+One to two weeks. The workflow map, feature priority and technical direction, including whether Kotlin Multiplatform is the right call for your product at all, and a fixed quote for the build.
+##### First release: $12,000 to $18,000
+8 to 12 weeks for a focused feature set, with the shared Kotlin core and a native interface on each platform you need.
+##### Operational platform: $20,000 to $35,000
+12 to 16 weeks for multi-role systems with dispatch, approvals, live tracking or payments, shipped in focused releases.
+##### Care and iteration: from $900 a month
+For products that are live and still moving: OS and dependency updates, store policy compliance, bug fixes with agreed response times, and a budgeted slice of new feature work each month.
 FAQ
 #### Kotlin Multiplatform questions we get asked.
 How is KMP different from Flutter or React Native?
