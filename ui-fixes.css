@@ -212,11 +212,29 @@ textarea:focus-visible,
 .hero-proof span,
 .footer-address,
 .footer-address a,
+.footer p,
+.footer-links a,
+.footer-bottom,
+.footer-bottom span,
+.fact-list dt,
+.process-step span,
 .contact-form .form-intro p,
 .contact-form .form-status,
 .contact-form .form-status[data-state="sending"] {
     color: #475569 !important;
     -webkit-text-fill-color: #475569 !important;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+    color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
+}
+
+/* Case-study contact band: the body copy was slate-700 on the dark band (1.41:1). */
+.case-study-page .cta-section .cta-copy > p:not(.eyebrow) {
+    color: #cbd5e1 !important;
+    -webkit-text-fill-color: #cbd5e1 !important;
 }
 
 .contact-form .form-status[data-state="success"] {
