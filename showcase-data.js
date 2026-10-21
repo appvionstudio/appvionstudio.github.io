@@ -169,12 +169,6 @@
                     image: "assets/screens/snowgrid/contractor-payouts.webp"
                 },
                 {
-                    id: "fleet-intelligence",
-                    name: "Fleet intelligence",
-                    caption: "The operator opens to daily revenue, active operations, and escrow balance - the three numbers that decide the day.",
-                    image: "assets/screens/snowgrid/fleet-intelligence.webp"
-                },
-                {
                     id: "pricing-rates",
                     name: "Pricing engine",
                     caption: "Each snow company sets its own base fare and square-foot rate, and every quote is computed from them.",

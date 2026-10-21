@@ -22,7 +22,7 @@
     // Which product leads the hero, and which of its screens cycle there.
     var HERO = {
         app: "snowgrid",
-        screens: ["site-measurement", "contractor-payouts", "fleet-intelligence"]
+        screens: ["site-measurement", "contractor-payouts", "pricing-rates"]
     };
 
     var motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
