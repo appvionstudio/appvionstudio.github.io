@@ -24,7 +24,12 @@
                     <small>Case study</small>
                 </span>
             </a>
-            <nav class="nav-links" aria-label="Case study navigation">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav" class="nav-links" aria-label="Case study navigation">
                 <a href="index.html#work">Work</a>
                 <a href="index.html#services">Services</a>
                 <a href="index.html#contact">Start a Build</a>
@@ -62,5 +67,6 @@
         window.APPVION_FIREBASE_CONTENT_PATH = ["siteContent", "home"];
     </script>
     <script src="case-study.js?v=20260526-case-studies"></script>
+    <script src="/nav.js" defer></script>
 </body>
 </html>

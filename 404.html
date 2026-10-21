@@ -12,7 +12,7 @@
     <link rel="icon" href="/appvion-logo-icon.png">
     <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
     <link rel="stylesheet" href="/styles.css?v=20260702-redesign">
-    <link rel="stylesheet" href="ui-fixes.css?v=20260822-fixes">
+    <link rel="stylesheet" href="/ui-fixes.css?v=20260822-fixes">
 </head>
 <body class="home-page case-study-page">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -28,10 +28,18 @@
                     <small>Elite mobile products</small>
                 </span>
             </a>
-            <nav class="nav-links" aria-label="Primary navigation">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
                 <a href="/work/">Work</a>
                 <a href="/#services">Services</a>
+                <a href="/pricing.html">Pricing</a>
                 <a href="/#process">Process</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/about.html">About</a>
                 <a class="button nav-button" href="/#contact">Book a Call</a>
             </nav>
         </header>
@@ -90,5 +98,6 @@
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="/nav.js" defer></script>
 </body>
 </html>

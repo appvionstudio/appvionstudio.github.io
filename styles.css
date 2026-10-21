@@ -4235,3 +4235,9 @@ h2 { font-size: clamp(36px, 3.9vw, 52px); }
 @media (max-width: 780px) {
     .screens-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 }
+
+/* Mobile menu panel: solid white so page text doesn't show through the open menu.
+   The .nav-links rule above sets 0.90 for every width and wins over the earlier 0.98 phone rules. */
+@media (max-width: 900px) {
+    .nav-links { background: #ffffff !important; }
+}

@@ -82,10 +82,18 @@
                     <small>Case study</small>
                 </span>
             </a>
-            <nav class="nav-links" aria-label="Case study navigation">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav" class="nav-links" aria-label="Case study navigation">
                 <a href="/work/">Work</a>
                 <a href="/#services">Services</a>
+                <a href="/pricing.html">Pricing</a>
                 <a href="/#process">Process</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/about.html">About</a>
                 <a class="button nav-button" href="/#contact">Book a Call</a>
             </nav>
         </header>
@@ -360,5 +368,6 @@
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="/nav.js" defer></script>
 </body>
 </html>
