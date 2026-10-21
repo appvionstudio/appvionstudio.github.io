@@ -10,7 +10,7 @@ AppVion Studio is small and deliberately so. The founder, Ayyaz Sajjad, works di
 - **Website:** https://appvionstudio.com/
 - **Location:** Multan, Punjab, Pakistan
 - **Service area:** Worldwide, remote-first
-- **Founder:** Ayyaz Sajjad — product strategy, Android engineering, Kotlin Multiplatform
+- **Founder:** Ayyaz Sajjad, Founder & CEO — product strategy, Android engineering, Kotlin Multiplatform
 - **Team size:** 4 (Ayyaz Sajjad, Saif Malik, Tayyaba Sajjad, Momina Shah)
 - **Email:** ayyaz@appvionstudio.com
 - **WhatsApp / phone:** +92 346 7277143
@@ -36,6 +36,7 @@ Each covers the problem, the engineering decisions that made the product trustwo
 
 - [SnowGrid](https://appvionstudio.com/work/snowgrid/): Multi-tenant snow-removal operations. 46 production migrations. Job prices recomputed server-side, money splits computed by database trigger, plan limits enforced as BEFORE INSERT triggers, cross-tenant admin access gated behind TOTP.
 - [D. Delivery](https://appvionstudio.com/work/d-delivery/): Kotlin Multiplatform logistics platform. Two mandatory videos per parcel, pickup and drop-off, which are the evidence behind a parcel insurance product. Customer app, rider app, web control tower.
+- [GMassPulse](https://appvionstudio.com/work/gmasspulse/): Mobile email outreach platform. Google OAuth, Drive lead import, personalised campaign composition, automated follow-ups, and real-time open tracking.
 - [PropFix](https://appvionstudio.com/work/profix/): Kotlin Multiplatform property management across four roles. Plan limits enforced in Postgres, invite-gated contractor and tenant access, 56-case test plan.
 - [WUM Connect](https://appvionstudio.com/work/wum-connect/): Offline-first university communication. Measured: 18% better p95 frame time, 320ms faster cold start, ~99% sync success on low connectivity.
 - [Attendance Suite](https://appvionstudio.com/work/attendance-management/): Institutional attendance at scale. Paging 3 for four-thousand-row rosters, conflict-safe writes, ~99% sync success.
@@ -52,10 +53,19 @@ Each covers the problem, the engineering decisions that made the product trustwo
 - [FAQ](https://appvionstudio.com/faq.html): Detailed answers on cost, timelines, ownership, process, technology, and working with an offshore studio.
 - [About](https://appvionstudio.com/about.html): Entity facts, team, capabilities, contact routes, and how to verify the studio.
 - [Insights](https://appvionstudio.com/insights/): Practical writing on framework choices, real costs, and what breaks in production.
+- [Mobile app development in Pakistan](https://appvionstudio.com/mobile-app-development-pakistan/): Founder-led Android Native and Kotlin Multiplatform studio in Pakistan, for local and international clients.
+- [Mobile app development in Multan](https://appvionstudio.com/mobile-app-development-multan/): The studio's home city; LMQ Road, Katchery Chowk, Multan. Apps and field-service systems for businesses in Multan and across Pakistan.
+
+## Team
+
+- [Ayyaz Sajjad](https://appvionstudio.com/ayyaz-sajjad.html) — Founder & CEO. Product strategy, Android engineering, Kotlin Multiplatform.
+- [Saif Malik](https://appvionstudio.com/saif-malik.html) — Project Manager. Delivery and client communication; ten years managing delivery across online platforms.
+- [Tayyaba Sajjad](https://appvionstudio.com/tayyaba-sajjad.html) — Developer.
+- [Momina Shah](https://appvionstudio.com/momina-shah.html) — Studio Associate.
 
 ## Insights articles
 
-- [Kotlin Multiplatform vs React Native for business apps](https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/) — React Native shares the user interface and renders it itself; Kotlin Multiplatform shares the business logic and keeps each interface natively platform-owned. The article sets out what each framework shares, the characteristic failure mode of each, and four questions that settle the choice: does the app work offline, how expensive is a rule being wrong, who maintains it in two years, and is iOS needed on day one. Written by Ayyaz Sajjad, founder and Android engineer.
+- [Kotlin Multiplatform vs React Native for business apps](https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/) — React Native shares the user interface and renders it itself; Kotlin Multiplatform shares the business logic and keeps each interface natively platform-owned. The article sets out what each framework shares, the characteristic failure mode of each, and four questions that settle the choice: does the app work offline, how expensive is a rule being wrong, who maintains it in two years, and is iOS needed on day one. Written by Ayyaz Sajjad, Founder & CEO.
 
 ## Products in the portfolio
 

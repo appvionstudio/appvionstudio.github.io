@@ -8,9 +8,9 @@ by conventional search.
 
 | File | Purpose |
 | --- | --- |
-| `robots.txt` | Explicitly allows 30+ crawlers by name, including GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, and CCBot. Blocks the admin panel and the internal review tool. |
+| `robots.txt` | Explicitly allows 30+ crawlers by name, including GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended, and CCBot. The admin panel, the review tool and `/Demos/` are not blocked on purpose: each carries `noindex`, and a crawler has to fetch a page to see that. |
 | `llms.txt` | The emerging convention for a machine-readable site summary. Key facts, pricing, products, and contact routes in ~900 words. |
-| `llms-full.txt` | Every content page as plain text, ~8,600 words. Regenerate after any content change. **Stale as of October 2026:** 9 of its 14 URLs return 404; regenerate it from the current pages (SEO task 12). |
+| `llms-full.txt` | The text of the 22 content pages in `sitemap.xml` (~17,000 words), one section per canonical URL. Regenerated 2026-10-21. Regenerate after any content change (see Regenerating). |
 | `company.json` | The company record as schema.org JSON, fetchable directly by a crawler that wants structured facts without parsing HTML. |
 | `sitemap.xml` | All public pages with `lastmod` (33 URLs as of October 2026; submitted in Google Search Console). |
 | `content.css` | Styling for the content pages only. |
@@ -18,13 +18,14 @@ by conventional search.
 
 ## Case studies
 
-Six products, each written from that project's own repository documentation rather than from
+Seven products, each written from that project's own repository documentation rather than from
 marketing copy. Every performance figure is a measured engineering result recorded in the repo.
 
 | Page | Product | The claim it rests on |
 | --- | --- | --- |
 | `/work/snowgrid/` | SnowGrid | 46 production migrations; price, money split and paywall enforced by database trigger |
 | `/work/d-delivery/` | D. Delivery | Two mandatory videos per parcel as insurance evidence |
+| `/work/gmasspulse/` | GMassPulse | Google OAuth, Drive lead import, automated follow-ups, real-time open tracking |
 | `/work/profix/` | PropFix | Four roles, plan limits in Postgres, 56-case test plan |
 | `/work/wum-connect/` | WUM Connect | 18% better p95 frame time, 320ms faster cold start, ~99% sync |
 | `/work/attendance-management/` | Attendance Suite | Paging 3 at four thousand rows, conflict-safe writes |
@@ -62,7 +63,7 @@ fragments.
 
 - **Homepage**: `ProfessionalService` + `Organization` (address, price range,
   offer catalog, services, portfolio), `WebSite`, `WebPage`, `ItemList` of
-  six `SoftwareApplication` products with full `featureList`, `FAQPage`,
+  seven `SoftwareApplication` products with full `featureList`, `FAQPage`,
   three `Person` entities.
 - **Content pages**: `WebPage`, `BreadcrumbList`, `Service` with priced
   `Offer`s, and `FAQPage` — 54 questions in schema in total.
@@ -99,8 +100,11 @@ obvious value choice.
 ## Regenerating
 
 After editing `showcase-data.js` or any content page, regenerate the corpus so
-`llms-full.txt` matches what is actually published. It is plain text — you can
-also edit it by hand.
+`llms-full.txt` matches what is actually published. The generator,
+`tools/build_llms_full.py`, lives in the workspace outside this repo: run
+`python tools/build_llms_full.py github-upload`. It reads the `<main>` text of every
+content page in `sitemap.xml`, so every URL in the file is canonical and live.
+Keep `llms.txt`, `company.json` and the About page facts in step with it.
 
 ---
 
