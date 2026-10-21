@@ -198,7 +198,7 @@ Project brief
 Secure intake: saved to the AppVion dashboard with admin email notification.
 
 ======================================================================
-## Insights on Android and Kotlin Multiplatform | AppVion Studio
+## Android & Kotlin Multiplatform Insights | AppVion Studio
 URL: https://appvionstudio.com/insights/
 ======================================================================
 
@@ -215,12 +215,13 @@ Bring the product and the constraints. Twenty minutes is usually enough to tell 
 Book a 20-min App Strategy Session See the work
 
 ======================================================================
-## Kotlin Multiplatform vs React Native for Business Apps | AppVion Studio
+## Kotlin Multiplatform vs React Native for Business Apps
 URL: https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/
 ======================================================================
 
 Choosing a framework
 ### Kotlin Multiplatform vs React Native for business apps.
+By Ayyaz Sajjad, Founder & CEO · Published 22 Sep 2026 · Updated 21 Oct 2026
 Most comparisons of these two frameworks are written by people who sell one of them. This one is written by a studio that builds Kotlin Multiplatform products and has shipped against React Native teams. The honest summary is that they share different things, and the right answer depends on one question about your product rather than on which framework is newer.
 The short answer
 #### React Native shares the interface. Kotlin Multiplatform shares the logic.
@@ -297,13 +298,14 @@ Bring the product, the platforms you need, and the constraints. Twenty minutes i
 Book a 20-min App Strategy Session Read about our KMP work
 
 ======================================================================
-## Mobile App Development Case Studies & Portfolio | AppVion Studio
+## Mobile App Case Studies & Portfolio | AppVion Studio
 URL: https://appvionstudio.com/work/
 ======================================================================
 
 Case studies
 ### Mobile app development case studies built around real operational pressure.
 Every project here started as a workflow that was breaking — dispatch by phone call, proof by memory, pricing by guesswork, reconciliation by spreadsheet. Each case study covers the problem, the approach, the engineering decisions that were harder than they look, and where the build actually stands.
+#### Flagship platforms
 D. Delivery KMP
 Rider job flow Order in transit Pickup video captured. Drop-off proof pending.
 Customer Rider Admin
@@ -350,7 +352,7 @@ Tell us what you want to build, what workflow is breaking, or what existing app 
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
-## SnowGrid Case Study | Fleet Dispatch & Field Service App Development | AppVion Studio
+## SnowGrid Case Study: Fleet Dispatch App | AppVion Studio
 URL: https://appvionstudio.com/work/snowgrid/
 ======================================================================
 
@@ -359,6 +361,7 @@ Fleet dispatch & field service
 One platform serving three completely different jobs — an operator running the fleet, a property owner buying a service, and a contractor working in the field in bad weather. Live dispatch mapping, map-based area measurement, photo verification, and Stripe escrow payments.
 Fleet management Real-time dispatch GPS tracking Stripe payments Multi-role platform
 3 user roles 14 screens Live GPS dispatch
+Published 16 Aug 2026 · Updated 21 Oct 2026
 Explore the Interactive Demo Build something like this
 The problem
 #### Snow work is priced by guesswork and paid on trust.
@@ -433,7 +436,7 @@ Scheduling, job assignment, proof of work, and getting paid for it — if that c
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
-## D. Delivery Case Study | Kotlin Multiplatform Logistics App Development | AppVion Studio
+## D. Delivery Case Study: KMP Logistics App | AppVion Studio
 URL: https://appvionstudio.com/work/d-delivery/
 ======================================================================
 
@@ -442,6 +445,7 @@ Logistics & delivery platform
 Three connected products — a customer booking app, a rider job app, and an admin control tower — engineered so that every parcel movement leaves behind evidence that holds up in a dispute, and every rupee of cash-on-delivery is reconciled against the platform's own ledger rather than a rider's word.
 Kotlin Multiplatform Jetpack Compose Supabase Realtime dispatch Proof of delivery
 3 apps, 1 shared codebase 2 mandatory video proofs per delivery Release candidate
+Published 16 Aug 2026 · Updated 21 Oct 2026
 Build something like this See more work
 The problem
 #### Courier disputes are won by whoever has evidence — and nobody had any.
@@ -523,7 +527,7 @@ Dispatch, proof of work, field teams, cash handling, approvals — if the workfl
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
-## PropFix Case Study | Property Maintenance & Work Order App | AppVion Studio
+## PropFix Case Study: Work Order App | AppVion Studio
 URL: https://appvionstudio.com/work/profix/
 ======================================================================
 
@@ -532,6 +536,7 @@ Property maintenance platform
 A Kotlin Multiplatform maintenance workflow connecting property managers and the contractors who do the work — job assignment, proof of work, progress visibility, and manager approval in one system instead of four phone calls and a paper docket.
 Kotlin Multiplatform Compose Multiplatform Supabase Work orders Multi-role
 3 roles Android & iOS from one codebase Offline-capable
+Published 16 Aug 2026 · Updated 21 Oct 2026
 Watch the Demo Build something like this
 The problem
 #### Maintenance work is coordinated by whoever is willing to keep chasing it.
@@ -593,7 +598,7 @@ Job assignment, proof of work, and getting paid for it — if that runs on phone
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
-## GMassPulse Case Study | Email Automation App Development | AppVion Studio
+## GMassPulse Case Study: Email Outreach App | AppVion Studio
 URL: https://appvionstudio.com/work/gmasspulse/
 ======================================================================
 
@@ -602,6 +607,7 @@ SaaS & automation platform
 Outreach tooling has always lived on the desktop. GMassPulse puts the whole loop — import a lead list, compose a personalised campaign, schedule follow-ups, and watch opens arrive in real time — on a phone, without shrinking a dashboard down to fit.
 Email automation Google OAuth Supabase Live tracking Mobile-first SaaS
 10 screens 4 core flows OAuth 2.0 secured
+Published 16 Aug 2026 · Updated 21 Oct 2026
 Explore the Interactive Demo Build something like this
 The problem
 #### Outreach tools tell you what happened yesterday.
@@ -676,7 +682,7 @@ Automation, live data, third-party API integration, OAuth — if the product onl
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
-## WUM Connect Case Study | University App Development | AppVion Studio
+## WUM Connect Case Study: University App | AppVion Studio
 URL: https://appvionstudio.com/work/wum-connect/
 ======================================================================
 
@@ -685,6 +691,7 @@ University communication platform
 A role-based university app where administrators, faculty, and students each see a different product built on the same data. Real-time announcements, faculty and student records, results publishing, and push notifications — replacing notice boards, WhatsApp groups, and word of mouth.
 Jetpack Compose Firebase Hilt Role-based access Push notifications
 3 user roles Real-time announcements Offline-friendly
+Published 16 Aug 2026 · Updated 21 Oct 2026
 Watch the Demo Build something like this
 The problem
 #### A campus announcement is only as good as its worst distribution channel.
@@ -752,7 +759,7 @@ Announcements, records, results, and role-specific access are a well-understood 
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
-## Attendance Management Case Study | Institutional Attendance App | AppVion Studio
+## Attendance Management Case Study | AppVion Studio
 URL: https://appvionstudio.com/work/attendance-management/
 ======================================================================
 
@@ -761,6 +768,7 @@ Institutional attendance platform
 Attendance is marked on the phone already in the room, works with no signal, syncs when the network returns, and leaves an audit trail nobody can quietly edit. Four roles — teacher, head of department, administrator, and student — each with a purpose-built view of the same records.
 Jetpack Compose Firebase WorkManager Offline-first Analytics
 4 user roles Works offline Append-only audit log
+Published 16 Aug 2026 · Updated 21 Oct 2026
 Watch the Demo Build something like this
 Capture flow Mark now, sync later
 01
@@ -824,7 +832,7 @@ Attendance, inspections, stock counts, field surveys — anything captured away 
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
-## Sports Society Events Case Study | Event Management App | AppVion Studio
+## Sports Society Events Case Study | AppVion Studio
 URL: https://appvionstudio.com/work/sports-society-events/
 ======================================================================
 
@@ -833,6 +841,7 @@ Events platform
 A sports society runs on sign-up sheets, group chats, and a coach's notebook. This replaces all three — event listings with real registration, per-event chat, leaderboards, and performance tracking that follows a participant across the season.
 Jetpack Compose Firebase Material 3 Real-time chat Multi-role
 3 user roles Live event chat Season leaderboards
+Published 16 Aug 2026 · Updated 21 Oct 2026
 Build something like this
 Event flow Announce to leaderboard
 01
@@ -1027,7 +1036,7 @@ Book a 20-min Strategy Call Send a Project Brief
 See the workSeven products, described screen by screen. Android developmentWhat native Kotlin and Compose buy you. Full FAQTimelines, ownership, process, and technology.
 
 ======================================================================
-## Android App Development with Kotlin and Jetpack Compose | AppVion Studio
+## Android App Development in Kotlin & Compose | AppVion Studio
 URL: https://appvionstudio.com/android-app-development.html
 ======================================================================
 
@@ -1087,7 +1096,7 @@ Book a 20-min Strategy Call Send a Project Brief
 Kotlin MultiplatformShare logic, keep the interface native. PricingReal numbers, not a contact form. See the workSeven products, screen by screen.
 
 ======================================================================
-## Kotlin Multiplatform Development Services | KMP Agency | AppVion Studio
+## Kotlin Multiplatform Development Services | AppVion Studio
 URL: https://appvionstudio.com/services/kotlin-multiplatform-development/
 ======================================================================
 
@@ -1159,7 +1168,7 @@ Bring the product, the platforms you need, and the constraints. If KMP is the wr
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
-## Frequently Asked Questions | AppVion Studio Mobile App Development
+## Mobile App Development FAQ | AppVion Studio
 URL: https://appvionstudio.com/faq.html
 ======================================================================
 
@@ -1176,7 +1185,7 @@ Ownership and risk
 Technology
 Working with a studio in Pakistan
 After launch
-Getting started
+#### Getting started
 ##### What does AppVion Studio actually do?
 AppVion Studio designs and builds mobile applications, principally native Android apps in Kotlin and Jetpack Compose, and cross-platform products using Kotlin Multiplatform. The studio specialises in operational software: dispatch, approvals, attendance, field service, communication, and internal business tools. It also takes on redesigns of existing apps that have aged badly.
 ##### What kind of projects are you best suited to?
@@ -1187,7 +1196,7 @@ Games, blockchain speculation projects, and anyone shopping for the cheapest pos
 Send a short brief through the contact form, email ayyaz@appvionstudio.com, or message +92 346 7277143 on WhatsApp. Include the product idea, who uses it, which platforms you need, your stage, and a rough budget and timeline. The first response comes within 24 hours.
 ##### Do I need to know exactly what I want first?
 No. That is what the Product Clarity Sprint is for. It costs from $1,500, runs one to two weeks, and turns a rough idea into a workflow map, a prioritised feature list, a technical direction, and an estimate you could take to any studio.
-Cost and commercials
+#### Cost and commercials
 ##### How much will my app cost?
 A production mobile app from AppVion Studio costs $12,000 to $35,000. A focused first release usually lands at $12,000 to $18,000. Multi-role operational platforms run to $35,000. Redesigns start at $6,000 and a scoping sprint starts at $1,500. The pricing page breaks down what moves those numbers.
 ##### Is the price fixed?
@@ -1196,7 +1205,7 @@ Yes. AppVion quotes a fixed figure per engagement once the scope is clear, and d
 Across milestones, with a deposit to begin and the balance released as each milestone is delivered and reviewed. You see working software at each stage.
 ##### Are there costs beyond your fee?
 Yes, and they are paid by you directly so you own them: Google Play Console registration is a one-off $25, the Apple Developer Program is $99 per year, and hosting, database, mapping, SMS, or payment-processing fees depend on the product and its usage.
-Process and timelines
+#### Process and timelines
 ##### How long does a build take?
 Eight to twelve weeks for a focused first release, twelve to sixteen for a multi-role operational platform with realtime data. A redesign takes four to eight weeks. Those figures assume the scope was settled first; they are not reliable if the product is still being invented while it is built.
 ##### What does the process look like week to week?
@@ -1205,7 +1214,7 @@ Four phases. A Signal Audit maps the business model, user roles, and the screens
 A working build at each milestone, plus a written update in between. The studio deliberately does not run daily stand-ups with clients, because they consume the time that produces the software.
 ##### What happens if the project runs late?
 You are told as soon as it is known rather than at the deadline, along with the options: cut scope, move the date, or change the approach. Fixed-price engagements mean a delay caused by AppVion is AppVion's problem, not a change order.
-Ownership and risk
+#### Ownership and risk
 ##### Who owns the code?
 You do, entirely, on final payment. That covers the source code, the repository, the design files, the store listings, and the backend accounts. AppVion retains no licence and holds no accounts.
 ##### Will I be locked in to AppVion?
@@ -1214,7 +1223,7 @@ No, and the architecture is deliberately conventional to make sure of it. The ap
 Yes, before any detailed discussion of your product if you prefer.
 ##### What if I already have a development team?
 That is common. AppVion can take a defined slice — the Android app, a Kotlin Multiplatform module, an architecture review, or an interface redesign — and work alongside your team rather than replacing it.
-Technology
+#### Technology
 ##### What technology do you build with?
 Kotlin and Jetpack Compose for Android, Kotlin Multiplatform with Ktor and SQLDelight for shared logic, and Supabase or Firebase for backend and realtime where a custom backend is not already in place. Room and Paging 3 handle local storage and large lists, and WorkManager handles background sync.
 ##### Do you build iOS apps?
@@ -1223,7 +1232,7 @@ Through Kotlin Multiplatform, yes: shared business logic in Kotlin with a native
 Yes, using Supabase, Firebase, or Ktor depending on the product. If you already have an API, AppVion integrates with it rather than insisting on a rewrite.
 ##### Do you work with AI features?
 Yes, where they earn their place: intelligent workflows, command surfaces, automation-ready interactions, and data-aware interface patterns. The studio does not add a chatbot to a product that does not need one.
-Working with a studio in Pakistan
+#### Working with a studio in Pakistan
 ##### Where are you based?
 Multan, Punjab, Pakistan. The studio is remote-first and works with clients worldwide.
 ##### How do time zones work?
@@ -1232,7 +1241,7 @@ Pakistan Standard Time is UTC+5. That gives a full working overlap with Europe, 
 English for all project communication, documentation, and code. The team also speaks Urdu.
 ##### Why should I trust an offshore studio?
 You should not, on assertion alone. That is why AppVion publishes working prototypes rather than testimonials, names every team member with an individual profile page, and lists direct contact routes to the founder. Start with a $1,500 scoping sprint rather than a $20,000 build, and judge the work before committing to it.
-After launch
+#### After launch
 ##### Do you maintain the app after launch?
 Yes, through a care and iteration retainer from $900 per month covering OS and dependency updates, store policy compliance, bug fixes with agreed response times, and a budgeted slice of new feature work.
 ##### What does maintenance normally cost across the industry?
@@ -1246,7 +1255,7 @@ Book a 20-min Strategy Call Send a Project Brief
 PricingReal numbers and what moves them. About the studioWho does the work, and where. See the workSeven products, screen by screen.
 
 ======================================================================
-## About AppVion Studio | Mobile App Development Studio in Multan, Pakistan
+## About AppVion Studio | App Development Studio in Multan
 URL: https://appvionstudio.com/about.html
 ======================================================================
 
@@ -1321,7 +1330,7 @@ Book a 20-min Strategy Call Send a Project Brief
 See the workSeven products, screen by screen. PricingWhat engagements cost. Full FAQTwenty-eight questions answered directly.
 
 ======================================================================
-## Mobile App Development Company in Pakistan | Android & Kotlin | AppVion Studio
+## Mobile App Development Company in Pakistan | AppVion Studio
 URL: https://appvionstudio.com/mobile-app-development-pakistan/
 ======================================================================
 
@@ -1394,7 +1403,7 @@ Tell us what you want to build, what workflow is breaking, or what existing app 
 Book a 20-min App Strategy Session WhatsApp us
 
 ======================================================================
-## Mobile App Development Company in Multan | Android & Kotlin | AppVion Studio
+## Mobile App Development Company in Multan | AppVion Studio
 URL: https://appvionstudio.com/mobile-app-development-multan/
 ======================================================================
 
@@ -1489,6 +1498,7 @@ Founder & CEO
 Founder of AppVion Studio, focused on premium Android apps, Kotlin Multiplatform systems, Jetpack Compose interfaces, and mobile products that solve real operational problems.
 Focus Android Native Kotlin Multiplatform Jetpack Compose
 Founder & CEO Ayyaz Sajjad
+#### Profile summary
 ##### Product direction
 Business-first mobile systems for dispatch, approvals, communication, attendance, secure access, and real workflow execution.
 ##### Technical base
@@ -1537,6 +1547,7 @@ Saif manages delivery at AppVion Studio. His job is to keep projects moving and 
 Client and team communication
 Delivery and maintenance
 Project Manager | AppVion Studio Saif Malik Multan, Pakistan · working remotely with clients worldwide.
+#### Profile summary
 ##### What he owns
 Project delivery and the communication around it: scope kept honest, timelines kept real, and clients kept informed without having to chase.
 ##### Experience
@@ -1568,6 +1579,7 @@ UI implementation support
 Studio delivery workflow
 Growth-ready portfolio
 Developer | AppVion Studio Tayyaba Sajjad
+#### Profile summary
 ##### Positioning
 Presented as a developer within a focused mobile product team, with room to add shipped modules, features, and technical wins.
 ##### Best fit
@@ -1599,6 +1611,7 @@ Studio presence
 Client-facing readiness
 Expandable profile
 Studio Associate | AppVion Studio Momina Shah
+#### Profile summary
 ##### Profile direction
 A refined team page that gives Momina a clear place inside the AppVion Studio brand without overclaiming details.
 ##### Brand value

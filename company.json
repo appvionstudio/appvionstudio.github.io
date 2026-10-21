@@ -11,7 +11,7 @@
   "description": "Founder-led mobile app development studio building Android Native and Kotlin Multiplatform products with Jetpack Compose, specialising in operational business systems such as dispatch, approvals, attendance, and field-service workflows.",
   "slogan": "Kotlin Multiplatform and Android apps for teams that work in the field.",
   "email": "ayyaz@appvionstudio.com",
-  "telephone": "+92-346-7277143",
+  "telephone": "+923467277143",
   "priceRange": "$1,500 - $35,000",
   "currenciesAccepted": "USD",
   "address": {
@@ -93,7 +93,7 @@
       "@type": "ContactPoint",
       "contactType": "sales",
       "email": "ayyaz@appvionstudio.com",
-      "telephone": "+92-346-7277143",
+      "telephone": "+923467277143",
       "areaServed": "Worldwide",
       "availableLanguage": ["English", "Urdu"]
     }
