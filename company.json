@@ -9,7 +9,7 @@
   "logo": "https://appvionstudio.com/appvion-logo-icon.png",
   "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
   "description": "Founder-led mobile app development studio building Android Native and Kotlin Multiplatform products with Jetpack Compose, specialising in operational business systems such as dispatch, approvals, attendance, and field-service workflows.",
-  "slogan": "World-class mobile apps for ambitious teams.",
+  "slogan": "Kotlin Multiplatform and Android apps for teams that work in the field.",
   "email": "ayyaz@appvionstudio.com",
   "telephone": "+92-346-7277143",
   "priceRange": "$1,500 - $35,000",
@@ -29,7 +29,7 @@
     "@type": "Person",
     "@id": "https://appvionstudio.com/ayyaz-sajjad.html#person",
     "name": "Ayyaz Sajjad",
-    "jobTitle": "Founder and Android App Developer"
+    "jobTitle": "Founder & CEO"
   },
   "numberOfEmployees": {
     "@type": "QuantitativeValue",
@@ -39,8 +39,14 @@
     {
       "@type": "Person",
       "name": "Ayyaz Sajjad",
-      "jobTitle": "Founder and Android App Developer",
+      "jobTitle": "Founder & CEO",
       "url": "https://appvionstudio.com/ayyaz-sajjad.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Saif Malik",
+      "jobTitle": "Project Manager",
+      "url": "https://appvionstudio.com/saif-malik.html"
     },
     {
       "@type": "Person",

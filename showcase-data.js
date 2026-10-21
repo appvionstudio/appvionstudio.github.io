@@ -25,7 +25,7 @@
     var APPS = [
         {
             id: "profix",
-            name: "ProFix",
+            name: "PropFix",
             kicker: "Field service platform",
             tagline: "A maintenance command layer that keeps dispatch, proof, and approval in one loop.",
             accent: "blue",

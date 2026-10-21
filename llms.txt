@@ -36,7 +36,7 @@ Each covers the problem, the engineering decisions that made the product trustwo
 
 - [SnowGrid](https://appvionstudio.com/work/snowgrid/): Multi-tenant snow-removal operations. 46 production migrations. Job prices recomputed server-side, money splits computed by database trigger, plan limits enforced as BEFORE INSERT triggers, cross-tenant admin access gated behind TOTP.
 - [D. Delivery](https://appvionstudio.com/work/d-delivery/): Kotlin Multiplatform logistics platform. Two mandatory videos per parcel, pickup and drop-off, which are the evidence behind a parcel insurance product. Customer app, rider app, web control tower.
-- [ProFix](https://appvionstudio.com/work/profix/): Kotlin Multiplatform property management across four roles. Plan limits enforced in Postgres, invite-gated contractor and tenant access, 56-case test plan.
+- [PropFix](https://appvionstudio.com/work/profix/): Kotlin Multiplatform property management across four roles. Plan limits enforced in Postgres, invite-gated contractor and tenant access, 56-case test plan.
 - [WUM Connect](https://appvionstudio.com/work/wum-connect/): Offline-first university communication. Measured: 18% better p95 frame time, 320ms faster cold start, ~99% sync success on low connectivity.
 - [Attendance Suite](https://appvionstudio.com/work/attendance-management/): Institutional attendance at scale. Paging 3 for four-thousand-row rosters, conflict-safe writes, ~99% sync success.
 - [VU Sports Society](https://appvionstudio.com/work/sports-society-events/): Campus events and role management. Event publish flow 35% faster, automatic capacity locking, FCM reminders.
@@ -47,7 +47,7 @@ Each covers the problem, the engineering decisions that made the product trustwo
 - [Pricing](https://appvionstudio.com/pricing.html): What a mobile app costs in 2026, AppVion's engagement bands, and how offshore pricing compares to US and European agencies.
 - [Android app development](https://appvionstudio.com/android-app-development.html): Native Android engineering with Kotlin and Jetpack Compose — approach, architecture, and what native buys you over cross-platform.
 - [Kotlin Multiplatform development](https://appvionstudio.com/services/kotlin-multiplatform-development/): What KMP is, what it shares and what stays native, and how it compares to Flutter and React Native.
-- [Case studies](https://appvionstudio.com/work/): Six products covered in depth, with the interactive prototype embedded in each.
+- [Case studies](https://appvionstudio.com/work/): Seven products covered in depth, with the interactive prototype embedded in each.
 - [Work](https://appvionstudio.com/work/): Seven products with a screen-by-screen description of what each one does.
 - [FAQ](https://appvionstudio.com/faq.html): Detailed answers on cost, timelines, ownership, process, technology, and working with an offshore studio.
 - [About](https://appvionstudio.com/about.html): Entity facts, team, capabilities, contact routes, and how to verify the studio.
@@ -61,7 +61,7 @@ Each covers the problem, the engineering decisions that made the product trustwo
 
 - **SnowGrid** — Enterprise snow-removal operations platform. Live dispatch map, fleet intelligence, dynamic pricing engine, escrow payouts, and separate property-owner and driver portals.
 - **GMassPulse** — Cold-email outreach infrastructure on Android. Lead import from Google Sheets, campaign editor, timezone-aware auto follow-ups, and a deliverability throttling engine.
-- **ProFix** — Kotlin Multiplatform field-service command layer. Dispatch, job detail, photo proof of work, and remote manager approval in one loop.
+- **PropFix** — Kotlin Multiplatform field-service command layer. Dispatch, job detail, photo proof of work, and remote manager approval in one loop.
 - **WUM Connect** — Role-aware university communication app. Firebase backend, real-time announcements, offline-first sync across student, faculty, and admin roles.
 - **Attendance Suite** — Data-heavy Android attendance system using Paging 3 to browse thousands of records smoothly, with reporting and exceptions surfaced first.
 - **D. Delivery** — Kotlin Multiplatform delivery and logistics platform. Customer app, rider app, and a web control tower. Every parcel is recorded on video at pickup and drop-off, backing a parcel insurance product. Cash on delivery, rider wallet, expanding-radius dispatch, routed distance pricing.

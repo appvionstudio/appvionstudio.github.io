@@ -10,7 +10,7 @@
     "ctaEyebrow": "Start the conversation",
     "ctaTitle": "Bring a serious mobile product idea. Leave with a sharper path.",
     "ctaBody": "Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade. AppVion will help turn it into a focused product direction.",
-    "footerTagline": "Elite mobile products, operational systems, and future-ready app experiences.",
+    "footerTagline": "Android and Kotlin Multiplatform products, operational systems, and offline-first field apps.",
     "email": "ayyaz@appvionstudio.com",
     "whatsapp": "+92 346 7277143",
     "whatsappUrl": "https://wa.me/923467277143",
@@ -36,7 +36,7 @@
     "D. Delivery",
     "SnowGrid",
     "GMassPulse",
-    "ProFix",
+    "PropFix",
     "WUM Connect",
     "Attendance Suite"
   ],
@@ -281,7 +281,7 @@
   "team": [
     {
       "id": "ayyaz-sajjad",
-      "role": "Founder | Android App Developer",
+      "role": "Founder & CEO",
       "name": "Ayyaz Sajjad",
       "description": "Leads AppVion Studio across product strategy, Android engineering, Kotlin Multiplatform systems, and premium mobile execution.",
       "photoPositionX": "50",
