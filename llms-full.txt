@@ -55,7 +55,7 @@ Mobile event coordination with filtering, structured updates, and participant-fa
 Read the case study
 Browse all case studies
 Services
-#### Strategy, design, and engineering in one accountable motion.
+#### Our mobile app development services
 AppVion is intentionally focused: fewer layers, faster decisions, and one product standard from first concept to launch.
 01
 ##### Mobile Product Strategy
@@ -76,7 +76,7 @@ Transform dated apps into premium experiences with sharper hierarchy, smoother f
 ##### Operational Tools
 Dispatch, approvals, tracking, secure content, attendance, communication, and internal systems built for repeat daily use.
 Process
-#### A high-clarity build system for serious product decisions.
+#### How we build your app, in four steps
 Every phase is built to reduce ambiguity, protect momentum, and turn a vague app idea into a launch-ready product system.
 01
 ##### Signal Audit
@@ -91,14 +91,14 @@ UI, motion, backend integration, state handling, and product logic come together
 ##### Launch Refinement
 Polish, QA, deployment support, analytics readiness, and post-launch improvement loops keep the product moving.
 Proof system
-#### Premium trust is built through clarity, not noise.
+#### Proof you can check before you hire us
 AppVion presents verifiable product depth: public demos, concrete workflows, visible founder accountability, and a modern technical base.
 07 Portfolio products and concepts presented with demos or clear product scope.
 04 Core domains covered: operations, delivery, education, and events.
 01 Founder-led accountability path from strategy to implementation review.
 24h Fast first response target for qualified strategy conversations.
 Why choose AppVion
-#### Built for buyers who care about taste, trust, and technical discipline.
+#### Why teams choose AppVion Studio
 ##### Founder-level thinking
 Strategy stays close to execution, so decisions move fast and the product does not drift into agency theater.
 ##### Mobile-first obsession
@@ -108,8 +108,8 @@ Visual hierarchy, motion, contrast, and spacing are used to create confidence be
 ##### Modern architecture
 Compose, Kotlin Multiplatform, Supabase, Firebase, Ktor, and SQLDelight patterns for products that can evolve.
 Client confidence
-#### The buying experience is designed to feel calm, premium, and accountable.
-No fabricated testimonials. Instead, the site makes trust inspectable: real demos, named team members, direct contact routes, and clear product reasoning.
+#### What to expect before, during and after the build
+You can check our work before you talk to us. Two of our apps are live on Google Play, seven projects have full case studies, our prices are published, and every team member is named. On final payment you own the source code, repositories and store listings.
 Before the build
 You get a crisp product direction, core workflow map, and realistic launch path.
 During the build
@@ -138,10 +138,10 @@ UX audit
 Interface redesign
 Architecture review
 Technology
-#### A modern mobile stack selected for speed, clarity, and longevity.
+#### Our tech stack: Kotlin, Jetpack Compose and Kotlin Multiplatform
 Android Native Kotlin Jetpack Compose Kotlin Multiplatform Ktor Supabase Firebase SQLDelight Paging 3 Realtime Systems Secure WebView AI-ready UX
 Studio team
-#### A focused team with a sharp founder-led product culture.
+#### Meet the AppVion Studio team
 Small by design, direct by default, and shaped around product quality rather than bloated handoff layers.
 Founder & CEO
 I started AppVion Studio to build apps that field teams can rely on every single day. I stay close to every project, from the first call to launch day.
@@ -233,7 +233,7 @@ URL: https://appvionstudio.com/insights/kotlin-multiplatform-vs-react-native/
 
 Choosing a framework
 ### Kotlin Multiplatform vs React Native for business apps.
-By Ayyaz Sajjad, Founder & CEO · Published 22 Sep 2026 · Updated 21 Oct 2026
+By Ayyaz Sajjad, Founder & CEO · Published 22 Sep 2026 · Updated 22 Oct 2026
 Most comparisons of these two frameworks are written by people who sell one of them. This one is written by a studio that builds Kotlin Multiplatform products and has shipped against React Native teams. The honest summary is that they share different things, and the right answer depends on one question about your product rather than on which framework is newer.
 The short answer
 #### React Native shares the interface. Kotlin Multiplatform shares the logic.
@@ -251,7 +251,7 @@ Networking and API contracts
 Local database, caching and sync
 Nothing in the interface, deliberately
 What that costs you
-React Native gives you one interface to build and one to maintain, which is genuinely fast. The price is that the interface is rendered by a bridge rather than by the platform, so every native capability arrives through a library someone else maintains.
+React Native gives you one interface to build and one to maintain, which is genuinely fast. The price is that your screens are written in JavaScript and React Native turns them into native views at runtime, so every native capability arrives through a library someone else maintains.
 Kotlin Multiplatform gives you two interfaces to build. The price is real. What you get back is that the interface is the platform’s own, and the rules that decide whether an invoice is correct exist exactly once.
 Where each one breaks
 #### The failure modes nobody puts in the pitch deck.
@@ -259,7 +259,7 @@ Both frameworks work. Both have a characteristic way of going wrong, and knowing
 Where React Native struggles
 Background work and offline sync, where each platform’s rules differ and the abstraction leaks
 Heavy hardware use — continuous GPS, camera pipelines, Bluetooth — which usually ends in a native module anyway
-Long lists of live data, where the bridge becomes the bottleneck
+Long lists of fast-changing data, which need careful tuning to stay smooth
 Dependency risk: a critical library going unmaintained is your problem, not the framework’s
 OS upgrades, where you wait for the ecosystem rather than for the platform
 Where Kotlin Multiplatform struggles
@@ -295,7 +295,7 @@ FAQ
 Is Kotlin Multiplatform better than React Native?
 Neither is better in general, and anyone who says otherwise is selling something. They share different things. React Native shares the user interface and renders it itself, which is fastest when the app is mostly screens and forms and one team owns both platforms. Kotlin Multiplatform shares the business logic and keeps each interface genuinely native, which wins when correctness matters, when the app is offline-first, or when it uses hardware heavily.
 Is Kotlin Multiplatform production ready in 2026?
-Yes. Kotlin Multiplatform reached stable status in 2024 and is backed by Google for cross-platform development. It runs in production at large engineering organisations, and at smaller studios shipping multi-role operational platforms with realtime dispatch, payments and offline sync.
+Yes. Kotlin Multiplatform has been stable since November 2023, and Google officially supports it for sharing business logic between Android and iOS. It runs in production at large engineering organisations, and at smaller studios shipping multi-role operational platforms with realtime dispatch, payments and offline sync.
 Which is cheaper to build?
 React Native is usually cheaper for a first version, because one team writes one interface. Kotlin Multiplatform is usually cheaper across a two to three year life, because the rules that cause expensive bugs exist once rather than twice, and you do not accumulate a backlog of platform workarounds in the interface layer. If the app will be rewritten in eighteen months either way, that long-run argument does not apply and you should take the cheaper first version.
 Can we migrate an existing React Native app to Kotlin Multiplatform?
@@ -303,7 +303,7 @@ Yes, but not incrementally in the way an Android-to-KMP migration can be. A Reac
 Does Kotlin Multiplatform work for iOS?
 Yes. The shared Kotlin module compiles to a native framework that Swift and SwiftUI consume like any other dependency. The iOS interface is written in Swift, so it behaves like a native iOS app rather than a port. This is the part people find surprising: KMP does not put a Kotlin interface on iOS, and is not trying to.
 What about Flutter?
-Flutter sits on the same side of the line as React Native: it shares the interface and renders it itself, with its own engine rather than a bridge, which makes it faster than React Native at list-heavy screens. The trade-off is the same one in a different form — your interface is not the platform’s, and every native capability arrives through a plugin. The four questions above apply to Flutter unchanged.
+Flutter sits on the same side of the line as React Native: it shares the interface. Unlike React Native, it does not use the platform’s own views; it draws every control itself with its own rendering engine. Every native capability still arrives through a plugin, and the four questions above apply to Flutter unchanged.
 Start the conversation
 #### Not sure which side of the line your product sits on?
 Bring the product, the platforms you need, and the constraints. Twenty minutes is usually enough to answer the four questions above — and if the answer is that you do not need us, you will get that straight.
@@ -324,8 +324,7 @@ The short answer
 Every engagement is quoted as a fixed figure once the scope is clear, and paid against milestones you can inspect. All figures are USD starting ranges.
 AppVion Studio engagements for Kotlin Multiplatform apps, 2026
 Engagement
-Price (USD)
-Time
+Price (USD) and time
 What it covers
 Product Clarity Sprint
 from $1,500
@@ -345,7 +344,7 @@ from $6,000
 An existing app made clearer and faster without a full rebuild
 Care and iteration
 from $900 a month
-Rolling
+rolling
 OS updates, store compliance, bug fixes and a slice of new work each month
 Where the saving comes from
 #### Adding iOS adds 35 to 55 percent, not 100.
@@ -455,7 +454,7 @@ An offline-first app treats the database on the phone as the place work is recor
 Book a free 20-min call See an offline-first build
 The short answer
 #### Offline-first and offline-friendly are not the same thing.
-Most apps that claim to work offline only keep old data readable. Offline-first means new work can be recorded with no signal at all.
+Most apps that claim to work offline only keep old data readable. Offline-first means new work can be recorded with no signal at all. Android's own offline-first guide puts it the same way: the app performs all, or a critical part, of its core work without the internet.
 Offline-friendly vs offline-first mobile apps
 Behaviour
 Offline-friendly
@@ -537,7 +536,7 @@ URL: https://appvionstudio.com/insights/kotlin-multiplatform-vs-flutter/
 
 Choosing a framework
 ### Kotlin Multiplatform vs Flutter for business apps.
-By Ayyaz Sajjad, Founder & CEO · Published 21 Oct 2026
+By Ayyaz Sajjad, Founder & CEO · Published 21 Oct 2026 · Updated 22 Oct 2026
 Both let one team ship Android and iOS. They get there in opposite ways, and for an operational business app that difference decides cost, risk and how the app feels to the people who use it every day. This is the comparison from a studio that builds Kotlin Multiplatform and will say when Flutter is the better call.
 Book a free 20-min call Read KMP vs React Native
 The short answer

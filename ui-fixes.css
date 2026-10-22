@@ -294,3 +294,21 @@ h2.qa-group-title {
     white-space: nowrap;
     border: 0;
 }
+
+/* ------------------------------------------------------------
+   11. Links inside running text (SEO-014).
+
+   The base reset makes every link look like plain text. In the
+   insights articles (official-source links) and the homepage
+   trust paragraph, links inside text are underlined so readers
+   can tell them apart. Buttons and cards are not affected.
+   ------------------------------------------------------------ */
+
+.article-page main p a:not(.button),
+.article-page main li a:not(.button),
+.article-page main th a,
+.confidence-copy p a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
