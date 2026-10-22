@@ -51,7 +51,7 @@
           "headline": "Kotlin Multiplatform vs React Native for business apps",
           "description": "A comparison of Kotlin Multiplatform and React Native for operational business apps: what each framework shares, where each one breaks, and how to choose between them.",
           "datePublished": "2026-09-22",
-          "dateModified": "2026-10-21",
+          "dateModified": "2026-10-22",
           "inLanguage": "en",
           "author": {
             "@type": "Person",
@@ -97,7 +97,7 @@
               "name": "Is Kotlin Multiplatform production ready in 2026?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Kotlin Multiplatform reached stable status in 2024 and is backed by Google for cross-platform development. It is used in production by large engineering teams, and by smaller studios shipping multi-role operational platforms with realtime dispatch, payments and offline sync."
+                "text": "Yes. Kotlin Multiplatform has been stable since November 2023, and Google officially supports it for sharing business logic between Android and iOS. It is used in production by large engineering teams, and by smaller studios shipping multi-role operational platforms with realtime dispatch, payments and offline sync."
               }
             },
             {
@@ -170,7 +170,7 @@
                 <div class="container section-heading">
                     <p class="eyebrow">Choosing a framework</p>
                     <h1>Kotlin Multiplatform vs React Native for business apps.</h1>
-                    <p class="article-byline">By <a href="/ayyaz-sajjad.html">Ayyaz Sajjad</a>, Founder &amp; CEO &middot; Published <time datetime="2026-09-22">22 Sep 2026</time> &middot; Updated <time datetime="2026-10-21">21 Oct 2026</time></p>
+                    <p class="article-byline">By <a href="/ayyaz-sajjad.html">Ayyaz Sajjad</a>, Founder &amp; CEO &middot; Published <time datetime="2026-09-22">22 Sep 2026</time> &middot; Updated <time datetime="2026-10-22">22 Oct 2026</time></p>
                     <p>
                         Most comparisons of these two frameworks are written by people who sell one of them. This one is
                         written by a studio that builds Kotlin Multiplatform products and has shipped against React Native
@@ -214,8 +214,9 @@
                         <p class="eyebrow">What that costs you</p>
                         <p>
                             React Native gives you one interface to build and one to maintain, which is genuinely fast.
-                            The price is that the interface is rendered by a bridge rather than by the platform, so every
-                            native capability arrives through a library someone else maintains.
+                            The price is that your screens are written in JavaScript and React Native
+                            <a href="https://reactnative.dev/docs/intro-react-native-components" target="_blank" rel="noopener noreferrer">turns them into native views</a>
+                            at runtime, so every native capability arrives through a library someone else maintains.
                         </p>
                         <p>
                             Kotlin Multiplatform gives you two interfaces to build. The price is real. What you get back is
@@ -241,7 +242,7 @@
                         <ul class="study-list">
                             <li>Background work and offline sync, where each platform&rsquo;s rules differ and the abstraction leaks</li>
                             <li>Heavy hardware use &mdash; continuous GPS, camera pipelines, Bluetooth &mdash; which usually ends in a native module anyway</li>
-                            <li>Long lists of live data, where the bridge becomes the bottleneck</li>
+                            <li>Long lists of fast-changing data, which need <a href="https://reactnative.dev/docs/optimizing-flatlist-configuration" target="_blank" rel="noopener noreferrer">careful tuning</a> to stay smooth</li>
                             <li>Dependency risk: a critical library going unmaintained is your problem, not the framework&rsquo;s</li>
                             <li>OS upgrades, where you wait for the ecosystem rather than for the platform</li>
                         </ul>
@@ -353,7 +354,7 @@
                     </details>
                     <details class="faq-item reveal in-view">
                         <summary>Is Kotlin Multiplatform production ready in 2026?</summary>
-                        <p>Yes. Kotlin Multiplatform reached stable status in 2024 and is backed by Google for cross-platform development. It runs in production at large engineering organisations, and at smaller studios shipping multi-role operational platforms with realtime dispatch, payments and offline sync.</p>
+                        <p>Yes. Kotlin Multiplatform has been <a href="https://kotlinlang.org/docs/whatsnew1920.html" target="_blank" rel="noopener noreferrer">stable since November 2023</a>, and Google <a href="https://developer.android.com/kotlin/multiplatform" target="_blank" rel="noopener noreferrer">officially supports it</a> for sharing business logic between Android and iOS. It runs in production at large engineering organisations, and at smaller studios shipping multi-role operational platforms with realtime dispatch, payments and offline sync.</p>
                     </details>
                     <details class="faq-item reveal in-view">
                         <summary>Which is cheaper to build?</summary>
@@ -369,7 +370,7 @@
                     </details>
                     <details class="faq-item reveal in-view">
                         <summary>What about Flutter?</summary>
-                        <p>Flutter sits on the same side of the line as React Native: it shares the interface and renders it itself, with its own engine rather than a bridge, which makes it faster than React Native at list-heavy screens. The trade-off is the same one in a different form &mdash; your interface is not the platform&rsquo;s, and every native capability arrives through a plugin. The four questions above apply to Flutter unchanged.</p>
+                        <p>Flutter sits on the same side of the line as React Native: it shares the interface. Unlike React Native, it does not use the platform&rsquo;s own views; it draws every control itself with its own rendering engine. Every native capability still arrives through a plugin, and the four questions above apply to Flutter unchanged.</p>
                     </details>
                 </div>
             </section>

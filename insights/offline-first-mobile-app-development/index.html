@@ -211,7 +211,7 @@
                     <p class="eyebrow">The short answer</p>
                     <h2>Offline-first and offline-friendly are not the same thing.</h2>
                     <p>
-                        Most apps that claim to work offline only keep old data readable. Offline-first means new work can be recorded with no signal at all.
+                        Most apps that claim to work offline only keep old data readable. Offline-first means new work can be recorded with no signal at all. Android's own <a href="https://developer.android.com/topic/architecture/data-layer/offline-first" target="_blank" rel="noopener noreferrer">offline-first guide</a> puts it the same way: the app performs all, or a critical part, of its core work without the internet.
                     </p>
                 </div>
                 <div class="container">
@@ -241,7 +241,7 @@
                 <div class="container choice-grid">
                     <article class="choice-card reveal in-view">
                         <h3>1. A local database as the source of truth</h3>
-                        <p>Screens read from the database on the phone, never straight from the network. We use SQLDelight in Kotlin Multiplatform and Room on Android, encrypted with SQLCipher when the data is sensitive.</p>
+                        <p>Screens read from the database on the phone, never straight from the network. We use <a href="https://sqldelight.github.io/sqldelight/latest/" target="_blank" rel="noopener noreferrer">SQLDelight</a> in Kotlin Multiplatform and <a href="https://developer.android.com/training/data-storage/room" target="_blank" rel="noopener noreferrer">Room</a> on Android, encrypted with SQLCipher when the data is sensitive.</p>
                     </article>
                     <article class="choice-card reveal in-view">
                         <h3>2. An outbox for every change</h3>
@@ -249,7 +249,7 @@
                     </article>
                     <article class="choice-card reveal in-view">
                         <h3>3. A background sync worker</h3>
-                        <p>A worker drains the outbox when the connection returns, even if the app is closed. In Attendance Management a WorkManager job does this, so a register is never lost.</p>
+                        <p>A worker drains the outbox when the connection returns, even if the app is closed. In Attendance Management a <a href="https://developer.android.com/develop/background-work/background-tasks/persistent" target="_blank" rel="noopener noreferrer">WorkManager</a> job does this, so a register is never lost.</p>
                     </article>
                     <article class="choice-card reveal in-view">
                         <h3>4. Conflict rules the server enforces</h3>
