@@ -312,3 +312,115 @@ h2.qa-group-title {
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
 }
+
+/* ------------------------------------------------------------
+   12. QA review fixes (2026-10-22).
+
+   Found by walking every page at 390, 768, 1366 and 1920 px.
+   ------------------------------------------------------------ */
+
+/* Header: the bar is transparent ("User-requested polish" in
+   styles.css), so the brand gets the same frosted pill as the menu
+   and stays readable over the dark bands. */
+.topbar .brand {
+    padding: 13px 18px 13px 13px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.10);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+}
+
+/* Centred headings were left-aligned blocks with centred text. */
+.section-heading.centered { margin-inline: auto; }
+
+/* Headline measure: 12-13ch of Instrument Serif is about 330px,
+   which broke headlines into 6-8 lines and pushed the homepage
+   call to action below the fold on 1366x768 laptops. */
+h1 { max-width: 18ch; }
+.hero h1 { max-width: 16ch; }
+.stack-section .section-heading h2 { max-width: 22ch; }
+.stack-cloud { max-width: 760px; margin-inline: auto; }
+
+/* Case-study heroes: long titles at 72px in a 496px column ran to six
+   lines; the text column gets the larger share and a calmer size. */
+@media (min-width: 1121px) {
+    .study-hero { grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr); }
+    .study-hero h1 { max-width: 22ch; font-size: clamp(42px, 4.4vw, 60px); }
+}
+/* The intro block stacked eyebrow, title, lead, tags and facts with no
+   space between them. */
+.study-hero > div:first-child { display: grid; gap: 16px; align-content: center; }
+.study-hero > div:first-child > * { margin-block: 0; }
+
+/* Three panels in a two-column grid: the last one spans the row
+   instead of sitting alone. */
+@media (min-width: 721px) {
+    .study-grid > :last-child:nth-child(odd):not(:first-child) { grid-column: 1 / -1; }
+}
+
+/* Case-study fact strips: facts as small pills, so a wrapped line
+   never starts with a "/" separator. */
+.study-hero .hero-proof { display: flex; flex-wrap: wrap; gap: 8px; }
+.study-hero .hero-proof span {
+    padding: 4px 10px !important;
+    border: 1px solid rgba(15, 23, 42, 0.12) !important;
+    border-radius: 999px !important;
+}
+.study-hero .hero-proof span + span::before { content: none !important; }
+
+/* Closing call to action on inner pages had no spacing between the
+   eyebrow, heading, text and buttons. */
+.cta-section > .cta-copy { gap: 16px; }
+.cta-copy h2 { max-width: 20ch; }
+.cta-section > .cta-copy .case-actions { margin-top: 8px; }
+
+/* Homepage: "Browse all case studies" sits centred under the grid. */
+#work .container > .case-actions { justify-content: center; }
+
+/* Project cards: the first grid row was fixed at 200px but the phone
+   visual is 230-280px tall, so it spilled into the copy and the label
+   touched the picture. Cards without a visual keep the link at its
+   natural height instead of stretching into an empty box. */
+.case-card:has(> .case-card-visual) { grid-template-rows: auto 1fr auto; }
+.case-card > a { align-self: end; }
+
+/* Work hub: four "Also in the portfolio" cards in two columns. */
+.case-grid.case-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Hero: static first screen shown until showcase.js mounts the
+   interactive prototype (slow connections saw a text placeholder). */
+.hero .device-lab > .shot-phone { width: min(290px, 72vw); margin-inline: auto; }
+
+/* Tap targets of at least 24px (WCAG 2.2) without changing the look. */
+.av-hero-dot { position: relative; }
+.av-hero-dot::after { content: ""; position: absolute; inset: -10px -3px; }
+.footer-address a { display: inline-block; padding-block: 3px; }
+.case-actions > a:not(.button) { display: inline-flex; align-items: center; min-height: 32px; }
+
+@media (max-width: 720px) {
+    h1,
+    .hero h1,
+    .section-heading h2,
+    .section-heading.centered h2,
+    .stack-section .section-heading h2,
+    .work-section .section-heading h2,
+    .confidence-copy h2,
+    .cta-layout h2,
+    .cta-copy h2 { max-width: none; }
+
+    .section { padding: 64px 0; }
+    .case-grid.case-grid-2 { grid-template-columns: 1fr; }
+
+    .topbar .brand { padding: 6px 14px 6px 6px; border-radius: 16px; }
+}
+
+/* Phones: the market comparison table fits the screen instead of
+   hiding its last column, and its caption wraps. */
+@media (max-width: 640px) {
+    .data-table { min-width: 0; font-size: 13px; }
+    .data-table th,
+    .data-table td { padding: 10px 8px; }
+    .data-table caption { padding: 12px 8px 0; }
+}
