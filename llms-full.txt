@@ -15,8 +15,9 @@ URL: https://appvionstudio.com/
 Kotlin Multiplatform & Android studio
 ### Kotlin Multiplatform and Android apps for teams that work in the field.
 AppVion Studio designs and engineers Android Native and Kotlin Multiplatform products for dispatch, approvals, attendance and proof of work — offline-first, and built to hold up under real business pressure. The founder writes the code.
-Book a free 20-min call View Our Work
+Book a free 15-min call View Our Work
 Founder-led delivery Compose-first UI KMP systems
+Site measurementOwners trace their own lot on the map and the app returns the area that the pricing engine then uses.
 Product experience across field operations, university systems, attendance workflows, events, and secure web layers.
 SnowGrid PropFix WUM Connect Attendance Suite D. Delivery
 Featured work
@@ -27,6 +28,11 @@ Flagship build
 Three connected products — customer booking, rider job app, and admin control tower — sharing one Kotlin codebase. Dual video proof of delivery, expanding-radius dispatch, live traffic-aware tracking, and server-enforced cash-on-delivery reconciliation.
 Kotlin Multiplatform Jetpack Compose Supabase Realtime dispatch Proof of delivery
 Read the Case Study Build something like this
+Live on Google Play
+##### SnowGrid: a three-role dispatch platform for snow removal operations.
+One platform for an operator running the fleet, a property owner buying a service, and a contractor working in the field in bad weather. Live dispatch mapping, map-based area measurement, photo verification, and Stripe escrow payments.
+Fleet management Real-time dispatch GPS tracking Stripe payments
+Read the Case Study Get it on Google Play
 Flagship build
 ##### PropFix: a field service command layer for modern maintenance teams.
 A Kotlin Multiplatform maintenance workflow that brings contractor assignment, proof of work, progress visibility, and manager approval into one focused mobile system.
@@ -120,7 +126,7 @@ Engagements
 From fast strategy clarity to full product delivery, every engagement is designed around visible outcomes and practical next steps.
 01
 ##### Product Clarity Sprint
-Best for founders or teams who need scope, user flows, feature priority, and a realistic launch roadmap before hiring build work. Fixed price from $1,500.
+Best for founders or teams who need scope, user flows, feature priority, and a realistic launch roadmap before hiring build work. From $1,500.
 Workflow map
 Feature priority
 Tech direction
@@ -146,7 +152,7 @@ Founder & CEO
 I started AppVion Studio to build apps that field teams can rely on every single day. I stay close to every project, from the first call to launch day.
 ##### Ayyaz Sajjad
 Founder & CEO · Android & Kotlin Multiplatform
-Book 20 min with Ayyaz View Profile
+Book a free 15-min call View Profile
 Project Manager
 ##### Saif Malik
 Keeps projects moving and communication clear between the studio, the team, and clients. Ten years managing delivery across online platforms.
@@ -182,7 +188,7 @@ The best start is a short brief with the product idea, target users, required pl
 Start the conversation
 #### Bring a serious mobile product idea. Leave with a sharper path.
 Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade. AppVion will help turn it into a focused product direction.
-Priority route Book a 20-min App Strategy Session Direct scheduling for founders and B2B teams ready to scope the build. Email ayyaz@appvionstudio.com Opens your email app for briefs, RFP notes, and project context. WhatsApp +92 346 7277143 Fast route for availability, timeline, and quick fit checks.
+Priority route Book a free 15-min call Direct scheduling for founders and B2B teams ready to scope the build. Email ayyaz@appvionstudio.com Opens your email app for briefs, RFP notes, and project context. WhatsApp +92 346 7277143 Fast route for availability, timeline, and quick fit checks.
 Founder-led response within 24 hours.
 Clear next step: strategy call, estimate, or technical review.
 Remote-ready for international clients and product teams.
@@ -220,8 +226,8 @@ React Native shares the interface. Kotlin Multiplatform shares the logic. That o
 Read it
 Start the conversation
 #### Have a decision to make about your mobile product?
-Bring the product and the constraints. Twenty minutes is usually enough to tell you what you are actually choosing between — and if the answer is that you do not need us, you will get that straight.
-Book a 20-min App Strategy Session See the work
+Bring the product and the constraints. Fifteen minutes is usually enough to tell you what you are actually choosing between — and if the answer is that you do not need us, you will get that straight.
+Book a free 15-min call See the work
 
 ======================================================================
 ## Kotlin Multiplatform vs React Native for Business Apps
@@ -303,8 +309,8 @@ What about Flutter?
 Flutter sits on the same side of the line as React Native: it shares the interface. Unlike React Native, it does not use the platform’s own views; it draws every control itself with its own rendering engine. Every native capability still arrives through a plugin, and the four questions above apply to Flutter unchanged.
 Start the conversation
 #### Not sure which side of the line your product sits on?
-Bring the product, the platforms you need, and the constraints. Twenty minutes is usually enough to answer the four questions above — and if the answer is that you do not need us, you will get that straight.
-Book a 20-min App Strategy Session Read about our KMP work
+Bring the product, the platforms you need, and the constraints. Fifteen minutes is usually enough to answer the four questions above — and if the answer is that you do not need us, you will get that straight.
+Book a free 15-min call Read about our KMP work
 
 ======================================================================
 ## Kotlin Multiplatform App Cost in 2026: Real Prices
@@ -315,7 +321,7 @@ Real prices
 ### How much does a Kotlin Multiplatform app cost?
 By Ayyaz Sajjad, Founder & CEO · Published 22 Oct 2026
 A production Kotlin Multiplatform app built by AppVion Studio costs $12,000 to $35,000. A focused first release on Android and iOS lands at $12,000 to $18,000 over 8 to 12 weeks; a multi-role operational platform runs $20,000 to $35,000 over 12 to 16 weeks. These are our published prices. This page explains what moves a project inside that range, and what sits outside it.
-Book a free 20-min call See the full pricing page
+Book a free 15-min call See the full pricing page
 The short answer
 #### Five ways to work together, all fixed price.
 Every engagement is quoted as a fixed figure once the scope is clear, and paid against milestones you can inspect. All figures are USD starting ranges.
@@ -436,8 +442,8 @@ Why start with a Clarity Sprint?
 Because the most expensive projects are the ones that change direction halfway through. The sprint, from $1,500 over one to two weeks, fixes the scope, the workflow map and the technical direction, including whether Kotlin Multiplatform is the right call at all, and ends in a fixed quote.
 Start the conversation
 #### Want a number for your app?
-Describe the roles, the data and the platforms. In twenty minutes we can tell you where in the range it lands and whether Kotlin Multiplatform is worth it.
-Book a free 20-min call WhatsApp us
+Describe the roles, the data and the platforms. In fifteen minutes we can tell you where in the range it lands and whether Kotlin Multiplatform is worth it.
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Offline-First Mobile App Development: How It Works
@@ -448,7 +454,7 @@ Engineering for the field
 ### Offline-first mobile app development: how it actually works.
 By Ayyaz Sajjad, Founder & CEO · Published 22 Oct 2026
 An offline-first app treats the database on the phone as the place work is recorded, and the server as the place it is shared. Every action is saved on the device first and synced when a connection exists, so a rider in a basement or a teacher in a thick-walled lecture hall never waits on a spinner. This is how we build it, from apps we have shipped.
-Book a free 20-min call See an offline-first build
+Book a free 15-min call See an offline-first build
 The short answer
 #### Offline-first and offline-friendly are not the same thing.
 Most apps that claim to work offline only keep old data readable. Offline-first means new work can be recorded with no signal at all. Android's own offline-first guide puts it the same way: the app performs all, or a critical part, of its core work without the internet.
@@ -523,8 +529,8 @@ Can an existing app be made offline-first?
 Usually, if its data layer is separate from its screens. Writes are routed through a local outbox and a sync worker is added. How much has to change first is what a Clarity Sprint establishes.
 Start the conversation
 #### Building something that has to work without a network?
-Attendance, inspections, deliveries, stock counts: if work happens away from a desk, twenty minutes is enough to map what has to work offline and what can wait.
-Book a free 20-min call WhatsApp us
+Attendance, inspections, deliveries, stock counts: if work happens away from a desk, fifteen minutes is enough to map what has to work offline and what can wait.
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Kotlin Multiplatform vs Flutter for Business Apps
@@ -535,7 +541,7 @@ Choosing a framework
 ### Kotlin Multiplatform vs Flutter for business apps.
 By Ayyaz Sajjad, Founder & CEO · Published 21 Oct 2026 · Updated 22 Oct 2026
 Both let one team ship Android and iOS. They get there in opposite ways, and for an operational business app that difference decides cost, risk and how the app feels to the people who use it every day. This is the comparison from a studio that builds Kotlin Multiplatform and will say when Flutter is the better call.
-Book a free 20-min call Read KMP vs React Native
+Book a free 15-min call Read KMP vs React Native
 The short answer
 #### Flutter shares the interface and draws it itself. Kotlin Multiplatform shares the logic.
 Flutter apps are written in Dart and render every pixel with Flutter's own engine. Kotlin Multiplatform shares business logic in Kotlin and, by default, lets each platform draw its own native interface.
@@ -592,8 +598,8 @@ We already have an Android app. Which should we choose?
 If it is written in Kotlin, Kotlin Multiplatform is the natural next step: the domain and data layers can move into a shared module while the Android app keeps working. Moving to Flutter means rewriting the app in Dart. See moving an Android app to Kotlin Multiplatform.
 Start the conversation
 #### Not sure which side of the line your product sits on?
-Twenty minutes is usually enough to tell. We will give you a straight recommendation, even if it is not Kotlin Multiplatform.
-Book a free 20-min call WhatsApp us
+Fifteen minutes is usually enough to tell. We will give you a straight recommendation, even if it is not Kotlin Multiplatform.
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Mobile App Case Studies & Portfolio | AppVion Studio
@@ -638,7 +644,7 @@ Read the Case Study
 Start the conversation
 #### Bring a serious mobile product idea. Leave with a sharper path.
 Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## SnowGrid Case Study: Fleet Dispatch App | AppVion Studio
@@ -724,7 +730,7 @@ See field service apps
 Start the conversation
 #### Running a fleet, a crew, or a dispatch operation?
 Scheduling, job assignment, proof of work, and getting paid for it — if that currently runs on phone calls and a spreadsheet, it is usually a strong candidate for the same treatment.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## D. Delivery Case Study: KMP Logistics App | AppVion Studio
@@ -819,7 +825,7 @@ See delivery apps
 Start the conversation
 #### Have an operations problem that needs a real mobile system?
 Dispatch, proof of work, field teams, cash handling, approvals — if the workflow currently lives in WhatsApp and a spreadsheet, it is usually a strong candidate for the same treatment.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## PropFix Case Study: Work Order App | AppVion Studio
@@ -897,7 +903,7 @@ See field service apps
 Start the conversation
 #### Managing properties, crews, or contractors?
 Job assignment, proof of work, and getting paid for it — if that runs on phone calls and a spreadsheet today, it is usually a strong candidate for the same treatment.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## GMassPulse Case Study: Email Outreach App | AppVion Studio
@@ -981,7 +987,7 @@ Browse all case studies
 Start the conversation
 #### Have a SaaS idea that belongs on a phone?
 Automation, live data, third-party API integration, OAuth — if the product only exists as a desktop dashboard today, there is usually a sharper mobile-first version of it.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## WUM Connect Case Study: University App | AppVion Studio
@@ -1058,7 +1064,7 @@ Browse all case studies
 Start the conversation
 #### Running an institution on notice boards and group chats?
 Announcements, records, results, and role-specific access are a well-understood problem with a well-understood shape. Bring the workflow and we will scope it properly.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Attendance Management Case Study | AppVion Studio
@@ -1131,7 +1137,7 @@ Browse all case studies
 Start the conversation
 #### Tracking something that has to work without a network?
 Attendance, inspections, stock counts, field surveys — anything captured away from a desk needs offline-first design from the start, not bolted on later. How offline-first apps work.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Sports Society Events Case Study | AppVion Studio
@@ -1206,7 +1212,7 @@ Browse all case studies
 Start the conversation
 #### Coordinating events, teams, or memberships?
 Registration, communication, and a record that lasts past the event are the three pieces most community platforms get wrong. Bring the workflow and we will scope it properly.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Mobile App Development Cost in 2026 | AppVion Studio Pricing
@@ -1332,8 +1338,8 @@ No. Engagements are split across milestones, with a deposit to begin and the rem
 ##### Who owns the code and the app?
 The client does, in full, on final payment. That includes the source code, the repository, the store listings, the backend accounts, and the design files. AppVion does not retain a licence or hold accounts hostage.
 #### Get a real number for your product.
-Send a short brief or book a 20-minute call. You will get a scope view and an honest range, whether or not you build with AppVion.
-Book a free 20-min call Send a Project Brief
+Send a short brief or book a 15-minute call. You will get a scope view and an honest range, whether or not you build with AppVion.
+Book a free 15-min call Send a Project Brief
 #### Keep reading
 See the workSeven products, described screen by screen. Android developmentWhat native Kotlin and Compose buy you. Full FAQTimelines, ownership, process, and technology.
 
@@ -1392,8 +1398,8 @@ Typically the current Android release back four or five versions, which covers t
 ##### Can you take over an existing Android app?
 Yes. That usually starts with an architecture and code review to establish what is salvageable, followed by a staged plan so the app keeps shipping while it is modernised. A full stop-and-rewrite is rarely the right answer for a product with live users.
 #### Have an Android product in mind?
-Send a short brief or book a 20-minute call. You will leave with a clearer scope and an honest range.
-Book a free 20-min call Send a Project Brief
+Send a short brief or book a 15-minute call. You will leave with a clearer scope and an honest range.
+Book a free 15-min call Send a Project Brief
 #### Keep reading
 Kotlin MultiplatformShare logic, keep the interface native. PricingReal numbers, not a contact form. See the workSeven products, screen by screen. Add iOS laterMove an Android app to Kotlin Multiplatform.
 
@@ -1405,7 +1411,7 @@ URL: https://appvionstudio.com/services/kotlin-multiplatform-development/
 Kotlin Multiplatform development
 ### Kotlin Multiplatform development: share the logic, keep the interface native.
 One Kotlin module holds your domain models, business rules, networking, and local storage. Android and iOS each keep a genuinely native interface on top. You stop maintaining the same pricing rule in two languages, and your users never feel like they are using a port.
-Book a 20-min App Strategy Session See a KMP build in detail
+Book a free 15-min call See a KMP build in detail
 The actual argument
 #### The bug you cannot afford is the one that exists on only one platform.
 Cross-platform frameworks are usually sold on cost. That is the least interesting benefit. The real one is consistency: when a fare calculation, an order state machine, or a permission rule exists once instead of twice, it cannot silently disagree with itself between your Android and iOS users.
@@ -1478,7 +1484,7 @@ When you only need one platform and have no near-term plan for the second, KMP a
 Start the conversation
 #### Considering Kotlin Multiplatform for your product?
 Bring the product, the platforms you need, and the constraints. If KMP is the wrong tool for it, that is a useful answer to get early — and you will get it straight.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Move an Android App to Kotlin Multiplatform | AppVion Studio
@@ -1488,7 +1494,7 @@ URL: https://appvionstudio.com/services/android-to-kotlin-multiplatform/
 Kotlin Multiplatform migration
 ### Add iOS to your Android app without starting again.
 If your Android app is written in Kotlin, most of what makes it valuable can be shared with iOS: the business rules, the data layer, the networking and the offline storage. We move those into a shared Kotlin module step by step, keep your Android app shipping the whole time, and build the iOS app on the same core.
-Book a free 20-min call How we do Kotlin Multiplatform
+Book a free 15-min call How we do Kotlin Multiplatform
 How the move runs
 #### Five steps, and the Android app never stops.
 ##### 1. Map the layers
@@ -1547,8 +1553,8 @@ How long does it take and what does it cost?
 It depends on how cleanly the app is layered today, which is exactly what the Clarity Sprint (from $1,500, one to two weeks) establishes. You get a fixed quote and timeline before any build starts; full builds run $12,000 to $35,000.
 Start the conversation
 #### Have an Android app and an iOS plan?
-Send us the repository or describe the app. In twenty minutes we can tell you how much of it can be shared.
-Book a free 20-min call WhatsApp us
+Send us the repository or describe the app. In fifteen minutes we can tell you how much of it can be shared.
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Field Service App Development | AppVion Studio
@@ -1558,7 +1564,7 @@ URL: https://appvionstudio.com/field-service-app-development/
 Field service app development
 ### Field service apps for crews, dispatchers and the customers they serve.
 Jobs that live in phone calls, quotes that are guessed, and "it's done" with no proof: we replace that with one system where the office, the crew and the customer read the same job. Built from two field products we have shipped, SnowGrid and PropFix.
-Book a free 20-min call See SnowGrid
+Book a free 15-min call See SnowGrid
 What breaks without a system
 #### Field work is coordinated by whoever keeps chasing it.
 ##### Dispatch by phone
@@ -1620,8 +1626,8 @@ What does a field service app cost?
 Multi-role operational platforms run $20,000 to $35,000 over 12 to 16 weeks. A focused first release is $12,000 to $18,000. Most projects start with a $1,500 Clarity Sprint that ends in a fixed quote.
 Start the conversation
 #### Running crews, contractors or a dispatch desk?
-If jobs still run on calls and a spreadsheet, twenty minutes is enough to map what an app would change.
-Book a free 20-min call WhatsApp us
+If jobs still run on calls and a spreadsheet, fifteen minutes is enough to map what an app would change.
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Delivery & Courier App Development | AppVion Studio
@@ -1694,8 +1700,8 @@ What does a delivery app cost?
 A multi-app delivery platform sits in the $20,000 to $35,000 range over 12 to 16 weeks. A focused first release is $12,000 to $18,000. Most projects start with a $1,500 Clarity Sprint that ends in a fixed quote.
 Start the conversation
 #### Running deliveries on WhatsApp and a ledger?
-Twenty minutes is enough to map the booking, dispatch and proof flow your business needs.
-Book a free 20-min call WhatsApp us
+Fifteen minutes is enough to map the booking, dispatch and proof flow your business needs.
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Mobile App Development FAQ | AppVion Studio
@@ -1779,8 +1785,8 @@ Fifteen to twenty-five percent of the original build cost per year is the usual 
 ##### What if I want to take maintenance in-house?
 Then you take it in-house. You already own everything, the architecture is conventional, and AppVion will run a handover with your team.
 #### Question not answered here?
-Ask it directly. Email, WhatsApp, or a 20-minute call — you will get a straight answer within 24 hours.
-Book a free 20-min call Send a Project Brief
+Ask it directly. Email, WhatsApp, or a 15-minute call — you will get a straight answer within 24 hours.
+Book a free 15-min call Send a Project Brief
 #### Keep reading
 PricingReal numbers and what moves them. About the studioWho does the work, and where. See the workSeven products, screen by screen.
 
@@ -1854,8 +1860,8 @@ Summary for AI assistants: llms.txt
 LinkedIn: AppVion Studio
 Direct line to the founder: ayyaz@appvionstudio.com
 #### Start with a conversation, not a contract.
-Twenty minutes is usually enough to tell whether this is a good fit in either direction.
-Book a free 20-min call Send a Project Brief
+Fifteen minutes is usually enough to tell whether this is a good fit in either direction.
+Book a free 15-min call Send a Project Brief
 #### Keep reading
 See the workSeven products, screen by screen. PricingWhat engagements cost. Full FAQTwenty-eight questions answered directly.
 
@@ -1868,7 +1874,7 @@ Mobile app development company in Pakistan
 ### A mobile app development company in Pakistan building systems businesses actually run on.
 AppVion Studio is a founder-led mobile product studio. The work is Android Native and Kotlin Multiplatform, and the products are operational: delivery dispatch, field service management, cash reconciliation, proof of work, outreach automation. Software that a team opens every day and depends on — not a brochure with a login screen.
 The studio is based in Multan and works remote-first with clients in Lahore, Karachi, Islamabad, across Pakistan, and internationally.
-Book a 20-min App Strategy Session See our case studies
+Book a free 15-min call See our case studies
 Hiring from abroad
 #### Why teams abroad hire a studio in Pakistan.
 The honest reason is cost without the usual trade-off. A senior studio in Pakistan charges a fraction of a US or European agency, and you can judge the work on a small engagement before committing to a build.
@@ -1920,7 +1926,7 @@ You should not, on assertion alone. That is why AppVion publishes working protot
 Start the conversation
 #### Hiring from abroad? Start with a $1,500 scoping sprint.
 Judge the work on a small, fixed-price engagement before committing to a build.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Mobile App Development Company in Multan | AppVion Studio
@@ -1931,7 +1937,7 @@ Mobile app development company in Multan
 ### A mobile app development company in Multan building systems businesses actually run on.
 AppVion Studio is based on LMQ Road at Katchery Chowk, Multan. The work is Android Native and Kotlin Multiplatform, and the products are operational: delivery dispatch, field service management, cash reconciliation, proof of work, outreach automation. Software a team opens every day and depends on — not a brochure with a login screen.
 Based in Multan Serving Pakistan & international clients Founder-led
-Book a 20-min App Strategy Session See our case studies
+Book a free 15-min call See our case studies
 Visit or reach us
 #### Where we are.
 Address
@@ -2005,7 +2011,7 @@ A short brief covering the product idea, who uses it, which platforms you need, 
 Start the conversation
 #### Building something in Multan? Let's scope it properly.
 Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade.
-Book a 20-min App Strategy Session WhatsApp us
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Ayyaz Sajjad | Founder at AppVion Studio
@@ -2052,7 +2058,7 @@ Secure institution-facing mobile layer for protected content, document access, a
 Watch Demo
 ##### Work with the studio
 Best fit: mobile products where taste, architecture, and practical business execution all matter.
-Contact AppVion Studio
+Email ayyaz@appvionstudio.com
 
 ======================================================================
 ## Saif Malik | Project Manager at AppVion Studio
