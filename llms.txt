@@ -63,8 +63,8 @@ Each covers the problem, the engineering decisions that made the product trustwo
 
 - [Ayyaz Sajjad](https://appvionstudio.com/ayyaz-sajjad.html) — Founder & CEO. Product strategy, Android engineering, Kotlin Multiplatform.
 - [Saif Malik](https://appvionstudio.com/saif-malik.html) — Project Manager. Delivery and client communication; ten years managing delivery across online platforms.
-- [Tayyaba Sajjad](https://appvionstudio.com/tayyaba-sajjad.html) — Developer.
-- [Momina Shah](https://appvionstudio.com/momina-shah.html) — Studio Associate.
+- Tayyaba Sajjad — Developer.
+- Momina Shah — Studio Associate.
 
 ## Insights articles
 

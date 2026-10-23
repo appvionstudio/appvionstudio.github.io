@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-10-22 from the 26 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-10-23 from the 26 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -17,9 +17,8 @@ Kotlin Multiplatform & Android studio
 AppVion Studio designs and engineers Android Native and Kotlin Multiplatform products for dispatch, approvals, attendance and proof of work — offline-first, and built to hold up under real business pressure. The founder writes the code.
 Book a free 20-min call View Our Work
 Founder-led delivery Compose-first UI KMP systems
-Interactive product prototypes load here: real screens from SnowGrid (enterprise snow-removal operations), GMassPulse (outreach infrastructure), and PropFix (Kotlin Multiplatform field service). Every product is written up in full under our work.
 Product experience across field operations, university systems, attendance workflows, events, and secure web layers.
-PropFix WUM Connect Attendance Suite D. Delivery
+SnowGrid PropFix WUM Connect Attendance Suite D. Delivery
 Featured work
 #### Case studies built around real operational pressure.
 The portfolio is shaped around practical systems: dispatch, approval, communication, data-heavy browsing, secure access, and mobile-first business execution.
@@ -95,7 +94,7 @@ Proof system
 AppVion presents verifiable product depth: public demos, concrete workflows, visible founder accountability, and a modern technical base.
 07 Portfolio products and concepts presented with demos or clear product scope.
 04 Core domains covered: operations, delivery, education, and events.
-01 Founder-led accountability path from strategy to implementation review.
+02 Apps live on Google Play: SnowGrid and the D. Delivery customer app.
 24h Fast first response target for qualified strategy conversations.
 Why choose AppVion
 #### Why teams choose AppVion Studio
@@ -121,19 +120,19 @@ Engagements
 From fast strategy clarity to full product delivery, every engagement is designed around visible outcomes and practical next steps.
 01
 ##### Product Clarity Sprint
-Best for founders or teams who need scope, user flows, feature priority, and a realistic launch roadmap before hiring build work.
+Best for founders or teams who need scope, user flows, feature priority, and a realistic launch roadmap before hiring build work. Fixed price from $1,500.
 Workflow map
 Feature priority
 Tech direction
 02
 ##### Premium App Build
-Best for serious mobile products that need strategy, UI, Android/KMP engineering, backend integration, and launch refinement.
+Best for serious mobile products that need strategy, UI, Android/KMP engineering, backend integration, and launch refinement. Builds run $12,000 to $35,000.
 Compose UI system
 API/backend integration
 Release support
 03
 ##### Redesign & Scale
-Best for existing apps that feel dated, confusing, slow, or hard to trust and need a premium product experience upgrade.
+Best for existing apps that feel dated, confusing, slow, or hard to trust and need a premium product experience upgrade. From $6,000.
 UX audit
 Interface redesign
 Architecture review
@@ -155,11 +154,9 @@ View Profile
 Developer
 ##### Tayyaba Sajjad
 Supports product delivery, UI implementation, and growing development execution within the studio workflow.
-View Profile
 Studio Associate
 ##### Momina Shah
 Strengthens the team-facing studio presence with space for future coordination, support, and client-facing contributions.
-View Profile
 Insights
 #### Guides for teams planning a mobile product.
 Engineering
@@ -185,7 +182,7 @@ The best start is a short brief with the product idea, target users, required pl
 Start the conversation
 #### Bring a serious mobile product idea. Leave with a sharper path.
 Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade. AppVion will help turn it into a focused product direction.
-Priority route Book a 20-min App Strategy Session Direct scheduling for founders and B2B teams ready to scope the build. Email ayyaz@appvionstudio.com Opens Gmail compose for briefs, RFP notes, and project context. WhatsApp +92 346 7277143 Fast route for availability, timeline, and quick fit checks.
+Priority route Book a 20-min App Strategy Session Direct scheduling for founders and B2B teams ready to scope the build. Email ayyaz@appvionstudio.com Opens your email app for briefs, RFP notes, and project context. WhatsApp +92 346 7277143 Fast route for availability, timeline, and quick fit checks.
 Founder-led response within 24 hours.
 Clear next step: strategy call, estimate, or technical review.
 Remote-ready for international clients and product teams.
@@ -195,7 +192,7 @@ Keep it practical: product goal, target users, platform, timeline, and the busin
 Name Email
 Project type Select one Android app Kotlin Multiplatform app Business tool App redesign Product strategy Timeline Select one ASAP 2-4 weeks 1-3 months Planning stage
 Project brief
-Secure intake: saved to the AppVion dashboard with admin email notification.
+Your brief goes straight to Ayyaz. We reply within 24 hours.
 
 ======================================================================
 ## Android & Kotlin Multiplatform Insights | AppVion Studio
@@ -607,23 +604,14 @@ Case studies
 ### Mobile app development case studies built around real operational pressure.
 Every project here started as a workflow that was breaking — dispatch by phone call, proof by memory, pricing by guesswork, reconciliation by spreadsheet. Each case study covers the problem, the approach, the engineering decisions that were harder than they look, and where the build actually stands.
 #### Flagship platforms
-D. Delivery KMP
-Rider job flow Order in transit Pickup video captured. Drop-off proof pending.
-Customer Rider Admin
 Logistics platform
 ##### D. Delivery
 Three-app Kotlin Multiplatform delivery platform with dual video proof of delivery, expanding-radius dispatch, live tracking, and server-enforced cash-on-delivery reconciliation.
 Read the Case Study
-SnowGrid Live
-Live dispatch Nearest crew matched Quote priced from measured area and snow depth.
-Admin Customer Contractor
 Fleet dispatch platform
 ##### SnowGrid
 Three-role snow removal management platform with live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and Stripe escrow payments.
 Read the Case Study
-GMassPulse Live
-Live campaign feed Opens streaming Sends, opens, and clicks across every campaign.
-Import Compose Track
 Email automation platform
 ##### GMassPulse
 Mobile-first outreach platform with Google OAuth, Drive lead import, personalised campaign composition, automated follow-ups, and real-time open tracking.
@@ -747,8 +735,8 @@ Logistics & delivery platform
 ### D. Delivery: a Kotlin Multiplatform logistics platform built around verifiable proof of delivery.
 Three connected products — a customer booking app, a rider job app, and an admin control tower — engineered so that every parcel movement leaves behind evidence that holds up in a dispute, and every rupee of cash-on-delivery is reconciled against the platform's own ledger rather than a rider's word.
 Kotlin Multiplatform Jetpack Compose Supabase Realtime dispatch Proof of delivery
-3 apps, 1 shared codebase 2 mandatory video proofs per delivery Release candidate
-Published 16 Aug 2026 · Updated 21 Oct 2026
+3 apps, 1 shared codebase 2 mandatory video proofs per delivery Customer app on Google Play
+Published 16 Aug 2026 · Updated 23 Oct 2026
 Get it on Google Play Build something like this See more work
 The problem
 #### Courier disputes are won by whoever has evidence — and nobody had any.
@@ -808,8 +796,8 @@ Technology
 #### The stack behind D. Delivery.
 Kotlin Multiplatform Jetpack Compose Coroutines & Flow Supabase Postgres Supabase Realtime Supabase Storage Row-Level Security Ktor Client SQLDelight SQLCipher Koin WorkManager CameraX ML Kit Firebase Cloud Messaging Firebase Crashlytics Google Maps & Places Google Routes API Edge Functions
 Where it stands
-#### Feature-complete and security-hardened, in pre-launch.
-The customer and rider apps are functionally complete across booking, dispatch, tracking, proof capture, payments, wallet, and settlement. The platform has been through a structured security pass covering access control, fare tampering, rate limiting, input validation, encrypted session and database storage, and crash reporting. Remaining work before public release is signing, store submission, and a final device-verification pass on the release build — deliberately not claimed as done until it is.
+#### The customer app is live on Google Play.
+The customer and rider apps are functionally complete across booking, dispatch, tracking, proof capture, payments, wallet, and settlement. The platform has been through a structured security pass covering access control, fare tampering, rate limiting, input validation, encrypted session and database storage, and crash reporting. The customer app is published on Google Play; the rider app and the admin control tower run on the same shared Kotlin codebase.
 More case studies
 #### Other operational systems we have built.
 Fleet dispatch platform
@@ -1249,7 +1237,7 @@ Core workflow and screen inventory
 Feature priority with a cut line
 Technical direction and stack choice
 Build estimate you can take to any studio
-Discuss this
+Discuss a Clarity Sprint
 02 · 8–16 weeks
 ##### Premium App Build
 $12,000 – $35,000USD
@@ -1259,7 +1247,7 @@ Multi-role operational platforms run $20,000–$35,000
 Jetpack Compose interface system
 Backend integration: Supabase, Firebase, or your existing API
 Store submission and launch support
-Discuss this
+Discuss a build
 03 · 4–8 weeks
 ##### Redesign & Scale
 from $6,000USD
@@ -1268,7 +1256,7 @@ UX audit against real user tasks
 Interface redesign and design system
 Architecture and performance review
 Staged rollout so the app keeps shipping
-Discuss this
+Discuss a redesign
 04 · Rolling
 ##### Care & Iteration
 from $900/moUSD
@@ -1277,7 +1265,7 @@ OS and dependency updates
 Store policy compliance
 Bug fixes with agreed response times
 A budgeted slice of new feature work each month
-Discuss this
+Discuss a retainer
 #### How this compares to the rest of the market.
 The largest single variable in software pricing is not the app. It is where the engineers sit. The same product specification produces wildly different invoices depending on the team's cost base, and a large part of a Western agency's rate funds sales, account management, and office overhead rather than engineering.
 Typical 2026 rates for mobile app development
@@ -1643,7 +1631,7 @@ URL: https://appvionstudio.com/delivery-app-development/
 Delivery and courier app development
 ### Delivery apps where every parcel leaves evidence.
 Customer booking, rider dispatch, live tracking and cash-on-delivery that reconciles against the platform's own ledger. Built from D. Delivery, our three-app Kotlin Multiplatform courier platform, whose customer app is live on Google Play.
-Get D. on Google Play Read the D. Delivery case study
+Get D. Delivery on Google Play Read the D. Delivery case study
 The real problem
 #### Courier disputes are won by whoever has evidence.
 In D. Delivery the goods were phones, laptops and electronics, where one disputed parcel can cost more than a month of delivery revenue. Bookings ran on WhatsApp, cash was reconciled by hand, and riders were assigned by whoever answered first.
@@ -1847,9 +1835,9 @@ Leads AppVion Studio across product strategy, Android engineering, Kotlin Multip
 ##### Saif Malik — Project Manager
 Keeps projects moving and communication clear between the studio, the team, and clients. Ten years managing delivery across online platforms. View profile.
 ##### Tayyaba Sajjad — Developer
-Supports product delivery, interface implementation, and development execution within the studio workflow. View profile.
+Supports product delivery, interface implementation, and development execution within the studio workflow.
 ##### Momina Shah — Studio Associate
-Strengthens the team-facing studio presence, coordination, support, and client-facing contributions. View profile.
+Strengthens the team-facing studio presence, coordination, support, and client-facing contributions.
 #### What the studio does.
 Android app development in Kotlin and Jetpack Compose
 Kotlin Multiplatform systems sharing business logic across Android and iOS

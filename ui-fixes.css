@@ -376,22 +376,38 @@ h1 { max-width: 18ch; }
 .cta-copy h2 { max-width: 20ch; }
 .cta-section > .cta-copy .case-actions { margin-top: 8px; }
 
+/* Homepage product strip: five names in a fixed 4- or 2-column grid
+   left one alone on its own row; a wrapping row fits any count. */
+.proof-logos { display: flex !important; flex-wrap: wrap; }
+
 /* Homepage: "Browse all case studies" sits centred under the grid. */
 #work .container > .case-actions { justify-content: center; }
 
-/* Project cards: the first grid row was fixed at 200px but the phone
-   visual is 230-280px tall, so it spilled into the copy and the label
-   touched the picture. Cards without a visual keep the link at its
-   natural height instead of stretching into an empty box. */
-.case-card:has(> .case-card-visual) { grid-template-rows: auto 1fr auto; }
-.case-card > a { align-self: end; }
+/* Project cards: the base grid (styles.css .case-card,
+   "200px 1fr auto") fixed the first row at 200px. Phone visuals are
+   230-280px tall and spilled into the copy; cards without a visual put
+   their eyebrow or text in that 200px row and stretched the link into
+   an empty box. A column lets every child take its natural height and
+   pins the call to action to the bottom of equal-height cards. */
+.case-card { display: flex; flex-direction: column; }
+.case-card > a,
+.case-card > .av-card-actions { margin-top: auto; }
+
+/* Insights hub: the article cards put their text straight in the card
+   (no wrapper div), so it ran flush to the card edges and the h2 used
+   the full section-heading size. Same inner padding as other cards. */
+.case-card > p,
+.case-card > h2 { margin: 0; padding-inline: 24px; }
+.case-card > .eyebrow:first-child { padding-top: 28px; }
+.case-card > h2 { max-width: none; font-size: clamp(26px, 2.4vw, 32px); line-height: 1.12; }
+.case-card > .case-actions { margin-top: auto; padding: 4px 24px 24px; }
 
 /* Work hub: four "Also in the portfolio" cards in two columns. */
 .case-grid.case-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-/* Hero: static first screen shown until showcase.js mounts the
-   interactive prototype (slow connections saw a text placeholder). */
-.hero .device-lab > .shot-phone { width: min(290px, 72vw); margin-inline: auto; }
+/* Profile and legal page titles kept the old 12ch measure through
+   the more specific .profile-copy h1 rule (styles.css). */
+.profile-copy h1 { max-width: 20ch; }
 
 /* Tap targets of at least 24px (WCAG 2.2) without changing the look. */
 .av-hero-dot { position: relative; }
@@ -408,10 +424,19 @@ h1 { max-width: 18ch; }
     .work-section .section-heading h2,
     .confidence-copy h2,
     .cta-layout h2,
-    .cta-copy h2 { max-width: none; }
+    .cta-copy h2,
+    .profile-copy h1 { max-width: none; }
 
     .section { padding: 64px 0; }
+    /* The homepage hero is also a .section; its phone spacing is set
+       on purpose rather than inherited from the rule above. */
+    .hero.section { padding: 72px 0 56px; }
     .case-grid.case-grid-2 { grid-template-columns: 1fr; }
+
+    /* Hero proof line: a wrapped line started with a "/" separator. */
+    .hero .hero-proof { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+    .hero .hero-proof span::before,
+    .hero .hero-proof span + span::before { content: none !important; display: none !important; }
 
     .topbar .brand { padding: 6px 14px 6px 6px; border-radius: 16px; }
 }

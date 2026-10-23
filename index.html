@@ -45,7 +45,7 @@
     <link rel="apple-touch-icon" href="appvion-logo-icon.png">
     <link rel="stylesheet" href="styles.css?v=20261021-perf">
     <link rel="stylesheet" href="showcase.css?v=20260822-cases">
-    <link rel="stylesheet" href="ui-fixes.css?v=20261022-qa">
+    <link rel="stylesheet" href="ui-fixes.css?v=20261023-qa3">
     <link rel="alternate" type="text/plain" href="https://appvionstudio.com/llms.txt" title="Machine-readable summary for AI assistants">
     <script src="showcase-data.js?v=20261021-store2" defer></script>
     <script src="showcase.js?v=20261021-store2" defer></script>
@@ -573,7 +573,6 @@
                   "@id": "https://appvionstudio.com/tayyaba-sajjad.html#person",
                   "name": "Tayyaba Sajjad",
                   "jobTitle": "Developer",
-                  "url": "https://appvionstudio.com/tayyaba-sajjad.html",
                   "worksFor": {
                         "@id": "https://appvionstudio.com/#organization"
                   }
@@ -583,7 +582,6 @@
                   "@id": "https://appvionstudio.com/momina-shah.html#person",
                   "name": "Momina Shah",
                   "jobTitle": "Studio Associate",
-                  "url": "https://appvionstudio.com/momina-shah.html",
                   "worksFor": {
                         "@id": "https://appvionstudio.com/#organization"
                   }
@@ -648,8 +646,11 @@
 
                     <div class="hero-visual reveal" data-parallax>
                         <div class="product-console">
-                            <div class="device-lab">
-                                <div class="shot-phone"><img src="assets/screens/snowgrid/site-measurement.webp" alt="SnowGrid app: a property owner marks their lot on a satellite map to measure it" width="600" height="1300" fetchpriority="high" decoding="async"></div>
+                            <div class="device-lab av-hero-lab">
+                                <!-- Same markup showcase.js builds for the first hero screen, so the swap to the interactive version does not move the layout. -->
+                                <div class="av-hero-trigger"><div class="av-device"><div class="av-device-tilt"><div class="av-device-frame"><span class="av-device-notch"></span><div class="av-device-screen"><div class="av-stage"><div class="av-screen av-screen-image" data-kind="image" data-screen="site-measurement" data-tone="blue"><img src="assets/screens/snowgrid/site-measurement.webp" width="600" height="1300" fetchpriority="high" decoding="async" alt="SnowGrid app: a property owner marks their lot on a satellite map to measure it"></div></div></div></div></div></div></div>
+                                <div class="av-hero-dots" aria-hidden="true"><span class="av-hero-dot is-on"></span><span class="av-hero-dot"></span><span class="av-hero-dot"></span></div>
+                                <p class="av-hero-caption"><b>Site measurement</b><i>Owners trace their own lot on the map and the app returns the area that the pricing engine then uses.</i></p>
                             </div>
                         </div>
                     </div>
@@ -660,6 +661,7 @@
                 <div class="container proof-strip-grid reveal">
                     <p>Product experience across field operations, university systems, attendance workflows, events, and secure web layers.</p>
                     <div class="proof-logos">
+                        <span>SnowGrid</span>
                         <span>PropFix</span>
                         <span>WUM Connect</span>
                         <span>Attendance Suite</span>
@@ -929,8 +931,8 @@
                             <span>Core domains covered: operations, delivery, education, and events.</span>
                         </article>
                         <article>
-                            <strong>01</strong>
-                            <span>Founder-led accountability path from strategy to implementation review.</span>
+                            <strong>02</strong>
+                            <span>Apps live on Google Play: SnowGrid and the D. Delivery customer app.</span>
                         </article>
                         <article>
                             <strong>24h</strong>
@@ -1008,7 +1010,7 @@
                         <article class="engagement-card reveal">
                             <span>01</span>
                             <h3>Product Clarity Sprint</h3>
-                            <p>Best for founders or teams who need scope, user flows, feature priority, and a realistic launch roadmap before hiring build work.</p>
+                            <p>Best for founders or teams who need scope, user flows, feature priority, and a realistic launch roadmap before hiring build work. From $1,500.</p>
                             <ul>
                                 <li>Workflow map</li>
                                 <li>Feature priority</li>
@@ -1018,7 +1020,7 @@
                         <article class="engagement-card featured reveal">
                             <span>02</span>
                             <h3>Premium App Build</h3>
-                            <p>Best for serious mobile products that need strategy, UI, Android/KMP engineering, backend integration, and launch refinement.</p>
+                            <p>Best for serious mobile products that need strategy, UI, Android/KMP engineering, backend integration, and launch refinement. Builds run $12,000 to $35,000.</p>
                             <ul>
                                 <li>Compose UI system</li>
                                 <li>API/backend integration</li>
@@ -1028,7 +1030,7 @@
                         <article class="engagement-card reveal">
                             <span>03</span>
                             <h3>Redesign & Scale</h3>
-                            <p>Best for existing apps that feel dated, confusing, slow, or hard to trust and need a premium product experience upgrade.</p>
+                            <p>Best for existing apps that feel dated, confusing, slow, or hard to trust and need a premium product experience upgrade. From $6,000.</p>
                             <ul>
                                 <li>UX audit</li>
                                 <li>Interface redesign</li>
@@ -1104,14 +1106,12 @@
                             <span>Developer</span>
                             <h3>Tayyaba Sajjad</h3>
                             <p>Supports product delivery, UI implementation, and growing development execution within the studio workflow.</p>
-                            <a class="button secondary" href="tayyaba-sajjad.html">View Profile</a>
                         </article>
                         <article class="team-card reveal">
                             <img class="team-photo" src="assets/team/momina-shah.jpg" alt="Momina Shah, Studio Associate at AppVion Studio" loading="lazy" style="--team-photo-x:50%;--team-photo-y:28%;">
                             <span>Studio Associate</span>
                             <h3>Momina Shah</h3>
                             <p>Strengthens the team-facing studio presence with space for future coordination, support, and client-facing contributions.</p>
-                            <a class="button secondary" href="momina-shah.html">View Profile</a>
                         </article>
                     </div>
                 </div>
@@ -1255,7 +1255,7 @@
                             <textarea name="message" rows="5" placeholder="Tell us the product idea, target users, must-have features, and current stage." required></textarea>
                         </label>
                         <button class="button primary" type="submit">Send Project Brief</button>
-                        <p class="form-status" data-form-status aria-live="polite">Secure intake: saved to the AppVion dashboard with admin email notification.</p>
+                        <p class="form-status" data-form-status aria-live="polite">Your brief goes straight to Ayyaz. We reply within 24 hours.</p>
                     </form>
                 </div>
             </section>
