@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-10-23 from the 26 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-10-23 from the 28 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -23,15 +23,15 @@ SnowGrid PropFix WUM Connect Attendance Suite D. Delivery
 Featured work
 #### Case studies built around real operational pressure.
 The portfolio is shaped around practical systems: dispatch, approval, communication, data-heavy browsing, secure access, and mobile-first business execution.
-Flagship build
-##### D. Delivery: a Kotlin Multiplatform logistics platform built around verifiable proof of delivery.
-Three connected products — customer booking, rider job app, and admin control tower — sharing one Kotlin codebase. Dual video proof of delivery, expanding-radius dispatch, live traffic-aware tracking, and server-enforced cash-on-delivery reconciliation.
-Kotlin Multiplatform Jetpack Compose Supabase Realtime dispatch Proof of delivery
-Read the Case Study Build something like this
 Live on Google Play
 ##### SnowGrid: a three-role dispatch platform for snow removal operations.
 One platform for an operator running the fleet, a property owner buying a service, and a contractor working in the field in bad weather. Live dispatch mapping, map-based area measurement, photo verification, and Stripe escrow payments.
 Fleet management Real-time dispatch GPS tracking Stripe payments
+Read the Case Study Get it on Google Play
+Live on Google Play
+##### D. Delivery: a Kotlin Multiplatform logistics platform built around verifiable proof of delivery.
+Three connected products — customer booking, rider job app, and admin control tower — sharing one Kotlin codebase. Dual video proof of delivery, expanding-radius dispatch, live traffic-aware tracking, and server-enforced cash-on-delivery reconciliation.
+Kotlin Multiplatform Jetpack Compose Supabase Realtime dispatch Proof of delivery
 Read the Case Study Get it on Google Play
 Flagship build
 ##### PropFix: a field service command layer for modern maintenance teams.
@@ -159,10 +159,12 @@ Keeps projects moving and communication clear between the studio, the team, and 
 View Profile
 Developer
 ##### Tayyaba Sajjad
-Supports product delivery, UI implementation, and growing development execution within the studio workflow.
+Builds app interfaces from approved designs and keeps screens consistent across a product. Three years of development experience.
+View Profile
 Studio Associate
 ##### Momina Shah
-Strengthens the team-facing studio presence with space for future coordination, support, and client-facing contributions.
+Supports project coordination and client communication, so requests are followed up and nothing waits. Three years of experience.
+View Profile
 Insights
 #### Guides for teams planning a mobile product.
 Engineering
@@ -1841,9 +1843,9 @@ Leads AppVion Studio across product strategy, Android engineering, Kotlin Multip
 ##### Saif Malik — Project Manager
 Keeps projects moving and communication clear between the studio, the team, and clients. Ten years managing delivery across online platforms. View profile.
 ##### Tayyaba Sajjad — Developer
-Supports product delivery, interface implementation, and development execution within the studio workflow.
+Builds the interfaces of the studio's Android and Kotlin Multiplatform apps from approved designs. Three years of development experience. View profile.
 ##### Momina Shah — Studio Associate
-Strengthens the team-facing studio presence, coordination, support, and client-facing contributions.
+Supports project coordination and client communication across studio projects. Three years of experience. View profile.
 #### What the studio does.
 Android app development in Kotlin and Jetpack Compose
 Kotlin Multiplatform systems sharing business logic across Android and iOS
@@ -2088,6 +2090,70 @@ Tracks what is in progress, what is blocked, and what needs a decision — so en
 Clients get a clear line into the studio and a straight answer on where their project stands, including when the answer is that something has slipped.
 ##### Maintains, not just launches
 Work does not end at release. Saif carries projects through iteration and maintenance, where most agencies quietly stop paying attention.
+##### Want to talk about a project?
+Bring the product, the constraints and the deadline. You will get a straight read on what is realistic before anyone quotes you a number.
+Back to Team
+
+======================================================================
+## Tayyaba Sajjad | Developer at AppVion Studio
+URL: https://appvionstudio.com/tayyaba-sajjad.html
+======================================================================
+
+Team profile
+Developer | AppVion Studio
+### Tayyaba Sajjad
+Tayyaba is a developer at AppVion Studio with three years of experience. She builds the screens of the studio's Android and Kotlin Multiplatform apps from approved designs, and keeps them consistent from one release to the next.
+3 years of development experience
+Interface implementation
+Delivery support
+Developer | AppVion Studio Tayyaba Sajjad AppVion Studio · Multan, Pakistan
+#### Profile summary
+##### What she owns
+Interface implementation: approved designs turned into working app screens, with consistent spacing, states and behaviour across the product.
+##### Experience
+Three years of development experience, now focused on interface implementation and delivery support inside AppVion Studio's product workflow.
+##### Why it matters here
+In a small team, the person who builds the screens shapes how the product feels in daily use. Careful interface work is what makes an operational app easy to trust.
+In the studio
+#### The developer behind the screens people use every day.
+##### Screens built to the design
+Approved designs become working app screens, with the small details, such as spacing, empty states and loading states, handled rather than left for later.
+##### Consistent across the product
+The same patterns are used from one screen to the next, so the app feels like one product rather than a collection of pages.
+##### Part of the delivery flow
+Works inside the studio's delivery workflow with the founder and the project manager, so interface work lands in the same release cycle as everything else.
+##### Want to talk about a project?
+Bring the product, the constraints and the deadline. You will get a straight read on what is realistic before anyone quotes you a number.
+Back to Team
+
+======================================================================
+## Momina Shah | Studio Associate at AppVion Studio
+URL: https://appvionstudio.com/momina-shah.html
+======================================================================
+
+Team profile
+Studio Associate | AppVion Studio
+### Momina Shah
+Momina is a studio associate at AppVion Studio with three years of experience. She supports coordination and client communication across studio projects, so requests are followed up and nothing falls between the team and the client.
+3 years of experience
+Studio coordination
+Client support
+Studio Associate | AppVion Studio Momina Shah AppVion Studio · Multan, Pakistan
+#### Profile summary
+##### What she owns
+Day-to-day coordination support: following up on requests, keeping project information organised, and helping clients reach the right person in the studio.
+##### Experience
+Three years of professional experience, now focused on coordination and client support at AppVion Studio.
+##### Why it matters here
+A small studio works best when someone keeps the details moving. Coordination support gives the founder and developers more time for the build, and helps clients get clear answers.
+In the studio
+#### Keeping the studio and its clients in step.
+##### Follows up
+Open questions and pending decisions are tracked and followed up, so a project does not stall waiting on a reply.
+##### Keeps information in order
+Project details, requests and updates are kept organised, so the team and the client work from the same picture.
+##### Supports clients
+Helps clients reach the right person in the studio and keeps them informed between milestones.
 ##### Want to talk about a project?
 Bring the product, the constraints and the deadline. You will get a straight read on what is realistic before anyone quotes you a number.
 Back to Team

@@ -51,12 +51,14 @@
     {
       "@type": "Person",
       "name": "Tayyaba Sajjad",
-      "jobTitle": "Developer"
+      "jobTitle": "Developer",
+      "url": "https://appvionstudio.com/tayyaba-sajjad.html"
     },
     {
       "@type": "Person",
       "name": "Momina Shah",
-      "jobTitle": "Studio Associate"
+      "jobTitle": "Studio Associate",
+      "url": "https://appvionstudio.com/momina-shah.html"
     }
   ],
   "knowsAbout": [
