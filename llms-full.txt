@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-10-23 from the 28 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-10-26 from the 29 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -61,7 +61,7 @@ Read the case study
 Browse all case studies
 Services
 #### Our mobile app development services
-AppVion is intentionally focused: fewer layers, faster decisions, and one product standard from first concept to launch.
+AppVion Studio is intentionally focused: fewer layers, faster decisions, and one product standard from first concept to launch.
 01
 ##### Mobile Product Strategy
 Define the product thesis, core workflow, feature priority, monetization shape, and launch path before code gets expensive.
@@ -97,12 +97,12 @@ UI, motion, backend integration, state handling, and product logic come together
 Polish, QA, deployment support, analytics readiness, and post-launch improvement loops keep the product moving.
 Proof system
 #### Proof you can check before you hire us
-AppVion presents verifiable product depth: public demos, concrete workflows, visible founder accountability, and a modern technical base.
+AppVion Studio presents verifiable product depth: public demos, concrete workflows, visible founder accountability, and a modern technical base.
 07 Portfolio products and concepts presented with demos or clear product scope.
 04 Core domains covered: operations, delivery, education, and events.
 02 Apps live on Google Play: SnowGrid and the D. Delivery customer app.
 24h Fast first response target for qualified strategy conversations.
-Why choose AppVion
+Why choose us
 #### Why teams choose AppVion Studio
 ##### Founder-level thinking
 Strategy stays close to execution, so decisions move fast and the product does not drift into agency theater.
@@ -189,7 +189,7 @@ How should a client start?
 The best start is a short brief with the product idea, target users, required platforms, current stage, budget range, and preferred launch timeline.
 Start the conversation
 #### Bring a serious mobile product idea. Leave with a sharper path.
-Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade. AppVion will help turn it into a focused product direction.
+Tell us what you want to build, what workflow is breaking, or what existing app needs a premium upgrade. AppVion Studio will help turn it into a focused product direction.
 Priority route Book a free 15-min call Direct scheduling for founders and B2B teams ready to scope the build. Email ayyaz@appvionstudio.com Opens your email app for briefs, RFP notes, and project context. WhatsApp +92 346 7277143 Fast route for availability, timeline, and quick fit checks.
 Founder-led response within 24 hours.
 Clear next step: strategy call, estimate, or technical review.
@@ -210,6 +210,10 @@ URL: https://appvionstudio.com/insights/
 Insights
 ### Writing about the decisions, not the buzzwords.
 Notes from building operational mobile products: how frameworks are actually chosen, what things really cost, and what breaks once an app is in the field rather than on a laptop. Written by the people doing the engineering.
+Straight answer
+#### Is Kotlin Multiplatform production-ready in 2026?
+Stable since 2023, officially supported by Google since 2024, Compose for iOS stable since 2025: the timeline, who runs it in production, and when it is worth it for your app. With sources.
+Read it
 Real prices
 #### How much does a Kotlin Multiplatform app cost?
 Published prices from $12,000 to $35,000, why adding iOS adds 35 to 55 percent rather than doubling the bill, the seven things that move a quote, and the costs that sit outside it.
@@ -313,6 +317,93 @@ Start the conversation
 #### Not sure which side of the line your product sits on?
 Bring the product, the platforms you need, and the constraints. Fifteen minutes is usually enough to answer the four questions above — and if the answer is that you do not need us, you will get that straight.
 Book a free 15-min call Read about our KMP work
+
+======================================================================
+## Is Kotlin Multiplatform Production-Ready in 2026?
+URL: https://appvionstudio.com/insights/kotlin-multiplatform-production-ready/
+======================================================================
+
+Straight answer
+### Is Kotlin Multiplatform production-ready in 2026?
+By Ayyaz Sajjad, Founder & CEO · Published 26 Oct 2026
+Yes. JetBrains declared Kotlin Multiplatform stable in November 2023, Google has officially supported it for sharing business logic between Android and iOS since May 2024, and Compose Multiplatform for iOS reached stable in May 2025. Netflix, McDonald’s, Cash App and Google Docs run it in production. The useful question now is whether it fits your app.
+Book a free 15-min call See our KMP service
+The timeline
+#### Four dates that made Kotlin Multiplatform production-ready.
+Each line links to the official announcement.
+Kotlin Multiplatform milestones, 2023 to 2026
+When
+What happened
+Source
+1 Nov 2023
+JetBrains declares Kotlin Multiplatform stable and “100% ready for use in production”.
+JetBrains blog
+14 May 2024
+Google announces official Android support for Kotlin Multiplatform to share business logic, and says the Google Docs app uses it for shared business logic on Android, iOS and the web.
+Android Developers Blog
+6 May 2025
+Compose Multiplatform 1.8.0 makes shared interfaces on iOS stable, so screens can be shared as well as logic.
+JetBrains blog
+2026
+Google’s Kotlin Multiplatform page calls it “stable and production-ready” and lists Jetpack libraries with multiplatform support, including Room, DataStore, Lifecycle and ViewModel, Navigation and Paging.
+developer.android.com
+In production
+#### Who uses Kotlin Multiplatform in production?
+JetBrains keeps a public list of Kotlin Multiplatform case studies, each linking to the company’s own write-up. Six of them, and what each one shares:
+##### Netflix
+Business logic for its Android and iOS studio apps, used in TV and film production. The team described the approach on the Netflix TechBlog in October 2020.
+##### McDonald’s
+Started with the payments feature of the McDonald’s app, then moved the whole app to Kotlin Multiplatform, in a case study published with the agency Umain.
+##### Cash App
+Shares its business logic across platforms with Kotlin Multiplatform, a move that started in 2018 when it replaced shared JavaScript.
+##### Google Docs
+Uses Kotlin Multiplatform for shared business logic in the Docs app on Android, iOS and the web, according to Google’s 2024 announcement.
+##### Forbes
+Shares more than 80 percent of the logic in its mobile app.
+##### Autodesk
+Shares offline sync logic and data models across iOS, Android and Windows.
+Netflix
+#### Does Netflix use Kotlin Multiplatform?
+Yes, for its studio apps: the Android and iOS tools used during TV and film production. Netflix’s engineers wrote the business logic once in Kotlin and compiled it for both platforms, and described the approach on the Netflix TechBlog in October 2020. JetBrains lists Netflix among its Kotlin Multiplatform case studies.
+Looking ahead
+#### Is Kotlin Multiplatform the future?
+No one can promise where a framework will be in five years, but the signals point one way. Google supports Kotlin Multiplatform officially and keeps adding multiplatform support to Jetpack libraries, JetBrains made Compose for iOS stable in 2025, and the public list of production users keeps growing. For shared business logic it is now a mainstream choice, not an experiment.
+Is it worth it?
+#### Is Kotlin Multiplatform worth it for your app?
+Production-ready is not the same as right for every product. The deciding question is where your app’s value sits.
+##### Worth it when
+Your app needs Android and iOS, its value sits in business rules, offline data or payments, and a wrong rule on one platform would cost money. Those rules are written, tested and fixed once. It is also the natural next step for an existing Kotlin Android app that now needs iOS.
+##### Not worth it when
+You only need one platform and have no near-term plan for the second, or the product is mostly screens with very little logic, so there is little worth sharing. Then a single native app, or Flutter for one shared interface, is the simpler choice. See KMP vs Flutter and KMP vs React Native.
+What we have shipped
+#### Kotlin Multiplatform apps we have shipped.
+This is not theory for us. Both products below share their business rules in Kotlin across apps.
+Logistics platform
+##### D. Delivery
+Customer, rider and admin apps from one shared Kotlin codebase, with video proof of delivery. The customer app is live on Google Play.
+Read the case study
+Field service
+##### PropFix
+Property maintenance across managers, contractors and tenants, with business rules written once for Android and iOS.
+Read the case study
+Service
+##### Kotlin Multiplatform development
+How we split shared logic from native interfaces, our stack, and what a KMP project costs.
+See the service
+FAQ
+#### Questions people ask first.
+Is Kotlin Multiplatform free?
+Yes. Kotlin Multiplatform is open source and built by JetBrains, with no licence fee. The cost of a KMP app is the engineering time plus the usual store accounts in your own name: the Apple Developer Program at $99 a year and Google Play Console at a one-off $25.
+Can Kotlin Multiplatform share the interface as well?
+Yes, if you want it to. Compose Multiplatform shares screens across Android and iOS and has been stable on iOS since May 2025. Sharing the interface is optional: many teams share only the logic and keep SwiftUI on iOS where a fully native feel matters most.
+Do we have to rewrite our Android app to use it?
+No. A well-layered Kotlin Android app can move its business rules and data layer into a shared module one feature at a time while the Android app keeps shipping. How a migration runs.
+How much does a Kotlin Multiplatform app cost?
+At AppVion Studio a focused first release costs $12,000 to $18,000 and a multi-role operational platform $20,000 to $35,000. Adding iOS through Kotlin Multiplatform typically adds 35 to 55 percent to an Android-only build rather than doubling it. Real prices.
+Start the conversation
+#### Wondering if Kotlin Multiplatform fits your app?
+Bring the platforms you need and what the app has to get right. In fifteen minutes we can tell you whether Kotlin Multiplatform is worth it for you, and if it is not, what is.
+Book a free 15-min call WhatsApp us
 
 ======================================================================
 ## Kotlin Multiplatform App Cost in 2026: Real Prices
@@ -1295,7 +1386,7 @@ $12,000 – $35,000
 Commodity freelance marketplace
 $10 – $25
 $3,000 – $8,000
-Comparison figures are drawn from published 2026 industry pricing guides, including Netguru, TechAhead, Velvetech, and Pakistan market reports. They are indicative ranges for a comparable product, not quotes from those firms. AppVion's rate sits at the top of the Pakistani market rather than the bottom — the studio competes on judgement, not on being the cheapest bid.
+Comparison figures are drawn from published 2026 industry pricing guides, including Netguru, TechAhead, Velvetech, and Pakistan market reports. They are indicative ranges for a comparable product, not quotes from those firms. AppVion Studio's rate sits at the top of the Pakistani market rather than the bottom — the studio competes on judgement, not on being the cheapest bid.
 #### What actually moves the number.
 Screen count is the weakest predictor of cost. These seven factors decide almost everything:
 Number of user roles. One role is a list and a detail screen. Four roles with different permissions is four products sharing a backend. This is the single biggest driver on operational apps.
@@ -1327,20 +1418,20 @@ Third-party accounts are always registered in the client's name. If the working 
 A production-ready mobile app costs between $12,000 and $35,000 when built by AppVion Studio. The same product costs $40,000 to $100,000 through an Eastern European agency and $100,000 or more through a US agency, because the largest single cost driver in software is where the engineering team sits, not the app itself. Simple apps with a handful of screens and no backend logic can land below $12,000, and multi-role operational platforms with live tracking and payments run to the top of the range.
 ##### What is the cheapest way to start?
 A Product Clarity Sprint, from $1,500 over one to two weeks. It produces a workflow map, a prioritised feature list, a technical direction, and a realistic launch plan. Most cost overruns happen because a build started before anyone agreed what was being built, so the sprint usually saves more than it costs.
-##### Why is AppVion cheaper than a US or European agency?
-Because the team is in Multan, Pakistan, and the studio is small. There is no account management layer, no sales team, and no city-centre office to fund. Senior engineering rates in Pakistan run $40 to $80 per hour at the top tier compared with $150 to $250 in the United States. AppVion charges a blended $45 to $65 per hour, which is the top of the local market, not the bottom.
+##### Why is AppVion Studio cheaper than a US or European agency?
+Because the team is in Multan, Pakistan, and the studio is small. There is no account management layer, no sales team, and no city-centre office to fund. Senior engineering rates in Pakistan run $40 to $80 per hour at the top tier compared with $150 to $250 in the United States. AppVion Studio charges a blended $45 to $65 per hour, which is the top of the local market, not the bottom.
 ##### Is a fixed price or an hourly rate better?
-Fixed price, in almost every case. AppVion quotes a fixed figure per engagement after the scope is clear, and delivery runs against milestones. Hourly billing transfers all the estimation risk to the client and rewards a slow team. The exception is open-ended iteration after launch, which is better suited to a monthly retainer.
+Fixed price, in almost every case. AppVion Studio quotes a fixed figure per engagement after the scope is clear, and delivery runs against milestones. Hourly billing transfers all the estimation risk to the client and rewards a slow team. The exception is open-ended iteration after launch, which is better suited to a monthly retainer.
 ##### What does the price not include?
-Third-party costs that belong to the client and are paid directly: Apple Developer Program at $99 per year, Google Play Console at a one-off $25, and any hosting, database, mapping, SMS, or payment-processor fees. AppVion sets these accounts up in the client's name so the client owns them outright.
+Third-party costs that belong to the client and are paid directly: Apple Developer Program at $99 per year, Google Play Console at a one-off $25, and any hosting, database, mapping, SMS, or payment-processor fees. AppVion Studio sets these accounts up in the client's name so the client owns them outright.
 ##### How much does an app cost to run after launch?
-Budget 15 to 25 percent of the original build cost per year for maintenance across the industry. On a $20,000 build that is roughly $3,000 to $5,000 a year for keeping the app current with OS releases, store policy changes, and dependency updates. AppVion's care and iteration retainer starts at $900 per month and covers both maintenance and ongoing feature work.
+Budget 15 to 25 percent of the original build cost per year for maintenance across the industry. On a $20,000 build that is roughly $3,000 to $5,000 a year for keeping the app current with OS releases, store policy changes, and dependency updates. AppVion Studio's care and iteration retainer starts at $900 per month and covers both maintenance and ongoing feature work.
 ##### Do you require full payment upfront?
 No. Engagements are split across milestones, with a deposit to begin and the remainder released as each milestone is delivered and reviewed. The client sees working software at each stage rather than a status report.
 ##### Who owns the code and the app?
-The client does, in full, on final payment. That includes the source code, the repository, the store listings, the backend accounts, and the design files. AppVion does not retain a licence or hold accounts hostage.
+The client does, in full, on final payment. That includes the source code, the repository, the store listings, the backend accounts, and the design files. AppVion Studio does not retain a licence or hold accounts hostage.
 #### Get a real number for your product.
-Send a short brief or book a 15-minute call. You will get a scope view and an honest range, whether or not you build with AppVion.
+Send a short brief or book a 15-minute call. You will get a scope view and an honest range, whether or not you build with AppVion Studio.
 Book a free 15-min call Send a Project Brief
 #### Keep reading
 See the workSeven products, described screen by screen. Android developmentWhat native Kotlin and Compose buy you. Full FAQTimelines, ownership, process, and technology.
@@ -1394,7 +1485,7 @@ Jetpack Compose is Google's modern declarative UI toolkit for Android, and it is
 ##### How long does an Android app take to build?
 A focused first release takes 8 to 12 weeks from a clear scope. A multi-role operational platform with realtime data and payments takes 12 to 16 weeks. A one to two week Product Clarity Sprint before the build is what makes those numbers reliable rather than optimistic.
 ##### Do you publish the app to Google Play for us?
-Yes. The Play Console account is registered in the client's name, and AppVion handles the build signing, store listing, content rating, data safety declarations, and staged rollout. The client owns the listing and the app from day one.
+Yes. The Play Console account is registered in the client's name, and AppVion Studio handles the build signing, store listing, content rating, data safety declarations, and staged rollout. The client owns the listing and the app from day one.
 ##### What Android versions do you support?
 Typically the current Android release back four or five versions, which covers the overwhelming majority of active devices. The exact floor is a business decision made during scoping, because supporting older versions costs testing time that may be better spent elsewhere.
 ##### Can you take over an existing Android app?
@@ -1406,7 +1497,7 @@ Book a free 15-min call Send a Project Brief
 Kotlin MultiplatformShare logic, keep the interface native. PricingReal numbers, not a contact form. See the workSeven products, screen by screen. Add iOS laterMove an Android app to Kotlin Multiplatform.
 
 ======================================================================
-## Kotlin Multiplatform Development Services | AppVion Studio
+## Kotlin Multiplatform Development Company | AppVion Studio
 URL: https://appvionstudio.com/services/kotlin-multiplatform-development/
 ======================================================================
 
@@ -1415,8 +1506,8 @@ Kotlin Multiplatform development
 One Kotlin module holds your domain models, business rules, networking, and local storage. Android and iOS each keep a genuinely native interface on top. You stop maintaining the same pricing rule in two languages, and your users never feel like they are using a port.
 Book a free 15-min call See a KMP build in detail
 The actual argument
-#### The bug you cannot afford is the one that exists on only one platform.
-Cross-platform frameworks are usually sold on cost. That is the least interesting benefit. The real one is consistency: when a fare calculation, an order state machine, or a permission rule exists once instead of twice, it cannot silently disagree with itself between your Android and iOS users.
+#### Why choose Kotlin Multiplatform for your app?
+Because the bug you cannot afford is the one that exists on only one platform. Cross-platform frameworks are usually sold on cost. That is the least interesting benefit. The real one is consistency: when a fare calculation, an order state machine, or a permission rule exists once instead of twice, it cannot silently disagree with itself between your Android and iOS users.
 ##### Rules cannot drift
 Pricing, validation, and state transitions live in one place. A fix applies everywhere at once, rather than being ported and half-remembered three months later.
 ##### The interface stays native
@@ -1426,7 +1517,7 @@ KMP does not demand a rewrite. A well-layered Android app can move its domain an
 ##### No framework lock-in tax
 Shared code is plain Kotlin. If a platform ever needs to diverge, it diverges at the interface layer without unpicking a proprietary runtime.
 What we share, and what we do not
-#### The split that keeps KMP projects healthy.
+#### What Kotlin Multiplatform shares, and what stays native.
 Sharing too much is how multiplatform projects turn brittle. The boundary matters more than the technology.
 Shared
 Domain models and business rules
@@ -1445,10 +1536,10 @@ Secure credential storage
 Why the line sits there
 Business logic is where correctness lives and where duplication is genuinely dangerous. Interface and platform integration are where users notice compromise immediately. Sharing the first and never the second gives you consistency without the uncanny feel of a ported app.
 Technology
-#### The KMP stack we work in.
+#### The Kotlin Multiplatform tech stack we use.
 Kotlin Multiplatform Jetpack Compose Compose Multiplatform Coroutines & Flow Ktor Client SQLDelight Koin kotlinx.serialization kotlinx-datetime Supabase Firebase SQLCipher
 Proof
-#### KMP products we have actually shipped.
+#### Kotlin Multiplatform apps we have shipped.
 This is not a first experiment with the technology. Both platforms below run shared Kotlin in production code.
 Logistics platform
 ##### D. Delivery
@@ -1462,8 +1553,19 @@ All work
 ##### Full portfolio
 Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.
 Browse all case studies
+Hire a KMP team
+#### Hire Kotlin Multiplatform developers from AppVion Studio.
+AppVion Studio is a founder-led team of four in Multan, Pakistan. The founder, Ayyaz Sajjad, works directly on the architecture and the Android and Kotlin Multiplatform engineering, so you speak to the person building your app rather than an account manager.
+##### Who builds it
+Ayyaz Sajjad leads product strategy and the Android and KMP engineering. Saif Malik manages delivery and client communication. Tayyaba Sajjad builds app interfaces from approved designs.
+##### Rate: $45 to $65 an hour
+That is our blended rate. Most work is quoted as fixed-price stages after a Product Clarity Sprint, so you pay for an agreed result rather than open-ended hours.
+##### Working hours
+Pakistan Standard Time is UTC+5: a full working overlap with Europe, the Middle East and Asia, and a morning overlap with the eastern United States. New enquiries get a reply within 24 hours.
+##### How to start
+A free 15-minute call, then a Product Clarity Sprint from $1,500 over one to two weeks that ends in a fixed quote. Builds are paid against milestones, and you own the code on final payment.
 Engagements
-#### How a KMP project runs, and what it costs.
+#### How much Kotlin Multiplatform development costs.
 Fixed prices per engagement, milestone payments, and full ownership of the code on final payment. These are the published starting ranges; the full breakdown is on the pricing page, and what a Kotlin Multiplatform app costs explains what moves the number.
 ##### Product Clarity Sprint: from $1,500
 One to two weeks. The workflow map, feature priority and technical direction, including whether Kotlin Multiplatform is the right call for your product at all, and a fixed quote for the build.
@@ -1475,10 +1577,16 @@ One to two weeks. The workflow map, feature priority and technical direction, in
 For products that are live and still moving: OS and dependency updates, store policy compliance, bug fixes with agreed response times, and a budgeted slice of new feature work each month.
 FAQ
 #### Kotlin Multiplatform questions we get asked.
+Is Kotlin Multiplatform worth it?
+It is worth it when an app needs both Android and iOS and its value sits in business rules, offline data or payments. Those are written once, tested once and fixed once for both platforms. For an app that needs only one platform, or is mostly screens with little logic, a single native app or Flutter is often simpler.
+Is Kotlin Multiplatform production ready?
+Yes. JetBrains declared Kotlin Multiplatform stable in November 2023, Google has officially supported it for sharing business logic between Android and iOS since May 2024, and Compose Multiplatform for iOS became stable in May 2025. Netflix, McDonald’s, Cash App and Google Docs use it in production, and we have shipped a three-app KMP logistics platform ourselves. Who uses it, with sources.
 How is KMP different from Flutter or React Native?
 Flutter and React Native share the user interface and render it themselves. Kotlin Multiplatform shares the logic — domain models, business rules, networking, local storage — while each platform keeps its own genuinely native interface. The result feels native because it is native, and the rules that matter cannot drift between your Android and iOS users. We go through this in depth, including where each option breaks, in Kotlin Multiplatform vs React Native for business apps and Kotlin Multiplatform vs Flutter.
-Is Kotlin Multiplatform production ready?
-Yes. KMP is stable and used in production by major engineering teams. We have shipped multi-app KMP platforms including a three-app logistics system with realtime dispatch, payments, and offline-first sync.
+How much does Kotlin Multiplatform development cost?
+At AppVion Studio a focused first release costs $12,000 to $18,000 over 8 to 12 weeks, and a multi-role operational platform $20,000 to $35,000 over 12 to 16 weeks. Adding iOS through Kotlin Multiplatform typically adds 35 to 55 percent to an Android-only build rather than doubling it. What moves the number.
+Can I hire a Kotlin Multiplatform developer by the hour?
+Our blended rate is $45 to $65 an hour, and we can take a defined slice of your project, such as a shared Kotlin module or an architecture review, alongside your own team. Most work is still quoted as fixed-price stages after a Product Clarity Sprint, so the cost is agreed before the build starts.
 Can you migrate our existing Android app to KMP?
 Usually yes, and incrementally rather than as a rewrite. A well-structured Android app already separates its domain and data layers; those move into a shared module first while the Android interface keeps working untouched, and an iOS interface is added afterwards.
 When is KMP the wrong choice?
@@ -1498,7 +1606,8 @@ Kotlin Multiplatform migration
 If your Android app is written in Kotlin, most of what makes it valuable can be shared with iOS: the business rules, the data layer, the networking and the offline storage. We move those into a shared Kotlin module step by step, keep your Android app shipping the whole time, and build the iOS app on the same core.
 Book a free 15-min call How we do Kotlin Multiplatform
 How the move runs
-#### Five steps, and the Android app never stops.
+#### How to migrate an Android app to Kotlin Multiplatform, in five steps.
+The Android app never stops shipping: the shared Kotlin core grows underneath it, one feature at a time.
 ##### 1. Map the layers
 In the Clarity Sprint we read the codebase, mark what is domain, data and interface, and find the code that has to be untangled first.
 ##### 2. Share the core
@@ -1510,7 +1619,7 @@ The iOS app gets its interface, native SwiftUI or shared Compose Multiplatform, 
 ##### 5. Release both
 From here a rule is written and fixed once, and both apps get it in the same release.
 What moves and what stays
-#### The boundary that keeps a migration safe.
+#### What moves to shared Kotlin, and what stays native.
 Business logic is where correctness lives and where duplication is dangerous. Interface and platform integration are where users notice compromise. We share the first and keep the second platform-specific.
 ##### Moves to shared Kotlin
 Domain models and business rules; use cases and validation; networking and API contracts; local database and caching; repositories and dependency injection.
@@ -1519,7 +1628,7 @@ Interface code (unless you choose Compose Multiplatform); navigation and lifecyc
 ##### Signs you are ready
 Kotlin code, business rules kept out of Activities and Fragments, and a repository or data layer. Missing pieces are fixed first, inside the plan.
 Proof
-#### Shared Kotlin we have shipped.
+#### Kotlin Multiplatform apps we have shipped.
 Logistics platform
 ##### D. Delivery
 Three apps from one shared Kotlin codebase: customer, rider and admin control tower. The customer app is live on Google Play.
@@ -1533,8 +1642,8 @@ Comparison
 Why moving a Kotlin app to KMP extends it, while Flutter would replace it.
 Read the article
 Engagements
-#### What it costs.
-The same published prices as every AppVion engagement. The full breakdown is on the pricing page.
+#### How much an Android to Kotlin Multiplatform migration costs.
+The same published prices as every AppVion Studio engagement. The full breakdown is on the pricing page.
 ##### Product Clarity Sprint: from $1,500
 One to two weeks. The workflow map, feature priorities, technical direction and a fixed quote for the build. You own the output whether or not we build it.
 ##### First release: $12,000 to $18,000
@@ -1544,13 +1653,15 @@ One to two weeks. The workflow map, feature priorities, technical direction and 
 ##### You own the code
 On final payment you own the source code, repositories, store listings and backend accounts. No lock-in.
 FAQ
-#### Questions people ask first.
+#### Android to Kotlin Multiplatform migration questions.
 Do we need to rewrite the Android app?
 Usually not. A well-structured Android app already separates its domain and data layers. Those move into a shared Kotlin module while the Android interface keeps working untouched.
 Will our Android users notice anything?
 They should not. The Android app keeps its own interface and keeps shipping while the shared module is introduced underneath it.
 Do we need iOS developers?
 The iOS app needs an interface: native SwiftUI on top of the shared module, or Compose Multiplatform screens shared with Android. We build either and tell you which suits your product.
+Is Kotlin better than Swift for an iOS app?
+They do different jobs here. Kotlin Multiplatform lets your existing Kotlin business logic run on iOS, so the rules are written once. Swift and SwiftUI remain the native way to build the iOS interface on top of that shared code, unless you choose Compose Multiplatform to share the screens as well.
 How long does it take and what does it cost?
 It depends on how cleanly the app is layered today, which is exactly what the Clarity Sprint (from $1,500, one to two weeks) establishes. You get a fixed quote and timeline before any build starts; full builds run $12,000 to $35,000.
 Start the conversation
@@ -1568,7 +1679,8 @@ Field service app development
 Jobs that live in phone calls, quotes that are guessed, and "it's done" with no proof: we replace that with one system where the office, the crew and the customer read the same job. Built from two field products we have shipped, SnowGrid and PropFix.
 Book a free 15-min call See SnowGrid
 What breaks without a system
-#### Field work is coordinated by whoever keeps chasing it.
+#### What is a field service app?
+A field service app is a mobile system for businesses whose work happens on site. It sends each job to the right technician or crew, tracks its status, records proof of work such as before and after photos, and lets the office and the customer see the same job. Without one, field work is coordinated by whoever keeps chasing it.
 ##### Dispatch by phone
 Work goes to whoever answers first, not whoever is nearest or free.
 ##### Quotes by guesswork
@@ -1578,7 +1690,7 @@ Without before and after evidence on the job record, every disputed invoice is o
 ##### Nothing is searchable
 Open jobs, owed payments and history live in messages and memory.
 What we build
-#### The parts every field service app needs.
+#### Features every field service app needs.
 ##### Jobs and work orders
 Raise a job against a property or site, assign it, and watch its status move without calling anyone.
 ##### Dispatch
@@ -1592,7 +1704,7 @@ Crews keep working without signal; the app syncs later and says when it last did
 ##### Roles and payments
 Office, crew and customer each get their own app view, with payouts and escrow where money is involved.
 Built before
-#### Field products we have shipped.
+#### Field service apps we have shipped.
 Snow removal operations
 ##### SnowGrid
 Three roles on one platform: map measurement, pricing from the company's own rates, contractor payouts. Live on Google Play.
@@ -1606,7 +1718,7 @@ Google Play
 Install the shipped app and judge it yourself.
 Open Google Play
 Engagements
-#### What it costs.
+#### How much a field service app costs.
 Published prices; the full breakdown is on the pricing page.
 ##### Product Clarity Sprint: from $1,500
 One to two weeks. The workflow map, feature priorities, technical direction and a fixed quote for the build. You own the output whether or not we build it.
@@ -1617,15 +1729,17 @@ One to two weeks. The workflow map, feature priorities, technical direction and 
 ##### You own the code
 On final payment you own the source code, repositories, store listings and backend accounts. No lock-in.
 FAQ
-#### Questions people ask first.
+#### Field service app questions.
 Does the app work without signal?
 Yes. We build offline-first: work is recorded on the phone and synced when the connection returns, and the app shows its own sync status so a field worker can tell the difference.
 Can contractors use their own phones?
 Yes. In PropFix contractors join by an invite code from the manager, so the contractor list stays curated rather than open to anyone.
 Android, iOS or both?
 Android native when your crews are on Android; Kotlin Multiplatform when you need both, so dispatch and pricing rules are written once.
-What does a field service app cost?
+How much does a field service app cost?
 Multi-role operational platforms run $20,000 to $35,000 over 12 to 16 weeks. A focused first release is $12,000 to $18,000. Most projects start with a $1,500 Clarity Sprint that ends in a fixed quote.
+How long does it take to build a field service app?
+A focused first release takes 8 to 12 weeks, and a multi-role platform with dispatch, payments and live tracking takes 12 to 16 weeks, shipped in focused releases. A one to two week Product Clarity Sprint comes first and fixes the scope, so the timeline in the quote is the one you can plan around.
 Start the conversation
 #### Running crews, contractors or a dispatch desk?
 If jobs still run on calls and a spreadsheet, fifteen minutes is enough to map what an app would change.
@@ -1641,8 +1755,8 @@ Delivery and courier app development
 Customer booking, rider dispatch, live tracking and cash-on-delivery that reconciles against the platform's own ledger. Built from D. Delivery, our three-app Kotlin Multiplatform courier platform, whose customer app is live on Google Play.
 Get D. Delivery on Google Play Read the D. Delivery case study
 The real problem
-#### Courier disputes are won by whoever has evidence.
-In D. Delivery the goods were phones, laptops and electronics, where one disputed parcel can cost more than a month of delivery revenue. Bookings ran on WhatsApp, cash was reconciled by hand, and riders were assigned by whoever answered first.
+#### Why a courier business needs proof of delivery.
+Courier disputes are won by whoever has evidence. In D. Delivery the goods were phones, laptops and electronics, where one disputed parcel can cost more than a month of delivery revenue. Bookings ran on WhatsApp, cash was reconciled by hand, and riders were assigned by whoever answered first.
 ##### No record of condition
 Nobody could prove what state a device was in at pickup.
 ##### Cash that never matched
@@ -1652,7 +1766,7 @@ The first rider to answer got the job, not the nearest one.
 ##### Customers calling for status
 There was nothing for them to look at.
 What we build
-#### Three apps, one source of truth.
+#### Delivery app features: customer, rider and admin apps.
 ##### Customer app
 Booking with address search, insurance based on declared value, live tracking with a traffic-aware ETA, receipt and rating.
 ##### Rider app
@@ -1666,7 +1780,7 @@ Videos and signatures are compressed on the phone and stored per order; uploads 
 ##### Money on the record
 Cash on delivery is settled against the platform's own ledger, not the rider's word.
 Built before
-#### The delivery platform we shipped.
+#### The delivery app we shipped.
 Logistics platform
 ##### D. Delivery
 Three apps from one Kotlin Multiplatform codebase, built around verifiable proof of delivery.
@@ -1680,7 +1794,7 @@ Kotlin Multiplatform
 How sharing the rules keeps pricing and order states identical across the apps.
 See the service
 Engagements
-#### What it costs.
+#### How much it costs to build a delivery app.
 Published prices; the full breakdown is on the pricing page.
 ##### Product Clarity Sprint: from $1,500
 One to two weeks. The workflow map, feature priorities, technical direction and a fixed quote for the build. You own the output whether or not we build it.
@@ -1691,15 +1805,17 @@ One to two weeks. The workflow map, feature priorities, technical direction and 
 ##### You own the code
 On final payment you own the source code, repositories, store listings and backend accounts. No lock-in.
 FAQ
-#### Questions people ask first.
+#### Delivery app development questions.
 Do you build the rider app and the admin panel too?
 Yes. A delivery business needs three products: a customer booking app, a rider job app and an admin control tower. In D. Delivery all three share one Kotlin codebase and one database.
 How does proof of delivery work?
 The rider records a video at pickup and at drop-off, and the recipient signs on the phone. The evidence is compressed on the device and stored under the order, so it holds up in a dispute.
 Can riders keep working on a weak signal?
 Yes. Uploads are queued by a background worker, so a rider is never blocked from finishing a job by the network.
-What does a delivery app cost?
+How much does it cost to build a delivery app?
 A multi-app delivery platform sits in the $20,000 to $35,000 range over 12 to 16 weeks. A focused first release is $12,000 to $18,000. Most projects start with a $1,500 Clarity Sprint that ends in a fixed quote.
+How do I start my own delivery app?
+Start with the workflow, not the screens: who books, how riders are dispatched and paid, how cash is settled and what evidence settles a dispute. A Product Clarity Sprint, from $1,500 over one to two weeks, turns that into a workflow map and a fixed quote; a focused first release then takes 8 to 12 weeks.
 Start the conversation
 #### Running deliveries on WhatsApp and a ledger?
 Fifteen minutes is enough to map the booking, dispatch and proof flow your business needs.
@@ -1738,7 +1854,7 @@ No. That is what the Product Clarity Sprint is for. It costs from $1,500, runs o
 ##### How much will my app cost?
 A production mobile app from AppVion Studio costs $12,000 to $35,000. A focused first release usually lands at $12,000 to $18,000. Multi-role operational platforms run to $35,000. Redesigns start at $6,000 and a scoping sprint starts at $1,500. The pricing page breaks down what moves those numbers.
 ##### Is the price fixed?
-Yes. AppVion quotes a fixed figure per engagement once the scope is clear, and delivery runs against milestones. If the scope changes mid-build, the change is priced and agreed before it is built rather than appearing on an invoice afterwards.
+Yes. AppVion Studio quotes a fixed figure per engagement once the scope is clear, and delivery runs against milestones. If the scope changes mid-build, the change is priced and agreed before it is built rather than appearing on an invoice afterwards.
 ##### How are payments structured?
 Across milestones, with a deposit to begin and the balance released as each milestone is delivered and reviewed. You see working software at each stage.
 ##### Are there costs beyond your fee?
@@ -1751,23 +1867,23 @@ Four phases. A Signal Audit maps the business model, user roles, and the screens
 ##### How often will I hear from you?
 A working build at each milestone, plus a written update in between. The studio deliberately does not run daily stand-ups with clients, because they consume the time that produces the software.
 ##### What happens if the project runs late?
-You are told as soon as it is known rather than at the deadline, along with the options: cut scope, move the date, or change the approach. Fixed-price engagements mean a delay caused by AppVion is AppVion's problem, not a change order.
+You are told as soon as it is known rather than at the deadline, along with the options: cut scope, move the date, or change the approach. Fixed-price engagements mean a delay caused by AppVion Studio is the studio's problem, not a change order.
 #### Ownership and risk
 ##### Who owns the code?
-You do, entirely, on final payment. That covers the source code, the repository, the design files, the store listings, and the backend accounts. AppVion retains no licence and holds no accounts.
-##### Will I be locked in to AppVion?
+You do, entirely, on final payment. That covers the source code, the repository, the design files, the store listings, and the backend accounts. AppVion Studio retains no licence and holds no accounts.
+##### Will I be locked in to AppVion Studio?
 No, and the architecture is deliberately conventional to make sure of it. The apps use standard Kotlin, Jetpack Compose, and mainstream backends, so another competent Android team can pick the project up. Being hard to replace is not a business model the studio is interested in.
 ##### Do you sign an NDA?
 Yes, before any detailed discussion of your product if you prefer.
 ##### What if I already have a development team?
-That is common. AppVion can take a defined slice — the Android app, a Kotlin Multiplatform module, an architecture review, or an interface redesign — and work alongside your team rather than replacing it.
+That is common. AppVion Studio can take a defined slice — the Android app, a Kotlin Multiplatform module, an architecture review, or an interface redesign — and work alongside your team rather than replacing it.
 #### Technology
 ##### What technology do you build with?
 Kotlin and Jetpack Compose for Android, Kotlin Multiplatform with Ktor and SQLDelight for shared logic, and Supabase or Firebase for backend and realtime where a custom backend is not already in place. Room and Paging 3 handle local storage and large lists, and WorkManager handles background sync.
 ##### Do you build iOS apps?
 Through Kotlin Multiplatform, yes: shared business logic in Kotlin with a native SwiftUI interface. The studio does not take on iOS-only projects, because Android is where its depth is.
 ##### Can you build a backend as well?
-Yes, using Supabase, Firebase, or Ktor depending on the product. If you already have an API, AppVion integrates with it rather than insisting on a rewrite.
+Yes, using Supabase, Firebase, or Ktor depending on the product. If you already have an API, AppVion Studio integrates with it rather than insisting on a rewrite.
 ##### Do you work with AI features?
 Yes, where they earn their place: intelligent workflows, command surfaces, automation-ready interactions, and data-aware interface patterns. The studio does not add a chatbot to a product that does not need one.
 #### Working with a studio in Pakistan
@@ -1778,14 +1894,14 @@ Pakistan Standard Time is UTC+5. That gives a full working overlap with Europe, 
 ##### What language do you work in?
 English for all project communication, documentation, and code. The team also speaks Urdu.
 ##### Why should I trust an offshore studio?
-You should not, on assertion alone. That is why AppVion publishes working prototypes rather than testimonials, names every team member with an individual profile page, and lists direct contact routes to the founder. Start with a $1,500 scoping sprint rather than a $20,000 build, and judge the work before committing to it.
+You should not, on assertion alone. That is why AppVion Studio publishes working prototypes rather than testimonials, names every team member with an individual profile page, and lists direct contact routes to the founder. Start with a $1,500 scoping sprint rather than a $20,000 build, and judge the work before committing to it.
 #### After launch
 ##### Do you maintain the app after launch?
 Yes, through a care and iteration retainer from $900 per month covering OS and dependency updates, store policy compliance, bug fixes with agreed response times, and a budgeted slice of new feature work.
 ##### What does maintenance normally cost across the industry?
 Fifteen to twenty-five percent of the original build cost per year is the usual guidance. On a $20,000 build that is roughly $3,000 to $5,000 annually just to keep the app current with Android releases and store policy.
 ##### What if I want to take maintenance in-house?
-Then you take it in-house. You already own everything, the architecture is conventional, and AppVion will run a handover with your team.
+Then you take it in-house. You already own everything, the architecture is conventional, and AppVion Studio will run a handover with your team.
 #### Question not answered here?
 Ask it directly. Email, WhatsApp, or a 15-minute call — you will get a straight answer within 24 hours.
 Book a free 15-min call Send a Project Brief
@@ -1834,7 +1950,7 @@ First response
 Within 24 hours
 #### Why the studio is small on purpose.
 Most agencies grow by inserting people between the client and the engineer. It is a reasonable way to scale revenue and a terrible way to keep a product coherent. Decisions get relayed, context is lost in the handoff, and the person who understood why a rule existed has moved to another account by month three.
-AppVion is built the other way round. The founder does the strategy and writes the Android code, so the person deciding what to build is the person who knows what it costs to build it. That caps how many projects run at once. It also means nothing is lost in translation.
+AppVion Studio is built the other way round. The founder does the strategy and writes the Android code, so the person deciding what to build is the person who knows what it costs to build it. That caps how many projects run at once. It also means nothing is lost in translation.
 #### Proof you can inspect, not testimonials.
 The site publishes no star ratings and no client quotes, because a studio at this size cannot produce a credible volume of them and invented ones are worse than none. Instead the work is made inspectable: seven products described screen by screen, interactive prototypes you can click through on the home page, and public video demos. Judge the software.
 #### Who does the work.
@@ -1881,7 +1997,7 @@ Hiring from abroad
 #### Why teams abroad hire a studio in Pakistan.
 The honest reason is cost without the usual trade-off. A senior studio in Pakistan charges a fraction of a US or European agency, and you can judge the work on a small engagement before committing to a build.
 ##### Rates
-AppVion charges a blended $45 to $65 an hour, against $150 to $250 at a US agency and $50 to $100 in Eastern Europe. A production app typically lands at $12,000 to $35,000. The full comparison is on the pricing page.
+AppVion Studio charges a blended $45 to $65 an hour, against $150 to $250 at a US agency and $50 to $100 in Eastern Europe. A production app typically lands at $12,000 to $35,000. The full comparison is on the pricing page.
 ##### Time zones
 Pakistan Standard Time is UTC+5: a full working overlap with Europe, the Middle East and Asia, and a morning overlap with the eastern United States. Calls are scheduled inside your working hours.
 ##### Language
@@ -1895,7 +2011,7 @@ Once the scope is clear you get a fixed figure, and delivery runs against milest
 ##### Milestone payments
 A deposit to begin, and the balance released as each milestone is delivered and reviewed. You see working software at every stage.
 ##### You own everything
-On final payment you own the source code, the repository, the design files, the store listings and the backend accounts. AppVion keeps no licence and holds no accounts.
+On final payment you own the source code, the repository, the design files, the store listings and the backend accounts. AppVion Studio keeps no licence and holds no accounts.
 ##### No lock-in, NDA on request
 Standard Kotlin, Jetpack Compose and mainstream backends, so another competent team can pick the project up. An NDA can be signed before any detailed discussion of your product.
 Proof
@@ -1916,7 +2032,7 @@ Read the Case Study
 FAQ
 #### Common questions before the first call.
 How much does mobile app development cost in Pakistan?
-At AppVion Studio a Product Clarity Sprint starts at $1,500, and a production Android or Kotlin Multiplatform app costs $12,000 to $35,000. Senior engineering rates in Pakistan run $40 to $80 an hour at the top tier; AppVion charges a blended $45 to $65. The full breakdown is on the pricing page.
+At AppVion Studio a Product Clarity Sprint starts at $1,500, and a production Android or Kotlin Multiplatform app costs $12,000 to $35,000. Senior engineering rates in Pakistan run $40 to $80 an hour at the top tier; AppVion Studio charges a blended $45 to $65. The full breakdown is on the pricing page.
 Do you work with clients outside Pakistan?
 Yes. The studio is remote-first and works in English with clients abroad through email, WhatsApp, LinkedIn and scheduled calls, which are booked inside the client's working hours.
 Do you build for iOS as well as Android?
@@ -1924,7 +2040,7 @@ Yes. Android Native is the deepest specialism here, and Kotlin Multiplatform is 
 How long does it take to build a mobile app?
 A first release with a focused feature set typically takes 8 to 12 weeks. Multi-role operational platforms with dispatch, approvals, live tracking or payments take 12 to 16 weeks and ship in focused releases, so progress stays inspectable throughout.
 Why should I trust an offshore studio?
-You should not, on assertion alone. That is why AppVion publishes working prototypes rather than testimonials, names every team member with a profile page, and lists direct contact routes to the founder. Start with a $1,500 scoping sprint and judge the work before committing to a build.
+You should not, on assertion alone. That is why AppVion Studio publishes working prototypes rather than testimonials, names every team member with a profile page, and lists direct contact routes to the founder. Start with a $1,500 scoping sprint and judge the work before committing to a build.
 Start the conversation
 #### Hiring from abroad? Start with a $1,500 scoping sprint.
 Judge the work on a small, fixed-price engagement before committing to a build.
