@@ -45,7 +45,7 @@ Each covers the problem, the engineering decisions that made the product trustwo
 ## Pages
 
 - [Home](https://appvionstudio.com/): Studio overview, interactive product prototypes, services, process, and contact.
-- [Pricing](https://appvionstudio.com/pricing.html): What a mobile app costs in 2026, AppVion's engagement bands, and how offshore pricing compares to US and European agencies.
+- [Pricing](https://appvionstudio.com/pricing.html): What a mobile app costs in 2026, AppVion Studio's engagement bands, and how offshore pricing compares to US and European agencies.
 - [Android app development](https://appvionstudio.com/android-app-development.html): Native Android engineering with Kotlin and Jetpack Compose — approach, architecture, and what native buys you over cross-platform.
 - [Kotlin Multiplatform development](https://appvionstudio.com/services/kotlin-multiplatform-development/): What KMP is, what it shares and what stays native, and how it compares to Flutter and React Native.
 - [Case studies](https://appvionstudio.com/work/): Seven products covered in depth, with the interactive prototype embedded in each.

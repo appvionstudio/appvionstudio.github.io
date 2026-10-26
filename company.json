@@ -4,7 +4,7 @@
   "@type": "ProfessionalService",
   "@id": "https://appvionstudio.com/#organization",
   "name": "AppVion Studio",
-  "alternateName": ["AppVion", "Appvion Studio"],
+  "alternateName": ["Appvion Studio", "AppVionStudio"],
   "url": "https://appvionstudio.com/",
   "logo": "https://appvionstudio.com/appvion-logo-icon.png",
   "image": "https://appvionstudio.com/appvion-logo-wordmark.jpg",
