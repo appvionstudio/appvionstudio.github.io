@@ -307,6 +307,7 @@ h2.qa-group-title {
 .article-page main p a:not(.button),
 .article-page main li a:not(.button),
 .article-page main th a,
+.article-page main td a,
 .confidence-copy p a {
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -454,4 +455,72 @@ h1 { max-width: 18ch; }
     .data-table th,
     .data-table td { padding: 10px 8px; }
     .data-table caption { padding: 12px 8px 0; }
+}
+
+/* ------------------------------------------------------------
+   13. Tables in the insight articles (2026-10-26).
+
+   The articles use .table-wrap and .data-table but do not load
+   content.css, so their tables had no borders or cell padding.
+   Same look as the pricing page tables, scoped to .article-page.
+   ------------------------------------------------------------ */
+
+.article-page .table-wrap {
+    max-width: 900px;
+    margin-top: 24px;
+    overflow-x: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.article-page .data-table {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.article-page .data-table caption {
+    padding: 16px 20px 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.article-page .data-table th,
+.article-page .data-table td {
+    padding: 14px 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.article-page .data-table thead th {
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.article-page .data-table tbody tr + tr th,
+.article-page .data-table tbody tr + tr td { border-top: 1px solid #e5e7eb; }
+
+.article-page .data-table tbody th { color: #0f172a; font-weight: 700; }
+.article-page .data-table td { color: #475569; font-weight: 500; }
+
+.article-page .data-table tr.is-highlight th,
+.article-page .data-table tr.is-highlight td {
+    background: rgba(37, 99, 235, 0.05);
+    color: #0f172a;
+    font-weight: 700;
+}
+
+@media (max-width: 640px) {
+    .article-page .data-table { min-width: 0; font-size: 13px; }
+    .article-page .data-table th,
+    .article-page .data-table td { padding: 10px 8px; }
+    .article-page .data-table caption { padding: 12px 8px 0; }
 }
