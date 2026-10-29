@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-10-26 from the 29 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-10-29 from the 29 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -33,11 +33,11 @@ Live on Google Play
 Three connected products — customer booking, rider job app, and admin control tower — sharing one Kotlin codebase. Dual video proof of delivery, expanding-radius dispatch, live traffic-aware tracking, and server-enforced cash-on-delivery reconciliation.
 Kotlin Multiplatform Jetpack Compose Supabase Realtime dispatch Proof of delivery
 Read the Case Study Get it on Google Play
-Flagship build
+Live on Google Play
 ##### PropFix: a field service command layer for modern maintenance teams.
 A Kotlin Multiplatform maintenance workflow that brings contractor assignment, proof of work, progress visibility, and manager approval into one focused mobile system.
 Kotlin Multiplatform Supabase Realtime workflow SaaS-ready
-Read the Case Study Watch Demo
+Read the Case Study Get it on Google Play
 WUM Connect Live
 Admin broadcast Exam schedule updated Sent to 4 active roles with offline sync.
 Students Faculty Admin
@@ -100,7 +100,7 @@ Proof system
 AppVion Studio presents verifiable product depth: public demos, concrete workflows, visible founder accountability, and a modern technical base.
 07 Portfolio products and concepts presented with demos or clear product scope.
 04 Core domains covered: operations, delivery, education, and events.
-02 Apps live on Google Play: SnowGrid and the D. Delivery customer app.
+03 Apps live on Google Play: SnowGrid, PropFix and the D. Delivery customer app.
 24h Fast first response target for qualified strategy conversations.
 Why choose us
 #### Why teams choose AppVion Studio
@@ -114,7 +114,7 @@ Visual hierarchy, motion, contrast, and spacing are used to create confidence be
 Compose, Kotlin Multiplatform, Supabase, Firebase, Ktor, and SQLDelight patterns for products that can evolve.
 Client confidence
 #### What to expect before, during and after the build
-You can check our work before you talk to us. Two of our apps are live on Google Play, seven projects have full case studies, our prices are published, and every team member is named. On final payment you own the source code, repositories and store listings.
+You can check our work before you talk to us. Three of our apps are live on Google Play, seven projects have full case studies, our prices are published, and every team member is named. On final payment you own the source code, repositories and store listings.
 Before the build
 You get a crisp product direction, core workflow map, and realistic launch path.
 During the build
@@ -720,7 +720,7 @@ Also in the portfolio
 Earlier products, each with a written case study and a recorded walkthrough.
 Property maintenance
 ##### PropFix
-A Kotlin Multiplatform maintenance workflow bringing contractor assignment, proof of work, progress visibility, and manager approval into one mobile system.
+A Kotlin Multiplatform maintenance workflow bringing contractor assignment, proof of work, progress visibility, and manager approval into one mobile system. Live on Google Play.
 Read the Case Study
 University product
 ##### WUM Connect
@@ -929,9 +929,9 @@ Property maintenance platform
 ### PropFix: a field service command layer for modern maintenance teams.
 A Kotlin Multiplatform maintenance workflow connecting property managers and the contractors who do the work — job assignment, proof of work, progress visibility, and manager approval in one system instead of four phone calls and a paper docket.
 Kotlin Multiplatform Compose Multiplatform Supabase Work orders Multi-role
-3 roles Android & iOS from one codebase Offline-capable
-Published 16 Aug 2026 · Updated 21 Oct 2026
-Watch the Demo Build something like this
+3 roles Android & iOS from one codebase Offline-capable Live on Google Play
+Published 16 Aug 2026 · Updated 29 Oct 2026
+Get it on Google Play Watch the Demo Build something like this
 The problem
 #### Maintenance work is coordinated by whoever is willing to keep chasing it.
 Context
@@ -1711,7 +1711,7 @@ Three roles on one platform: map measurement, pricing from the company's own rat
 Read the case study
 Property maintenance
 ##### PropFix
-Work orders from report to sign-off across managers, contractors and tenants, in Kotlin Multiplatform.
+Work orders from report to sign-off across managers, contractors and tenants, in Kotlin Multiplatform. Live on Google Play.
 Read the case study
 Google Play
 ##### SnowGrid on Google Play
