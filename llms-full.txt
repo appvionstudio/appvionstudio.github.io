@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-10-29 from the 29 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-10-30 from the 29 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -70,7 +70,7 @@ Define the product thesis, core workflow, feature priority, monetization shape, 
 Native Android products with Compose-driven interfaces, refined interactions, scalable structure, and crisp mobile ergonomics.
 03
 ##### Kotlin Multiplatform Systems
-Shared business logic and durable architecture for teams that want cleaner delivery across platforms without duplicated complexity.
+Shared business logic and durable architecture for teams that want cleaner delivery across platforms without duplicated complexity. Already on Android? Add iOS without a rewrite.
 04
 ##### AI-Ready Interfaces
 Intelligent workflows, command surfaces, automation-ready UX, and data-aware interaction patterns built with restraint.
@@ -79,7 +79,7 @@ Intelligent workflows, command surfaces, automation-ready UX, and data-aware int
 Transform dated apps into premium experiences with sharper hierarchy, smoother flows, better trust signals, and cleaner UI systems.
 06
 ##### Operational Tools
-Dispatch, approvals, tracking, secure content, attendance, communication, and internal systems built for repeat daily use.
+Dispatch, approvals, tracking, secure content, attendance, communication, and internal systems built for repeat daily use. See our field service and delivery apps.
 Process
 #### How we build your app, in four steps
 Every phase is built to reduce ambiguity, protect momentum, and turn a vague app idea into a launch-ready product system.
@@ -176,6 +176,15 @@ Real numbers, what moves them, and how offshore pricing compares to US and Europ
 Engineering
 ##### Kotlin Multiplatform vs Flutter for business apps.
 Shared logic or a shared interface: what each one means for an operational app.
+Pricing
+##### How much does a Kotlin Multiplatform app cost?
+Published price bands, what adding iOS really adds, and the costs outside the quote.
+Engineering
+##### Is Kotlin Multiplatform production-ready in 2026?
+The timeline, who uses it in production, and when it is worth it, with sources.
+Engineering
+##### Offline-first mobile app development: how it works.
+A local database, an outbox, background sync and conflict rules, from apps we have shipped.
 FAQ
 #### Clear answers before the first call.
 A good project starts with aligned expectations. These are the questions most buyers need answered before sharing a brief.
