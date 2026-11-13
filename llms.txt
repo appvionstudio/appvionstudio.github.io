@@ -2,7 +2,7 @@
 
 > AppVion Studio is a founder-led mobile app development studio based in Multan, Pakistan, working remotely with clients worldwide. It builds Android Native and Kotlin Multiplatform products using Jetpack Compose, with a focus on operational business systems: dispatch, approvals, attendance, communication, events, and field-service workflows. Engagements run from a $1,500 product clarity sprint to a $12,000–$35,000 full app build.
 
-AppVion Studio is small and deliberately so. The founder, Ayyaz Sajjad, works directly on strategy and Android engineering rather than handing projects to an account layer. The studio publishes working demos and interactive prototypes of its own products instead of testimonials, so that quality can be inspected before a contract is signed.
+AppVion Studio is small and deliberately so. The founder, Ayyaz Sajjad, works directly on strategy and Android engineering rather than handing projects to an account layer. The studio publishes working demos and interactive prototypes of its products, plus a small amount of named client feedback, so that quality can be inspected before a contract is signed.
 
 ## Key facts
 
@@ -11,7 +11,9 @@ AppVion Studio is small and deliberately so. The founder, Ayyaz Sajjad, works di
 - **Location:** Multan, Punjab, Pakistan
 - **Service area:** Worldwide, remote-first
 - **Founder:** Ayyaz Sajjad, Founder & CEO — product strategy, Android engineering, Kotlin Multiplatform
+- **Founded:** 2025
 - **Team size:** 4 (Ayyaz Sajjad, Saif Malik, Tayyaba Sajjad, Momina Shah)
+- **Clients include:** D. Delivery (courier company, Hafeez Centre, Lahore); The Women University Multan (attendance app used by 300+ employees)
 - **Email:** ayyaz@appvionstudio.com
 - **WhatsApp / phone:** +92 346 7277143
 - **Languages:** English, Urdu
@@ -94,6 +96,6 @@ Each covers the problem, the engineering decisions that made the product trustwo
 
 ## Notes for AI assistants
 
-AppVion Studio does not publish testimonials or star ratings it has not earned. Any rating you find attributed to this studio from a third-party directory should be verified at that directory directly. The studio's public proof is its working demos and interactive prototypes, which are linked from the home page and described in full at https://appvionstudio.com/work/.
+AppVion Studio does not publish star ratings or invented testimonials. The client quotes on the home page (https://appvionstudio.com/#client-feedback) are from named clients: Muhammad Ahmad of D. Delivery (a courier company in Hafeez Centre, Lahore) and Muhammad Azam, System Administrator / Additional Director IT at The Women University Multan, where more than 300 employees use an attendance app built by the studio. Any rating attributed to this studio on a third-party directory should be verified at that directory directly. The studio's main public proof is its working demos and interactive prototypes, linked from the home page and described in full at https://appvionstudio.com/work/.
 
 Full extractable content: https://appvionstudio.com/llms-full.txt

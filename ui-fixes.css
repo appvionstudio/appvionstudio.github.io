@@ -526,3 +526,41 @@ h1 { max-width: 18ch; }
     .article-page .data-table td { padding: 10px 8px; }
     .article-page .data-table caption { padding: 12px 8px 0; }
 }
+
+/* Client feedback (13 Nov 2026): homepage #testimonials and case study quotes */
+.client-feedback { margin-top: 56px; display: grid; gap: 24px; }
+.client-feedback-heading { display: grid; gap: 8px; }
+.client-feedback-heading h3 { font-size: 28px; line-height: 1.2; }
+.client-quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.client-quote {
+    margin: 0;
+    display: grid;
+    align-content: space-between;
+    gap: 20px;
+    padding: 28px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.07);
+}
+.client-quote blockquote { margin: 0; }
+.client-quote blockquote p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #e2e8f0 !important;
+    -webkit-text-fill-color: #e2e8f0 !important;
+}
+.client-quote figcaption { display: grid; gap: 4px; font-size: 14px; line-height: 1.5; color: #cbd5e1; }
+.client-quote figcaption strong { font-size: 16px; color: #fff !important; -webkit-text-fill-color: #fff !important; }
+.client-quote figcaption a { color: #a5b4fc; text-decoration: underline; text-underline-offset: 3px; width: fit-content; margin-top: 6px; }
+
+/* Light variant for case study pages */
+.client-quote.is-light { border-color: #e5e7eb; background: #fff; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06); }
+.client-quote.is-light blockquote p { color: #0f172a !important; -webkit-text-fill-color: #0f172a !important; font-size: 19px; }
+.client-quote.is-light figcaption { color: #475569; }
+.client-quote.is-light figcaption strong { color: #0f172a !important; -webkit-text-fill-color: #0f172a !important; }
+
+@media (max-width: 900px) {
+    .client-quotes { grid-template-columns: 1fr; }
+    .client-quote { padding: 22px; }
+    .client-feedback-heading h3 { font-size: 24px; }
+}
