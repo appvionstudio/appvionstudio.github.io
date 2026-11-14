@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-11-13 from the 29 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-11-14 from the 29 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -127,6 +127,8 @@ Client feedback
 Muhammad Ahmad D. Delivery, Hafeez Centre, Lahore Read the D. Delivery case study
 “More than 300 employees at the university use the attendance app. We have been relieved of biometric machine licensing and hardware problems: every employee now has the biometric machine in their own hand, in the form of their mobile phone. They connect to the university Wi-Fi and mark their attendance, and our employees are very happy with the digitisation.”
 Muhammad Azam System Administrator / Additional Director IT, The Women University Multan
+“PropFix is very helpful, time-saving and easy to use. It saves us time, money and the headache of paperwork in the field. The app is easy, user-friendly and fast for everyone: customers, contractors and admins. It is reshaping our work.”
+Rao Tasleem Khan Senior Sub-Engineer (Field), Construction Read the PropFix case study
 Engagements
 #### Choose the build path that matches your product stage.
 From fast strategy clarity to full product delivery, every engagement is designed around visible outcomes and practical next steps.
@@ -949,7 +951,7 @@ Property maintenance platform
 A Kotlin Multiplatform maintenance workflow connecting property managers and the contractors who do the work — job assignment, proof of work, progress visibility, and manager approval in one system instead of four phone calls and a paper docket.
 Kotlin Multiplatform Compose Multiplatform Supabase Work orders Multi-role
 3 roles Android & iOS from one codebase Offline-capable Live on Google Play
-Published 16 Aug 2026 · Updated 29 Oct 2026
+Published 16 Aug 2026 · Updated 14 Nov 2026
 Get it on Google Play Watch the Demo Build something like this
 The problem
 #### Maintenance work is coordinated by whoever is willing to keep chasing it.
@@ -991,6 +993,10 @@ Sync you can see
 The dashboard states its own sync status rather than silently assuming it is current. A field worker with poor signal can tell the difference between "nothing to do" and "we have not heard from the server lately" — a distinction most apps quietly collapse.
 Shared logic, native shells
 Compose Multiplatform with Koin dependency injection and a local SQLDelight cache. Business rules are written once; each platform keeps its own native presentation.
+Client feedback
+#### What a user in the field says.
+“PropFix is very helpful, time-saving and easy to use. It saves us time, money and the headache of paperwork in the field. The app is easy, user-friendly and fast for everyone: customers, contractors and admins. It is reshaping our work.”
+Rao Tasleem Khan Senior Sub-Engineer (Field), Construction
 Technology
 #### The stack behind PropFix.
 Kotlin Multiplatform Compose Multiplatform Material 3 Coroutines & Flow Supabase Supabase Auth SQLDelight Koin Role-Based Access

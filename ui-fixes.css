@@ -531,7 +531,7 @@ h1 { max-width: 18ch; }
 .client-feedback { margin-top: 56px; display: grid; gap: 24px; }
 .client-feedback-heading { display: grid; gap: 8px; }
 .client-feedback-heading h3 { font-size: 28px; line-height: 1.2; }
-.client-quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.client-quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
 .client-quote {
     margin: 0;
     display: grid;
