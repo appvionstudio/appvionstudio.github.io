@@ -1,0 +1,3 @@
+# AppVion Studio apps (SnowGrid, PropFix, D. Delivery) do not show ads.
+# No ad sellers are authorised to sell inventory in these apps.
+placeholder.example.com, placeholder, DIRECT, placeholder
