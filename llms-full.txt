@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-11-14 from the 29 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-11-21 from the 31 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -35,7 +35,7 @@ Kotlin Multiplatform Jetpack Compose Supabase Realtime dispatch Proof of deliver
 Read the Case Study Get it on Google Play
 Live on Google Play
 ##### PropFix: a field service command layer for modern maintenance teams.
-A Kotlin Multiplatform maintenance workflow that brings contractor assignment, proof of work, progress visibility, and manager approval into one focused mobile system.
+A Kotlin Multiplatform maintenance workflow that brings contractor assignment, proof of work, progress visibility, and manager approval into one focused mobile system. Housing societies in Pakistan: see PropFix for housing societies.
 Kotlin Multiplatform Supabase Realtime workflow SaaS-ready
 Read the Case Study Get it on Google Play
 WUM Connect Live
@@ -79,7 +79,7 @@ Intelligent workflows, command surfaces, automation-ready UX, and data-aware int
 Transform dated apps into premium experiences with sharper hierarchy, smoother flows, better trust signals, and cleaner UI systems.
 06
 ##### Operational Tools
-Dispatch, approvals, tracking, secure content, attendance, communication, and internal systems built for repeat daily use. See our field service and delivery apps.
+Dispatch, approvals, tracking, secure content, attendance, communication, and internal systems built for repeat daily use. See our field service and delivery apps, and our staff attendance app.
 Process
 #### How we build your app, in four steps
 Every phase is built to reduce ambiguity, protect momentum, and turn a vague app idea into a launch-ready product system.
@@ -126,7 +126,7 @@ Client feedback
 “We are very happy with AppVion Studio. Their work is amazing, the team is very cooperative, and they delivered more than we expected by thinking outside the box. I will 100% recommend them to more people.”
 Muhammad Ahmad D. Delivery, Hafeez Centre, Lahore Read the D. Delivery case study
 “More than 300 employees at the university use the attendance app. We have been relieved of biometric machine licensing and hardware problems: every employee now has the biometric machine in their own hand, in the form of their mobile phone. They connect to the university Wi-Fi and mark their attendance, and our employees are very happy with the digitisation.”
-Muhammad Azam System Administrator / Additional Director IT, The Women University Multan
+Muhammad Azam System Administrator / Additional Director IT, The Women University Multan See the staff attendance app
 “PropFix is very helpful, time-saving and easy to use. It saves us time, money and the headache of paperwork in the field. The app is easy, user-friendly and fast for everyone: customers, contractors and admins. It is reshaping our work.”
 Rao Tasleem Khan Senior Sub-Engineer (Field), Construction Read the PropFix case study
 Engagements
@@ -1018,6 +1018,10 @@ Industry
 ##### Field service apps
 Dispatch, work orders, proof of work and offline sync: what a field service app needs, from the products we have shipped.
 See field service apps
+Housing societies
+##### PropFix for housing societies
+How a housing society or property office in Pakistan runs resident complaints in PropFix, from complaint to approved job.
+See PropFix for societies
 Start the conversation
 #### Managing properties, crews, or contractors?
 Job assignment, proof of work, and getting paid for it — if that runs on phone calls and a spreadsheet today, it is usually a strong candidate for the same treatment.
@@ -1252,6 +1256,10 @@ All work
 ##### Full portfolio
 Every case study and product demo in one place, across logistics, field service, education, events, and SaaS.
 Browse all case studies
+Staff attendance
+##### Staff attendance app
+Staff mark attendance on their own phones over the institution's Wi-Fi, without biometric machines. Used by more than 300 employees at The Women University Multan.
+See the staff attendance app
 Start the conversation
 #### Tracking something that has to work without a network?
 Attendance, inspections, stock counts, field surveys — anything captured away from a desk needs offline-first design from the start, not bolted on later. How offline-first apps work.
@@ -1847,6 +1855,191 @@ Fifteen minutes is enough to map the booking, dispatch and proof flow your busin
 Book a free 15-min call WhatsApp us
 
 ======================================================================
+## Staff Attendance App Without Biometrics | AppVion Studio
+URL: https://appvionstudio.com/staff-attendance-app/
+======================================================================
+
+Staff attendance app
+### A staff attendance app for universities, colleges and offices in Pakistan, without biometric machines.
+AppVion Studio sets up a staff attendance system in which employees mark attendance on their own mobile phones while connected to your institution's Wi-Fi. There are no fingerprint machines to buy and no licences to renew. More than 300 employees at The Women University Multan use it, and setup for a new institution takes about 4 to 5 days.
+Used by 300+ employees No fingerprint hardware Setup in about 4 to 5 days
+Book a free 15-min call How it works
+How it works
+#### How staff mark attendance without a biometric machine.
+The phone each employee already carries does the job a fingerprint machine used to do.
+01
+##### We set it up
+We configure the system for your institution's Wi-Fi network and your staff. Full setup takes about 4 to 5 days.
+02
+##### Staff connect to your Wi-Fi
+Each employee connects their own mobile phone to the institution's Wi-Fi network.
+03
+##### They mark attendance on the phone
+Connected to the Wi-Fi, the employee marks attendance in the app. No fingerprint scanner is involved.
+04
+##### No hardware to look after
+No biometric machines to buy or license, and no machine hardware problems to chase.
+Proof
+#### Used by more than 300 employees at The Women University Multan.
+The Women University Multan replaced its biometric attendance machines with this system. Staff connect to the university Wi-Fi and mark attendance on their own phones.
+“More than 300 employees at the university use the attendance app. We have been relieved of biometric machine licensing and hardware problems: every employee now has the biometric machine in their own hand, in the form of their mobile phone. They connect to the university Wi-Fi and mark their attendance, and our employees are very happy with the digitisation.”
+Muhammad Azam System Administrator / Additional Director IT, The Women University Multan
+Who it is for
+#### Who a Wi-Fi attendance app suits.
+Any institution in Pakistan whose staff come to a site with its own Wi-Fi network. The one requirement: staff mark attendance while connected to that Wi-Fi.
+##### Universities
+Already in use at The Women University Multan, where more than 300 employees mark attendance this way.
+##### Colleges and schools
+Teaching and office staff mark attendance on their phones instead of at a fingerprint machine or in a register.
+##### Hospitals
+Staff mark attendance over the hospital Wi-Fi, with no biometric machine to keep working.
+##### Offices
+Companies and government offices that want staff attendance without buying fingerprint hardware.
+Setup
+#### What setup involves.
+About 4 to 5 days
+Full setup for a new institution takes about 4 to 5 days.
+Configured for your Wi-Fi and staff
+We configure the system for your institution's Wi-Fi network and your staff, so employees can mark attendance on their own phones.
+Not built from scratch
+AppVion Studio owns the complete code of the system that runs at The Women University Multan, and sets the same system up for other institutions.
+A private deployment
+The system is set up privately for your institution. It is not a public app on Google Play.
+Related
+#### More from AppVion Studio.
+Class attendance
+##### Attendance Management
+For teacher-marked class attendance, see our attendance management case study.
+Read the case study
+Multan, Pakistan
+##### Our studio in Multan
+AppVion Studio is on LMQ Road, Katchery Chowk, Multan, and works with clients across Pakistan.
+App development in Multan
+Housing societies
+##### PropFix for housing societies
+A maintenance complaint app for housing societies and property offices, live on Google Play.
+See PropFix for societies
+FAQ
+#### Staff attendance app questions.
+Do we need fingerprint or biometric machines?
+No. Staff mark attendance on their own mobile phones while connected to your institution's Wi-Fi. There is no fingerprint hardware to buy and no biometric machine licence to renew.
+How long does setup take?
+Full setup takes about 4 to 5 days. We configure the system for your institution's Wi-Fi network and your staff.
+Where is this attendance system already in use?
+At The Women University Multan, where more than 300 employees connect to the university Wi-Fi and mark attendance on their own phones instead of on biometric machines.
+Do you build it from scratch for every institution?
+No. AppVion Studio owns the complete code of the system and sets the same system up for each new institution. It is a private deployment for your institution, not a public app on Google Play.
+How much does a staff attendance app cost?
+There is no public price. Book a free 15-minute call, tell us about your institution and your staff, and we send you a fixed quote.
+Where in Pakistan do you work?
+AppVion Studio is on LMQ Road, Katchery Chowk, Multan. We work remote-first with clients in Lahore, Karachi, Islamabad and across Pakistan, and in-person meetings can be arranged for clients in and around Multan.
+Start the conversation
+#### Replacing biometric machines at your institution?
+Book a free 15-minute call. Tell us how many staff you have and how they mark attendance today, and we send you a fixed quote for the setup.
+Book a free 15-min call WhatsApp us
+
+======================================================================
+## Housing Society Complaint App: PropFix | AppVion Studio
+URL: https://appvionstudio.com/housing-society-complaint-app/
+======================================================================
+
+PropFix for housing societies
+### PropFix: a maintenance complaint app for housing societies and property offices in Pakistan.
+PropFix is a maintenance complaint app on Google Play that a housing society or property office can download and run itself. Residents raise complaints, the society office assigns each job to a contractor, the contractor attaches before and after photos as proof, and the office approves the work. It is built by AppVion Studio, and you can start on the free plan.
+Live on Google Play Resident, office and contractor roles Before and after photo proof
+Get PropFix on Google Play Book a free 15-min call
+How the complaint flow works
+#### From a resident's complaint to an approved job.
+Three PropFix roles map onto a society. The resident uses the tenant role, the society office uses the property manager role, and maintenance staff or outside contractors use the contractor role.
+01
+##### The resident raises a complaint
+The resident links their unit with an invite code from the office, then reports the problem in the app. Each complaint shows its unit, category and urgency.
+02
+##### The office assigns it
+The society office sees the waiting complaint on its PropFix board and assigns the job to a contractor from its own list.
+03
+##### The contractor adds photo proof
+The contractor is notified of the job, does the work and attaches before and after photos. PropFix records where each photo was taken, at the moment it is taken.
+04
+##### The office approves
+The office checks the photos on the job record and approves the work without a site visit. The resident follows the complaint's status in the app.
+Inside the app
+#### The complaint flow, screen by screen.
+ComplaintResident · Category and urgency
+TodayOffice · Waiting complaints and the job board
+Job detailOffice · Assign and check proof
+My jobsContractor · What to do next
+Why not WhatsApp and registers
+#### Why PropFix beats phone calls, WhatsApp groups and complaint registers.
+When complaints live in phone calls and messages, nothing is searchable, nobody can say which jobs are open without asking around, and "it's done" is a claim, not a record.
+##### Complaints stay on record
+A complaint made on a call or in a group chat is hard to find a week later. In PropFix every complaint and job is a record on the office's list.
+##### Open jobs at a glance
+The office board shows how many jobs are open, dispatched, in progress and completed, without calling anyone.
+##### Proof, not a claim
+Before and after photos sit on the job itself, so "it's done" can be checked.
+##### Residents see the status
+Residents follow their complaint's status in the app instead of calling the office for updates.
+Proof
+#### Live on Google Play and used in the field.
+PropFix is live on Google Play. Rao Tasleem Khan, a Senior Sub-Engineer (Field) in construction, uses it at work. This is what he says:
+“PropFix is very helpful, time-saving and easy to use. It saves us time, money and the headache of paperwork in the field. The app is easy, user-friendly and fast for everyone: customers, contractors and admins. It is reshaping our work.”
+Rao Tasleem Khan Senior Sub-Engineer (Field), Construction
+Plans
+#### What PropFix costs.
+PropFix has a free plan and two paid monthly plans, as listed in the PropFix terms of service. You upgrade from Settings in the app.
+##### Free
+Up to 3 properties, 20 work orders a month and 3 contractors.
+##### Pro: $19 a month
+Up to 25 properties, 500 work orders a month and 15 contractors.
+##### Business: $49 a month
+Unlimited properties, work orders and contractors, plus priority support.
+##### Start free
+Start on the free plan and upgrade from Settings in the app when you need more.
+Get started
+#### How a society starts using PropFix.
+1. Download PropFix
+The society office downloads PropFix from Google Play and signs up as the property manager.
+2. Add your properties and units
+The office enters the society's properties and units in the app.
+3. Invite contractors and residents
+Contractors sign up with an invite code the office creates under Settings, then Manage Invites. Residents enter the office's invite code to link their unit.
+4. Want help? Book a call
+If you would like help setting PropFix up for your society, book a free 15-minute call.
+Related
+#### More from AppVion Studio.
+Case study
+##### How we built PropFix
+Work orders from report to sign-off, invite-code onboarding and proof of work, in Kotlin Multiplatform.
+Read the case study
+Industry
+##### Field service apps
+Dispatch, work orders, proof of work and offline sync, from the products we have shipped.
+See field service apps
+Institutions
+##### Staff attendance app
+Staff mark attendance on their own phones over the institution's Wi-Fi, without biometric machines.
+See the staff attendance app
+FAQ
+#### PropFix for housing societies: questions.
+Can a housing society use PropFix on its own?
+Yes. Download PropFix from Google Play, sign up as the property manager for your society office, and invite residents and contractors with invite codes. If you want help setting it up, book a free 15-minute call.
+How do residents and contractors join?
+Both need an invite code from the office. Contractors sign up with a code the office creates under Settings, then Manage Invites. Residents enter the office's invite code on their dashboard to link their unit.
+How does the office know the work was really done?
+The contractor attaches before and after photos to the job, and PropFix stores the location at the moment each photo is taken. The office approves the job with those photos on the record, without a site visit.
+Does PropFix work on a weak signal?
+Yes. PropFix saves changes to the phone first and syncs when the phone is back online. Until then a change shows as pending.
+How much does PropFix cost?
+The Free plan covers up to 3 properties, 20 work orders a month and 3 contractors. Pro is $19 a month and Business is $49 a month, as listed in the PropFix terms of service. You upgrade from Settings in the app.
+Who makes PropFix?
+AppVion Studio, a mobile app studio on LMQ Road, Katchery Chowk, Multan, Pakistan, founded in 2025. The PropFix case study explains how we built it.
+Start the conversation
+#### Running a housing society or property office?
+Download PropFix and start on the free plan. If you want help setting it up for your society, book a free 15-minute call.
+Get PropFix on Google Play Book a free 15-min call
+
+======================================================================
 ## Mobile App Development FAQ | AppVion Studio
 URL: https://appvionstudio.com/faq.html
 ======================================================================
@@ -2042,6 +2235,7 @@ Standard Kotlin, Jetpack Compose and mainstream backends, so another competent t
 Proof
 #### Work you can inspect before you hire.
 Each case study covers the problem, the approach, and the engineering decisions that were harder than they look.
+For institutions and housing societies in Pakistan: a staff attendance app that more than 300 employees at The Women University Multan use instead of biometric machines, and PropFix for housing societies, live on Google Play.
 Logistics platform
 ##### D. Delivery
 A three-app Kotlin Multiplatform delivery platform for high-value electronics couriering, with dual video proof of delivery, expanding-radius rider dispatch, and server-enforced cash-on-delivery reconciliation.
@@ -2121,7 +2315,7 @@ Rider assignment, live tracking, proof of delivery, and cash-on-delivery reconci
 Job dispatch, crew availability, photo verification, and payout tracking for teams working away from a desk.
 05
 ##### Business & internal tools
-Attendance, approvals, secure content, and communication systems built for repeat daily use.
+Attendance, approvals, secure content, and communication systems built for repeat daily use. See our staff attendance app, used by more than 300 employees at The Women University Multan.
 06
 ##### Product redesigns
 Dated apps rebuilt into premium experiences with sharper hierarchy, smoother flows, and cleaner interface systems.

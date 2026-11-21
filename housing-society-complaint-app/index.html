@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G75C44N2Y4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("consent", "default", { analytics_storage: "denied", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied" });
+        try { if (localStorage.getItem("appvion-consent") === "granted") gtag("consent", "update", { analytics_storage: "granted" }); } catch (e) {}
+        gtag("js", new Date());
+        gtag("config", "G-G75C44N2Y4");
+    </script>
+    <script src="/analytics-events.js" defer></script>
+    <script src="/consent.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Society Complaint App: PropFix | AppVion Studio</title>
+    <meta name="description" content="Maintenance complaint app for housing societies in Pakistan: residents report, the office assigns a contractor, who adds photo proof. Live on Google Play.">
+    <meta name="keywords" content="housing society complaint app, housing society management app Pakistan, property maintenance complaint app, society maintenance app, resident complaint app, PropFix">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://appvionstudio.com/housing-society-complaint-app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AppVion Studio">
+    <meta property="og:title" content="Housing Society Complaint App: PropFix | AppVion Studio">
+    <meta property="og:description" content="Maintenance complaint app for housing societies in Pakistan: residents report, the office assigns a contractor, who adds photo proof. Live on Google Play.">
+    <meta property="og:image" content="https://appvionstudio.com/assets/og/housing-society.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="PropFix for housing societies by AppVion Studio, with the complaints and job detail screens">
+    <meta property="og:url" content="https://appvionstudio.com/housing-society-complaint-app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Housing Society Complaint App: PropFix | AppVion Studio">
+    <meta name="twitter:description" content="Maintenance complaint app for housing societies in Pakistan: residents report, the office assigns a contractor, who adds photo proof. Live on Google Play.">
+    <meta name="twitter:image" content="https://appvionstudio.com/assets/og/housing-society.jpg">
+    <meta name="twitter:image:alt" content="PropFix for housing societies by AppVion Studio, with the complaints and job detail screens">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
+    <link rel="icon" href="/appvion-logo-icon.png">
+    <link rel="apple-touch-icon" href="/appvion-logo-icon.png">
+    <link rel="stylesheet" href="/styles.css?v=20261021-perf">
+    <link rel="stylesheet" href="/ui-fixes.css?v=20261113-clients">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "@id": "https://appvionstudio.com/work/profix/#app",
+      "name": "PropFix",
+      "operatingSystem": "Android",
+      "applicationCategory": "BusinessApplication",
+      "description": "Maintenance complaint and work order app for housing societies and property offices. Residents raise complaints, the office assigns each job to a contractor, the contractor attaches before and after photos as proof, and the office approves the work.",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.appvionstudio.propfix",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.appvionstudio.propfix",
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://appvionstudio.com/#organization",
+        "name": "AppVion Studio",
+        "url": "https://appvionstudio.com/"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Housing societies and property offices in Pakistan"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free plan",
+          "description": "Up to 3 properties, 20 work orders a month and 3 contractors.",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro plan",
+          "description": "Up to 25 properties, 500 work orders a month and 15 contractors.",
+          "price": "19",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "19",
+            "priceCurrency": "USD",
+            "unitText": "MONTH"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business plan",
+          "description": "Unlimited properties, work orders and contractors, plus priority support.",
+          "price": "49",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "49",
+            "priceCurrency": "USD",
+            "unitText": "MONTH"
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a housing society use PropFix on its own?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Download PropFix from Google Play, sign up as the property manager for your society office, and invite residents and contractors with invite codes. If you want help setting it up, book a free 15-minute call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do residents and contractors join?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both need an invite code from the office. Contractors sign up with a code the office creates under Settings, then Manage Invites. Residents enter the office's invite code on their dashboard to link their unit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the office know the work was really done?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The contractor attaches before and after photos to the job, and PropFix stores the location at the moment each photo is taken. The office approves the job with those photos on the record, without a site visit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does PropFix work on a weak signal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. PropFix saves changes to the phone first and syncs when the phone is back online. Until then a change shows as pending."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does PropFix cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Free plan covers up to 3 properties, 20 work orders a month and 3 contractors. Pro is $19 a month and Business is $49 a month, as listed in the PropFix terms of service. You upgrade from Settings in the app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who makes PropFix?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AppVion Studio, a mobile app studio on LMQ Road, Katchery Chowk, Multan, Pakistan, founded in 2025. The PropFix case study explains how we built it."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://appvionstudio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "PropFix for housing societies",
+          "item": "https://appvionstudio.com/housing-society-complaint-app/"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="home-page case-study-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-shell">
+        <header class="topbar" data-header>
+            <a class="brand" href="/" aria-label="AppVion Studio Home">
+                <span class="brand-mark">
+                    <img class="brand-mark-image" src="/appvion-logo-icon-128.webp" alt="AppVion Studio logo">
+                </span>
+                <span class="brand-text">
+                    <strong>AppVion Studio</strong>
+                    <small>Industries</small>
+                </span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
+                <a href="/work/">Work</a>
+                <a href="/#services">Services</a>
+                <a href="/pricing.html">Pricing</a>
+                <a href="/#process">Process</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/about.html">About</a>
+                <a class="button nav-button" href="/#contact">Book a Call</a>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="section">
+                <div class="container">
+                    <nav class="eyebrow" aria-label="Breadcrumb">
+                        <a href="/">Home</a> / PropFix for housing societies
+                    </nav>
+                </div>
+                <div class="container section-heading">
+                    <p class="eyebrow">PropFix for housing societies</p>
+                    <h1>PropFix: a maintenance complaint app for housing societies and property offices in Pakistan.</h1>
+                    <p>
+                        PropFix is a maintenance complaint app on Google Play that a housing society or property office can download and run itself. Residents raise complaints, the society office assigns each job to a contractor, the contractor attaches before and after photos as proof, and the office approves the work. It is built by AppVion Studio, and you can start on the free plan.
+                    </p>
+                    <div class="hero-proof">
+                        <span>Live on Google Play</span>
+                        <span>Resident, office and contractor roles</span>
+                        <span>Before and after photo proof</span>
+                    </div>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://play.google.com/store/apps/details?id=com.appvionstudio.propfix" target="_blank" rel="noopener noreferrer" data-contact-action="google-play" data-contact-label="Housing society hero Google Play">Get PropFix on Google Play</a>
+                        <a class="button secondary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Housing society hero">Book a free 15-min call</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="how-it-works">
+                <div class="container section-heading">
+                    <p class="eyebrow">How the complaint flow works</p>
+                    <h2>From a resident's complaint to an approved job.</h2>
+                    <p>
+                        Three PropFix roles map onto a society. The resident uses the tenant role, the society office uses the property manager role, and maintenance staff or outside contractors use the contractor role.
+                    </p>
+                </div>
+                <div class="container process-grid">
+                    <article class="process-step reveal in-view">
+                        <span>01</span>
+                        <h3>The resident raises a complaint</h3>
+                        <p>The resident links their unit with an invite code from the office, then reports the problem in the app. Each complaint shows its unit, category and urgency.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>02</span>
+                        <h3>The office assigns it</h3>
+                        <p>The society office sees the waiting complaint on its PropFix board and assigns the job to a contractor from its own list.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>03</span>
+                        <h3>The contractor adds photo proof</h3>
+                        <p>The contractor is notified of the job, does the work and attaches before and after photos. PropFix records where each photo was taken, at the moment it is taken.</p>
+                    </article>
+                    <article class="process-step reveal in-view">
+                        <span>04</span>
+                        <h3>The office approves</h3>
+                        <p>The office checks the photos on the job record and approves the work without a site visit. The resident follows the complaint's status in the app.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Inside the app</p>
+                    <h2>The complaint flow, screen by screen.</h2>
+                </div>
+                <div class="container screens-grid">
+                    <figure>
+                        <div class="shot-phone"><img src="/assets/screens/propfix-tenant-complaints.webp" alt="PropFix complaints list with an open electrical complaint, its unit and its urgency" width="600" height="1300" loading="lazy" decoding="async"></div>
+                        <figcaption><strong>Complaint</strong><span>Resident &middot; Category and urgency</span></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="shot-phone"><img src="/assets/screens/propfix-manager-today.webp" alt="PropFix manager home with the job board counts and a waiting tenant complaint" width="600" height="1300" loading="lazy" decoding="async"></div>
+                        <figcaption><strong>Today</strong><span>Office &middot; Waiting complaints and the job board</span></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="shot-phone"><img src="/assets/screens/propfix-job-detail.webp" alt="PropFix job detail with the assigned contractor and before and after proof of work slots" width="600" height="1300" loading="lazy" decoding="async"></div>
+                        <figcaption><strong>Job detail</strong><span>Office &middot; Assign and check proof</span></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="shot-phone"><img src="/assets/screens/propfix-contractor-jobs.webp" alt="PropFix contractor list of jobs on now and waiting to start" width="600" height="1300" loading="lazy" decoding="async"></div>
+                        <figcaption><strong>My jobs</strong><span>Contractor &middot; What to do next</span></figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Why not WhatsApp and registers</p>
+                    <h2>Why PropFix beats phone calls, WhatsApp groups and complaint registers.</h2>
+                    <p>
+                        When complaints live in phone calls and messages, nothing is searchable, nobody can say which jobs are open without asking around, and "it's done" is a claim, not a record.
+                    </p>
+                </div>
+                <div class="container choice-grid">
+                    <article class="choice-card reveal in-view">
+                        <h3>Complaints stay on record</h3>
+                        <p>A complaint made on a call or in a group chat is hard to find a week later. In PropFix every complaint and job is a record on the office's list.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>Open jobs at a glance</h3>
+                        <p>The office board shows how many jobs are open, dispatched, in progress and completed, without calling anyone.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>Proof, not a claim</h3>
+                        <p>Before and after photos sit on the job itself, so "it's done" can be checked.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>Residents see the status</h3>
+                        <p>Residents follow their complaint's status in the app instead of calling the office for updates.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="proof">
+                <div class="container section-heading">
+                    <p class="eyebrow">Proof</p>
+                    <h2>Live on Google Play and used in the field.</h2>
+                    <p>
+                        PropFix is live on <a href="https://play.google.com/store/apps/details?id=com.appvionstudio.propfix" target="_blank" rel="noopener noreferrer" data-contact-action="google-play" data-contact-label="Housing society proof Google Play">Google Play</a>. Rao Tasleem Khan, a Senior Sub-Engineer (Field) in construction, uses it at work. This is what he says:
+                    </p>
+                </div>
+                <div class="container">
+                    <figure class="client-quote is-light">
+                        <blockquote>
+                            <p>&ldquo;PropFix is very helpful, time-saving and easy to use. It saves us time, money and the headache of paperwork in the field. The app is easy, user-friendly and fast for everyone: customers, contractors and admins. It is reshaping our work.&rdquo;</p>
+                        </blockquote>
+                        <figcaption>
+                            <strong>Rao Tasleem Khan</strong>
+                            <span>Senior Sub-Engineer (Field), Construction</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Plans</p>
+                    <h2>What PropFix costs.</h2>
+                    <p>
+                        PropFix has a free plan and two paid monthly plans, as listed in the <a href="/propfix/terms/">PropFix terms of service</a>. You upgrade from Settings in the app.
+                    </p>
+                </div>
+                <div class="container choice-grid">
+                    <article class="choice-card reveal in-view">
+                        <h3>Free</h3>
+                        <p>Up to 3 properties, 20 work orders a month and 3 contractors.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>Pro: $19 a month</h3>
+                        <p>Up to 25 properties, 500 work orders a month and 15 contractors.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>Business: $49 a month</h3>
+                        <p>Unlimited properties, work orders and contractors, plus priority support.</p>
+                    </article>
+                    <article class="choice-card reveal in-view">
+                        <h3>Start free</h3>
+                        <p>Start on the free plan and upgrade from Settings in the app when you need more.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Get started</p>
+                    <h2>How a society starts using PropFix.</h2>
+                </div>
+                <div class="container study-grid">
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">1. Download PropFix</p>
+                        <p>The society office downloads PropFix from <a href="https://play.google.com/store/apps/details?id=com.appvionstudio.propfix" target="_blank" rel="noopener noreferrer" data-contact-action="google-play" data-contact-label="Housing society steps Google Play">Google Play</a> and signs up as the property manager.</p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">2. Add your properties and units</p>
+                        <p>The office enters the society's properties and units in the app.</p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">3. Invite contractors and residents</p>
+                        <p>Contractors sign up with an invite code the office creates under Settings, then Manage Invites. Residents enter the office's invite code to link their unit.</p>
+                    </section>
+                    <section class="study-panel reveal in-view">
+                        <p class="eyebrow">4. Want help? Book a call</p>
+                        <p>If you would like help setting PropFix up for your society, <a href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Housing society setup help">book a free 15-minute call</a>.</p>
+                    </section>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container section-heading">
+                    <p class="eyebrow">Related</p>
+                    <h2>More from AppVion Studio.</h2>
+                </div>
+                <div class="container case-grid">
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Case study</span>
+                            <h3>How we built PropFix</h3>
+                            <p>Work orders from report to sign-off, invite-code onboarding and proof of work, in Kotlin Multiplatform.</p>
+                        </div>
+                        <a href="/work/profix/">Read the case study</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Industry</span>
+                            <h3>Field service apps</h3>
+                            <p>Dispatch, work orders, proof of work and offline sync, from the products we have shipped.</p>
+                        </div>
+                        <a href="/field-service-app-development/">See field service apps</a>
+                    </article>
+                    <article class="case-card reveal in-view">
+                        <div>
+                            <span class="case-kicker">Institutions</span>
+                            <h3>Staff attendance app</h3>
+                            <p>Staff mark attendance on their own phones over the institution's Wi-Fi, without biometric machines.</p>
+                        </div>
+                        <a href="/staff-attendance-app/">See the staff attendance app</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section faq-section">
+                <div class="container section-heading">
+                    <p class="eyebrow">FAQ</p>
+                    <h2>PropFix for housing societies: questions.</h2>
+                </div>
+                <div class="container faq-list">
+                    <details class="faq-item reveal in-view" open>
+                        <summary>Can a housing society use PropFix on its own?</summary>
+                        <p>Yes. Download PropFix from Google Play, sign up as the property manager for your society office, and invite residents and contractors with invite codes. If you want help setting it up, book a free 15-minute call.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>How do residents and contractors join?</summary>
+                        <p>Both need an invite code from the office. Contractors sign up with a code the office creates under Settings, then Manage Invites. Residents enter the office's invite code on their dashboard to link their unit.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>How does the office know the work was really done?</summary>
+                        <p>The contractor attaches before and after photos to the job, and PropFix stores the location at the moment each photo is taken. The office approves the job with those photos on the record, without a site visit.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>Does PropFix work on a weak signal?</summary>
+                        <p>Yes. PropFix saves changes to the phone first and syncs when the phone is back online. Until then a change shows as pending.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>How much does PropFix cost?</summary>
+                        <p>The Free plan covers up to 3 properties, 20 work orders a month and 3 contractors. Pro is $19 a month and Business is $49 a month, as listed in the <a href="/propfix/terms/">PropFix terms of service</a>. You upgrade from Settings in the app.</p>
+                    </details>
+                    <details class="faq-item reveal in-view">
+                        <summary>Who makes PropFix?</summary>
+                        <p>AppVion Studio, a mobile app studio on LMQ Road, Katchery Chowk, Multan, Pakistan, founded in 2025. The <a href="/work/profix/">PropFix case study</a> explains how we built it.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section id="contact" class="section cta-section">
+                <div class="container cta-copy">
+                    <p class="eyebrow">Start the conversation</p>
+                    <h2>Running a housing society or property office?</h2>
+                    <p>
+                        Download PropFix and start on the free plan. If you want help setting it up for your society, book a free 15-minute call.
+                    </p>
+                    <div class="case-actions">
+                        <a class="button primary" href="https://play.google.com/store/apps/details?id=com.appvionstudio.propfix" target="_blank" rel="noopener noreferrer" data-contact-action="google-play" data-contact-label="Housing society Google Play">Get PropFix on Google Play</a>
+                        <a class="button secondary" href="https://calendly.com/ayyaz-appvionstudio/30min" target="_blank" rel="noopener noreferrer" data-contact-action="strategy-call" data-contact-label="Housing society">Book a free 15-min call</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div>
+                    <a class="brand footer-brand" href="/" aria-label="AppVion Studio Home">
+                        <span class="brand-mark">
+                            <img class="brand-mark-image" src="/appvion-logo-icon-128.webp" alt="AppVion Studio logo">
+                        </span>
+                        <span class="brand-text">
+                            <strong>AppVion Studio</strong>
+                            <small>Mobile app development studio</small>
+                        </span>
+                    </a>
+                    <p>Android Native and Kotlin Multiplatform products, built in Multan and delivered worldwide.</p>
+                </div>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="/work/">Work</a>
+                    <a href="/pricing.html">Pricing</a>
+                    <a href="/android-app-development.html">Android Development</a>
+                    <a href="/services/kotlin-multiplatform-development/">Kotlin Multiplatform</a>
+                    <a href="/field-service-app-development/">Field Service Apps</a>
+                    <a href="/delivery-app-development/">Delivery Apps</a>
+                    <a href="/insights/">Insights</a>
+                    <a href="/faq.html">FAQ</a>
+                    <a href="/about.html">About</a>
+                    <a href="/mobile-app-development-pakistan/">App Development in Pakistan</a>
+                    <a href="/mobile-app-development-multan/">App Development in Multan</a>
+                    <a href="/#contact">Contact</a>
+                    <a href="https://www.linkedin.com/company/112235810/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="/privacy.html">Privacy</a>
+                    <a href="/terms.html">Terms</a>
+                </nav>
+            </div>
+            <div class="container footer-bottom">
+                <span>AppVion Studio &copy; <span id="year"></span></span>
+                <span>Multan, Pakistan &middot; Working worldwide</span>
+            </div>
+        </footer>
+    </div>
+
+    <a class="sticky-mobile-cta" href="https://wa.me/923467277143" target="_blank" rel="noreferrer" aria-label="Start a project on WhatsApp" data-contact-action="whatsapp" data-contact-label="Sticky WhatsApp">
+        <span>WhatsApp</span>
+        <strong>Start Project</strong>
+    </a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="/nav.js" defer></script>
+</body>
+</html>
