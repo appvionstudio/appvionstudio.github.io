@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reset your PropFix password</title>
+<meta name="description" content="Choose a new password for your PropFix account.">
+<!-- This page handles one-time reset tokens: never indexed, never sends a referrer, and loads
+     no analytics or third-party scripts. It talks to the PropFix auth server directly. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://appvionstudio.com/propfix/reset-password/">
+<link rel="icon" href="/assets/propfix-icon-96.png">
+<style>
+  :root{--ink:#16202a;--muted:#5b6b7a;--rule:#dde4ea;--bg:#fbf8f2;--card:#ffffff;--accent:#1c2b4a;--gold:#b8892f;--good:#1e7a4f;--bad:#b3261e;--field:#ffffff}
+  @media (prefers-color-scheme:dark){
+    :root{--ink:#e9eef4;--muted:#9fb0be;--rule:#2a3642;--bg:#0f151c;--card:#161f29;--accent:#c9a45a;--gold:#c9a45a;--good:#5cc28f;--bad:#f2867e;--field:#0f151c}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:28rem;margin:0 auto;padding:2.5rem 1rem 4rem}
+  .brand{display:flex;align-items:center;gap:.6rem;margin-bottom:2rem;font-weight:700;font-size:1.15rem}
+  .brand img{width:36px;height:36px;border-radius:9px}
+  .brand span{color:var(--gold)}
+  h1{font-size:1.8rem;line-height:1.15;margin:0 0 .4rem}
+  p.lead{color:var(--muted);margin:0 0 1.6rem}
+  .card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:1.25rem}
+  label{display:block;font-weight:600;font-size:.92rem;margin:1rem 0 .35rem}
+  label:first-child{margin-top:0}
+  input{width:100%;font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--rule);border-radius:10px;padding:.75rem .85rem}
+  input:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+  .rules{display:flex;flex-wrap:wrap;gap:.4rem;margin:.55rem 0 0;padding:0;list-style:none;font-size:.8rem}
+  .rules li{border:1px solid var(--rule);border-radius:999px;padding:.1rem .55rem;color:var(--muted)}
+  .rules li.ok{border-color:var(--good);color:var(--good)}
+  button{margin-top:1.3rem;width:100%;font:inherit;font-weight:700;color:#fff;background:#1c2b4a;border:0;border-radius:12px;padding:.85rem 1rem;cursor:pointer}
+  @media (prefers-color-scheme:dark){button{background:#c9a45a;color:#14110a}}
+  button[disabled]{opacity:.55;cursor:not-allowed}
+  .msg{margin:1rem 0 0;padding:.75rem .9rem;border-radius:10px;font-size:.95rem}
+  .msg.err{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad)}
+  .msg.ok{background:color-mix(in srgb,var(--good) 12%,transparent);color:var(--good)}
+  .hidden{display:none}
+  .small{font-size:.85rem;color:var(--muted);margin-top:1.4rem}
+  a{color:var(--accent)}
+  @media (prefers-color-scheme:dark){a{color:#c9a45a}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="brand"><img src="/assets/propfix-icon-96.png" alt="" width="36" height="36"><b>Prop<span>Fix</span></b></div>
+
+  <section id="link-step" class="hidden">
+    <h1>Choose a new password</h1>
+    <p class="lead">Your reset link worked. Pick a new password for your PropFix account.</p>
+    <form class="card" id="link-form" novalidate>
+      <label for="pw1">New password</label>
+      <input id="pw1" type="password" autocomplete="new-password" required>
+      <ul class="rules" id="rules1"></ul>
+      <label for="pw1b">Confirm new password</label>
+      <input id="pw1b" type="password" autocomplete="new-password" required>
+      <button type="submit" id="link-btn">Save new password</button>
+      <div id="link-msg" class="msg hidden" role="status"></div>
+    </form>
+  </section>
+
+  <section id="code-step" class="hidden">
+    <h1>Reset your password</h1>
+    <p class="lead" id="code-lead">Enter the email you use for PropFix, the code from the reset email, and a new password.</p>
+    <form class="card" id="code-form" novalidate>
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="email" inputmode="email" required>
+      <label for="code">Code from the email</label>
+      <input id="code" inputmode="numeric" autocomplete="one-time-code" maxlength="10" required>
+      <label for="pw2">New password</label>
+      <input id="pw2" type="password" autocomplete="new-password" required>
+      <ul class="rules" id="rules2"></ul>
+      <label for="pw2b">Confirm new password</label>
+      <input id="pw2b" type="password" autocomplete="new-password" required>
+      <button type="submit" id="code-btn">Save new password</button>
+      <div id="code-msg" class="msg hidden" role="status"></div>
+    </form>
+    <p class="small">No code? In the PropFix app, tap <strong>Forgot password?</strong> on the sign-in screen and we will email you one.</p>
+  </section>
+
+  <section id="done-step" class="hidden">
+    <h1>Password changed</h1>
+    <p class="lead">Open PropFix and sign in with your new password.</p>
+    <p><a href="https://play.google.com/store/apps/details?id=com.appvionstudio.propfix">Get PropFix on Google Play</a></p>
+  </section>
+
+  <p class="small">Need help? <a href="/propfix/support/">PropFix support</a></p>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var AUTH = "https://ejberbiliuquoepzshkz.supabase.co/auth/v1";
+  // Publishable key: public by design (it ships inside the app too). Row level security,
+  // not this key, is what protects data.
+  var KEY = "sb_publishable_CNy4i76cqCaaQ6bWkxEtNg_sX1hfHs4";
+  var RULES = [
+    ["10+ characters", function (p) { return p.length >= 10; }],
+    ["a-z", function (p) { return /[a-z]/.test(p); }],
+    ["A-Z", function (p) { return /[A-Z]/.test(p); }],
+    ["0-9", function (p) { return /[0-9]/.test(p); }]
+  ];
+
+  function $(id) { return document.getElementById(id); }
+  function show(id) { ["link-step", "code-step", "done-step"].forEach(function (s) { $(s).classList.toggle("hidden", s !== id); }); }
+  function say(el, text, ok) { el.textContent = text; el.className = "msg " + (ok ? "ok" : "err"); }
+  function strong(p) { return RULES.every(function (r) { return r[1](p); }); }
+  function bindRules(input, list) {
+    function draw() {
+      list.innerHTML = "";
+      RULES.forEach(function (r) {
+        var li = document.createElement("li");
+        li.textContent = r[0];
+        if (r[1](input.value)) li.className = "ok";
+        list.appendChild(li);
+      });
+    }
+    input.addEventListener("input", draw); draw();
+  }
+  function errorText(status, body) {
+    var code = (body && (body.error_code || body.code)) || "";
+    if (code === "weak_password") return "That password is too weak. Use at least 10 characters with a lowercase letter, a capital letter and a number.";
+    if (code === "same_password") return "That is your current password. Choose a new one.";
+    if (code === "otp_expired" || status === 403) return "That code or link is wrong or has expired. Request a new one in the app (Forgot password?).";
+    if (status === 401) return "This reset link has expired. Request a new one in the app (Forgot password?).";
+    if (status === 429) return "Too many tries. Wait a few minutes, then try again.";
+    return "Something went wrong. Please try again.";
+  }
+  function call(method, path, token, payload) {
+    var headers = { "apikey": KEY, "Content-Type": "application/json" };
+    if (token) headers["Authorization"] = "Bearer " + token;
+    return fetch(AUTH + path, { method: method, headers: headers, body: payload ? JSON.stringify(payload) : undefined, referrerPolicy: "no-referrer", cache: "no-store" })
+      .then(function (res) {
+        return res.text().then(function (t) {
+          var body = null; try { body = t ? JSON.parse(t) : null; } catch (e) { body = null; }
+          return { ok: res.ok, status: res.status, body: body };
+        });
+      });
+  }
+  // Ends the reset session so the one-time token cannot be reused from this browser.
+  function endSession(token) { return call("POST", "/logout", token).catch(function () {}); }
+  function setPassword(token, password, msg, btn) {
+    btn.disabled = true;
+    return call("PUT", "/user", token, { password: password }).then(function (r) {
+      if (!r.ok) { say(msg, errorText(r.status, r.body)); btn.disabled = false; return; }
+      return endSession(token).then(function () { show("done-step"); });
+    }).catch(function () { say(msg, "No connection. Check your internet and try again."); btn.disabled = false; });
+  }
+
+  // Read the link's result, then remove it from the address bar and history straight away.
+  var hash = new URLSearchParams(location.hash.replace(/^#/, ""));
+  var query = new URLSearchParams(location.search);
+  if (location.hash || location.search) history.replaceState(null, "", location.pathname);
+
+  var token = hash.get("access_token");
+  var linkError = hash.get("error_code") || hash.get("error") || query.get("error_code");
+
+  bindRules($("pw1"), $("rules1"));
+  bindRules($("pw2"), $("rules2"));
+
+  if (token && (hash.get("type") === "recovery" || !hash.get("type"))) {
+    show("link-step");
+    $("link-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var p = $("pw1").value, msg = $("link-msg");
+      if (!strong(p)) return say(msg, "Use at least 10 characters with a lowercase letter, a capital letter and a number.");
+      if (p !== $("pw1b").value) return say(msg, "The passwords do not match.");
+      setPassword(token, p, msg, $("link-btn"));
+    });
+  } else {
+    show("code-step");
+    if (linkError || query.get("code")) {
+      $("code-lead").textContent = "That link has expired or was already used. You can still use the code from the newest reset email below, or request a new one in the app.";
+    }
+    $("code-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var email = $("email").value.trim(), code = $("code").value.replace(/\D/g, ""), p = $("pw2").value, msg = $("code-msg"), btn = $("code-btn");
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return say(msg, "Enter the email you use for PropFix.");
+      if (code.length < 6) return say(msg, "Enter the code from the email.");
+      if (!strong(p)) return say(msg, "Use at least 10 characters with a lowercase letter, a capital letter and a number.");
+      if (p !== $("pw2b").value) return say(msg, "The passwords do not match.");
+      btn.disabled = true;
+      call("POST", "/verify", null, { type: "recovery", email: email, token: code }).then(function (r) {
+        var t = r.body && r.body.access_token;
+        if (!r.ok || !t) { say(msg, errorText(r.status, r.body)); btn.disabled = false; return; }
+        return setPassword(t, p, msg, btn);
+      }).catch(function () { say(msg, "No connection. Check your internet and try again."); btn.disabled = false; });
+    });
+  }
+})();
+</script>
+</body>
+</html>
