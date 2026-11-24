@@ -154,7 +154,7 @@
             kicker: "Enterprise operations",
             tagline: "Snow removal run as a live network: property owners, dispatch, contractors, and drivers on one grid.",
             accent: "blue",
-            stack: ["Android Native", "Mapbox", "Live dispatch", "Escrow payouts"],
+            stack: ["Android Native", "Mapbox", "Live dispatch", "Payment ledger"],
             screens: [
                 {
                     id: "site-measurement",

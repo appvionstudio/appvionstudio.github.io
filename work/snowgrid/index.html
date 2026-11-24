@@ -15,14 +15,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnowGrid Case Study: Fleet Dispatch App | AppVion Studio</title>
-    <meta name="description" content="How we built SnowGrid: a three-role snow removal platform with live dispatch maps, GPS fleet tracking, area measurement, photo proof and Stripe escrow.">
-    <meta name="keywords" content="fleet management app development, dispatch app development, field service app development, snow removal software, GPS tracking app, Stripe payments app, multi-role platform, mobile app development case study">
+    <meta name="description" content="How we built SnowGrid: a three-role snow removal platform with live dispatch maps, GPS fleet tracking, area measurement, photo proof and a payment ledger.">
+    <meta name="keywords" content="fleet management app development, dispatch app development, field service app development, snow removal software, GPS tracking app, payment ledger app, multi-role platform, mobile app development case study">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://appvionstudio.com/work/snowgrid/">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="AppVion Studio">
     <meta property="og:title" content="SnowGrid — Fleet Dispatch &amp; Field Service Platform | AppVion Studio">
-    <meta property="og:description" content="Three roles, one platform: live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and Stripe escrow payments.">
+    <meta property="og:description" content="Three roles, one platform: live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and a payment ledger.">
     <meta property="og:image" content="https://appvionstudio.com/assets/og/case-snowgrid.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -30,7 +30,7 @@
     <meta property="og:url" content="https://appvionstudio.com/work/snowgrid/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="SnowGrid — Fleet Dispatch &amp; Field Service Platform">
-    <meta name="twitter:description" content="Live dispatch, GPS fleet tracking, area measurement, photo proof, and Stripe escrow in one multi-role platform.">
+    <meta name="twitter:description" content="Live dispatch, GPS fleet tracking, area measurement, photo proof, and a payment ledger in one multi-role platform.">
     <meta name="twitter:image" content="https://appvionstudio.com/assets/og/case-snowgrid.jpg">
     <meta name="twitter:image:alt" content="SnowGrid case study with map measurement and contractor payout screens">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,10 +45,10 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "SnowGrid: a three-role dispatch and field service platform for snow removal operations",
-      "description": "Case study of a multi-role fleet dispatch platform engineered by AppVion Studio, covering live dispatch mapping, GPS tracking, map-based area measurement, photo verification, and Stripe escrow payments.",
+      "description": "Case study of a multi-role fleet dispatch platform engineered by AppVion Studio, covering live dispatch mapping, GPS tracking, map-based area measurement, photo verification, and a payment ledger.",
       "image": "https://appvionstudio.com/assets/screens/snowgrid-measure-property.webp",
       "datePublished": "2026-08-16",
-      "dateModified": "2026-10-21",
+      "dateModified": "2026-11-25",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://appvionstudio.com/work/snowgrid/"
@@ -136,13 +136,13 @@
                         <p class="lead">
                             One platform serving three completely different jobs &mdash; an operator running the fleet, a property
                             owner buying a service, and a contractor working in the field in bad weather. Live dispatch mapping,
-                            map-based area measurement, photo verification, and Stripe escrow payments.
+                            map-based area measurement, photo verification, and a payment ledger.
                         </p>
                         <div class="case-tags">
                             <span>Fleet management</span>
                             <span>Real-time dispatch</span>
                             <span>GPS tracking</span>
-                            <span>Stripe payments</span>
+                            <span>Payment ledger</span>
                             <span>Multi-role platform</span>
                         </div>
                         <div class="hero-proof">
@@ -150,7 +150,7 @@
                             <span>14 screens</span>
                             <span>Live GPS dispatch</span>
                         </div>
-                        <p class="article-byline">Published <time datetime="2026-08-16">16 Aug 2026</time> &middot; Updated <time datetime="2026-10-21">21 Oct 2026</time></p>
+                        <p class="article-byline">Published <time datetime="2026-08-16">16 Aug 2026</time> &middot; Updated <time datetime="2026-11-25">25 Nov 2026</time></p>
                         <div class="case-actions">
                             <a class="button primary" href="https://play.google.com/store/apps/details?id=com.snowgrid.app" target="_blank" rel="noopener noreferrer" data-contact-action="google-play" data-contact-label="SnowGrid case study Google Play">Get it on Google Play</a>
                             <a href="/#work" data-av-demo-replaced="true">Explore the Interactive Demo</a>
@@ -209,7 +209,7 @@
                     <article class="process-step reveal in-view">
                         <span>01</span>
                         <h3>Admin command centre</h3>
-                        <p>Seven screens for fleet management, live dispatch, revenue and escrow monitoring, pricing configuration, and oversight of every job in the system.</p>
+                        <p>Seven screens for fleet management, live dispatch, revenue and payment tracking, pricing configuration, and oversight of every job in the system.</p>
                     </article>
                     <article class="process-step reveal in-view">
                         <span>02</span>
@@ -224,7 +224,7 @@
                     <article class="process-step reveal in-view">
                         <span>04</span>
                         <h3>Shared services</h3>
-                        <p>Role-based authentication, a dynamic pricing engine, live GPS streaming, and Stripe escrow holding funds until work is verified.</p>
+                        <p>Role-based authentication, a dynamic pricing engine, live GPS streaming, and a payment ledger tied to each job.</p>
                     </article>
                 </div>
             </section>
@@ -296,11 +296,12 @@
                         </p>
                     </section>
                     <section class="study-panel reveal in-view">
-                        <p class="eyebrow">Escrow tied to proof</p>
+                        <p class="eyebrow">Payment tied to proof</p>
                         <p>
-                            Payment is authorised up front and held in Stripe escrow. Before and after photos are the condition
-                            for release, which means the customer's protection and the contractor's payout depend on the same
-                            piece of evidence instead of on a phone call.
+                            Every job carries its own payment record next to its before and after photos, so the customer's
+                            protection and the contractor's payout rest on the same piece of evidence instead of on a phone call.
+                            We also built a Stripe escrow flow that holds payment until the photos are approved. The live app
+                            keeps it switched off: companies collect payment directly, and SnowGrid records it.
                         </p>
                     </section>
                 </div>
@@ -322,7 +323,7 @@
                     </article>
                     <article>
                         <strong>08</strong>
-                        <span>Core platform capabilities, from area measurement to escrow payout.</span>
+                        <span>Core platform capabilities, from area measurement to the payment ledger.</span>
                     </article>
                     <article>
                         <strong>Live</strong>
@@ -342,9 +343,8 @@
                     <span>GPS Tracking</span>
                     <span>Satellite Mapping</span>
                     <span>Polygon Area Tool</span>
-                    <span>Stripe Payments</span>
-                    <span>Stripe Escrow</span>
-                    <span>Stripe Payouts</span>
+                    <span>Payment Ledger</span>
+                    <span>Stripe Escrow Flow (off in live app)</span>
                     <span>Role-Based Auth</span>
                     <span>Photo Verification</span>
                     <span>Dynamic Pricing Engine</span>

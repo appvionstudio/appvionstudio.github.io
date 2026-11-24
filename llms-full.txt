@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-11-21 from the 31 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-11-25 from the 31 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -25,8 +25,8 @@ Featured work
 The portfolio is shaped around practical systems: dispatch, approval, communication, data-heavy browsing, secure access, and mobile-first business execution.
 Live on Google Play
 ##### SnowGrid: a three-role dispatch platform for snow removal operations.
-One platform for an operator running the fleet, a property owner buying a service, and a contractor working in the field in bad weather. Live dispatch mapping, map-based area measurement, photo verification, and Stripe escrow payments.
-Fleet management Real-time dispatch GPS tracking Stripe payments
+One platform for an operator running the fleet, a property owner buying a service, and a contractor working in the field in bad weather. Live dispatch mapping, map-based area measurement, photo verification, and a payment ledger.
+Fleet management Real-time dispatch GPS tracking Payment ledger
 Read the Case Study Get it on Google Play
 Live on Google Play
 ##### D. Delivery: a Kotlin Multiplatform logistics platform built around verifiable proof of delivery.
@@ -726,7 +726,7 @@ Three-app Kotlin Multiplatform delivery platform with dual video proof of delive
 Read the Case Study
 Fleet dispatch platform
 ##### SnowGrid
-Three-role snow removal management platform with live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and Stripe escrow payments.
+Three-role snow removal management platform with live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and a payment ledger.
 Read the Case Study
 Email automation platform
 ##### GMassPulse
@@ -763,10 +763,10 @@ URL: https://appvionstudio.com/work/snowgrid/
 
 Fleet dispatch & field service
 ### SnowGrid: a three-role dispatch platform for snow removal operations.
-One platform serving three completely different jobs — an operator running the fleet, a property owner buying a service, and a contractor working in the field in bad weather. Live dispatch mapping, map-based area measurement, photo verification, and Stripe escrow payments.
-Fleet management Real-time dispatch GPS tracking Stripe payments Multi-role platform
+One platform serving three completely different jobs — an operator running the fleet, a property owner buying a service, and a contractor working in the field in bad weather. Live dispatch mapping, map-based area measurement, photo verification, and a payment ledger.
+Fleet management Real-time dispatch GPS tracking Payment ledger Multi-role platform
 3 user roles 14 screens Live GPS dispatch
-Published 16 Aug 2026 · Updated 21 Oct 2026
+Published 16 Aug 2026 · Updated 25 Nov 2026
 Get it on Google Play Explore the Interactive Demo Build something like this
 The problem
 #### Snow work is priced by guesswork and paid on trust.
@@ -781,7 +781,7 @@ The approach
 Each role got an interface designed around its actual working conditions, not a shared screen with features hidden by permission flags. The contractor app in particular is built for gloved hands, cold weather, and one-handed use in a vehicle.
 01
 ##### Admin command centre
-Seven screens for fleet management, live dispatch, revenue and escrow monitoring, pricing configuration, and oversight of every job in the system.
+Seven screens for fleet management, live dispatch, revenue and payment tracking, pricing configuration, and oversight of every job in the system.
 02
 ##### Customer app
 Four screens: register a property, pin and measure its area on a live satellite map, choose snow depth and priority, get an instant quote, authorise payment.
@@ -790,7 +790,7 @@ Four screens: register a property, pin and measure its area on a live satellite 
 Three screens: receive real-time assignments, toggle availability, submit before and after photo verification, handle disputes, and track earnings and payouts.
 04
 ##### Shared services
-Role-based authentication, a dynamic pricing engine, live GPS streaming, and Stripe escrow holding funds until work is verified.
+Role-based authentication, a dynamic pricing engine, live GPS streaming, and a payment ledger tied to each job.
 Inside the apps
 #### Screens from the shipped build.
 Real screenshots from the three role-specific apps — the operator command centre, the customer booking flow, and the field contractor portal.
@@ -808,17 +808,17 @@ Dynamic pricing engine
 Price is a matrix, not a number: measured area combined with snow depth, priority tier, and environmental multipliers. Operators tune the matrix from the admin panel without a code change, so pricing can react to a season rather than waiting on a release.
 Live dispatch map
 Every active contractor streams position to a single operator map. Assignment decisions are made against who is genuinely nearest and available, rather than whoever picks up the phone first.
-Escrow tied to proof
-Payment is authorised up front and held in Stripe escrow. Before and after photos are the condition for release, which means the customer's protection and the contractor's payout depend on the same piece of evidence instead of on a phone call.
+Payment tied to proof
+Every job carries its own payment record next to its before and after photos, so the customer's protection and the contractor's payout rest on the same piece of evidence instead of on a phone call. We also built a Stripe escrow flow that holds payment until the photos are approved. The live app keeps it switched off: companies collect payment directly, and SnowGrid records it.
 Scope at a glance
 #### What the build actually covers.
 03 Distinct user roles, each with a purpose-built interface rather than a shared screen.
 14 Designed and built screens across the admin, customer, and contractor apps.
-08 Core platform capabilities, from area measurement to escrow payout.
+08 Core platform capabilities, from area measurement to the payment ledger.
 Live GPS fleet positions streamed to the operator dispatch map in real time.
 Technology
 #### The stack behind SnowGrid.
-Mobile App Real-Time Dispatch GPS Tracking Satellite Mapping Polygon Area Tool Stripe Payments Stripe Escrow Stripe Payouts Role-Based Auth Photo Verification Dynamic Pricing Engine Revenue Dashboard
+Mobile App Real-Time Dispatch GPS Tracking Satellite Mapping Polygon Area Tool Payment Ledger Stripe Escrow Flow (off in live app) Role-Based Auth Photo Verification Dynamic Pricing Engine Revenue Dashboard
 More case studies
 #### Other operational systems we have built.
 Logistics platform
@@ -922,7 +922,7 @@ More case studies
 #### Other operational systems we have built.
 Fleet dispatch platform
 ##### SnowGrid
-Three-role snow removal management platform with live dispatch mapping, map-based area measurement, photo verification, and Stripe escrow payments.
+Three-role snow removal management platform with live dispatch mapping, map-based area measurement, photo verification, and a payment ledger.
 Read the Case Study
 Email automation platform
 ##### GMassPulse
@@ -1008,7 +1008,7 @@ Three-app Kotlin Multiplatform delivery platform with dual video proof of delive
 Read the Case Study
 Fleet dispatch platform
 ##### SnowGrid
-Three-role snow removal management platform with live dispatch mapping, area measurement, photo verification, and Stripe escrow.
+Three-role snow removal management platform with live dispatch mapping, area measurement, photo verification, and a payment ledger.
 Read the Case Study
 All work
 ##### Full portfolio
@@ -1100,7 +1100,7 @@ Three-app Kotlin Multiplatform delivery platform with dual video proof of delive
 Read the Case Study
 Fleet dispatch platform
 ##### SnowGrid
-Three-role snow removal management platform with live dispatch mapping, map-based area measurement, photo verification, and Stripe escrow payments.
+Three-role snow removal management platform with live dispatch mapping, map-based area measurement, photo verification, and a payment ledger.
 Read the Case Study
 All work
 ##### Full portfolio
@@ -1504,7 +1504,7 @@ Every build uses a layered architecture with a single source of truth for each p
 That sounds like ceremony until the second year, when a new requirement arrives and it turns out to be a change in one layer rather than a search across forty files. Most of what makes an app expensive to maintain is decided in the first three weeks of building it.
 #### Android work you can actually inspect.
 The studio publishes working prototypes and named client feedback. Each product below can be explored screen by screen on the work page or through the interactive prototypes on the home page.
-SnowGrid — enterprise snow-removal operations: live dispatch on a Mapbox map, a dynamic pricing engine, escrow payouts, and separate owner and driver portals.
+SnowGrid — enterprise snow-removal operations: live dispatch on a Mapbox map, a dynamic pricing engine, a payment ledger, and separate owner and driver portals.
 GMassPulse — cold-email outreach infrastructure with Google Sheets lead import, a campaign editor, and a deliverability throttling engine.
 WUM Connect — role-aware university communication on Firebase with offline-first sync across student, faculty, and admin roles.
 Attendance Suite — thousands of attendance records browsed smoothly with Paging 3, exceptions surfaced ahead of the routine.
@@ -2242,7 +2242,7 @@ A three-app Kotlin Multiplatform delivery platform for high-value electronics co
 Read the Case Study
 Fleet dispatch platform
 ##### SnowGrid
-A three-role field service platform with live dispatch mapping, map-based area measurement for accurate quoting, photo verification, and Stripe escrow payments.
+A three-role field service platform with live dispatch mapping, map-based area measurement for accurate quoting, photo verification, and a payment ledger.
 Read the Case Study
 Email automation platform
 ##### GMassPulse
@@ -2327,7 +2327,7 @@ A three-app Kotlin Multiplatform delivery platform for high-value electronics co
 Read the Case Study
 Fleet dispatch platform
 ##### SnowGrid
-A three-role field service platform with live dispatch mapping, map-based area measurement for accurate quoting, photo verification, and Stripe escrow payments.
+A three-role field service platform with live dispatch mapping, map-based area measurement for accurate quoting, photo verification, and a payment ledger.
 Read the Case Study
 Email automation platform
 ##### GMassPulse

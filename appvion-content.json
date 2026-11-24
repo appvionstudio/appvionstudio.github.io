@@ -62,7 +62,7 @@
       "id": "snowgrid",
       "title": "SnowGrid",
       "kicker": "Fleet dispatch platform",
-      "description": "Three-role snow removal management platform with live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and Stripe escrow payments.",
+      "description": "Three-role snow removal management platform with live dispatch mapping, GPS fleet tracking, map-based area measurement, photo verification, and a payment ledger.",
       "status": "Live",
       "metric": "Dispatch",
       "theme": "event",

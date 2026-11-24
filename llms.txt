@@ -80,7 +80,7 @@ Each covers the problem, the engineering decisions that made the product trustwo
 
 ## Products in the portfolio
 
-- **SnowGrid** — Enterprise snow-removal operations platform. Live dispatch map, fleet intelligence, dynamic pricing engine, escrow payouts, and separate property-owner and driver portals.
+- **SnowGrid** — Enterprise snow-removal operations platform. Live dispatch map, fleet intelligence, dynamic pricing engine, a payment ledger, and separate property-owner and driver portals.
 - **GMassPulse** — Cold-email outreach infrastructure on Android. Lead import from Google Sheets, campaign editor, timezone-aware auto follow-ups, and a deliverability throttling engine.
 - **PropFix** — Kotlin Multiplatform field-service command layer. Dispatch, job detail, photo proof of work, and remote manager approval in one loop.
 - **WUM Connect** — Role-aware university communication app. Firebase backend, real-time announcements, offline-first sync across student, faculty, and admin roles.
