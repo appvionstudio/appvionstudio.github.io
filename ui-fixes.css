@@ -564,3 +564,6 @@ h1 { max-width: 18ch; }
     .client-quote { padding: 22px; }
     .client-feedback-heading h3 { font-size: 24px; }
 }
+
+/* 2026-11-27: links inside cards were indistinguishable from text */
+.choice-card p a { text-decoration: underline; text-underline-offset: 3px; }

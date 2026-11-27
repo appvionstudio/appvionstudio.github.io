@@ -1,6 +1,6 @@
 # AppVion Studio
 
-> AppVion Studio is a founder-led mobile app development studio based in Multan, Pakistan, working remotely with clients worldwide. It builds Android Native and Kotlin Multiplatform products using Jetpack Compose, with a focus on operational business systems: dispatch, approvals, attendance, communication, events, and field-service workflows. Engagements run from a $1,500 product clarity sprint to a $12,000–$35,000 full app build.
+> AppVion Studio is a founder-led mobile app development studio based in Multan, Pakistan, working remotely with clients worldwide. It builds Android Native and Kotlin Multiplatform products using Jetpack Compose, with a focus on operational business systems: dispatch, approvals, attendance, communication, events, and field-service workflows. For clients abroad, engagements run from a $1,500 product clarity sprint to a $12,000–$35,000 full app build. For businesses in Pakistan, most apps cost PKR 3–7 lakh (PKR 300,000–700,000), as one fixed price agreed after a free 15-minute call.
 
 AppVion Studio is small and deliberately so. The founder, Ayyaz Sajjad, works directly on strategy and Android engineering rather than handing projects to an account layer. The studio publishes working demos and interactive prototypes of its products, plus a small amount of named client feedback, so that quality can be inspected before a contract is signed.
 
@@ -60,8 +60,8 @@ Each covers the problem, the engineering decisions that made the product trustwo
 - [Delivery and courier app development](https://appvionstudio.com/delivery-app-development/): Customer, rider and admin apps with video proof of delivery and cash reconciliation, from D. Delivery.
 - [Staff attendance app without biometric machines](https://appvionstudio.com/staff-attendance-app/): For universities, colleges, schools, hospitals and offices in Pakistan. Staff mark attendance on their own phones while connected to the institution's Wi-Fi, with no fingerprint hardware or licence renewals. Used by 300+ employees at The Women University Multan; setup takes about 4 to 5 days; fixed quote after a free 15-minute call.
 - [PropFix for housing societies](https://appvionstudio.com/housing-society-complaint-app/): Maintenance complaint app for housing societies and property offices in Pakistan, live on Google Play. Residents raise complaints, the office assigns a contractor, the contractor attaches before and after photos, the office approves. Self-serve download with a free plan.
-- [Mobile app development in Pakistan](https://appvionstudio.com/mobile-app-development-pakistan/): Founder-led Android Native and Kotlin Multiplatform studio in Pakistan, for local and international clients.
-- [Mobile app development in Multan](https://appvionstudio.com/mobile-app-development-multan/): The studio's home city; LMQ Road, Katchery Chowk, Multan. Apps and field-service systems for businesses in Multan and across Pakistan.
+- [Mobile app development in Pakistan](https://appvionstudio.com/mobile-app-development-pakistan/): Founder-led Android Native and Kotlin Multiplatform studio in Pakistan, for local and international clients. Most business apps for companies in Pakistan cost PKR 3–7 lakh, fixed price, paid by milestone.
+- [Mobile app development in Multan](https://appvionstudio.com/mobile-app-development-multan/): The studio's home city: a software house on LMQ Road, Katchery Chowk, Multan. Apps and field-service systems for businesses in Multan and across Pakistan; most business apps PKR 3–7 lakh, fixed price.
 
 ## Team
 

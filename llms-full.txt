@@ -3,7 +3,7 @@
 > Complete extractable text of https://appvionstudio.com/ for AI assistants and answer engines.
 > Short version: https://appvionstudio.com/llms.txt
 > Machine-readable company record: https://appvionstudio.com/company.json
-> Generated 2026-11-25 from the 31 content pages in https://appvionstudio.com/sitemap.xml.
+> Generated 2026-11-27 from the 31 content pages in https://appvionstudio.com/sitemap.xml.
 > Contact: ayyaz@appvionstudio.com | +92 346 7277143 | https://wa.me/923467277143
 
 
@@ -2211,6 +2211,17 @@ Mobile app development company in Pakistan
 AppVion Studio is a founder-led mobile product studio. The work is Android Native and Kotlin Multiplatform, and the products are operational: delivery dispatch, field service management, cash reconciliation, proof of work, outreach automation. Software that a team opens every day and depends on — not a brochure with a login screen.
 The studio is based in Multan and works remote-first with clients in Lahore, Karachi, Islamabad, across Pakistan, and internationally.
 Book a free 15-min call See our case studies
+Businesses in Pakistan
+#### Building an app for a business in Pakistan.
+A clear price in rupees, work you can check, and a team you can call in Urdu or English.
+##### PKR 3 to 7 lakh for most business apps
+Most of the apps we build for companies in Pakistan land in this range, as one fixed price agreed after a free 15-minute call. Larger systems are quoted after scoping.
+##### Work for Pakistani clients
+A courier platform for D. Delivery in Hafeez Centre, Lahore; a staff attendance app used by more than 300 employees at The Women University Multan; and PropFix for housing societies, live on Google Play.
+##### Urdu, WhatsApp and meetings in Multan
+Calls in Urdu or English, updates on WhatsApp, and an in-person meeting at our Multan office on LMQ Road once the project is scoped.
+##### One fixed price, paid by milestone
+After the call you get one fixed price in PKR. A deposit starts the work, and the rest is paid as each milestone is delivered and checked.
 Hiring from abroad
 #### Why teams abroad hire a studio in Pakistan.
 The honest reason is cost without the usual trade-off. A senior studio in Pakistan charges a fraction of a US or European agency, and you can judge the work on a small engagement before committing to a build.
@@ -2251,7 +2262,7 @@ Read the Case Study
 FAQ
 #### Common questions before the first call.
 How much does mobile app development cost in Pakistan?
-At AppVion Studio a Product Clarity Sprint starts at $1,500, and a production Android or Kotlin Multiplatform app costs $12,000 to $35,000. Senior engineering rates in Pakistan run $40 to $80 an hour at the top tier; AppVion Studio charges a blended $45 to $65. The full breakdown is on the pricing page.
+For businesses in Pakistan, most apps we build cost PKR 3 to 7 lakh, as one fixed price agreed after a free 15-minute call; larger systems are quoted after scoping. For clients abroad, a Product Clarity Sprint starts at $1,500 and a production Android or Kotlin Multiplatform app costs $12,000 to $35,000, at a blended $45 to $65 an hour. The full breakdown for clients abroad is on the pricing page.
 Do you work with clients outside Pakistan?
 Yes. The studio is remote-first and works in English with clients abroad through email, WhatsApp, LinkedIn and scheduled calls, which are booked inside the client's working hours.
 Do you build for iOS as well as Android?
@@ -2266,14 +2277,14 @@ Judge the work on a small, fixed-price engagement before committing to a build.
 Book a free 15-min call WhatsApp us
 
 ======================================================================
-## Mobile App Development Company in Multan | AppVion Studio
+## App Development Company & Software House in Multan | AppVion Studio
 URL: https://appvionstudio.com/mobile-app-development-multan/
 ======================================================================
 
-Mobile app development company in Multan
+Mobile app development company & software house in Multan
 ### A mobile app development company in Multan building systems businesses actually run on.
-AppVion Studio is based on LMQ Road at Katchery Chowk, Multan. The work is Android Native and Kotlin Multiplatform, and the products are operational: delivery dispatch, field service management, cash reconciliation, proof of work, outreach automation. Software a team opens every day and depends on — not a brochure with a login screen.
-Based in Multan Serving Pakistan & international clients Founder-led
+AppVion Studio is a software house on LMQ Road at Katchery Chowk, Multan. The work is Android Native and Kotlin Multiplatform, and the products are operational: delivery dispatch, field service management, cash reconciliation, proof of work, outreach automation. Software a team opens every day and depends on — not a brochure with a login screen.
+Based in Multan Most apps PKR 3–7 lakh Serving Pakistan & international clients Founder-led
 Book a free 15-min call See our case studies
 Visit or reach us
 #### Where we are.
@@ -2288,6 +2299,17 @@ WhatsApp
 ayyaz@appvionstudio.com
 How we work
 Remote-first by default — strategy calls, WhatsApp, and structured project briefs. For clients in and around Multan, an in-person meeting can be arranged once the project is scoped.
+Cost
+#### What an app costs for a business in Pakistan.
+A clear number, in rupees, before any work starts.
+##### PKR 3 to 7 lakh for most business apps
+Most of the apps we build for companies in Pakistan land in this range: for example a staff attendance app, a complaint app for a housing society, or a delivery app with an admin panel. Larger systems are quoted after scoping.
+##### One fixed price before work starts
+After a free 15-minute call we agree the scope and give you one fixed price in PKR. If the scope changes, the change is priced and agreed before it is built.
+##### Pay by milestone, own the code
+A deposit to start, then payments as each milestone is delivered and checked. On final payment you own the source code, the app listing and the accounts.
+##### Urdu or English, meet in Multan
+Calls in Urdu or English, updates on WhatsApp, and an in-person meeting in Multan once the project is scoped.
 Why this matters
 #### Most app projects fail on scope, not on code.
 The common failure is not that an app cannot be built. It is that the wrong app gets built — features nobody uses, a workflow that does not match how the business actually operates, and a launch that quietly stalls. Strategy is where the money is either saved or lost.
@@ -2325,22 +2347,28 @@ Logistics platform
 ##### D. Delivery
 A three-app Kotlin Multiplatform delivery platform for high-value electronics couriering, with dual video proof of delivery, expanding-radius rider dispatch, and server-enforced cash reconciliation.
 Read the Case Study
-Fleet dispatch platform
-##### SnowGrid
-A three-role field service platform with live dispatch mapping, map-based area measurement for accurate quoting, photo verification, and a payment ledger.
-Read the Case Study
-Email automation platform
-##### GMassPulse
-A mobile-first outreach platform with Google OAuth, Drive lead import, personalised campaign composition, automated follow-ups, and real-time open tracking.
-Read the Case Study
+University, Multan
+##### Staff attendance app
+More than 300 employees at The Women University Multan mark attendance on their own phones over the university Wi-Fi, instead of biometric machines.
+See the attendance app
+Housing societies
+##### PropFix
+A maintenance complaint app for housing societies and property offices, live on Google Play: residents raise complaints, contractors attach before and after photos, the office approves.
+See PropFix
+Client feedback
+#### What a Multan client says.
+“More than 300 employees at the university use the attendance app. We have been relieved of biometric machine licensing and hardware problems: every employee now has the biometric machine in their own hand, in the form of their mobile phone. They connect to the university Wi-Fi and mark their attendance, and our employees are very happy with the digitisation.”
+Muhammad Azam System Administrator / Additional Director IT, The Women University Multan
 FAQ
 #### Questions from Multan clients.
 Where is AppVion Studio located in Multan?
 We are on LMQ Road at Katchery Chowk, Multan, Punjab. Most project work runs remotely through scheduled calls, WhatsApp, and email, and in-person meetings in Multan can be arranged for local clients.
 Do you only work with clients in Multan?
 No. The studio is based in Multan but works remote-first with clients across Lahore, Karachi, Islamabad, the rest of Pakistan, and internationally. Delivered projects include a logistics platform, a fleet dispatch system, and an email automation product across different markets.
-How much does an app cost?
-Cost tracks scope, not location. A focused MVP with one user role sits at the low end; a multi-role operational platform with realtime dispatch, payments, and proof capture sits considerably higher. We price after a strategy session rather than from a rate card, because an accurate number needs the workflow, roles, and integrations defined first.
+How much does an app cost in Multan?
+Most business apps we build for companies in Pakistan cost PKR 3 to 7 lakh, as one fixed price agreed after a free 15-minute call. Larger systems are quoted after scoping. Payment is by milestone, and on final payment you own the source code.
+Is AppVion Studio a software house?
+Yes. We are a software house on LMQ Road at Katchery Chowk, Multan, focused on mobile apps: Android Native and Kotlin Multiplatform apps with admin panels for businesses and institutions. Our staff attendance app is used by more than 300 employees at The Women University Multan.
 Can we meet in person?
 Yes. For clients in and around Multan an in-person strategy meeting can be arranged. Book a call first so the session is scoped and genuinely useful rather than exploratory.
 What should I prepare before the first call?
