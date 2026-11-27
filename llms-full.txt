@@ -2220,19 +2220,8 @@ Most of the apps we build for companies in Pakistan land in this range, as one f
 A courier platform for D. Delivery in Hafeez Centre, Lahore; a staff attendance app used by more than 300 employees at The Women University Multan; and PropFix for housing societies, live on Google Play.
 ##### Urdu, WhatsApp and meetings in Multan
 Calls in Urdu or English, updates on WhatsApp, and an in-person meeting at our Multan office on LMQ Road once the project is scoped.
-##### One fixed price, paid by milestone
-After the call you get one fixed price in PKR. A deposit starts the work, and the rest is paid as each milestone is delivered and checked.
-Hiring from abroad
-#### Why teams abroad hire a studio in Pakistan.
-The honest reason is cost without the usual trade-off. A senior studio in Pakistan charges a fraction of a US or European agency, and you can judge the work on a small engagement before committing to a build.
-##### Rates
-AppVion Studio charges a blended $45 to $65 an hour, against $150 to $250 at a US agency and $50 to $100 in Eastern Europe. A production app typically lands at $12,000 to $35,000. The full comparison is on the pricing page.
-##### Time zones
-Pakistan Standard Time is UTC+5: a full working overlap with Europe, the Middle East and Asia, and a morning overlap with the eastern United States. Calls are scheduled inside your working hours.
-##### Language
-English for all project communication, documentation and code. The team also speaks Urdu.
-##### Proof before commitment
-Start with a $1,500 Product Clarity Sprint rather than a $20,000 build. You get the scope, the workflow map and a fixed quote, and you see how the studio works before the larger decision.
+##### Built for weak signal
+Our apps save work on the phone first and sync when the signal returns, so riders and field staff can keep working where coverage is poor.
 Contracts
 #### How pricing, payments and ownership work.
 ##### A fixed price per engagement
@@ -2262,18 +2251,18 @@ Read the Case Study
 FAQ
 #### Common questions before the first call.
 How much does mobile app development cost in Pakistan?
-For businesses in Pakistan, most apps we build cost PKR 3 to 7 lakh, as one fixed price agreed after a free 15-minute call; larger systems are quoted after scoping. For clients abroad, a Product Clarity Sprint starts at $1,500 and a production Android or Kotlin Multiplatform app costs $12,000 to $35,000, at a blended $45 to $65 an hour. The full breakdown for clients abroad is on the pricing page.
+For businesses in Pakistan, most apps we build cost PKR 3 to 7 lakh, as one fixed price agreed after a free 15-minute call. Larger systems are quoted after scoping. Payment is by milestone, and on final payment you own the source code.
 Do you work with clients outside Pakistan?
-Yes. The studio is remote-first and works in English with clients abroad through email, WhatsApp, LinkedIn and scheduled calls, which are booked inside the client's working hours.
+Yes. The studio is remote-first and works in English with clients abroad through email, WhatsApp, LinkedIn and scheduled calls, which are booked inside the client's working hours. Pricing for clients outside Pakistan is on a separate page.
 Do you build for iOS as well as Android?
 Yes. Android Native is the deepest specialism here, and Kotlin Multiplatform is used when a product needs both platforms without duplicating business logic. Shared logic lives in one Kotlin module while each platform keeps a native interface.
 How long does it take to build a mobile app?
 A first release with a focused feature set typically takes 8 to 12 weeks. Multi-role operational platforms with dispatch, approvals, live tracking or payments take 12 to 16 weeks and ship in focused releases, so progress stays inspectable throughout.
-Why should I trust an offshore studio?
-You should not, on assertion alone. That is why AppVion Studio publishes working prototypes and named client feedback, names every team member with a profile page, and lists direct contact routes to the founder. Start with a $1,500 scoping sprint and judge the work before committing to a build.
+Why should I trust a small studio?
+You should not, on assertion alone. That is why AppVion Studio publishes working prototypes and named client feedback, names every team member with a profile page, and lists direct contact routes to the founder. Start with a free 15-minute call and a fixed price in PKR before committing to a build.
 Start the conversation
-#### Hiring from abroad? Start with a $1,500 scoping sprint.
-Judge the work on a small, fixed-price engagement before committing to a build.
+#### Building an app for your business? Get one fixed price in PKR.
+Tell us what you want to build. After a free 15-minute call you get one fixed price in rupees.
 Book a free 15-min call WhatsApp us
 
 ======================================================================
